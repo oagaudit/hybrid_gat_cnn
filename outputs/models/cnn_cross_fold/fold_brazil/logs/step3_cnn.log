@@ -1,0 +1,3415 @@
+2026-07-15 20:48:58,679 - INFO - ============================================================
+2026-07-15 20:48:58,679 - INFO -  Stage 1: CNN Training Started
+2026-07-15 20:48:58,679 - INFO - ============================================================
+2026-07-15 20:48:58,679 - INFO - Output directory: ./outputs/models/cnn_cross_fold/fold_brazil
+2026-07-15 20:48:58,679 - INFO - Log file: ./outputs/models/cnn_cross_fold/fold_brazil/logs/step3_cnn.log
+2026-07-15 20:48:58,679 - INFO -  Using fixed images from: ./fixed_run/images
+2026-07-15 20:48:58,679 - INFO -  Countries: ['japan', 'usa']
+2026-07-15 20:48:58,683 - WARNING - Warning: japan files not found in ./fixed_run/images
+2026-07-15 20:48:58,683 - WARNING - Warning: usa files not found in ./fixed_run/images
+2026-07-15 20:49:46,566 - INFO - ============================================================
+2026-07-15 20:49:46,566 - INFO -  Stage 1: CNN Training Started
+2026-07-15 20:49:46,566 - INFO - ============================================================
+2026-07-15 20:49:46,566 - INFO - Output directory: ./outputs/models/cnn_cross_fold/fold_brazil
+2026-07-15 20:49:46,566 - INFO - Log file: ./outputs/models/cnn_cross_fold/fold_brazil/logs/step3_cnn.log
+2026-07-15 20:49:46,566 - INFO -  Using fixed images from: ./fixed_run/images
+2026-07-15 20:49:46,567 - INFO -  Countries: ['japan', 'usa']
+2026-07-15 20:49:46,570 - WARNING - Warning: japan files not found in ./fixed_run/images
+2026-07-15 20:49:46,570 - WARNING - Warning: usa files not found in ./fixed_run/images
+2026-07-15 20:59:43,969 - INFO - ============================================================
+2026-07-15 20:59:43,970 - INFO -  Stage 1: CNN Training Started
+2026-07-15 20:59:43,970 - INFO - ============================================================
+2026-07-15 20:59:43,970 - INFO - Output directory: ./outputs/models/cnn_cross_fold/fold_brazil
+2026-07-15 20:59:43,970 - INFO - Log file: ./outputs/models/cnn_cross_fold/fold_brazil/logs/step3_cnn.log
+2026-07-15 20:59:43,970 - INFO -  Using fixed images from: ./outputs/images
+2026-07-15 20:59:43,970 - INFO -  Countries: ['japan', 'usa']
+2026-07-15 20:59:45,769 - INFO -  Merged 2 countries into temporary files
+2026-07-15 20:59:45,772 - INFO - Total samples: 5741
+2026-07-15 20:59:45,780 - INFO - Saved split to ./outputs/models/cnn_cross_fold/fold_brazil/merged_japan_usa_split.json
+2026-07-15 20:59:45,780 - INFO - 
+============================================================
+Starting run 1/5
+============================================================
+2026-07-15 20:59:45,820 - INFO - 
+Run 1: Device = mps
+2026-07-15 20:59:48,465 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-15 20:59:48,469 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-15 20:59:48,470 - INFO - 
+Epoch 1/50
+2026-07-15 21:00:08,179 - INFO - Train Loss: 0.8224, Train Acc: 0.6294
+2026-07-15 21:00:08,179 - INFO - Val Loss: 0.7163, Val Acc: 0.7247, Val F1: 0.6638, Val AUC: 0.7946
+2026-07-15 21:00:08,237 - INFO -   -> New best model saved (F1=0.6638)
+2026-07-15 21:00:08,237 - INFO - 
+Epoch 2/50
+2026-07-15 21:00:18,158 - INFO - Train Loss: 0.7519, Train Acc: 0.6852
+2026-07-15 21:00:18,158 - INFO - Val Loss: 0.6990, Val Acc: 0.7050, Val F1: 0.6684, Val AUC: 0.8101
+2026-07-15 21:00:18,205 - INFO -   -> New best model saved (F1=0.6684)
+2026-07-15 21:00:18,205 - INFO - 
+Epoch 3/50
+2026-07-15 21:00:26,892 - INFO - Train Loss: 0.6982, Train Acc: 0.7163
+2026-07-15 21:00:26,892 - INFO - Val Loss: 0.8512, Val Acc: 0.4750, Val F1: 0.5695, Val AUC: 0.8141
+2026-07-15 21:00:26,892 - INFO - 
+Epoch 4/50
+2026-07-15 21:00:32,958 - INFO - Train Loss: 0.6649, Train Acc: 0.7389
+2026-07-15 21:00:32,958 - INFO - Val Loss: 0.9640, Val Acc: 0.4483, Val F1: 0.5646, Val AUC: 0.8180
+2026-07-15 21:00:32,958 - INFO - 
+Epoch 5/50
+2026-07-15 21:00:38,940 - INFO - Train Loss: 0.6222, Train Acc: 0.7601
+2026-07-15 21:00:38,940 - INFO - Val Loss: 0.6133, Val Acc: 0.7607, Val F1: 0.6953, Val AUC: 0.8468
+2026-07-15 21:00:38,971 - INFO -   -> New best model saved (F1=0.6953)
+2026-07-15 21:00:38,971 - INFO - 
+Epoch 6/50
+2026-07-15 21:00:45,450 - INFO - Train Loss: 0.5999, Train Acc: 0.7768
+2026-07-15 21:00:45,450 - INFO - Val Loss: 0.5827, Val Acc: 0.8281, Val F1: 0.7367, Val AUC: 0.8586
+2026-07-15 21:00:45,478 - INFO -   -> New best model saved (F1=0.7367)
+2026-07-15 21:00:45,478 - INFO - 
+Epoch 7/50
+2026-07-15 21:00:51,370 - INFO - Train Loss: 0.5620, Train Acc: 0.7929
+2026-07-15 21:00:51,371 - INFO - Val Loss: 0.5742, Val Acc: 0.8165, Val F1: 0.7208, Val AUC: 0.8667
+2026-07-15 21:00:51,371 - INFO - 
+Epoch 8/50
+2026-07-15 21:00:57,707 - INFO - Train Loss: 0.5494, Train Acc: 0.8071
+2026-07-15 21:00:57,708 - INFO - Val Loss: 0.6000, Val Acc: 0.8351, Val F1: 0.7237, Val AUC: 0.8704
+2026-07-15 21:00:57,708 - INFO - 
+Epoch 9/50
+2026-07-15 21:01:03,385 - INFO - Train Loss: 0.5214, Train Acc: 0.8111
+2026-07-15 21:01:03,385 - INFO - Val Loss: 0.5342, Val Acc: 0.8142, Val F1: 0.7394, Val AUC: 0.8767
+2026-07-15 21:01:03,413 - INFO -   -> New best model saved (F1=0.7394)
+2026-07-15 21:01:03,413 - INFO - 
+Epoch 10/50
+2026-07-15 21:01:09,209 - INFO - Train Loss: 0.5060, Train Acc: 0.8265
+2026-07-15 21:01:09,209 - INFO - Val Loss: 0.6018, Val Acc: 0.8397, Val F1: 0.7416, Val AUC: 0.8766
+2026-07-15 21:01:09,236 - INFO -   -> New best model saved (F1=0.7416)
+2026-07-15 21:01:09,236 - INFO - 
+Epoch 11/50
+2026-07-15 21:01:14,958 - INFO - Train Loss: 0.4947, Train Acc: 0.8280
+2026-07-15 21:01:14,958 - INFO - Val Loss: 0.5164, Val Acc: 0.8293, Val F1: 0.7578, Val AUC: 0.8902
+2026-07-15 21:01:14,988 - INFO -   -> New best model saved (F1=0.7578)
+2026-07-15 21:01:14,988 - INFO - 
+Epoch 12/50
+2026-07-15 21:01:21,178 - INFO - Train Loss: 0.4648, Train Acc: 0.8497
+2026-07-15 21:01:21,178 - INFO - Val Loss: 0.5547, Val Acc: 0.7875, Val F1: 0.7180, Val AUC: 0.8678
+2026-07-15 21:01:21,178 - INFO - 
+Epoch 13/50
+2026-07-15 21:01:27,126 - INFO - Train Loss: 0.4670, Train Acc: 0.8437
+2026-07-15 21:01:27,126 - INFO - Val Loss: 0.5293, Val Acc: 0.8409, Val F1: 0.7584, Val AUC: 0.8945
+2026-07-15 21:01:27,156 - INFO -   -> New best model saved (F1=0.7584)
+2026-07-15 21:01:27,156 - INFO - 
+Epoch 14/50
+2026-07-15 21:01:33,123 - INFO - Train Loss: 0.4479, Train Acc: 0.8484
+2026-07-15 21:01:33,123 - INFO - Val Loss: 0.5103, Val Acc: 0.8153, Val F1: 0.7558, Val AUC: 0.8933
+2026-07-15 21:01:33,123 - INFO - 
+Epoch 15/50
+2026-07-15 21:01:38,742 - INFO - Train Loss: 0.4348, Train Acc: 0.8472
+2026-07-15 21:01:38,742 - INFO - Val Loss: 0.5055, Val Acc: 0.8281, Val F1: 0.7590, Val AUC: 0.8956
+2026-07-15 21:01:38,770 - INFO -   -> New best model saved (F1=0.7590)
+2026-07-15 21:01:38,770 - INFO - 
+Epoch 16/50
+2026-07-15 21:01:44,635 - INFO - Train Loss: 0.4094, Train Acc: 0.8599
+2026-07-15 21:01:44,637 - INFO - Val Loss: 0.5682, Val Acc: 0.8537, Val F1: 0.7640, Val AUC: 0.9095
+2026-07-15 21:01:44,671 - INFO -   -> New best model saved (F1=0.7640)
+2026-07-15 21:01:44,671 - INFO - 
+Epoch 17/50
+2026-07-15 21:01:50,370 - INFO - Train Loss: 0.4051, Train Acc: 0.8591
+2026-07-15 21:01:50,370 - INFO - Val Loss: 0.4975, Val Acc: 0.8502, Val F1: 0.7780, Val AUC: 0.9058
+2026-07-15 21:01:50,398 - INFO -   -> New best model saved (F1=0.7780)
+2026-07-15 21:01:50,398 - INFO - 
+Epoch 18/50
+2026-07-15 21:01:56,167 - INFO - Train Loss: 0.3974, Train Acc: 0.8666
+2026-07-15 21:01:56,167 - INFO - Val Loss: 0.5669, Val Acc: 0.8548, Val F1: 0.7715, Val AUC: 0.9076
+2026-07-15 21:01:56,167 - INFO - 
+Epoch 19/50
+2026-07-15 21:02:01,750 - INFO - Train Loss: 0.3857, Train Acc: 0.8664
+2026-07-15 21:02:01,750 - INFO - Val Loss: 0.4754, Val Acc: 0.8537, Val F1: 0.7857, Val AUC: 0.9138
+2026-07-15 21:02:01,777 - INFO -   -> New best model saved (F1=0.7857)
+2026-07-15 21:02:01,777 - INFO - 
+Epoch 20/50
+2026-07-15 21:02:07,817 - INFO - Train Loss: 0.3647, Train Acc: 0.8825
+2026-07-15 21:02:07,817 - INFO - Val Loss: 0.4867, Val Acc: 0.8490, Val F1: 0.7811, Val AUC: 0.9153
+2026-07-15 21:02:07,817 - INFO - 
+Epoch 21/50
+2026-07-15 21:02:13,556 - INFO - Train Loss: 0.3649, Train Acc: 0.8793
+2026-07-15 21:02:13,556 - INFO - Val Loss: 0.4623, Val Acc: 0.8316, Val F1: 0.7745, Val AUC: 0.9173
+2026-07-15 21:02:13,556 - INFO - 
+Epoch 22/50
+2026-07-15 21:02:19,264 - INFO - Train Loss: 0.3580, Train Acc: 0.8878
+2026-07-15 21:02:19,264 - INFO - Val Loss: 0.6084, Val Acc: 0.8618, Val F1: 0.7716, Val AUC: 0.9125
+2026-07-15 21:02:19,264 - INFO - 
+Epoch 23/50
+2026-07-15 21:02:24,905 - INFO - Train Loss: 0.3462, Train Acc: 0.8858
+2026-07-15 21:02:24,905 - INFO - Val Loss: 0.4893, Val Acc: 0.8676, Val F1: 0.7979, Val AUC: 0.9183
+2026-07-15 21:02:24,939 - INFO -   -> New best model saved (F1=0.7979)
+2026-07-15 21:02:24,939 - INFO - 
+Epoch 24/50
+2026-07-15 21:02:30,940 - INFO - Train Loss: 0.3273, Train Acc: 0.8930
+2026-07-15 21:02:30,940 - INFO - Val Loss: 0.4745, Val Acc: 0.8537, Val F1: 0.7907, Val AUC: 0.9130
+2026-07-15 21:02:30,940 - INFO - 
+Epoch 25/50
+2026-07-15 21:02:36,858 - INFO - Train Loss: 0.3191, Train Acc: 0.8950
+2026-07-15 21:02:36,858 - INFO - Val Loss: 0.4784, Val Acc: 0.8571, Val F1: 0.7890, Val AUC: 0.9176
+2026-07-15 21:02:36,858 - INFO - 
+Epoch 26/50
+2026-07-15 21:02:42,488 - INFO - Train Loss: 0.3073, Train Acc: 0.9000
+2026-07-15 21:02:42,488 - INFO - Val Loss: 0.7772, Val Acc: 0.8362, Val F1: 0.7081, Val AUC: 0.9170
+2026-07-15 21:02:42,489 - INFO - 
+Epoch 27/50
+2026-07-15 21:02:48,059 - INFO - Train Loss: 0.2781, Train Acc: 0.9109
+2026-07-15 21:02:48,059 - INFO - Val Loss: 0.4685, Val Acc: 0.8525, Val F1: 0.7921, Val AUC: 0.9168
+2026-07-15 21:02:48,059 - INFO - 
+Epoch 28/50
+2026-07-15 21:02:53,855 - INFO - Train Loss: 0.2821, Train Acc: 0.9104
+2026-07-15 21:02:53,855 - INFO - Val Loss: 0.4680, Val Acc: 0.8641, Val F1: 0.8014, Val AUC: 0.9253
+2026-07-15 21:02:53,883 - INFO -   -> New best model saved (F1=0.8014)
+2026-07-15 21:02:53,883 - INFO - 
+Epoch 29/50
+2026-07-15 21:02:59,598 - INFO - Train Loss: 0.2697, Train Acc: 0.9144
+2026-07-15 21:02:59,598 - INFO - Val Loss: 0.5338, Val Acc: 0.8722, Val F1: 0.8050, Val AUC: 0.9235
+2026-07-15 21:02:59,626 - INFO -   -> New best model saved (F1=0.8050)
+2026-07-15 21:02:59,626 - INFO - 
+Epoch 30/50
+2026-07-15 21:03:05,194 - INFO - Train Loss: 0.2506, Train Acc: 0.9141
+2026-07-15 21:03:05,194 - INFO - Val Loss: 0.4571, Val Acc: 0.8571, Val F1: 0.8038, Val AUC: 0.9244
+2026-07-15 21:03:05,194 - INFO - 
+Epoch 31/50
+2026-07-15 21:03:10,835 - INFO - Train Loss: 0.2579, Train Acc: 0.9161
+2026-07-15 21:03:10,835 - INFO - Val Loss: 0.6144, Val Acc: 0.8699, Val F1: 0.7926, Val AUC: 0.9251
+2026-07-15 21:03:10,835 - INFO - 
+Epoch 32/50
+2026-07-15 21:03:16,504 - INFO - Train Loss: 0.2460, Train Acc: 0.9216
+2026-07-15 21:03:16,504 - INFO - Val Loss: 0.4749, Val Acc: 0.8653, Val F1: 0.8073, Val AUC: 0.9274
+2026-07-15 21:03:16,530 - INFO -   -> New best model saved (F1=0.8073)
+2026-07-15 21:03:16,530 - INFO - 
+Epoch 33/50
+2026-07-15 21:03:22,080 - INFO - Train Loss: 0.2411, Train Acc: 0.9246
+2026-07-15 21:03:22,080 - INFO - Val Loss: 0.5293, Val Acc: 0.8676, Val F1: 0.7964, Val AUC: 0.9243
+2026-07-15 21:03:22,080 - INFO - 
+Epoch 34/50
+2026-07-15 21:03:27,778 - INFO - Train Loss: 0.2368, Train Acc: 0.9243
+2026-07-15 21:03:27,779 - INFO - Val Loss: 0.5050, Val Acc: 0.8699, Val F1: 0.8056, Val AUC: 0.9301
+2026-07-15 21:03:27,779 - INFO - 
+Epoch 35/50
+2026-07-15 21:03:33,419 - INFO - Train Loss: 0.2398, Train Acc: 0.9256
+2026-07-15 21:03:33,419 - INFO - Val Loss: 0.5725, Val Acc: 0.8722, Val F1: 0.8029, Val AUC: 0.9264
+2026-07-15 21:03:33,419 - INFO - 
+Epoch 36/50
+2026-07-15 21:03:39,393 - INFO - Train Loss: 0.2191, Train Acc: 0.9335
+2026-07-15 21:03:39,393 - INFO - Val Loss: 0.4995, Val Acc: 0.8827, Val F1: 0.8231, Val AUC: 0.9304
+2026-07-15 21:03:39,419 - INFO -   -> New best model saved (F1=0.8231)
+2026-07-15 21:03:39,419 - INFO - 
+Epoch 37/50
+2026-07-15 21:03:45,180 - INFO - Train Loss: 0.2257, Train Acc: 0.9335
+2026-07-15 21:03:45,180 - INFO - Val Loss: 0.4999, Val Acc: 0.8769, Val F1: 0.8147, Val AUC: 0.9323
+2026-07-15 21:03:45,180 - INFO - 
+Epoch 38/50
+2026-07-15 21:03:50,772 - INFO - Train Loss: 0.2237, Train Acc: 0.9288
+2026-07-15 21:03:50,772 - INFO - Val Loss: 0.5467, Val Acc: 0.8804, Val F1: 0.8157, Val AUC: 0.9325
+2026-07-15 21:03:50,772 - INFO - 
+Epoch 39/50
+2026-07-15 21:03:56,372 - INFO - Train Loss: 0.2095, Train Acc: 0.9345
+2026-07-15 21:03:56,372 - INFO - Val Loss: 0.4704, Val Acc: 0.8769, Val F1: 0.8191, Val AUC: 0.9332
+2026-07-15 21:03:56,372 - INFO - 
+Epoch 40/50
+2026-07-15 21:04:02,106 - INFO - Train Loss: 0.2055, Train Acc: 0.9375
+2026-07-15 21:04:02,106 - INFO - Val Loss: 0.4850, Val Acc: 0.8769, Val F1: 0.8160, Val AUC: 0.9340
+2026-07-15 21:04:02,106 - INFO - 
+Epoch 41/50
+2026-07-15 21:04:07,679 - INFO - Train Loss: 0.1983, Train Acc: 0.9425
+2026-07-15 21:04:07,679 - INFO - Val Loss: 0.5362, Val Acc: 0.8734, Val F1: 0.8071, Val AUC: 0.9324
+2026-07-15 21:04:07,679 - INFO - 
+Epoch 42/50
+2026-07-15 21:04:13,234 - INFO - Train Loss: 0.2084, Train Acc: 0.9306
+2026-07-15 21:04:13,234 - INFO - Val Loss: 0.4330, Val Acc: 0.8664, Val F1: 0.8148, Val AUC: 0.9357
+2026-07-15 21:04:13,234 - INFO - 
+Epoch 43/50
+2026-07-15 21:04:18,792 - INFO - Train Loss: 0.2001, Train Acc: 0.9408
+2026-07-15 21:04:18,792 - INFO - Val Loss: 0.5432, Val Acc: 0.8769, Val F1: 0.8107, Val AUC: 0.9322
+2026-07-15 21:04:18,792 - INFO - 
+Epoch 44/50
+2026-07-15 21:04:24,609 - INFO - Train Loss: 0.1945, Train Acc: 0.9395
+2026-07-15 21:04:24,609 - INFO - Val Loss: 0.4807, Val Acc: 0.8804, Val F1: 0.8227, Val AUC: 0.9358
+2026-07-15 21:04:24,609 - INFO - 
+Epoch 45/50
+2026-07-15 21:04:30,203 - INFO - Train Loss: 0.1858, Train Acc: 0.9455
+2026-07-15 21:04:30,203 - INFO - Val Loss: 0.4990, Val Acc: 0.8769, Val F1: 0.8172, Val AUC: 0.9320
+2026-07-15 21:04:30,203 - INFO - 
+Epoch 46/50
+2026-07-15 21:04:35,797 - INFO - Train Loss: 0.1818, Train Acc: 0.9470
+2026-07-15 21:04:35,797 - INFO - Val Loss: 0.6484, Val Acc: 0.8664, Val F1: 0.7826, Val AUC: 0.9320
+2026-07-15 21:04:35,797 - INFO - 
+Epoch 47/50
+2026-07-15 21:04:41,521 - INFO - Train Loss: 0.1922, Train Acc: 0.9378
+2026-07-15 21:04:41,521 - INFO - Val Loss: 0.5156, Val Acc: 0.8792, Val F1: 0.8143, Val AUC: 0.9354
+2026-07-15 21:04:41,521 - INFO - 
+Epoch 48/50
+2026-07-15 21:04:47,459 - INFO - Train Loss: 0.1884, Train Acc: 0.9413
+2026-07-15 21:04:47,459 - INFO - Val Loss: 0.5497, Val Acc: 0.8757, Val F1: 0.8086, Val AUC: 0.9333
+2026-07-15 21:04:47,459 - INFO - 
+Epoch 49/50
+2026-07-15 21:04:53,566 - INFO - Train Loss: 0.1760, Train Acc: 0.9470
+2026-07-15 21:04:53,566 - INFO - Val Loss: 0.5538, Val Acc: 0.8804, Val F1: 0.8151, Val AUC: 0.9350
+2026-07-15 21:04:53,566 - INFO - 
+Epoch 50/50
+2026-07-15 21:04:59,811 - INFO - Train Loss: 0.1849, Train Acc: 0.9418
+2026-07-15 21:04:59,811 - INFO - Val Loss: 0.5317, Val Acc: 0.8804, Val F1: 0.8190, Val AUC: 0.9338
+2026-07-15 21:05:00,836 - INFO - 
+Run 1 Test Results:
+2026-07-15 21:05:00,837 - INFO -   Accuracy: 0.8666, F1: 0.7898, AUC: 0.9263
+2026-07-15 21:05:00,837 - INFO - 
+============================================================
+Starting run 2/5
+============================================================
+2026-07-15 21:05:00,837 - INFO - 
+Run 2: Device = mps
+2026-07-15 21:05:02,222 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-15 21:05:02,224 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-15 21:05:02,224 - INFO - 
+Epoch 1/50
+2026-07-15 21:05:08,741 - INFO - Train Loss: 0.8337, Train Acc: 0.6317
+2026-07-15 21:05:08,742 - INFO - Val Loss: 0.7318, Val Acc: 0.7422, Val F1: 0.5964, Val AUC: 0.7927
+2026-07-15 21:05:08,776 - INFO -   -> New best model saved (F1=0.5964)
+2026-07-15 21:05:08,776 - INFO - 
+Epoch 2/50
+2026-07-15 21:05:16,079 - INFO - Train Loss: 0.7556, Train Acc: 0.6824
+2026-07-15 21:05:16,080 - INFO - Val Loss: 0.6896, Val Acc: 0.7456, Val F1: 0.6794, Val AUC: 0.8069
+2026-07-15 21:05:16,111 - INFO -   -> New best model saved (F1=0.6794)
+2026-07-15 21:05:16,111 - INFO - 
+Epoch 3/50
+2026-07-15 21:05:22,976 - INFO - Train Loss: 0.7117, Train Acc: 0.7160
+2026-07-15 21:05:22,976 - INFO - Val Loss: 0.6691, Val Acc: 0.7422, Val F1: 0.6657, Val AUC: 0.8185
+2026-07-15 21:05:22,976 - INFO - 
+Epoch 4/50
+2026-07-15 21:05:30,061 - INFO - Train Loss: 0.6706, Train Acc: 0.7344
+2026-07-15 21:05:30,062 - INFO - Val Loss: 0.6342, Val Acc: 0.7433, Val F1: 0.6774, Val AUC: 0.8355
+2026-07-15 21:05:30,062 - INFO - 
+Epoch 5/50
+2026-07-15 21:05:37,131 - INFO - Train Loss: 0.6297, Train Acc: 0.7541
+2026-07-15 21:05:37,131 - INFO - Val Loss: 0.6565, Val Acc: 0.8142, Val F1: 0.7059, Val AUC: 0.8483
+2026-07-15 21:05:37,167 - INFO -   -> New best model saved (F1=0.7059)
+2026-07-15 21:05:37,168 - INFO - 
+Epoch 6/50
+2026-07-15 21:05:44,309 - INFO - Train Loss: 0.6058, Train Acc: 0.7755
+2026-07-15 21:05:44,309 - INFO - Val Loss: 0.6422, Val Acc: 0.6957, Val F1: 0.6641, Val AUC: 0.8523
+2026-07-15 21:05:44,309 - INFO - 
+Epoch 7/50
+2026-07-15 21:05:51,197 - INFO - Train Loss: 0.5856, Train Acc: 0.7810
+2026-07-15 21:05:51,197 - INFO - Val Loss: 0.5741, Val Acc: 0.8107, Val F1: 0.7332, Val AUC: 0.8615
+2026-07-15 21:05:51,226 - INFO -   -> New best model saved (F1=0.7332)
+2026-07-15 21:05:51,226 - INFO - 
+Epoch 8/50
+2026-07-15 21:05:58,168 - INFO - Train Loss: 0.5595, Train Acc: 0.7949
+2026-07-15 21:05:58,169 - INFO - Val Loss: 0.5746, Val Acc: 0.8026, Val F1: 0.7344, Val AUC: 0.8626
+2026-07-15 21:05:58,205 - INFO -   -> New best model saved (F1=0.7344)
+2026-07-15 21:05:58,205 - INFO - 
+Epoch 9/50
+2026-07-15 21:06:04,971 - INFO - Train Loss: 0.5384, Train Acc: 0.8091
+2026-07-15 21:06:04,972 - INFO - Val Loss: 0.5491, Val Acc: 0.8304, Val F1: 0.7509, Val AUC: 0.8761
+2026-07-15 21:06:05,001 - INFO -   -> New best model saved (F1=0.7509)
+2026-07-15 21:06:05,001 - INFO - 
+Epoch 10/50
+2026-07-15 21:06:11,754 - INFO - Train Loss: 0.5260, Train Acc: 0.8099
+2026-07-15 21:06:11,754 - INFO - Val Loss: 0.6064, Val Acc: 0.8339, Val F1: 0.7297, Val AUC: 0.8766
+2026-07-15 21:06:11,754 - INFO - 
+Epoch 11/50
+2026-07-15 21:06:18,442 - INFO - Train Loss: 0.5184, Train Acc: 0.8191
+2026-07-15 21:06:18,442 - INFO - Val Loss: 0.6264, Val Acc: 0.8362, Val F1: 0.7262, Val AUC: 0.8812
+2026-07-15 21:06:18,442 - INFO - 
+Epoch 12/50
+2026-07-15 21:06:25,143 - INFO - Train Loss: 0.5098, Train Acc: 0.8181
+2026-07-15 21:06:25,143 - INFO - Val Loss: 0.5769, Val Acc: 0.8409, Val F1: 0.7439, Val AUC: 0.8888
+2026-07-15 21:06:25,143 - INFO - 
+Epoch 13/50
+2026-07-15 21:06:31,781 - INFO - Train Loss: 0.4783, Train Acc: 0.8367
+2026-07-15 21:06:31,781 - INFO - Val Loss: 0.5298, Val Acc: 0.8409, Val F1: 0.7575, Val AUC: 0.8913
+2026-07-15 21:06:31,808 - INFO -   -> New best model saved (F1=0.7575)
+2026-07-15 21:06:31,808 - INFO - 
+Epoch 14/50
+2026-07-15 21:06:38,409 - INFO - Train Loss: 0.4672, Train Acc: 0.8405
+2026-07-15 21:06:38,410 - INFO - Val Loss: 0.5700, Val Acc: 0.8374, Val F1: 0.7378, Val AUC: 0.8957
+2026-07-15 21:06:38,410 - INFO - 
+Epoch 15/50
+2026-07-15 21:06:45,029 - INFO - Train Loss: 0.4511, Train Acc: 0.8512
+2026-07-15 21:06:45,029 - INFO - Val Loss: 0.5547, Val Acc: 0.7735, Val F1: 0.7288, Val AUC: 0.8958
+2026-07-15 21:06:45,029 - INFO - 
+Epoch 16/50
+2026-07-15 21:06:51,692 - INFO - Train Loss: 0.4488, Train Acc: 0.8407
+2026-07-15 21:06:51,692 - INFO - Val Loss: 0.5240, Val Acc: 0.7933, Val F1: 0.7464, Val AUC: 0.9040
+2026-07-15 21:06:51,692 - INFO - 
+Epoch 17/50
+2026-07-15 21:06:58,363 - INFO - Train Loss: 0.4262, Train Acc: 0.8552
+2026-07-15 21:06:58,363 - INFO - Val Loss: 0.7922, Val Acc: 0.8246, Val F1: 0.6848, Val AUC: 0.9006
+2026-07-15 21:06:58,363 - INFO - 
+Epoch 18/50
+2026-07-15 21:07:05,221 - INFO - Train Loss: 0.4128, Train Acc: 0.8616
+2026-07-15 21:07:05,221 - INFO - Val Loss: 0.5316, Val Acc: 0.7712, Val F1: 0.7252, Val AUC: 0.9016
+2026-07-15 21:07:05,221 - INFO - 
+Epoch 19/50
+2026-07-15 21:07:11,847 - INFO - Train Loss: 0.4023, Train Acc: 0.8651
+2026-07-15 21:07:11,847 - INFO - Val Loss: 0.5921, Val Acc: 0.8537, Val F1: 0.7640, Val AUC: 0.9054
+2026-07-15 21:07:11,878 - INFO -   -> New best model saved (F1=0.7640)
+2026-07-15 21:07:11,879 - INFO - 
+Epoch 20/50
+2026-07-15 21:07:18,553 - INFO - Train Loss: 0.3873, Train Acc: 0.8741
+2026-07-15 21:07:18,553 - INFO - Val Loss: 0.6679, Val Acc: 0.8502, Val F1: 0.7505, Val AUC: 0.9084
+2026-07-15 21:07:18,553 - INFO - 
+Epoch 21/50
+2026-07-15 21:07:25,180 - INFO - Train Loss: 0.3871, Train Acc: 0.8671
+2026-07-15 21:07:25,180 - INFO - Val Loss: 0.4646, Val Acc: 0.8502, Val F1: 0.7929, Val AUC: 0.9147
+2026-07-15 21:07:25,207 - INFO -   -> New best model saved (F1=0.7929)
+2026-07-15 21:07:25,207 - INFO - 
+Epoch 22/50
+2026-07-15 21:07:31,761 - INFO - Train Loss: 0.3905, Train Acc: 0.8654
+2026-07-15 21:07:31,762 - INFO - Val Loss: 0.4869, Val Acc: 0.8502, Val F1: 0.7802, Val AUC: 0.9155
+2026-07-15 21:07:31,762 - INFO - 
+Epoch 23/50
+2026-07-15 21:07:38,358 - INFO - Train Loss: 0.3551, Train Acc: 0.8825
+2026-07-15 21:07:38,358 - INFO - Val Loss: 0.4732, Val Acc: 0.8467, Val F1: 0.7822, Val AUC: 0.9163
+2026-07-15 21:07:38,358 - INFO - 
+Epoch 24/50
+2026-07-15 21:07:45,047 - INFO - Train Loss: 0.3487, Train Acc: 0.8843
+2026-07-15 21:07:45,047 - INFO - Val Loss: 0.4731, Val Acc: 0.8537, Val F1: 0.7828, Val AUC: 0.9211
+2026-07-15 21:07:45,047 - INFO - 
+Epoch 25/50
+2026-07-15 21:07:51,701 - INFO - Train Loss: 0.3428, Train Acc: 0.8883
+2026-07-15 21:07:51,701 - INFO - Val Loss: 0.6760, Val Acc: 0.8537, Val F1: 0.7520, Val AUC: 0.9210
+2026-07-15 21:07:51,701 - INFO - 
+Epoch 26/50
+2026-07-15 21:07:58,343 - INFO - Train Loss: 0.3468, Train Acc: 0.8810
+2026-07-15 21:07:58,343 - INFO - Val Loss: 0.8138, Val Acc: 0.8374, Val F1: 0.7189, Val AUC: 0.9094
+2026-07-15 21:07:58,343 - INFO - 
+Epoch 27/50
+2026-07-15 21:08:04,984 - INFO - Train Loss: 0.3099, Train Acc: 0.8990
+2026-07-15 21:08:04,985 - INFO - Val Loss: 0.4919, Val Acc: 0.8595, Val F1: 0.7925, Val AUC: 0.9178
+2026-07-15 21:08:04,985 - INFO - 
+Epoch 28/50
+2026-07-15 21:08:11,639 - INFO - Train Loss: 0.3020, Train Acc: 0.9062
+2026-07-15 21:08:11,639 - INFO - Val Loss: 0.5452, Val Acc: 0.8653, Val F1: 0.7921, Val AUC: 0.9213
+2026-07-15 21:08:11,639 - INFO - 
+Epoch 29/50
+2026-07-15 21:08:18,332 - INFO - Train Loss: 0.2886, Train Acc: 0.9069
+2026-07-15 21:08:18,332 - INFO - Val Loss: 0.8366, Val Acc: 0.8444, Val F1: 0.7276, Val AUC: 0.9217
+2026-07-15 21:08:18,332 - INFO - 
+Epoch 30/50
+2026-07-15 21:08:24,898 - INFO - Train Loss: 0.2849, Train Acc: 0.9037
+2026-07-15 21:08:24,898 - INFO - Val Loss: 0.6318, Val Acc: 0.8734, Val F1: 0.7993, Val AUC: 0.9242
+2026-07-15 21:08:24,926 - INFO -   -> New best model saved (F1=0.7993)
+2026-07-15 21:08:24,926 - INFO - 
+Epoch 31/50
+2026-07-15 21:08:31,570 - INFO - Train Loss: 0.2825, Train Acc: 0.9126
+2026-07-15 21:08:31,570 - INFO - Val Loss: 0.6567, Val Acc: 0.8548, Val F1: 0.7582, Val AUC: 0.9232
+2026-07-15 21:08:31,570 - INFO - 
+Epoch 32/50
+2026-07-15 21:08:38,182 - INFO - Train Loss: 0.2645, Train Acc: 0.9116
+2026-07-15 21:08:38,182 - INFO - Val Loss: 0.5551, Val Acc: 0.8664, Val F1: 0.7898, Val AUC: 0.9265
+2026-07-15 21:08:38,182 - INFO - 
+Epoch 33/50
+2026-07-15 21:08:44,857 - INFO - Train Loss: 0.2670, Train Acc: 0.9141
+2026-07-15 21:08:44,857 - INFO - Val Loss: 0.5564, Val Acc: 0.8688, Val F1: 0.7957, Val AUC: 0.9253
+2026-07-15 21:08:44,857 - INFO - 
+Epoch 34/50
+2026-07-15 21:08:51,687 - INFO - Train Loss: 0.2495, Train Acc: 0.9209
+2026-07-15 21:08:51,687 - INFO - Val Loss: 0.6552, Val Acc: 0.8641, Val F1: 0.7763, Val AUC: 0.9248
+2026-07-15 21:08:51,687 - INFO - 
+Epoch 35/50
+2026-07-15 21:08:58,333 - INFO - Train Loss: 0.2465, Train Acc: 0.9236
+2026-07-15 21:08:58,334 - INFO - Val Loss: 0.6817, Val Acc: 0.8641, Val F1: 0.7728, Val AUC: 0.9262
+2026-07-15 21:08:58,334 - INFO - 
+Epoch 36/50
+2026-07-15 21:09:05,161 - INFO - Train Loss: 0.2607, Train Acc: 0.9136
+2026-07-15 21:09:05,161 - INFO - Val Loss: 0.5382, Val Acc: 0.8711, Val F1: 0.7978, Val AUC: 0.9294
+2026-07-15 21:09:05,161 - INFO - 
+Epoch 37/50
+2026-07-15 21:09:11,813 - INFO - Train Loss: 0.2423, Train Acc: 0.9236
+2026-07-15 21:09:11,813 - INFO - Val Loss: 0.6595, Val Acc: 0.8653, Val F1: 0.7778, Val AUC: 0.9285
+2026-07-15 21:09:11,813 - INFO - 
+Epoch 38/50
+2026-07-15 21:09:18,600 - INFO - Train Loss: 0.2375, Train Acc: 0.9288
+2026-07-15 21:09:18,600 - INFO - Val Loss: 0.6586, Val Acc: 0.8630, Val F1: 0.7748, Val AUC: 0.9269
+2026-07-15 21:09:18,600 - INFO - 
+Epoch 39/50
+2026-07-15 21:09:25,386 - INFO - Train Loss: 0.2169, Train Acc: 0.9343
+2026-07-15 21:09:25,386 - INFO - Val Loss: 0.6835, Val Acc: 0.8606, Val F1: 0.7683, Val AUC: 0.9301
+2026-07-15 21:09:25,386 - INFO - 
+Epoch 40/50
+2026-07-15 21:09:31,958 - INFO - Train Loss: 0.2138, Train Acc: 0.9338
+2026-07-15 21:09:31,958 - INFO - Val Loss: 0.6397, Val Acc: 0.8653, Val F1: 0.7811, Val AUC: 0.9304
+2026-07-15 21:09:31,958 - INFO - 
+Epoch 41/50
+2026-07-15 21:09:38,780 - INFO - Train Loss: 0.2362, Train Acc: 0.9228
+2026-07-15 21:09:38,780 - INFO - Val Loss: 0.6204, Val Acc: 0.8734, Val F1: 0.7955, Val AUC: 0.9318
+2026-07-15 21:09:38,780 - INFO - 
+Epoch 42/50
+2026-07-15 21:09:45,583 - INFO - Train Loss: 0.2140, Train Acc: 0.9350
+2026-07-15 21:09:45,583 - INFO - Val Loss: 0.6198, Val Acc: 0.8688, Val F1: 0.7848, Val AUC: 0.9318
+2026-07-15 21:09:45,583 - INFO - 
+Epoch 43/50
+2026-07-15 21:09:52,390 - INFO - Train Loss: 0.2110, Train Acc: 0.9413
+2026-07-15 21:09:52,391 - INFO - Val Loss: 0.7009, Val Acc: 0.8641, Val F1: 0.7746, Val AUC: 0.9304
+2026-07-15 21:09:52,391 - INFO - 
+Epoch 44/50
+2026-07-15 21:09:59,098 - INFO - Train Loss: 0.2252, Train Acc: 0.9278
+2026-07-15 21:09:59,099 - INFO - Val Loss: 0.7136, Val Acc: 0.8641, Val F1: 0.7728, Val AUC: 0.9323
+2026-07-15 21:09:59,099 - INFO - 
+Epoch 45/50
+2026-07-15 21:10:05,822 - INFO - Train Loss: 0.2096, Train Acc: 0.9370
+2026-07-15 21:10:05,822 - INFO - Val Loss: 0.6402, Val Acc: 0.8734, Val F1: 0.7963, Val AUC: 0.9320
+2026-07-15 21:10:05,822 - INFO - Early stopping at epoch 45
+2026-07-15 21:10:06,251 - INFO - 
+Run 2 Test Results:
+2026-07-15 21:10:06,251 - INFO -   Accuracy: 0.8399, F1: 0.7283, AUC: 0.9219
+2026-07-15 21:10:06,251 - INFO - 
+============================================================
+Starting run 3/5
+============================================================
+2026-07-15 21:10:06,251 - INFO - 
+Run 3: Device = mps
+2026-07-15 21:10:07,761 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-15 21:10:07,762 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-15 21:10:07,762 - INFO - 
+Epoch 1/50
+2026-07-15 21:10:14,338 - INFO - Train Loss: 0.8191, Train Acc: 0.6434
+2026-07-15 21:10:14,338 - INFO - Val Loss: 0.7333, Val Acc: 0.7120, Val F1: 0.6497, Val AUC: 0.7853
+2026-07-15 21:10:14,374 - INFO -   -> New best model saved (F1=0.6497)
+2026-07-15 21:10:14,374 - INFO - 
+Epoch 2/50
+2026-07-15 21:10:21,109 - INFO - Train Loss: 0.7398, Train Acc: 0.6882
+2026-07-15 21:10:21,109 - INFO - Val Loss: 0.6784, Val Acc: 0.7456, Val F1: 0.6717, Val AUC: 0.8131
+2026-07-15 21:10:21,139 - INFO -   -> New best model saved (F1=0.6717)
+2026-07-15 21:10:21,139 - INFO - 
+Epoch 3/50
+2026-07-15 21:10:27,850 - INFO - Train Loss: 0.6904, Train Acc: 0.7252
+2026-07-15 21:10:27,850 - INFO - Val Loss: 0.6574, Val Acc: 0.7340, Val F1: 0.6788, Val AUC: 0.8310
+2026-07-15 21:10:27,879 - INFO -   -> New best model saved (F1=0.6788)
+2026-07-15 21:10:27,879 - INFO - 
+Epoch 4/50
+2026-07-15 21:10:34,737 - INFO - Train Loss: 0.6567, Train Acc: 0.7494
+2026-07-15 21:10:34,737 - INFO - Val Loss: 0.6018, Val Acc: 0.7863, Val F1: 0.6954, Val AUC: 0.8487
+2026-07-15 21:10:34,766 - INFO -   -> New best model saved (F1=0.6954)
+2026-07-15 21:10:34,766 - INFO - 
+Epoch 5/50
+2026-07-15 21:10:41,535 - INFO - Train Loss: 0.6068, Train Acc: 0.7820
+2026-07-15 21:10:41,535 - INFO - Val Loss: 0.6467, Val Acc: 0.8269, Val F1: 0.7118, Val AUC: 0.8546
+2026-07-15 21:10:41,565 - INFO -   -> New best model saved (F1=0.7118)
+2026-07-15 21:10:41,565 - INFO - 
+Epoch 6/50
+2026-07-15 21:10:48,287 - INFO - Train Loss: 0.5895, Train Acc: 0.7842
+2026-07-15 21:10:48,287 - INFO - Val Loss: 0.5870, Val Acc: 0.8235, Val F1: 0.7276, Val AUC: 0.8604
+2026-07-15 21:10:48,317 - INFO -   -> New best model saved (F1=0.7276)
+2026-07-15 21:10:48,317 - INFO - 
+Epoch 7/50
+2026-07-15 21:10:55,289 - INFO - Train Loss: 0.5488, Train Acc: 0.8099
+2026-07-15 21:10:55,289 - INFO - Val Loss: 1.0158, Val Acc: 0.7712, Val F1: 0.5450, Val AUC: 0.8596
+2026-07-15 21:10:55,290 - INFO - 
+Epoch 8/50
+2026-07-15 21:11:01,978 - INFO - Train Loss: 0.5529, Train Acc: 0.8021
+2026-07-15 21:11:01,979 - INFO - Val Loss: 0.7510, Val Acc: 0.8014, Val F1: 0.6323, Val AUC: 0.8752
+2026-07-15 21:11:01,979 - INFO - 
+Epoch 9/50
+2026-07-15 21:11:08,701 - INFO - Train Loss: 0.5315, Train Acc: 0.8163
+2026-07-15 21:11:08,701 - INFO - Val Loss: 1.3425, Val Acc: 0.7410, Val F1: 0.4383, Val AUC: 0.8702
+2026-07-15 21:11:08,701 - INFO - 
+Epoch 10/50
+2026-07-15 21:11:15,525 - INFO - Train Loss: 0.5083, Train Acc: 0.8253
+2026-07-15 21:11:15,525 - INFO - Val Loss: 0.5308, Val Acc: 0.8118, Val F1: 0.7412, Val AUC: 0.8821
+2026-07-15 21:11:15,556 - INFO -   -> New best model saved (F1=0.7412)
+2026-07-15 21:11:15,556 - INFO - 
+Epoch 11/50
+2026-07-15 21:11:22,242 - INFO - Train Loss: 0.4953, Train Acc: 0.8280
+2026-07-15 21:11:22,242 - INFO - Val Loss: 0.5969, Val Acc: 0.8374, Val F1: 0.7318, Val AUC: 0.8865
+2026-07-15 21:11:22,242 - INFO - 
+Epoch 12/50
+2026-07-15 21:11:29,146 - INFO - Train Loss: 0.4772, Train Acc: 0.8377
+2026-07-15 21:11:29,146 - INFO - Val Loss: 0.5316, Val Acc: 0.8397, Val F1: 0.7612, Val AUC: 0.8853
+2026-07-15 21:11:29,176 - INFO -   -> New best model saved (F1=0.7612)
+2026-07-15 21:11:29,176 - INFO - 
+Epoch 13/50
+2026-07-15 21:11:35,946 - INFO - Train Loss: 0.4582, Train Acc: 0.8427
+2026-07-15 21:11:35,947 - INFO - Val Loss: 0.5555, Val Acc: 0.7909, Val F1: 0.7264, Val AUC: 0.8732
+2026-07-15 21:11:35,947 - INFO - 
+Epoch 14/50
+2026-07-15 21:11:42,787 - INFO - Train Loss: 0.4589, Train Acc: 0.8397
+2026-07-15 21:11:42,787 - INFO - Val Loss: 0.8241, Val Acc: 0.8165, Val F1: 0.6681, Val AUC: 0.8947
+2026-07-15 21:11:42,787 - INFO - 
+Epoch 15/50
+2026-07-15 21:11:49,863 - INFO - Train Loss: 0.4316, Train Acc: 0.8534
+2026-07-15 21:11:49,863 - INFO - Val Loss: 0.5298, Val Acc: 0.7909, Val F1: 0.7421, Val AUC: 0.8966
+2026-07-15 21:11:49,863 - INFO - 
+Epoch 16/50
+2026-07-15 21:11:56,849 - INFO - Train Loss: 0.4213, Train Acc: 0.8621
+2026-07-15 21:11:56,850 - INFO - Val Loss: 0.5630, Val Acc: 0.8513, Val F1: 0.7664, Val AUC: 0.9004
+2026-07-15 21:11:56,884 - INFO -   -> New best model saved (F1=0.7664)
+2026-07-15 21:11:56,884 - INFO - 
+Epoch 17/50
+2026-07-15 21:12:04,145 - INFO - Train Loss: 0.4185, Train Acc: 0.8581
+2026-07-15 21:12:04,145 - INFO - Val Loss: 0.5358, Val Acc: 0.8548, Val F1: 0.7715, Val AUC: 0.9044
+2026-07-15 21:12:04,180 - INFO -   -> New best model saved (F1=0.7715)
+2026-07-15 21:12:04,180 - INFO - 
+Epoch 18/50
+2026-07-15 21:12:12,019 - INFO - Train Loss: 0.4186, Train Acc: 0.8594
+2026-07-15 21:12:12,019 - INFO - Val Loss: 0.4837, Val Acc: 0.8339, Val F1: 0.7776, Val AUC: 0.9061
+2026-07-15 21:12:12,056 - INFO -   -> New best model saved (F1=0.7776)
+2026-07-15 21:12:12,056 - INFO - 
+Epoch 19/50
+2026-07-15 21:12:20,167 - INFO - Train Loss: 0.3961, Train Acc: 0.8651
+2026-07-15 21:12:20,167 - INFO - Val Loss: 0.6965, Val Acc: 0.6551, Val F1: 0.6590, Val AUC: 0.9011
+2026-07-15 21:12:20,167 - INFO - 
+Epoch 20/50
+2026-07-15 21:12:27,613 - INFO - Train Loss: 0.3749, Train Acc: 0.8681
+2026-07-15 21:12:27,615 - INFO - Val Loss: 0.5213, Val Acc: 0.8537, Val F1: 0.7717, Val AUC: 0.9121
+2026-07-15 21:12:27,615 - INFO - 
+Epoch 21/50
+2026-07-15 21:12:34,857 - INFO - Train Loss: 0.3691, Train Acc: 0.8756
+2026-07-15 21:12:34,857 - INFO - Val Loss: 0.7394, Val Acc: 0.8420, Val F1: 0.7280, Val AUC: 0.9135
+2026-07-15 21:12:34,857 - INFO - 
+Epoch 22/50
+2026-07-15 21:12:41,730 - INFO - Train Loss: 0.3633, Train Acc: 0.8778
+2026-07-15 21:12:41,730 - INFO - Val Loss: 0.4935, Val Acc: 0.8606, Val F1: 0.7887, Val AUC: 0.9127
+2026-07-15 21:12:41,759 - INFO -   -> New best model saved (F1=0.7887)
+2026-07-15 21:12:41,759 - INFO - 
+Epoch 23/50
+2026-07-15 21:12:48,623 - INFO - Train Loss: 0.3544, Train Acc: 0.8800
+2026-07-15 21:12:48,623 - INFO - Val Loss: 0.5268, Val Acc: 0.8641, Val F1: 0.7892, Val AUC: 0.9190
+2026-07-15 21:12:48,652 - INFO -   -> New best model saved (F1=0.7892)
+2026-07-15 21:12:48,652 - INFO - 
+Epoch 24/50
+2026-07-15 21:12:55,976 - INFO - Train Loss: 0.3409, Train Acc: 0.8883
+2026-07-15 21:12:55,976 - INFO - Val Loss: 0.5900, Val Acc: 0.8676, Val F1: 0.7904, Val AUC: 0.9145
+2026-07-15 21:12:56,004 - INFO -   -> New best model saved (F1=0.7904)
+2026-07-15 21:12:56,005 - INFO - 
+Epoch 25/50
+2026-07-15 21:13:03,087 - INFO - Train Loss: 0.3146, Train Acc: 0.8960
+2026-07-15 21:13:03,087 - INFO - Val Loss: 0.5153, Val Acc: 0.8641, Val F1: 0.7937, Val AUC: 0.9159
+2026-07-15 21:13:03,136 - INFO -   -> New best model saved (F1=0.7937)
+2026-07-15 21:13:03,136 - INFO - 
+Epoch 26/50
+2026-07-15 21:13:10,217 - INFO - Train Loss: 0.2972, Train Acc: 0.9079
+2026-07-15 21:13:10,217 - INFO - Val Loss: 0.6012, Val Acc: 0.8630, Val F1: 0.7782, Val AUC: 0.9219
+2026-07-15 21:13:10,217 - INFO - 
+Epoch 27/50
+2026-07-15 21:13:17,169 - INFO - Train Loss: 0.3046, Train Acc: 0.8995
+2026-07-15 21:13:17,169 - INFO - Val Loss: 0.5833, Val Acc: 0.8653, Val F1: 0.7828, Val AUC: 0.9220
+2026-07-15 21:13:17,169 - INFO - 
+Epoch 28/50
+2026-07-15 21:13:24,040 - INFO - Train Loss: 0.2928, Train Acc: 0.9029
+2026-07-15 21:13:24,040 - INFO - Val Loss: 0.5381, Val Acc: 0.8746, Val F1: 0.8043, Val AUC: 0.9221
+2026-07-15 21:13:24,066 - INFO -   -> New best model saved (F1=0.8043)
+2026-07-15 21:13:24,066 - INFO - 
+Epoch 29/50
+2026-07-15 21:13:30,884 - INFO - Train Loss: 0.2687, Train Acc: 0.9139
+2026-07-15 21:13:30,885 - INFO - Val Loss: 0.4934, Val Acc: 0.8699, Val F1: 0.8056, Val AUC: 0.9216
+2026-07-15 21:13:30,915 - INFO -   -> New best model saved (F1=0.8056)
+2026-07-15 21:13:30,915 - INFO - 
+Epoch 30/50
+2026-07-15 21:13:37,735 - INFO - Train Loss: 0.2802, Train Acc: 0.9062
+2026-07-15 21:13:37,735 - INFO - Val Loss: 0.5146, Val Acc: 0.8618, Val F1: 0.7952, Val AUC: 0.9218
+2026-07-15 21:13:37,735 - INFO - 
+Epoch 31/50
+2026-07-15 21:13:44,889 - INFO - Train Loss: 0.2650, Train Acc: 0.9189
+2026-07-15 21:13:44,889 - INFO - Val Loss: 0.4905, Val Acc: 0.8664, Val F1: 0.8014, Val AUC: 0.9265
+2026-07-15 21:13:44,889 - INFO - 
+Epoch 32/50
+2026-07-15 21:13:51,612 - INFO - Train Loss: 0.2568, Train Acc: 0.9179
+2026-07-15 21:13:51,612 - INFO - Val Loss: 0.4653, Val Acc: 0.8653, Val F1: 0.8034, Val AUC: 0.9269
+2026-07-15 21:13:51,612 - INFO - 
+Epoch 33/50
+2026-07-15 21:13:58,483 - INFO - Train Loss: 0.2370, Train Acc: 0.9256
+2026-07-15 21:13:58,483 - INFO - Val Loss: 0.5097, Val Acc: 0.8757, Val F1: 0.8099, Val AUC: 0.9264
+2026-07-15 21:13:58,528 - INFO -   -> New best model saved (F1=0.8099)
+2026-07-15 21:13:58,528 - INFO - 
+Epoch 34/50
+2026-07-15 21:14:06,631 - INFO - Train Loss: 0.2485, Train Acc: 0.9228
+2026-07-15 21:14:06,632 - INFO - Val Loss: 0.5099, Val Acc: 0.8711, Val F1: 0.8042, Val AUC: 0.9251
+2026-07-15 21:14:06,632 - INFO - 
+Epoch 35/50
+2026-07-15 21:14:13,819 - INFO - Train Loss: 0.2381, Train Acc: 0.9251
+2026-07-15 21:14:13,819 - INFO - Val Loss: 0.5474, Val Acc: 0.8734, Val F1: 0.8022, Val AUC: 0.9252
+2026-07-15 21:14:13,819 - INFO - 
+Epoch 36/50
+2026-07-15 21:14:20,680 - INFO - Train Loss: 0.2338, Train Acc: 0.9291
+2026-07-15 21:14:20,680 - INFO - Val Loss: 0.5196, Val Acc: 0.8734, Val F1: 0.8064, Val AUC: 0.9266
+2026-07-15 21:14:20,680 - INFO - 
+Epoch 37/50
+2026-07-15 21:14:27,584 - INFO - Train Loss: 0.2191, Train Acc: 0.9345
+2026-07-15 21:14:27,584 - INFO - Val Loss: 0.4893, Val Acc: 0.8630, Val F1: 0.8020, Val AUC: 0.9262
+2026-07-15 21:14:27,584 - INFO - 
+Epoch 38/50
+2026-07-15 21:14:34,414 - INFO - Train Loss: 0.2121, Train Acc: 0.9365
+2026-07-15 21:14:34,414 - INFO - Val Loss: 0.6031, Val Acc: 0.8734, Val F1: 0.8007, Val AUC: 0.9251
+2026-07-15 21:14:34,414 - INFO - 
+Epoch 39/50
+2026-07-15 21:14:41,335 - INFO - Train Loss: 0.2206, Train Acc: 0.9311
+2026-07-15 21:14:41,336 - INFO - Val Loss: 0.5643, Val Acc: 0.8746, Val F1: 0.8043, Val AUC: 0.9268
+2026-07-15 21:14:41,336 - INFO - 
+Epoch 40/50
+2026-07-15 21:14:48,239 - INFO - Train Loss: 0.2183, Train Acc: 0.9326
+2026-07-15 21:14:48,239 - INFO - Val Loss: 0.5204, Val Acc: 0.8734, Val F1: 0.8111, Val AUC: 0.9272
+2026-07-15 21:14:48,272 - INFO -   -> New best model saved (F1=0.8111)
+2026-07-15 21:14:48,272 - INFO - 
+Epoch 41/50
+2026-07-15 21:14:55,168 - INFO - Train Loss: 0.2144, Train Acc: 0.9338
+2026-07-15 21:14:55,169 - INFO - Val Loss: 0.5307, Val Acc: 0.8815, Val F1: 0.8191, Val AUC: 0.9285
+2026-07-15 21:14:55,200 - INFO -   -> New best model saved (F1=0.8191)
+2026-07-15 21:14:55,200 - INFO - 
+Epoch 42/50
+2026-07-15 21:15:02,073 - INFO - Train Loss: 0.2126, Train Acc: 0.9393
+2026-07-15 21:15:02,073 - INFO - Val Loss: 0.5377, Val Acc: 0.8804, Val F1: 0.8157, Val AUC: 0.9296
+2026-07-15 21:15:02,073 - INFO - 
+Epoch 43/50
+2026-07-15 21:15:09,162 - INFO - Train Loss: 0.2182, Train Acc: 0.9306
+2026-07-15 21:15:09,162 - INFO - Val Loss: 0.5022, Val Acc: 0.8815, Val F1: 0.8235, Val AUC: 0.9296
+2026-07-15 21:15:09,214 - INFO -   -> New best model saved (F1=0.8235)
+2026-07-15 21:15:09,214 - INFO - 
+Epoch 44/50
+2026-07-15 21:15:16,475 - INFO - Train Loss: 0.2122, Train Acc: 0.9355
+2026-07-15 21:15:16,476 - INFO - Val Loss: 0.5145, Val Acc: 0.8862, Val F1: 0.8287, Val AUC: 0.9286
+2026-07-15 21:15:16,504 - INFO -   -> New best model saved (F1=0.8287)
+2026-07-15 21:15:16,504 - INFO - 
+Epoch 45/50
+2026-07-15 21:15:23,456 - INFO - Train Loss: 0.2220, Train Acc: 0.9268
+2026-07-15 21:15:23,456 - INFO - Val Loss: 0.5104, Val Acc: 0.8850, Val F1: 0.8260, Val AUC: 0.9288
+2026-07-15 21:15:23,456 - INFO - 
+Epoch 46/50
+2026-07-15 21:15:30,357 - INFO - Train Loss: 0.2167, Train Acc: 0.9293
+2026-07-15 21:15:30,357 - INFO - Val Loss: 0.4852, Val Acc: 0.8664, Val F1: 0.8061, Val AUC: 0.9295
+2026-07-15 21:15:30,357 - INFO - 
+Epoch 47/50
+2026-07-15 21:15:37,235 - INFO - Train Loss: 0.2008, Train Acc: 0.9390
+2026-07-15 21:15:37,235 - INFO - Val Loss: 0.5157, Val Acc: 0.8780, Val F1: 0.8187, Val AUC: 0.9292
+2026-07-15 21:15:37,235 - INFO - 
+Epoch 48/50
+2026-07-15 21:15:44,163 - INFO - Train Loss: 0.2149, Train Acc: 0.9316
+2026-07-15 21:15:44,164 - INFO - Val Loss: 0.5204, Val Acc: 0.8850, Val F1: 0.8272, Val AUC: 0.9302
+2026-07-15 21:15:44,164 - INFO - 
+Epoch 49/50
+2026-07-15 21:15:51,126 - INFO - Train Loss: 0.2076, Train Acc: 0.9350
+2026-07-15 21:15:51,126 - INFO - Val Loss: 0.5561, Val Acc: 0.8850, Val F1: 0.8242, Val AUC: 0.9304
+2026-07-15 21:15:51,126 - INFO - 
+Epoch 50/50
+2026-07-15 21:15:58,004 - INFO - Train Loss: 0.2128, Train Acc: 0.9350
+2026-07-15 21:15:58,004 - INFO - Val Loss: 0.5369, Val Acc: 0.8839, Val F1: 0.8221, Val AUC: 0.9314
+2026-07-15 21:15:58,455 - INFO - 
+Run 3 Test Results:
+2026-07-15 21:15:58,455 - INFO -   Accuracy: 0.8596, F1: 0.7755, AUC: 0.9201
+2026-07-15 21:15:58,456 - INFO - 
+============================================================
+Starting run 4/5
+============================================================
+2026-07-15 21:15:58,456 - INFO - 
+Run 4: Device = mps
+2026-07-15 21:16:00,068 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-15 21:16:00,070 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-15 21:16:00,070 - INFO - 
+Epoch 1/50
+2026-07-15 21:16:06,788 - INFO - Train Loss: 0.8204, Train Acc: 0.6307
+2026-07-15 21:16:06,788 - INFO - Val Loss: 0.7248, Val Acc: 0.7480, Val F1: 0.6604, Val AUC: 0.7895
+2026-07-15 21:16:06,823 - INFO -   -> New best model saved (F1=0.6604)
+2026-07-15 21:16:06,823 - INFO - 
+Epoch 2/50
+2026-07-15 21:16:13,768 - INFO - Train Loss: 0.7601, Train Acc: 0.6809
+2026-07-15 21:16:13,768 - INFO - Val Loss: 0.7361, Val Acc: 0.6353, Val F1: 0.6306, Val AUC: 0.8030
+2026-07-15 21:16:13,768 - INFO - 
+Epoch 3/50
+2026-07-15 21:16:20,777 - INFO - Train Loss: 0.7111, Train Acc: 0.7140
+2026-07-15 21:16:20,777 - INFO - Val Loss: 0.6634, Val Acc: 0.7526, Val F1: 0.6768, Val AUC: 0.8218
+2026-07-15 21:16:20,804 - INFO -   -> New best model saved (F1=0.6768)
+2026-07-15 21:16:20,804 - INFO - 
+Epoch 4/50
+2026-07-15 21:16:27,697 - INFO - Train Loss: 0.6722, Train Acc: 0.7347
+2026-07-15 21:16:27,697 - INFO - Val Loss: 0.6510, Val Acc: 0.7317, Val F1: 0.6787, Val AUC: 0.8319
+2026-07-15 21:16:27,726 - INFO -   -> New best model saved (F1=0.6787)
+2026-07-15 21:16:27,726 - INFO - 
+Epoch 5/50
+2026-07-15 21:16:34,720 - INFO - Train Loss: 0.6362, Train Acc: 0.7601
+2026-07-15 21:16:34,720 - INFO - Val Loss: 0.6257, Val Acc: 0.7364, Val F1: 0.6834, Val AUC: 0.8427
+2026-07-15 21:16:34,750 - INFO -   -> New best model saved (F1=0.6834)
+2026-07-15 21:16:34,750 - INFO - 
+Epoch 6/50
+2026-07-15 21:16:41,797 - INFO - Train Loss: 0.6110, Train Acc: 0.7693
+2026-07-15 21:16:41,797 - INFO - Val Loss: 0.6113, Val Acc: 0.8153, Val F1: 0.7114, Val AUC: 0.8572
+2026-07-15 21:16:41,825 - INFO -   -> New best model saved (F1=0.7114)
+2026-07-15 21:16:41,825 - INFO - 
+Epoch 7/50
+2026-07-15 21:16:48,766 - INFO - Train Loss: 0.5844, Train Acc: 0.7882
+2026-07-15 21:16:48,766 - INFO - Val Loss: 0.6338, Val Acc: 0.8235, Val F1: 0.7077, Val AUC: 0.8666
+2026-07-15 21:16:48,766 - INFO - 
+Epoch 8/50
+2026-07-15 21:16:55,761 - INFO - Train Loss: 0.5614, Train Acc: 0.7942
+2026-07-15 21:16:55,761 - INFO - Val Loss: 0.6357, Val Acc: 0.6864, Val F1: 0.6625, Val AUC: 0.8661
+2026-07-15 21:16:55,761 - INFO - 
+Epoch 9/50
+2026-07-15 21:17:02,803 - INFO - Train Loss: 0.5486, Train Acc: 0.8059
+2026-07-15 21:17:02,803 - INFO - Val Loss: 0.5643, Val Acc: 0.7851, Val F1: 0.7259, Val AUC: 0.8717
+2026-07-15 21:17:02,832 - INFO -   -> New best model saved (F1=0.7259)
+2026-07-15 21:17:02,832 - INFO - 
+Epoch 10/50
+2026-07-15 21:17:09,711 - INFO - Train Loss: 0.5231, Train Acc: 0.8146
+2026-07-15 21:17:09,711 - INFO - Val Loss: 0.5633, Val Acc: 0.7793, Val F1: 0.7164, Val AUC: 0.8734
+2026-07-15 21:17:09,711 - INFO - 
+Epoch 11/50
+2026-07-15 21:17:16,795 - INFO - Train Loss: 0.5067, Train Acc: 0.8270
+2026-07-15 21:17:16,795 - INFO - Val Loss: 0.5383, Val Acc: 0.8211, Val F1: 0.7571, Val AUC: 0.8767
+2026-07-15 21:17:16,826 - INFO -   -> New best model saved (F1=0.7571)
+2026-07-15 21:17:16,826 - INFO - 
+Epoch 12/50
+2026-07-15 21:17:24,018 - INFO - Train Loss: 0.4897, Train Acc: 0.8283
+2026-07-15 21:17:24,019 - INFO - Val Loss: 0.6655, Val Acc: 0.6713, Val F1: 0.6667, Val AUC: 0.8836
+2026-07-15 21:17:24,019 - INFO - 
+Epoch 13/50
+2026-07-15 21:17:30,973 - INFO - Train Loss: 0.4672, Train Acc: 0.8385
+2026-07-15 21:17:30,973 - INFO - Val Loss: 0.5376, Val Acc: 0.7805, Val F1: 0.7216, Val AUC: 0.8840
+2026-07-15 21:17:30,973 - INFO - 
+Epoch 14/50
+2026-07-15 21:17:37,897 - INFO - Train Loss: 0.4632, Train Acc: 0.8377
+2026-07-15 21:17:37,897 - INFO - Val Loss: 0.5178, Val Acc: 0.8026, Val F1: 0.7424, Val AUC: 0.8900
+2026-07-15 21:17:37,897 - INFO - 
+Epoch 15/50
+2026-07-15 21:17:44,870 - INFO - Train Loss: 0.4350, Train Acc: 0.8527
+2026-07-15 21:17:44,870 - INFO - Val Loss: 0.5741, Val Acc: 0.8467, Val F1: 0.7582, Val AUC: 0.8934
+2026-07-15 21:17:44,919 - INFO -   -> New best model saved (F1=0.7582)
+2026-07-15 21:17:44,919 - INFO - 
+Epoch 16/50
+2026-07-15 21:17:51,822 - INFO - Train Loss: 0.4226, Train Acc: 0.8549
+2026-07-15 21:17:51,823 - INFO - Val Loss: 0.7256, Val Acc: 0.8374, Val F1: 0.7189, Val AUC: 0.8961
+2026-07-15 21:17:51,823 - INFO - 
+Epoch 17/50
+2026-07-15 21:17:58,870 - INFO - Train Loss: 0.4179, Train Acc: 0.8542
+2026-07-15 21:17:58,870 - INFO - Val Loss: 0.6967, Val Acc: 0.8432, Val F1: 0.7327, Val AUC: 0.8968
+2026-07-15 21:17:58,870 - INFO - 
+Epoch 18/50
+2026-07-15 21:18:05,824 - INFO - Train Loss: 0.4052, Train Acc: 0.8656
+2026-07-15 21:18:05,824 - INFO - Val Loss: 0.6129, Val Acc: 0.8479, Val F1: 0.7533, Val AUC: 0.8982
+2026-07-15 21:18:05,824 - INFO - 
+Epoch 19/50
+2026-07-15 21:18:12,809 - INFO - Train Loss: 0.3871, Train Acc: 0.8693
+2026-07-15 21:18:12,809 - INFO - Val Loss: 0.5730, Val Acc: 0.8467, Val F1: 0.7684, Val AUC: 0.8954
+2026-07-15 21:18:12,840 - INFO -   -> New best model saved (F1=0.7684)
+2026-07-15 21:18:12,840 - INFO - 
+Epoch 20/50
+2026-07-15 21:18:19,832 - INFO - Train Loss: 0.3827, Train Acc: 0.8698
+2026-07-15 21:18:19,832 - INFO - Val Loss: 0.7764, Val Acc: 0.8351, Val F1: 0.7183, Val AUC: 0.9051
+2026-07-15 21:18:19,832 - INFO - 
+Epoch 21/50
+2026-07-15 21:18:26,815 - INFO - Train Loss: 0.3405, Train Acc: 0.8888
+2026-07-15 21:18:26,815 - INFO - Val Loss: 0.5604, Val Acc: 0.8606, Val F1: 0.7834, Val AUC: 0.9091
+2026-07-15 21:18:26,843 - INFO -   -> New best model saved (F1=0.7834)
+2026-07-15 21:18:26,843 - INFO - 
+Epoch 22/50
+2026-07-15 21:18:33,865 - INFO - Train Loss: 0.3371, Train Acc: 0.8902
+2026-07-15 21:18:33,865 - INFO - Val Loss: 0.5759, Val Acc: 0.8595, Val F1: 0.7763, Val AUC: 0.9131
+2026-07-15 21:18:33,865 - INFO - 
+Epoch 23/50
+2026-07-15 21:18:40,867 - INFO - Train Loss: 0.3324, Train Acc: 0.8965
+2026-07-15 21:18:40,867 - INFO - Val Loss: 0.6844, Val Acc: 0.8502, Val F1: 0.7485, Val AUC: 0.9127
+2026-07-15 21:18:40,867 - INFO - 
+Epoch 24/50
+2026-07-15 21:18:47,825 - INFO - Train Loss: 0.3257, Train Acc: 0.8920
+2026-07-15 21:18:47,825 - INFO - Val Loss: 0.7209, Val Acc: 0.8409, Val F1: 0.7232, Val AUC: 0.9154
+2026-07-15 21:18:47,825 - INFO - 
+Epoch 25/50
+2026-07-15 21:18:54,885 - INFO - Train Loss: 0.3180, Train Acc: 0.8955
+2026-07-15 21:18:54,885 - INFO - Val Loss: 0.5550, Val Acc: 0.8606, Val F1: 0.7810, Val AUC: 0.9198
+2026-07-15 21:18:54,885 - INFO - 
+Epoch 26/50
+2026-07-15 21:19:01,833 - INFO - Train Loss: 0.3089, Train Acc: 0.9034
+2026-07-15 21:19:01,833 - INFO - Val Loss: 0.4898, Val Acc: 0.8618, Val F1: 0.7959, Val AUC: 0.9198
+2026-07-15 21:19:01,862 - INFO -   -> New best model saved (F1=0.7959)
+2026-07-15 21:19:01,862 - INFO - 
+Epoch 27/50
+2026-07-15 21:19:08,861 - INFO - Train Loss: 0.3071, Train Acc: 0.9009
+2026-07-15 21:19:08,861 - INFO - Val Loss: 0.4742, Val Acc: 0.8397, Val F1: 0.7796, Val AUC: 0.9167
+2026-07-15 21:19:08,861 - INFO - 
+Epoch 28/50
+2026-07-15 21:19:15,890 - INFO - Train Loss: 0.2862, Train Acc: 0.9064
+2026-07-15 21:19:15,890 - INFO - Val Loss: 0.5103, Val Acc: 0.8618, Val F1: 0.7945, Val AUC: 0.9201
+2026-07-15 21:19:15,891 - INFO - 
+Epoch 29/50
+2026-07-15 21:19:22,953 - INFO - Train Loss: 0.2922, Train Acc: 0.9054
+2026-07-15 21:19:22,954 - INFO - Val Loss: 0.4720, Val Acc: 0.8595, Val F1: 0.7960, Val AUC: 0.9226
+2026-07-15 21:19:22,988 - INFO -   -> New best model saved (F1=0.7960)
+2026-07-15 21:19:22,988 - INFO - 
+Epoch 30/50
+2026-07-15 21:19:30,051 - INFO - Train Loss: 0.2843, Train Acc: 0.9072
+2026-07-15 21:19:30,051 - INFO - Val Loss: 0.7072, Val Acc: 0.8502, Val F1: 0.7476, Val AUC: 0.9237
+2026-07-15 21:19:30,051 - INFO - 
+Epoch 31/50
+2026-07-15 21:19:37,068 - INFO - Train Loss: 0.2742, Train Acc: 0.9149
+2026-07-15 21:19:37,068 - INFO - Val Loss: 0.7086, Val Acc: 0.8560, Val F1: 0.7606, Val AUC: 0.9188
+2026-07-15 21:19:37,068 - INFO - 
+Epoch 32/50
+2026-07-15 21:19:44,134 - INFO - Train Loss: 0.2616, Train Acc: 0.9201
+2026-07-15 21:19:44,134 - INFO - Val Loss: 0.5184, Val Acc: 0.8676, Val F1: 0.7950, Val AUC: 0.9249
+2026-07-15 21:19:44,134 - INFO - 
+Epoch 33/50
+2026-07-15 21:19:51,159 - INFO - Train Loss: 0.2693, Train Acc: 0.9119
+2026-07-15 21:19:51,159 - INFO - Val Loss: 0.7091, Val Acc: 0.8537, Val F1: 0.7558, Val AUC: 0.9269
+2026-07-15 21:19:51,159 - INFO - 
+Epoch 34/50
+2026-07-15 21:19:58,141 - INFO - Train Loss: 0.2519, Train Acc: 0.9176
+2026-07-15 21:19:58,141 - INFO - Val Loss: 0.5174, Val Acc: 0.8641, Val F1: 0.7899, Val AUC: 0.9323
+2026-07-15 21:19:58,141 - INFO - 
+Epoch 35/50
+2026-07-15 21:20:05,187 - INFO - Train Loss: 0.2578, Train Acc: 0.9196
+2026-07-15 21:20:05,187 - INFO - Val Loss: 0.4889, Val Acc: 0.8711, Val F1: 0.8042, Val AUC: 0.9300
+2026-07-15 21:20:05,218 - INFO -   -> New best model saved (F1=0.8042)
+2026-07-15 21:20:05,218 - INFO - 
+Epoch 36/50
+2026-07-15 21:20:12,244 - INFO - Train Loss: 0.2462, Train Acc: 0.9216
+2026-07-15 21:20:12,244 - INFO - Val Loss: 0.4386, Val Acc: 0.8513, Val F1: 0.7994, Val AUC: 0.9316
+2026-07-15 21:20:12,244 - INFO - 
+Epoch 37/50
+2026-07-15 21:20:19,267 - INFO - Train Loss: 0.2381, Train Acc: 0.9251
+2026-07-15 21:20:19,267 - INFO - Val Loss: 0.5392, Val Acc: 0.8757, Val F1: 0.8065, Val AUC: 0.9311
+2026-07-15 21:20:19,299 - INFO -   -> New best model saved (F1=0.8065)
+2026-07-15 21:20:19,299 - INFO - 
+Epoch 38/50
+2026-07-15 21:20:26,512 - INFO - Train Loss: 0.2318, Train Acc: 0.9281
+2026-07-15 21:20:26,513 - INFO - Val Loss: 0.4942, Val Acc: 0.8734, Val F1: 0.8078, Val AUC: 0.9307
+2026-07-15 21:20:26,540 - INFO -   -> New best model saved (F1=0.8078)
+2026-07-15 21:20:26,541 - INFO - 
+Epoch 39/50
+2026-07-15 21:20:33,516 - INFO - Train Loss: 0.2341, Train Acc: 0.9241
+2026-07-15 21:20:33,516 - INFO - Val Loss: 0.5520, Val Acc: 0.8757, Val F1: 0.8072, Val AUC: 0.9308
+2026-07-15 21:20:33,516 - INFO - 
+Epoch 40/50
+2026-07-15 21:20:40,640 - INFO - Train Loss: 0.2246, Train Acc: 0.9288
+2026-07-15 21:20:40,641 - INFO - Val Loss: 0.6421, Val Acc: 0.8664, Val F1: 0.7818, Val AUC: 0.9312
+2026-07-15 21:20:40,641 - INFO - 
+Epoch 41/50
+2026-07-15 21:20:47,615 - INFO - Train Loss: 0.2241, Train Acc: 0.9321
+2026-07-15 21:20:47,615 - INFO - Val Loss: 0.5528, Val Acc: 0.8711, Val F1: 0.8007, Val AUC: 0.9289
+2026-07-15 21:20:47,615 - INFO - 
+Epoch 42/50
+2026-07-15 21:20:54,768 - INFO - Train Loss: 0.2139, Train Acc: 0.9333
+2026-07-15 21:20:54,768 - INFO - Val Loss: 0.5998, Val Acc: 0.8780, Val F1: 0.8059, Val AUC: 0.9321
+2026-07-15 21:20:54,768 - INFO - 
+Epoch 43/50
+2026-07-15 21:21:01,792 - INFO - Train Loss: 0.2154, Train Acc: 0.9318
+2026-07-15 21:21:01,792 - INFO - Val Loss: 0.5412, Val Acc: 0.8722, Val F1: 0.8036, Val AUC: 0.9339
+2026-07-15 21:21:01,792 - INFO - 
+Epoch 44/50
+2026-07-15 21:21:08,950 - INFO - Train Loss: 0.2001, Train Acc: 0.9348
+2026-07-15 21:21:08,951 - INFO - Val Loss: 0.5430, Val Acc: 0.8688, Val F1: 0.7971, Val AUC: 0.9327
+2026-07-15 21:21:08,951 - INFO - 
+Epoch 45/50
+2026-07-15 21:21:16,014 - INFO - Train Loss: 0.1952, Train Acc: 0.9438
+2026-07-15 21:21:16,014 - INFO - Val Loss: 0.6049, Val Acc: 0.8734, Val F1: 0.7985, Val AUC: 0.9343
+2026-07-15 21:21:16,014 - INFO - 
+Epoch 46/50
+2026-07-15 21:21:23,070 - INFO - Train Loss: 0.1949, Train Acc: 0.9420
+2026-07-15 21:21:23,070 - INFO - Val Loss: 0.5709, Val Acc: 0.8722, Val F1: 0.7993, Val AUC: 0.9345
+2026-07-15 21:21:23,070 - INFO - 
+Epoch 47/50
+2026-07-15 21:21:30,168 - INFO - Train Loss: 0.2013, Train Acc: 0.9380
+2026-07-15 21:21:30,168 - INFO - Val Loss: 0.5926, Val Acc: 0.8734, Val F1: 0.7955, Val AUC: 0.9355
+2026-07-15 21:21:30,168 - INFO - 
+Epoch 48/50
+2026-07-15 21:21:37,273 - INFO - Train Loss: 0.2114, Train Acc: 0.9328
+2026-07-15 21:21:37,273 - INFO - Val Loss: 0.6108, Val Acc: 0.8746, Val F1: 0.8015, Val AUC: 0.9351
+2026-07-15 21:21:37,273 - INFO - 
+Epoch 49/50
+2026-07-15 21:21:44,285 - INFO - Train Loss: 0.2083, Train Acc: 0.9353
+2026-07-15 21:21:44,285 - INFO - Val Loss: 0.5794, Val Acc: 0.8722, Val F1: 0.8000, Val AUC: 0.9342
+2026-07-15 21:21:44,285 - INFO - 
+Epoch 50/50
+2026-07-15 21:21:51,481 - INFO - Train Loss: 0.2003, Train Acc: 0.9405
+2026-07-15 21:21:51,481 - INFO - Val Loss: 0.5450, Val Acc: 0.8757, Val F1: 0.8093, Val AUC: 0.9348
+2026-07-15 21:21:51,513 - INFO -   -> New best model saved (F1=0.8093)
+2026-07-15 21:21:51,979 - INFO - 
+Run 4 Test Results:
+2026-07-15 21:21:51,979 - INFO -   Accuracy: 0.8561, F1: 0.7660, AUC: 0.9173
+2026-07-15 21:21:51,979 - INFO - 
+============================================================
+Starting run 5/5
+============================================================
+2026-07-15 21:21:51,979 - INFO - 
+Run 5: Device = mps
+2026-07-15 21:21:53,556 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-15 21:21:53,558 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-15 21:21:53,558 - INFO - 
+Epoch 1/50
+2026-07-15 21:22:00,477 - INFO - Train Loss: 0.8326, Train Acc: 0.6085
+2026-07-15 21:22:00,477 - INFO - Val Loss: 0.7245, Val Acc: 0.7352, Val F1: 0.6597, Val AUC: 0.7873
+2026-07-15 21:22:00,515 - INFO -   -> New best model saved (F1=0.6597)
+2026-07-15 21:22:00,516 - INFO - 
+Epoch 2/50
+2026-07-15 21:22:07,787 - INFO - Train Loss: 0.7631, Train Acc: 0.6670
+2026-07-15 21:22:07,788 - INFO - Val Loss: 0.7130, Val Acc: 0.6876, Val F1: 0.6493, Val AUC: 0.8021
+2026-07-15 21:22:07,788 - INFO - 
+Epoch 3/50
+2026-07-15 21:22:15,000 - INFO - Train Loss: 0.7175, Train Acc: 0.7038
+2026-07-15 21:22:15,000 - INFO - Val Loss: 0.7075, Val Acc: 0.6818, Val F1: 0.6423, Val AUC: 0.8067
+2026-07-15 21:22:15,000 - INFO - 
+Epoch 4/50
+2026-07-15 21:22:22,174 - INFO - Train Loss: 0.6884, Train Acc: 0.7170
+2026-07-15 21:22:22,174 - INFO - Val Loss: 0.8826, Val Acc: 0.5087, Val F1: 0.5774, Val AUC: 0.8152
+2026-07-15 21:22:22,174 - INFO - 
+Epoch 5/50
+2026-07-15 21:22:29,348 - INFO - Train Loss: 0.6558, Train Acc: 0.7392
+2026-07-15 21:22:29,348 - INFO - Val Loss: 0.6949, Val Acc: 0.6539, Val F1: 0.6321, Val AUC: 0.8270
+2026-07-15 21:22:29,348 - INFO - 
+Epoch 6/50
+2026-07-15 21:22:36,622 - INFO - Train Loss: 0.6094, Train Acc: 0.7661
+2026-07-15 21:22:36,622 - INFO - Val Loss: 0.6121, Val Acc: 0.8095, Val F1: 0.7071, Val AUC: 0.8421
+2026-07-15 21:22:36,651 - INFO -   -> New best model saved (F1=0.7071)
+2026-07-15 21:22:36,651 - INFO - 
+Epoch 7/50
+2026-07-15 21:22:43,749 - INFO - Train Loss: 0.5871, Train Acc: 0.7835
+2026-07-15 21:22:43,749 - INFO - Val Loss: 0.9298, Val Acc: 0.4959, Val F1: 0.5770, Val AUC: 0.8380
+2026-07-15 21:22:43,749 - INFO - 
+Epoch 8/50
+2026-07-15 21:22:50,907 - INFO - Train Loss: 0.5655, Train Acc: 0.7899
+2026-07-15 21:22:50,907 - INFO - Val Loss: 0.6000, Val Acc: 0.8153, Val F1: 0.7135, Val AUC: 0.8607
+2026-07-15 21:22:50,939 - INFO -   -> New best model saved (F1=0.7135)
+2026-07-15 21:22:50,939 - INFO - 
+Epoch 9/50
+2026-07-15 21:22:58,229 - INFO - Train Loss: 0.5391, Train Acc: 0.8036
+2026-07-15 21:22:58,229 - INFO - Val Loss: 0.5501, Val Acc: 0.8246, Val F1: 0.7479, Val AUC: 0.8721
+2026-07-15 21:22:58,259 - INFO -   -> New best model saved (F1=0.7479)
+2026-07-15 21:22:58,259 - INFO - 
+Epoch 10/50
+2026-07-15 21:23:05,412 - INFO - Train Loss: 0.5323, Train Acc: 0.8069
+2026-07-15 21:23:05,412 - INFO - Val Loss: 0.5439, Val Acc: 0.8188, Val F1: 0.7451, Val AUC: 0.8752
+2026-07-15 21:23:05,412 - INFO - 
+Epoch 11/50
+2026-07-15 21:23:12,568 - INFO - Train Loss: 0.5017, Train Acc: 0.8268
+2026-07-15 21:23:12,568 - INFO - Val Loss: 0.6668, Val Acc: 0.6690, Val F1: 0.6570, Val AUC: 0.8600
+2026-07-15 21:23:12,568 - INFO - 
+Epoch 12/50
+2026-07-15 21:23:19,793 - INFO - Train Loss: 0.4918, Train Acc: 0.8235
+2026-07-15 21:23:19,793 - INFO - Val Loss: 0.8162, Val Acc: 0.5621, Val F1: 0.6027, Val AUC: 0.8619
+2026-07-15 21:23:19,793 - INFO - 
+Epoch 13/50
+2026-07-15 21:23:26,903 - INFO - Train Loss: 0.4720, Train Acc: 0.8333
+2026-07-15 21:23:26,904 - INFO - Val Loss: 0.5428, Val Acc: 0.8339, Val F1: 0.7530, Val AUC: 0.8780
+2026-07-15 21:23:26,936 - INFO -   -> New best model saved (F1=0.7530)
+2026-07-15 21:23:26,936 - INFO - 
+Epoch 14/50
+2026-07-15 21:23:34,092 - INFO - Train Loss: 0.4551, Train Acc: 0.8464
+2026-07-15 21:23:34,093 - INFO - Val Loss: 0.5054, Val Acc: 0.8374, Val F1: 0.7619, Val AUC: 0.8922
+2026-07-15 21:23:34,126 - INFO -   -> New best model saved (F1=0.7619)
+2026-07-15 21:23:34,126 - INFO - 
+Epoch 15/50
+2026-07-15 21:23:41,298 - INFO - Train Loss: 0.4499, Train Acc: 0.8457
+2026-07-15 21:23:41,298 - INFO - Val Loss: 0.5694, Val Acc: 0.8467, Val F1: 0.7556, Val AUC: 0.8945
+2026-07-15 21:23:41,298 - INFO - 
+Epoch 16/50
+2026-07-15 21:23:48,446 - INFO - Train Loss: 0.4429, Train Acc: 0.8467
+2026-07-15 21:23:48,446 - INFO - Val Loss: 0.6811, Val Acc: 0.8420, Val F1: 0.7302, Val AUC: 0.8968
+2026-07-15 21:23:48,446 - INFO - 
+Epoch 17/50
+2026-07-15 21:23:55,565 - INFO - Train Loss: 0.4342, Train Acc: 0.8484
+2026-07-15 21:23:55,565 - INFO - Val Loss: 0.7382, Val Acc: 0.8397, Val F1: 0.7251, Val AUC: 0.8987
+2026-07-15 21:23:55,565 - INFO - 
+Epoch 18/50
+2026-07-15 21:24:02,736 - INFO - Train Loss: 0.4072, Train Acc: 0.8649
+2026-07-15 21:24:02,736 - INFO - Val Loss: 0.8643, Val Acc: 0.8177, Val F1: 0.6624, Val AUC: 0.9007
+2026-07-15 21:24:02,736 - INFO - 
+Epoch 19/50
+2026-07-15 21:24:09,958 - INFO - Train Loss: 0.4002, Train Acc: 0.8626
+2026-07-15 21:24:09,958 - INFO - Val Loss: 0.5279, Val Acc: 0.8548, Val F1: 0.7772, Val AUC: 0.9072
+2026-07-15 21:24:09,989 - INFO -   -> New best model saved (F1=0.7772)
+2026-07-15 21:24:09,989 - INFO - 
+Epoch 20/50
+2026-07-15 21:24:17,132 - INFO - Train Loss: 0.3935, Train Acc: 0.8716
+2026-07-15 21:24:17,133 - INFO - Val Loss: 0.4999, Val Acc: 0.8467, Val F1: 0.7732, Val AUC: 0.9063
+2026-07-15 21:24:17,133 - INFO - 
+Epoch 21/50
+2026-07-15 21:24:24,362 - INFO - Train Loss: 0.3532, Train Acc: 0.8868
+2026-07-15 21:24:24,362 - INFO - Val Loss: 0.4955, Val Acc: 0.8223, Val F1: 0.7568, Val AUC: 0.9093
+2026-07-15 21:24:24,362 - INFO - 
+Epoch 22/50
+2026-07-15 21:24:31,542 - INFO - Train Loss: 0.3628, Train Acc: 0.8790
+2026-07-15 21:24:31,542 - INFO - Val Loss: 0.5794, Val Acc: 0.8630, Val F1: 0.7862, Val AUC: 0.9119
+2026-07-15 21:24:31,574 - INFO -   -> New best model saved (F1=0.7862)
+2026-07-15 21:24:31,574 - INFO - 
+Epoch 23/50
+2026-07-15 21:24:39,187 - INFO - Train Loss: 0.3587, Train Acc: 0.8776
+2026-07-15 21:24:39,188 - INFO - Val Loss: 0.6208, Val Acc: 0.7294, Val F1: 0.7113, Val AUC: 0.9148
+2026-07-15 21:24:39,188 - INFO - 
+Epoch 24/50
+2026-07-15 21:24:47,034 - INFO - Train Loss: 0.3506, Train Acc: 0.8783
+2026-07-15 21:24:47,035 - INFO - Val Loss: 0.5067, Val Acc: 0.8583, Val F1: 0.7852, Val AUC: 0.9159
+2026-07-15 21:24:47,035 - INFO - 
+Epoch 25/50
+2026-07-15 21:24:54,455 - INFO - Train Loss: 0.3341, Train Acc: 0.8888
+2026-07-15 21:24:54,455 - INFO - Val Loss: 0.7450, Val Acc: 0.8455, Val F1: 0.7356, Val AUC: 0.9162
+2026-07-15 21:24:54,455 - INFO - 
+Epoch 26/50
+2026-07-15 21:25:01,627 - INFO - Train Loss: 0.3198, Train Acc: 0.8927
+2026-07-15 21:25:01,627 - INFO - Val Loss: 0.7119, Val Acc: 0.8618, Val F1: 0.7707, Val AUC: 0.9154
+2026-07-15 21:25:01,627 - INFO - 
+Epoch 27/50
+2026-07-15 21:25:08,934 - INFO - Train Loss: 0.3276, Train Acc: 0.8890
+2026-07-15 21:25:08,935 - INFO - Val Loss: 0.5975, Val Acc: 0.8734, Val F1: 0.7970, Val AUC: 0.9179
+2026-07-15 21:25:08,978 - INFO -   -> New best model saved (F1=0.7970)
+2026-07-15 21:25:08,978 - INFO - 
+Epoch 28/50
+2026-07-15 21:25:16,698 - INFO - Train Loss: 0.3089, Train Acc: 0.8955
+2026-07-15 21:25:16,698 - INFO - Val Loss: 0.6935, Val Acc: 0.8571, Val F1: 0.7583, Val AUC: 0.9251
+2026-07-15 21:25:16,698 - INFO - 
+Epoch 29/50
+2026-07-15 21:25:24,060 - INFO - Train Loss: 0.2897, Train Acc: 0.9104
+2026-07-15 21:25:24,060 - INFO - Val Loss: 0.5651, Val Acc: 0.8641, Val F1: 0.7861, Val AUC: 0.9250
+2026-07-15 21:25:24,060 - INFO - 
+Epoch 30/50
+2026-07-15 21:25:31,296 - INFO - Train Loss: 0.2796, Train Acc: 0.9107
+2026-07-15 21:25:31,296 - INFO - Val Loss: 0.7094, Val Acc: 0.8595, Val F1: 0.7641, Val AUC: 0.9249
+2026-07-15 21:25:31,296 - INFO - 
+Epoch 31/50
+2026-07-15 21:25:38,529 - INFO - Train Loss: 0.2615, Train Acc: 0.9189
+2026-07-15 21:25:38,529 - INFO - Val Loss: 0.4944, Val Acc: 0.8664, Val F1: 0.7972, Val AUC: 0.9295
+2026-07-15 21:25:38,564 - INFO -   -> New best model saved (F1=0.7972)
+2026-07-15 21:25:38,564 - INFO - 
+Epoch 32/50
+2026-07-15 21:25:45,881 - INFO - Train Loss: 0.2616, Train Acc: 0.9161
+2026-07-15 21:25:45,882 - INFO - Val Loss: 0.4972, Val Acc: 0.8676, Val F1: 0.7993, Val AUC: 0.9283
+2026-07-15 21:25:45,909 - INFO -   -> New best model saved (F1=0.7993)
+2026-07-15 21:25:45,909 - INFO - 
+Epoch 33/50
+2026-07-15 21:25:53,120 - INFO - Train Loss: 0.2569, Train Acc: 0.9174
+2026-07-15 21:25:53,120 - INFO - Val Loss: 0.4893, Val Acc: 0.8630, Val F1: 0.7937, Val AUC: 0.9312
+2026-07-15 21:25:53,121 - INFO - 
+Epoch 34/50
+2026-07-15 21:26:00,392 - INFO - Train Loss: 0.2576, Train Acc: 0.9166
+2026-07-15 21:26:00,392 - INFO - Val Loss: 0.6396, Val Acc: 0.8722, Val F1: 0.7909, Val AUC: 0.9291
+2026-07-15 21:26:00,392 - INFO - 
+Epoch 35/50
+2026-07-15 21:26:07,669 - INFO - Train Loss: 0.2482, Train Acc: 0.9184
+2026-07-15 21:26:07,669 - INFO - Val Loss: 0.4794, Val Acc: 0.8664, Val F1: 0.7979, Val AUC: 0.9330
+2026-07-15 21:26:07,669 - INFO - 
+Epoch 36/50
+2026-07-15 21:26:14,902 - INFO - Train Loss: 0.2482, Train Acc: 0.9231
+2026-07-15 21:26:14,902 - INFO - Val Loss: 0.5606, Val Acc: 0.8734, Val F1: 0.8043, Val AUC: 0.9296
+2026-07-15 21:26:14,931 - INFO -   -> New best model saved (F1=0.8043)
+2026-07-15 21:26:14,931 - INFO - 
+Epoch 37/50
+2026-07-15 21:26:22,115 - INFO - Train Loss: 0.2304, Train Acc: 0.9293
+2026-07-15 21:26:22,115 - INFO - Val Loss: 0.5032, Val Acc: 0.8734, Val F1: 0.8084, Val AUC: 0.9306
+2026-07-15 21:26:22,147 - INFO -   -> New best model saved (F1=0.8084)
+2026-07-15 21:26:22,147 - INFO - 
+Epoch 38/50
+2026-07-15 21:26:29,401 - INFO - Train Loss: 0.2306, Train Acc: 0.9278
+2026-07-15 21:26:29,401 - INFO - Val Loss: 0.5670, Val Acc: 0.8722, Val F1: 0.8029, Val AUC: 0.9318
+2026-07-15 21:26:29,401 - INFO - 
+Epoch 39/50
+2026-07-15 21:26:36,557 - INFO - Train Loss: 0.2265, Train Acc: 0.9335
+2026-07-15 21:26:36,557 - INFO - Val Loss: 0.7130, Val Acc: 0.8641, Val F1: 0.7813, Val AUC: 0.9283
+2026-07-15 21:26:36,558 - INFO - 
+Epoch 40/50
+2026-07-15 21:26:43,843 - INFO - Train Loss: 0.2308, Train Acc: 0.9273
+2026-07-15 21:26:43,843 - INFO - Val Loss: 0.4527, Val Acc: 0.8595, Val F1: 0.8064, Val AUC: 0.9302
+2026-07-15 21:26:43,843 - INFO - 
+Epoch 41/50
+2026-07-15 21:26:51,086 - INFO - Train Loss: 0.2142, Train Acc: 0.9301
+2026-07-15 21:26:51,086 - INFO - Val Loss: 0.6860, Val Acc: 0.8641, Val F1: 0.7746, Val AUC: 0.9326
+2026-07-15 21:26:51,086 - INFO - 
+Epoch 42/50
+2026-07-15 21:26:58,307 - INFO - Train Loss: 0.2284, Train Acc: 0.9271
+2026-07-15 21:26:58,308 - INFO - Val Loss: 0.5139, Val Acc: 0.8769, Val F1: 0.8087, Val AUC: 0.9354
+2026-07-15 21:26:58,338 - INFO -   -> New best model saved (F1=0.8087)
+2026-07-15 21:26:58,338 - INFO - 
+Epoch 43/50
+2026-07-15 21:27:05,617 - INFO - Train Loss: 0.2220, Train Acc: 0.9308
+2026-07-15 21:27:05,617 - INFO - Val Loss: 0.5952, Val Acc: 0.8699, Val F1: 0.7941, Val AUC: 0.9300
+2026-07-15 21:27:05,617 - INFO - 
+Epoch 44/50
+2026-07-15 21:27:12,786 - INFO - Train Loss: 0.2099, Train Acc: 0.9350
+2026-07-15 21:27:12,786 - INFO - Val Loss: 0.8689, Val Acc: 0.8479, Val F1: 0.7354, Val AUC: 0.9265
+2026-07-15 21:27:12,786 - INFO - 
+Epoch 45/50
+2026-07-15 21:27:20,039 - INFO - Train Loss: 0.2090, Train Acc: 0.9365
+2026-07-15 21:27:20,039 - INFO - Val Loss: 0.8950, Val Acc: 0.8513, Val F1: 0.7419, Val AUC: 0.9320
+2026-07-15 21:27:20,039 - INFO - 
+Epoch 46/50
+2026-07-15 21:27:27,321 - INFO - Train Loss: 0.2154, Train Acc: 0.9308
+2026-07-15 21:27:27,321 - INFO - Val Loss: 0.5142, Val Acc: 0.8711, Val F1: 0.8042, Val AUC: 0.9380
+2026-07-15 21:27:27,321 - INFO - 
+Epoch 47/50
+2026-07-15 21:27:34,581 - INFO - Train Loss: 0.1868, Train Acc: 0.9413
+2026-07-15 21:27:34,582 - INFO - Val Loss: 0.6107, Val Acc: 0.8688, Val F1: 0.7880, Val AUC: 0.9374
+2026-07-15 21:27:34,582 - INFO - 
+Epoch 48/50
+2026-07-15 21:27:41,811 - INFO - Train Loss: 0.1839, Train Acc: 0.9423
+2026-07-15 21:27:41,811 - INFO - Val Loss: 0.6235, Val Acc: 0.8757, Val F1: 0.8015, Val AUC: 0.9372
+2026-07-15 21:27:41,811 - INFO - 
+Epoch 49/50
+2026-07-15 21:27:49,090 - INFO - Train Loss: 0.1807, Train Acc: 0.9460
+2026-07-15 21:27:49,091 - INFO - Val Loss: 0.6810, Val Acc: 0.8699, Val F1: 0.7879, Val AUC: 0.9376
+2026-07-15 21:27:49,091 - INFO - 
+Epoch 50/50
+2026-07-15 21:27:56,544 - INFO - Train Loss: 0.1746, Train Acc: 0.9485
+2026-07-15 21:27:56,544 - INFO - Val Loss: 0.6947, Val Acc: 0.8653, Val F1: 0.7811, Val AUC: 0.9366
+2026-07-15 21:27:57,042 - INFO - 
+Run 5 Test Results:
+2026-07-15 21:27:57,042 - INFO -   Accuracy: 0.8422, F1: 0.7280, AUC: 0.9224
+2026-07-15 21:27:57,053 - INFO - 
+Saved all runs results to ./outputs/models/cnn_cross_fold/fold_brazil/merged_japan_usa_cnn_stage1_results.csv
+2026-07-15 21:27:57,053 - INFO - 
+============================================================
+2026-07-15 21:27:57,053 - INFO - SUMMARY OF ALL RUNS
+2026-07-15 21:27:57,053 - INFO - ============================================================
+2026-07-15 21:27:57,056 - INFO - test_acc: 0.8529 ± 0.0103
+2026-07-15 21:27:57,056 - INFO - test_prec: 0.9235 ± 0.0167
+2026-07-15 21:27:57,056 - INFO - test_rec: 0.6440 ± 0.0432
+2026-07-15 21:27:57,056 - INFO - test_f1: 0.7575 ± 0.0251
+2026-07-15 21:27:57,056 - INFO - test_auc: 0.9216 ± 0.0030
+2026-07-15 21:27:57,059 - INFO - 
+Best overall run: 1 (test F1=0.7898)
+2026-07-15 21:27:57,059 - INFO - Best model saved at: ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn_run1.pth
+2026-07-15 21:27:57,078 - INFO - Copied best model to ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn.pth
+2026-07-15 21:28:00,558 - INFO - 
+All plots and summaries saved to: ./outputs/models/cnn_cross_fold/fold_brazil/plots
+2026-07-15 21:28:00,558 - INFO -  Stage 1 training completed. Ready for Stage 2 (GNN).
+2026-07-16 11:38:18,210 - INFO - ============================================================
+2026-07-16 11:38:18,210 - INFO - Stage 1: CNN Training Started (Using Pre-defined Splits)
+2026-07-16 11:38:18,210 - INFO - ============================================================
+2026-07-16 11:38:18,210 - INFO - Countries: ['japan', 'usa']
+2026-07-16 11:38:18,210 - INFO - Output directory: ./outputs/models/cnn_cross_fold/fold_brazil
+2026-07-16 11:38:18,210 - INFO - Log file: ./outputs/models/cnn_cross_fold/fold_brazil/logs/step3_cnn.log
+2026-07-16 11:38:18,210 - INFO - Using images from: ./outputs/images
+2026-07-16 11:38:19,874 - INFO - Merged 2 countries into temporary files
+2026-07-16 11:38:19,879 - INFO - Total samples: 8899
+2026-07-16 11:38:20,071 - INFO - Total train pairs: 34321
+2026-07-16 11:38:20,071 - INFO - Total val pairs: 10931
+2026-07-16 11:38:20,071 - INFO - Total test pairs: 9528
+2026-07-16 11:38:20,326 - INFO - Train samples: 8781
+2026-07-16 11:38:20,326 - INFO - Val samples: 4313
+2026-07-16 11:38:20,326 - INFO - Test samples: 4498
+2026-07-16 11:38:20,326 - INFO - 
+============================================================
+Starting run 1/5
+============================================================
+2026-07-16 11:38:20,353 - INFO - 
+Run 1: Device = mps
+2026-07-16 11:38:23,368 - INFO - Train class distribution: 0=5570.0, 1=3211.0 (ratio 1:0.58)
+2026-07-16 11:38:23,370 - INFO - Using class weighting: pos_weight = 1.73
+2026-07-16 11:38:23,371 - INFO - 
+Epoch 1/50
+2026-07-16 11:38:38,317 - INFO - Train Loss: 0.7953, Train Acc: 0.6464
+2026-07-16 11:38:38,318 - INFO - Val Loss: 0.6899, Val Acc: 0.6805, Val F1: 0.6474, Val AUC: 0.8047
+2026-07-16 11:38:38,357 - INFO -   -> New best model saved (F1=0.6474)
+2026-07-16 11:38:38,357 - INFO - 
+Epoch 2/50
+2026-07-16 11:38:53,302 - INFO - Train Loss: 0.7263, Train Acc: 0.6930
+2026-07-16 11:38:53,302 - INFO - Val Loss: 0.6197, Val Acc: 0.7336, Val F1: 0.6678, Val AUC: 0.8392
+2026-07-16 11:38:53,330 - INFO -   -> New best model saved (F1=0.6678)
+2026-07-16 11:38:53,330 - INFO - 
+Epoch 3/50
+2026-07-16 11:39:07,111 - INFO - Train Loss: 0.6635, Train Acc: 0.7324
+2026-07-16 11:39:07,111 - INFO - Val Loss: 0.7298, Val Acc: 0.5553, Val F1: 0.6124, Val AUC: 0.8657
+2026-07-16 11:39:07,111 - INFO - 
+Epoch 4/50
+2026-07-16 11:39:21,092 - INFO - Train Loss: 0.6214, Train Acc: 0.7635
+2026-07-16 11:39:21,092 - INFO - Val Loss: 0.5231, Val Acc: 0.8284, Val F1: 0.7329, Val AUC: 0.8915
+2026-07-16 11:39:21,116 - INFO -   -> New best model saved (F1=0.7329)
+2026-07-16 11:39:21,116 - INFO - 
+Epoch 5/50
+2026-07-16 11:39:34,921 - INFO - Train Loss: 0.5992, Train Acc: 0.7746
+2026-07-16 11:39:34,922 - INFO - Val Loss: 0.5620, Val Acc: 0.8259, Val F1: 0.6908, Val AUC: 0.9049
+2026-07-16 11:39:34,922 - INFO - 
+Epoch 6/50
+2026-07-16 11:39:48,508 - INFO - Train Loss: 0.5846, Train Acc: 0.7834
+2026-07-16 11:39:48,509 - INFO - Val Loss: 0.5013, Val Acc: 0.8416, Val F1: 0.7348, Val AUC: 0.9175
+2026-07-16 11:39:48,534 - INFO -   -> New best model saved (F1=0.7348)
+2026-07-16 11:39:48,534 - INFO - 
+Epoch 7/50
+2026-07-16 11:40:02,087 - INFO - Train Loss: 0.5673, Train Acc: 0.7894
+2026-07-16 11:40:02,087 - INFO - Val Loss: 0.4458, Val Acc: 0.8569, Val F1: 0.7934, Val AUC: 0.9245
+2026-07-16 11:40:02,122 - INFO -   -> New best model saved (F1=0.7934)
+2026-07-16 11:40:02,122 - INFO - 
+Epoch 8/50
+2026-07-16 11:40:15,318 - INFO - Train Loss: 0.5504, Train Acc: 0.7985
+2026-07-16 11:40:15,318 - INFO - Val Loss: 0.4537, Val Acc: 0.8604, Val F1: 0.7754, Val AUC: 0.9344
+2026-07-16 11:40:15,318 - INFO - 
+Epoch 9/50
+2026-07-16 11:40:28,297 - INFO - Train Loss: 0.5227, Train Acc: 0.8081
+2026-07-16 11:40:28,297 - INFO - Val Loss: 0.4382, Val Acc: 0.8676, Val F1: 0.7888, Val AUC: 0.9386
+2026-07-16 11:40:28,297 - INFO - 
+Epoch 10/50
+2026-07-16 11:40:41,194 - INFO - Train Loss: 0.5162, Train Acc: 0.8105
+2026-07-16 11:40:41,194 - INFO - Val Loss: 0.4227, Val Acc: 0.8472, Val F1: 0.8087, Val AUC: 0.9449
+2026-07-16 11:40:41,218 - INFO -   -> New best model saved (F1=0.8087)
+2026-07-16 11:40:41,218 - INFO - 
+Epoch 11/50
+2026-07-16 11:40:55,035 - INFO - Train Loss: 0.5028, Train Acc: 0.8192
+2026-07-16 11:40:55,036 - INFO - Val Loss: 0.5613, Val Acc: 0.8396, Val F1: 0.7164, Val AUC: 0.9528
+2026-07-16 11:40:55,036 - INFO - 
+Epoch 12/50
+2026-07-16 11:41:08,994 - INFO - Train Loss: 0.4915, Train Acc: 0.8284
+2026-07-16 11:41:08,994 - INFO - Val Loss: 0.4261, Val Acc: 0.8729, Val F1: 0.7918, Val AUC: 0.9555
+2026-07-16 11:41:08,994 - INFO - 
+Epoch 13/50
+2026-07-16 11:41:23,090 - INFO - Train Loss: 0.4673, Train Acc: 0.8327
+2026-07-16 11:41:23,090 - INFO - Val Loss: 0.3470, Val Acc: 0.9015, Val F1: 0.8512, Val AUC: 0.9655
+2026-07-16 11:41:23,119 - INFO -   -> New best model saved (F1=0.8512)
+2026-07-16 11:41:23,119 - INFO - 
+Epoch 14/50
+2026-07-16 11:41:35,981 - INFO - Train Loss: 0.4671, Train Acc: 0.8354
+2026-07-16 11:41:35,981 - INFO - Val Loss: 0.4858, Val Acc: 0.8546, Val F1: 0.7491, Val AUC: 0.9675
+2026-07-16 11:41:35,981 - INFO - 
+Epoch 15/50
+2026-07-16 11:41:48,916 - INFO - Train Loss: 0.4465, Train Acc: 0.8432
+2026-07-16 11:41:48,917 - INFO - Val Loss: 0.4590, Val Acc: 0.8593, Val F1: 0.7606, Val AUC: 0.9701
+2026-07-16 11:41:48,917 - INFO - 
+Epoch 16/50
+2026-07-16 11:42:01,770 - INFO - Train Loss: 0.4546, Train Acc: 0.8456
+2026-07-16 11:42:01,770 - INFO - Val Loss: 0.2917, Val Acc: 0.9103, Val F1: 0.8789, Val AUC: 0.9749
+2026-07-16 11:42:01,794 - INFO -   -> New best model saved (F1=0.8789)
+2026-07-16 11:42:01,794 - INFO - 
+Epoch 17/50
+2026-07-16 11:42:14,926 - INFO - Train Loss: 0.4389, Train Acc: 0.8520
+2026-07-16 11:42:14,927 - INFO - Val Loss: 0.3297, Val Acc: 0.9038, Val F1: 0.8495, Val AUC: 0.9781
+2026-07-16 11:42:14,927 - INFO - 
+Epoch 18/50
+2026-07-16 11:42:27,882 - INFO - Train Loss: 0.4191, Train Acc: 0.8556
+2026-07-16 11:42:27,883 - INFO - Val Loss: 0.3908, Val Acc: 0.8859, Val F1: 0.8149, Val AUC: 0.9797
+2026-07-16 11:42:27,883 - INFO - 
+Epoch 19/50
+2026-07-16 11:42:40,791 - INFO - Train Loss: 0.4074, Train Acc: 0.8631
+2026-07-16 11:42:40,791 - INFO - Val Loss: 0.3349, Val Acc: 0.9031, Val F1: 0.8476, Val AUC: 0.9812
+2026-07-16 11:42:40,791 - INFO - 
+Epoch 20/50
+2026-07-16 11:42:54,881 - INFO - Train Loss: 0.4122, Train Acc: 0.8542
+2026-07-16 11:42:54,881 - INFO - Val Loss: 0.2546, Val Acc: 0.9346, Val F1: 0.9044, Val AUC: 0.9834
+2026-07-16 11:42:54,906 - INFO -   -> New best model saved (F1=0.9044)
+2026-07-16 11:42:54,906 - INFO - 
+Epoch 21/50
+2026-07-16 11:43:08,704 - INFO - Train Loss: 0.4049, Train Acc: 0.8611
+2026-07-16 11:43:08,705 - INFO - Val Loss: 0.2341, Val Acc: 0.9432, Val F1: 0.9193, Val AUC: 0.9857
+2026-07-16 11:43:08,730 - INFO -   -> New best model saved (F1=0.9193)
+2026-07-16 11:43:08,730 - INFO - 
+Epoch 22/50
+2026-07-16 11:43:24,595 - INFO - Train Loss: 0.3850, Train Acc: 0.8685
+2026-07-16 11:43:24,596 - INFO - Val Loss: 0.2307, Val Acc: 0.9427, Val F1: 0.9173, Val AUC: 0.9858
+2026-07-16 11:43:24,596 - INFO - 
+Epoch 23/50
+2026-07-16 11:43:40,639 - INFO - Train Loss: 0.3849, Train Acc: 0.8673
+2026-07-16 11:43:40,640 - INFO - Val Loss: 0.2347, Val Acc: 0.9420, Val F1: 0.9146, Val AUC: 0.9890
+2026-07-16 11:43:40,640 - INFO - 
+Epoch 24/50
+2026-07-16 11:43:55,933 - INFO - Train Loss: 0.3508, Train Acc: 0.8805
+2026-07-16 11:43:55,934 - INFO - Val Loss: 0.3405, Val Acc: 0.9008, Val F1: 0.8415, Val AUC: 0.9894
+2026-07-16 11:43:55,934 - INFO - 
+Epoch 25/50
+2026-07-16 11:44:11,273 - INFO - Train Loss: 0.3556, Train Acc: 0.8772
+2026-07-16 11:44:11,273 - INFO - Val Loss: 0.1848, Val Acc: 0.9620, Val F1: 0.9477, Val AUC: 0.9923
+2026-07-16 11:44:11,298 - INFO -   -> New best model saved (F1=0.9477)
+2026-07-16 11:44:11,298 - INFO - 
+Epoch 26/50
+2026-07-16 11:44:26,096 - INFO - Train Loss: 0.3487, Train Acc: 0.8849
+2026-07-16 11:44:26,096 - INFO - Val Loss: 0.2100, Val Acc: 0.9490, Val F1: 0.9251, Val AUC: 0.9909
+2026-07-16 11:44:26,096 - INFO - 
+Epoch 27/50
+2026-07-16 11:44:40,703 - INFO - Train Loss: 0.3485, Train Acc: 0.8797
+2026-07-16 11:44:40,704 - INFO - Val Loss: 0.2486, Val Acc: 0.9344, Val F1: 0.9006, Val AUC: 0.9922
+2026-07-16 11:44:40,704 - INFO - 
+Epoch 28/50
+2026-07-16 11:44:56,106 - INFO - Train Loss: 0.3423, Train Acc: 0.8820
+2026-07-16 11:44:56,106 - INFO - Val Loss: 0.2503, Val Acc: 0.9328, Val F1: 0.8982, Val AUC: 0.9915
+2026-07-16 11:44:56,106 - INFO - 
+Epoch 29/50
+2026-07-16 11:45:11,134 - INFO - Train Loss: 0.3249, Train Acc: 0.8936
+2026-07-16 11:45:11,134 - INFO - Val Loss: 0.1899, Val Acc: 0.9529, Val F1: 0.9309, Val AUC: 0.9941
+2026-07-16 11:45:11,134 - INFO - 
+Epoch 30/50
+2026-07-16 11:45:25,627 - INFO - Train Loss: 0.3307, Train Acc: 0.8866
+2026-07-16 11:45:25,627 - INFO - Val Loss: 0.1923, Val Acc: 0.9504, Val F1: 0.9267, Val AUC: 0.9941
+2026-07-16 11:45:25,627 - INFO - 
+Epoch 31/50
+2026-07-16 11:45:40,519 - INFO - Train Loss: 0.3106, Train Acc: 0.8945
+2026-07-16 11:45:40,520 - INFO - Val Loss: 0.1517, Val Acc: 0.9608, Val F1: 0.9464, Val AUC: 0.9936
+2026-07-16 11:45:40,520 - INFO - 
+Epoch 32/50
+2026-07-16 11:45:56,562 - INFO - Train Loss: 0.3155, Train Acc: 0.8920
+2026-07-16 11:45:56,563 - INFO - Val Loss: 0.2694, Val Acc: 0.9272, Val F1: 0.8880, Val AUC: 0.9943
+2026-07-16 11:45:56,563 - INFO - 
+Epoch 33/50
+2026-07-16 11:46:16,388 - INFO - Train Loss: 0.3063, Train Acc: 0.8988
+2026-07-16 11:46:16,389 - INFO - Val Loss: 0.1373, Val Acc: 0.9694, Val F1: 0.9569, Val AUC: 0.9961
+2026-07-16 11:46:16,448 - INFO -   -> New best model saved (F1=0.9569)
+2026-07-16 11:46:16,448 - INFO - 
+Epoch 34/50
+2026-07-16 11:46:48,489 - INFO - Train Loss: 0.3102, Train Acc: 0.9000
+2026-07-16 11:46:48,489 - INFO - Val Loss: 0.1848, Val Acc: 0.9532, Val F1: 0.9310, Val AUC: 0.9959
+2026-07-16 11:46:48,490 - INFO - 
+Epoch 35/50
+2026-07-16 11:47:18,536 - INFO - Train Loss: 0.2989, Train Acc: 0.9025
+2026-07-16 11:47:18,537 - INFO - Val Loss: 0.2337, Val Acc: 0.9369, Val F1: 0.9047, Val AUC: 0.9950
+2026-07-16 11:47:18,537 - INFO - 
+Epoch 36/50
+2026-07-16 11:47:43,886 - INFO - Train Loss: 0.2878, Train Acc: 0.9025
+2026-07-16 11:47:43,887 - INFO - Val Loss: 0.1656, Val Acc: 0.9610, Val F1: 0.9432, Val AUC: 0.9960
+2026-07-16 11:47:43,887 - INFO - 
+Epoch 37/50
+2026-07-16 11:48:07,702 - INFO - Train Loss: 0.2865, Train Acc: 0.9079
+2026-07-16 11:48:07,703 - INFO - Val Loss: 0.2847, Val Acc: 0.9221, Val F1: 0.8791, Val AUC: 0.9958
+2026-07-16 11:48:07,703 - INFO - 
+Epoch 38/50
+2026-07-16 11:48:31,708 - INFO - Train Loss: 0.2773, Train Acc: 0.9091
+2026-07-16 11:48:31,709 - INFO - Val Loss: 0.1366, Val Acc: 0.9668, Val F1: 0.9525, Val AUC: 0.9963
+2026-07-16 11:48:31,709 - INFO - 
+Epoch 39/50
+2026-07-16 11:48:55,273 - INFO - Train Loss: 0.2656, Train Acc: 0.9113
+2026-07-16 11:48:55,273 - INFO - Val Loss: 0.1864, Val Acc: 0.9495, Val F1: 0.9249, Val AUC: 0.9971
+2026-07-16 11:48:55,274 - INFO - 
+Epoch 40/50
+2026-07-16 11:49:19,124 - INFO - Train Loss: 0.2761, Train Acc: 0.9078
+2026-07-16 11:49:19,125 - INFO - Val Loss: 0.1119, Val Acc: 0.9773, Val F1: 0.9679, Val AUC: 0.9975
+2026-07-16 11:49:19,180 - INFO -   -> New best model saved (F1=0.9679)
+2026-07-16 11:49:19,180 - INFO - 
+Epoch 41/50
+2026-07-16 11:49:43,278 - INFO - Train Loss: 0.2732, Train Acc: 0.9104
+2026-07-16 11:49:43,279 - INFO - Val Loss: 0.1205, Val Acc: 0.9733, Val F1: 0.9620, Val AUC: 0.9971
+2026-07-16 11:49:43,279 - INFO - 
+Epoch 42/50
+2026-07-16 11:50:08,611 - INFO - Train Loss: 0.2525, Train Acc: 0.9179
+2026-07-16 11:50:08,612 - INFO - Val Loss: 0.1084, Val Acc: 0.9789, Val F1: 0.9702, Val AUC: 0.9974
+2026-07-16 11:50:08,659 - INFO -   -> New best model saved (F1=0.9702)
+2026-07-16 11:50:08,659 - INFO - 
+Epoch 43/50
+2026-07-16 11:50:32,140 - INFO - Train Loss: 0.2663, Train Acc: 0.9114
+2026-07-16 11:50:32,140 - INFO - Val Loss: 0.3155, Val Acc: 0.9161, Val F1: 0.8688, Val AUC: 0.9961
+2026-07-16 11:50:32,140 - INFO - 
+Epoch 44/50
+2026-07-16 11:50:56,246 - INFO - Train Loss: 0.2552, Train Acc: 0.9171
+2026-07-16 11:50:56,247 - INFO - Val Loss: 0.2305, Val Acc: 0.9374, Val F1: 0.9053, Val AUC: 0.9970
+2026-07-16 11:50:56,247 - INFO - 
+Epoch 45/50
+2026-07-16 11:51:19,990 - INFO - Train Loss: 0.2606, Train Acc: 0.9186
+2026-07-16 11:51:19,990 - INFO - Val Loss: 0.0957, Val Acc: 0.9821, Val F1: 0.9749, Val AUC: 0.9977
+2026-07-16 11:51:20,027 - INFO -   -> New best model saved (F1=0.9749)
+2026-07-16 11:51:20,027 - INFO - 
+Epoch 46/50
+2026-07-16 11:51:45,371 - INFO - Train Loss: 0.2483, Train Acc: 0.9196
+2026-07-16 11:51:45,372 - INFO - Val Loss: 0.1646, Val Acc: 0.9604, Val F1: 0.9421, Val AUC: 0.9976
+2026-07-16 11:51:45,372 - INFO - 
+Epoch 47/50
+2026-07-16 11:52:09,072 - INFO - Train Loss: 0.2451, Train Acc: 0.9203
+2026-07-16 11:52:09,073 - INFO - Val Loss: 0.1560, Val Acc: 0.9627, Val F1: 0.9456, Val AUC: 0.9980
+2026-07-16 11:52:09,073 - INFO - 
+Epoch 48/50
+2026-07-16 11:52:32,665 - INFO - Train Loss: 0.2474, Train Acc: 0.9216
+2026-07-16 11:52:32,665 - INFO - Val Loss: 0.0948, Val Acc: 0.9831, Val F1: 0.9762, Val AUC: 0.9980
+2026-07-16 11:52:32,720 - INFO -   -> New best model saved (F1=0.9762)
+2026-07-16 11:52:32,720 - INFO - 
+Epoch 49/50
+2026-07-16 11:52:56,107 - INFO - Train Loss: 0.2366, Train Acc: 0.9223
+2026-07-16 11:52:56,108 - INFO - Val Loss: 0.0953, Val Acc: 0.9835, Val F1: 0.9769, Val AUC: 0.9979
+2026-07-16 11:52:56,144 - INFO -   -> New best model saved (F1=0.9769)
+2026-07-16 11:52:56,144 - INFO - 
+Epoch 50/50
+2026-07-16 11:53:19,969 - INFO - Train Loss: 0.2332, Train Acc: 0.9259
+2026-07-16 11:53:19,970 - INFO - Val Loss: 0.0838, Val Acc: 0.9861, Val F1: 0.9807, Val AUC: 0.9977
+2026-07-16 11:53:20,006 - INFO -   -> New best model saved (F1=0.9807)
+2026-07-16 11:53:23,206 - INFO - 
+Run 1 Test Results:
+2026-07-16 11:53:23,206 - INFO -   Accuracy: 0.9853, F1: 0.9775, AUC: 0.9977
+2026-07-16 11:53:23,206 - INFO - 
+============================================================
+Starting run 2/5
+============================================================
+2026-07-16 11:53:23,208 - INFO - 
+Run 2: Device = mps
+2026-07-16 11:53:28,049 - INFO - Train class distribution: 0=5570.0, 1=3211.0 (ratio 1:0.58)
+2026-07-16 11:53:28,052 - INFO - Using class weighting: pos_weight = 1.73
+2026-07-16 11:53:28,052 - INFO - 
+Epoch 1/50
+2026-07-16 11:53:55,161 - INFO - Train Loss: 0.8104, Train Acc: 0.6426
+2026-07-16 11:53:55,162 - INFO - Val Loss: 0.6893, Val Acc: 0.7459, Val F1: 0.6332, Val AUC: 0.7989
+2026-07-16 11:53:55,218 - INFO -   -> New best model saved (F1=0.6332)
+2026-07-16 11:53:55,218 - INFO - 
+Epoch 2/50
+2026-07-16 11:54:24,233 - INFO - Train Loss: 0.7254, Train Acc: 0.7004
+2026-07-16 11:54:24,234 - INFO - Val Loss: 0.6097, Val Acc: 0.7765, Val F1: 0.6620, Val AUC: 0.8412
+2026-07-16 11:54:24,297 - INFO -   -> New best model saved (F1=0.6620)
+2026-07-16 11:54:24,297 - INFO - 
+Epoch 3/50
+2026-07-16 11:54:50,999 - INFO - Train Loss: 0.6707, Train Acc: 0.7323
+2026-07-16 11:54:50,999 - INFO - Val Loss: 0.5646, Val Acc: 0.7746, Val F1: 0.7038, Val AUC: 0.8667
+2026-07-16 11:54:51,056 - INFO -   -> New best model saved (F1=0.7038)
+2026-07-16 11:54:51,057 - INFO - 
+Epoch 4/50
+2026-07-16 11:55:18,137 - INFO - Train Loss: 0.6298, Train Acc: 0.7603
+2026-07-16 11:55:18,138 - INFO - Val Loss: 0.5494, Val Acc: 0.8268, Val F1: 0.7101, Val AUC: 0.8867
+2026-07-16 11:55:18,199 - INFO -   -> New best model saved (F1=0.7101)
+2026-07-16 11:55:18,199 - INFO - 
+Epoch 5/50
+2026-07-16 11:55:43,705 - INFO - Train Loss: 0.6011, Train Acc: 0.7751
+2026-07-16 11:55:43,706 - INFO - Val Loss: 0.6602, Val Acc: 0.8018, Val F1: 0.6255, Val AUC: 0.8927
+2026-07-16 11:55:43,706 - INFO - 
+Epoch 6/50
+2026-07-16 11:56:08,375 - INFO - Train Loss: 0.5833, Train Acc: 0.7865
+2026-07-16 11:56:08,376 - INFO - Val Loss: 0.5826, Val Acc: 0.8245, Val F1: 0.6845, Val AUC: 0.9086
+2026-07-16 11:56:08,376 - INFO - 
+Epoch 7/50
+2026-07-16 11:56:41,349 - INFO - Train Loss: 0.5717, Train Acc: 0.7893
+2026-07-16 11:56:41,350 - INFO - Val Loss: 0.4675, Val Acc: 0.8488, Val F1: 0.7605, Val AUC: 0.9222
+2026-07-16 11:56:41,389 - INFO -   -> New best model saved (F1=0.7605)
+2026-07-16 11:56:41,389 - INFO - 
+Epoch 8/50
+2026-07-16 11:57:09,446 - INFO - Train Loss: 0.5541, Train Acc: 0.7974
+2026-07-16 11:57:09,446 - INFO - Val Loss: 0.4419, Val Acc: 0.8639, Val F1: 0.7945, Val AUC: 0.9320
+2026-07-16 11:57:09,505 - INFO -   -> New best model saved (F1=0.7945)
+2026-07-16 11:57:09,505 - INFO - 
+Epoch 9/50
+2026-07-16 11:57:35,778 - INFO - Train Loss: 0.5276, Train Acc: 0.8085
+2026-07-16 11:57:35,778 - INFO - Val Loss: 0.4256, Val Acc: 0.8695, Val F1: 0.8013, Val AUC: 0.9387
+2026-07-16 11:57:35,820 - INFO -   -> New best model saved (F1=0.8013)
+2026-07-16 11:57:35,820 - INFO - 
+Epoch 10/50
+2026-07-16 11:58:00,691 - INFO - Train Loss: 0.5296, Train Acc: 0.8040
+2026-07-16 11:58:00,691 - INFO - Val Loss: 0.8035, Val Acc: 0.8029, Val F1: 0.6259, Val AUC: 0.9178
+2026-07-16 11:58:00,691 - INFO - 
+Epoch 11/50
+2026-07-16 11:58:25,478 - INFO - Train Loss: 0.5086, Train Acc: 0.8197
+2026-07-16 11:58:25,479 - INFO - Val Loss: 0.4005, Val Acc: 0.8829, Val F1: 0.8175, Val AUC: 0.9518
+2026-07-16 11:58:25,527 - INFO -   -> New best model saved (F1=0.8175)
+2026-07-16 11:58:25,527 - INFO - 
+Epoch 12/50
+2026-07-16 11:58:50,323 - INFO - Train Loss: 0.4994, Train Acc: 0.8196
+2026-07-16 11:58:50,323 - INFO - Val Loss: 0.3534, Val Acc: 0.8882, Val F1: 0.8435, Val AUC: 0.9566
+2026-07-16 11:58:50,367 - INFO -   -> New best model saved (F1=0.8435)
+2026-07-16 11:58:50,367 - INFO - 
+Epoch 13/50
+2026-07-16 11:59:15,218 - INFO - Train Loss: 0.4766, Train Acc: 0.8310
+2026-07-16 11:59:15,219 - INFO - Val Loss: 0.4326, Val Acc: 0.8732, Val F1: 0.7941, Val AUC: 0.9524
+2026-07-16 11:59:15,219 - INFO - 
+Epoch 14/50
+2026-07-16 11:59:40,218 - INFO - Train Loss: 0.4641, Train Acc: 0.8391
+2026-07-16 11:59:40,219 - INFO - Val Loss: 0.4423, Val Acc: 0.8741, Val F1: 0.7927, Val AUC: 0.9642
+2026-07-16 11:59:40,219 - INFO - 
+Epoch 15/50
+2026-07-16 12:00:05,050 - INFO - Train Loss: 0.4523, Train Acc: 0.8414
+2026-07-16 12:00:05,051 - INFO - Val Loss: 0.3828, Val Acc: 0.8880, Val F1: 0.8212, Val AUC: 0.9669
+2026-07-16 12:00:05,051 - INFO - 
+Epoch 16/50
+2026-07-16 12:00:29,999 - INFO - Train Loss: 0.4514, Train Acc: 0.8426
+2026-07-16 12:00:30,002 - INFO - Val Loss: 0.4492, Val Acc: 0.8676, Val F1: 0.7777, Val AUC: 0.9699
+2026-07-16 12:00:30,002 - INFO - 
+Epoch 17/50
+2026-07-16 12:00:54,852 - INFO - Train Loss: 0.4353, Train Acc: 0.8493
+2026-07-16 12:00:54,852 - INFO - Val Loss: 0.6726, Val Acc: 0.8231, Val F1: 0.6760, Val AUC: 0.9712
+2026-07-16 12:00:54,852 - INFO - 
+Epoch 18/50
+2026-07-16 12:01:19,673 - INFO - Train Loss: 0.4316, Train Acc: 0.8464
+2026-07-16 12:01:19,674 - INFO - Val Loss: 0.4439, Val Acc: 0.8755, Val F1: 0.7926, Val AUC: 0.9743
+2026-07-16 12:01:19,674 - INFO - 
+Epoch 19/50
+2026-07-16 12:01:44,456 - INFO - Train Loss: 0.3962, Train Acc: 0.8624
+2026-07-16 12:01:44,456 - INFO - Val Loss: 0.6875, Val Acc: 0.8229, Val F1: 0.6749, Val AUC: 0.9782
+2026-07-16 12:01:44,456 - INFO - 
+Epoch 20/50
+2026-07-16 12:02:09,483 - INFO - Train Loss: 0.3979, Train Acc: 0.8660
+2026-07-16 12:02:09,484 - INFO - Val Loss: 0.6421, Val Acc: 0.8400, Val F1: 0.7153, Val AUC: 0.9772
+2026-07-16 12:02:09,484 - INFO - 
+Epoch 21/50
+2026-07-16 12:02:34,191 - INFO - Train Loss: 0.3731, Train Acc: 0.8750
+2026-07-16 12:02:34,191 - INFO - Val Loss: 0.5124, Val Acc: 0.8586, Val F1: 0.7568, Val AUC: 0.9845
+2026-07-16 12:02:34,191 - INFO - 
+Epoch 22/50
+2026-07-16 12:03:00,579 - INFO - Train Loss: 0.3736, Train Acc: 0.8732
+2026-07-16 12:03:00,580 - INFO - Val Loss: 0.5192, Val Acc: 0.8574, Val F1: 0.7543, Val AUC: 0.9859
+2026-07-16 12:03:00,580 - INFO - 
+Epoch 23/50
+2026-07-16 12:03:29,888 - INFO - Train Loss: 0.3631, Train Acc: 0.8779
+2026-07-16 12:03:29,888 - INFO - Val Loss: 0.3400, Val Acc: 0.9033, Val F1: 0.8464, Val AUC: 0.9873
+2026-07-16 12:03:29,974 - INFO -   -> New best model saved (F1=0.8464)
+2026-07-16 12:03:29,974 - INFO - 
+Epoch 24/50
+2026-07-16 12:03:57,219 - INFO - Train Loss: 0.3639, Train Acc: 0.8737
+2026-07-16 12:03:57,219 - INFO - Val Loss: 0.6133, Val Acc: 0.8405, Val F1: 0.7164, Val AUC: 0.9857
+2026-07-16 12:03:57,219 - INFO - 
+Epoch 25/50
+2026-07-16 12:04:26,260 - INFO - Train Loss: 0.3512, Train Acc: 0.8825
+2026-07-16 12:04:26,261 - INFO - Val Loss: 0.4343, Val Acc: 0.8811, Val F1: 0.8032, Val AUC: 0.9880
+2026-07-16 12:04:26,261 - INFO - 
+Epoch 26/50
+2026-07-16 12:04:55,063 - INFO - Train Loss: 0.3491, Train Acc: 0.8832
+2026-07-16 12:04:55,063 - INFO - Val Loss: 0.2796, Val Acc: 0.9212, Val F1: 0.8783, Val AUC: 0.9910
+2026-07-16 12:04:55,107 - INFO -   -> New best model saved (F1=0.8783)
+2026-07-16 12:04:55,107 - INFO - 
+Epoch 27/50
+2026-07-16 12:05:23,705 - INFO - Train Loss: 0.3352, Train Acc: 0.8901
+2026-07-16 12:05:23,706 - INFO - Val Loss: 0.3839, Val Acc: 0.8917, Val F1: 0.8241, Val AUC: 0.9913
+2026-07-16 12:05:23,706 - INFO - 
+Epoch 28/50
+2026-07-16 12:05:49,165 - INFO - Train Loss: 0.3437, Train Acc: 0.8865
+2026-07-16 12:05:49,165 - INFO - Val Loss: 0.4250, Val Acc: 0.8845, Val F1: 0.8099, Val AUC: 0.9924
+2026-07-16 12:05:49,165 - INFO - 
+Epoch 29/50
+2026-07-16 12:06:16,295 - INFO - Train Loss: 0.3216, Train Acc: 0.8924
+2026-07-16 12:06:16,295 - INFO - Val Loss: 0.2667, Val Acc: 0.9253, Val F1: 0.8856, Val AUC: 0.9922
+2026-07-16 12:06:16,342 - INFO -   -> New best model saved (F1=0.8856)
+2026-07-16 12:06:16,343 - INFO - 
+Epoch 30/50
+2026-07-16 12:06:43,311 - INFO - Train Loss: 0.3329, Train Acc: 0.8857
+2026-07-16 12:06:43,312 - INFO - Val Loss: 0.4271, Val Acc: 0.8880, Val F1: 0.8164, Val AUC: 0.9908
+2026-07-16 12:06:43,312 - INFO - 
+Epoch 31/50
+2026-07-16 12:07:07,971 - INFO - Train Loss: 0.3086, Train Acc: 0.8996
+2026-07-16 12:07:07,971 - INFO - Val Loss: 0.4108, Val Acc: 0.8892, Val F1: 0.8188, Val AUC: 0.9924
+2026-07-16 12:07:07,971 - INFO - 
+Epoch 32/50
+2026-07-16 12:07:32,692 - INFO - Train Loss: 0.3224, Train Acc: 0.8909
+2026-07-16 12:07:32,693 - INFO - Val Loss: 0.3793, Val Acc: 0.8966, Val F1: 0.8331, Val AUC: 0.9939
+2026-07-16 12:07:32,693 - INFO - 
+Epoch 33/50
+2026-07-16 12:07:57,338 - INFO - Train Loss: 0.3175, Train Acc: 0.8957
+2026-07-16 12:07:57,338 - INFO - Val Loss: 0.2813, Val Acc: 0.9202, Val F1: 0.8762, Val AUC: 0.9943
+2026-07-16 12:07:57,338 - INFO - 
+Epoch 34/50
+2026-07-16 12:08:22,187 - INFO - Train Loss: 0.3122, Train Acc: 0.8955
+2026-07-16 12:08:22,188 - INFO - Val Loss: 0.3939, Val Acc: 0.8922, Val F1: 0.8246, Val AUC: 0.9943
+2026-07-16 12:08:22,188 - INFO - 
+Epoch 35/50
+2026-07-16 12:08:46,912 - INFO - Train Loss: 0.2927, Train Acc: 0.9051
+2026-07-16 12:08:46,913 - INFO - Val Loss: 0.2256, Val Acc: 0.9386, Val F1: 0.9074, Val AUC: 0.9952
+2026-07-16 12:08:46,951 - INFO -   -> New best model saved (F1=0.9074)
+2026-07-16 12:08:46,951 - INFO - 
+Epoch 36/50
+2026-07-16 12:09:11,748 - INFO - Train Loss: 0.3013, Train Acc: 0.8996
+2026-07-16 12:09:11,749 - INFO - Val Loss: 0.4062, Val Acc: 0.8899, Val F1: 0.8201, Val AUC: 0.9944
+2026-07-16 12:09:11,749 - INFO - 
+Epoch 37/50
+2026-07-16 12:09:36,594 - INFO - Train Loss: 0.2934, Train Acc: 0.9009
+2026-07-16 12:09:36,595 - INFO - Val Loss: 0.2967, Val Acc: 0.9202, Val F1: 0.8760, Val AUC: 0.9952
+2026-07-16 12:09:36,595 - INFO - 
+Epoch 38/50
+2026-07-16 12:10:01,590 - INFO - Train Loss: 0.2798, Train Acc: 0.9093
+2026-07-16 12:10:01,590 - INFO - Val Loss: 0.1651, Val Acc: 0.9608, Val F1: 0.9431, Val AUC: 0.9960
+2026-07-16 12:10:01,640 - INFO -   -> New best model saved (F1=0.9431)
+2026-07-16 12:10:01,640 - INFO - 
+Epoch 39/50
+2026-07-16 12:10:26,637 - INFO - Train Loss: 0.2837, Train Acc: 0.9056
+2026-07-16 12:10:26,638 - INFO - Val Loss: 0.3904, Val Acc: 0.8952, Val F1: 0.8303, Val AUC: 0.9957
+2026-07-16 12:10:26,638 - INFO - 
+Epoch 40/50
+2026-07-16 12:10:51,352 - INFO - Train Loss: 0.2621, Train Acc: 0.9158
+2026-07-16 12:10:51,353 - INFO - Val Loss: 0.2819, Val Acc: 0.9207, Val F1: 0.8768, Val AUC: 0.9962
+2026-07-16 12:10:51,353 - INFO - 
+Epoch 41/50
+2026-07-16 12:11:16,298 - INFO - Train Loss: 0.2814, Train Acc: 0.9062
+2026-07-16 12:11:16,299 - INFO - Val Loss: 0.2320, Val Acc: 0.9409, Val F1: 0.9110, Val AUC: 0.9961
+2026-07-16 12:11:16,299 - INFO - 
+Epoch 42/50
+2026-07-16 12:11:41,124 - INFO - Train Loss: 0.2705, Train Acc: 0.9122
+2026-07-16 12:11:41,125 - INFO - Val Loss: 0.2968, Val Acc: 0.9200, Val F1: 0.8757, Val AUC: 0.9957
+2026-07-16 12:11:41,125 - INFO - 
+Epoch 43/50
+2026-07-16 12:12:05,807 - INFO - Train Loss: 0.2750, Train Acc: 0.9133
+2026-07-16 12:12:05,807 - INFO - Val Loss: 0.5155, Val Acc: 0.8625, Val F1: 0.7650, Val AUC: 0.9956
+2026-07-16 12:12:05,807 - INFO - 
+Epoch 44/50
+2026-07-16 12:12:30,706 - INFO - Train Loss: 0.2778, Train Acc: 0.9092
+2026-07-16 12:12:30,707 - INFO - Val Loss: 0.3593, Val Acc: 0.9045, Val F1: 0.8475, Val AUC: 0.9964
+2026-07-16 12:12:30,707 - INFO - 
+Epoch 45/50
+2026-07-16 12:12:55,379 - INFO - Train Loss: 0.2578, Train Acc: 0.9154
+2026-07-16 12:12:55,380 - INFO - Val Loss: 0.3359, Val Acc: 0.9086, Val F1: 0.8553, Val AUC: 0.9968
+2026-07-16 12:12:55,380 - INFO - 
+Epoch 46/50
+2026-07-16 12:13:20,175 - INFO - Train Loss: 0.2404, Train Acc: 0.9242
+2026-07-16 12:13:20,176 - INFO - Val Loss: 0.3094, Val Acc: 0.9182, Val F1: 0.8722, Val AUC: 0.9968
+2026-07-16 12:13:20,176 - INFO - 
+Epoch 47/50
+2026-07-16 12:13:44,847 - INFO - Train Loss: 0.2429, Train Acc: 0.9206
+2026-07-16 12:13:44,848 - INFO - Val Loss: 0.2485, Val Acc: 0.9346, Val F1: 0.9006, Val AUC: 0.9969
+2026-07-16 12:13:44,848 - INFO - 
+Epoch 48/50
+2026-07-16 12:14:09,686 - INFO - Train Loss: 0.2383, Train Acc: 0.9232
+2026-07-16 12:14:09,687 - INFO - Val Loss: 0.2887, Val Acc: 0.9207, Val F1: 0.8767, Val AUC: 0.9971
+2026-07-16 12:14:09,687 - INFO - 
+Epoch 49/50
+2026-07-16 12:14:34,492 - INFO - Train Loss: 0.2356, Train Acc: 0.9264
+2026-07-16 12:14:34,493 - INFO - Val Loss: 0.2748, Val Acc: 0.9286, Val F1: 0.8903, Val AUC: 0.9972
+2026-07-16 12:14:34,493 - INFO - 
+Epoch 50/50
+2026-07-16 12:14:59,339 - INFO - Train Loss: 0.2417, Train Acc: 0.9226
+2026-07-16 12:14:59,340 - INFO - Val Loss: 0.2260, Val Acc: 0.9416, Val F1: 0.9121, Val AUC: 0.9970
+2026-07-16 12:15:02,303 - INFO - 
+Run 2 Test Results:
+2026-07-16 12:15:02,303 - INFO -   Accuracy: 0.9493, F1: 0.9167, AUC: 0.9965
+2026-07-16 12:15:02,303 - INFO - 
+============================================================
+Starting run 3/5
+============================================================
+2026-07-16 12:15:02,306 - INFO - 
+Run 3: Device = mps
+2026-07-16 12:15:07,215 - INFO - Train class distribution: 0=5570.0, 1=3211.0 (ratio 1:0.58)
+2026-07-16 12:15:07,218 - INFO - Using class weighting: pos_weight = 1.73
+2026-07-16 12:15:07,218 - INFO - 
+Epoch 1/50
+2026-07-16 12:15:31,803 - INFO - Train Loss: 0.7974, Train Acc: 0.6484
+2026-07-16 12:15:31,804 - INFO - Val Loss: 0.6743, Val Acc: 0.7412, Val F1: 0.6365, Val AUC: 0.8063
+2026-07-16 12:15:31,840 - INFO -   -> New best model saved (F1=0.6365)
+2026-07-16 12:15:31,841 - INFO - 
+Epoch 2/50
+2026-07-16 12:15:56,605 - INFO - Train Loss: 0.6996, Train Acc: 0.7123
+2026-07-16 12:15:56,606 - INFO - Val Loss: 0.5890, Val Acc: 0.7753, Val F1: 0.6903, Val AUC: 0.8581
+2026-07-16 12:15:56,656 - INFO -   -> New best model saved (F1=0.6903)
+2026-07-16 12:15:56,657 - INFO - 
+Epoch 3/50
+2026-07-16 12:16:21,956 - INFO - Train Loss: 0.6405, Train Acc: 0.7480
+2026-07-16 12:16:21,957 - INFO - Val Loss: 0.6037, Val Acc: 0.6800, Val F1: 0.6728, Val AUC: 0.8766
+2026-07-16 12:16:21,957 - INFO - 
+Epoch 4/50
+2026-07-16 12:16:46,617 - INFO - Train Loss: 0.6143, Train Acc: 0.7710
+2026-07-16 12:16:46,618 - INFO - Val Loss: 0.5704, Val Acc: 0.8268, Val F1: 0.6962, Val AUC: 0.8931
+2026-07-16 12:16:46,671 - INFO -   -> New best model saved (F1=0.6962)
+2026-07-16 12:16:46,671 - INFO - 
+Epoch 5/50
+2026-07-16 12:17:11,392 - INFO - Train Loss: 0.5945, Train Acc: 0.7832
+2026-07-16 12:17:11,393 - INFO - Val Loss: 0.6756, Val Acc: 0.8092, Val F1: 0.6433, Val AUC: 0.8956
+2026-07-16 12:17:11,393 - INFO - 
+Epoch 6/50
+2026-07-16 12:17:36,100 - INFO - Train Loss: 0.5732, Train Acc: 0.7889
+2026-07-16 12:17:36,100 - INFO - Val Loss: 0.6870, Val Acc: 0.8120, Val F1: 0.6497, Val AUC: 0.9155
+2026-07-16 12:17:36,100 - INFO - 
+Epoch 7/50
+2026-07-16 12:18:00,694 - INFO - Train Loss: 0.5573, Train Acc: 0.7985
+2026-07-16 12:18:00,695 - INFO - Val Loss: 0.5863, Val Acc: 0.8226, Val F1: 0.6795, Val AUC: 0.9223
+2026-07-16 12:18:00,695 - INFO - 
+Epoch 8/50
+2026-07-16 12:18:25,270 - INFO - Train Loss: 0.5372, Train Acc: 0.8065
+2026-07-16 12:18:25,270 - INFO - Val Loss: 0.4397, Val Acc: 0.8607, Val F1: 0.7915, Val AUC: 0.9245
+2026-07-16 12:18:25,310 - INFO -   -> New best model saved (F1=0.7915)
+2026-07-16 12:18:25,310 - INFO - 
+Epoch 9/50
+2026-07-16 12:18:49,972 - INFO - Train Loss: 0.5235, Train Acc: 0.8100
+2026-07-16 12:18:49,972 - INFO - Val Loss: 0.4096, Val Acc: 0.8704, Val F1: 0.8048, Val AUC: 0.9403
+2026-07-16 12:18:50,017 - INFO -   -> New best model saved (F1=0.8048)
+2026-07-16 12:18:50,017 - INFO - 
+Epoch 10/50
+2026-07-16 12:19:14,613 - INFO - Train Loss: 0.5139, Train Acc: 0.8190
+2026-07-16 12:19:14,613 - INFO - Val Loss: 0.5421, Val Acc: 0.8384, Val F1: 0.7154, Val AUC: 0.9466
+2026-07-16 12:19:14,613 - INFO - 
+Epoch 11/50
+2026-07-16 12:19:39,475 - INFO - Train Loss: 0.4980, Train Acc: 0.8230
+2026-07-16 12:19:39,476 - INFO - Val Loss: 0.4137, Val Acc: 0.8797, Val F1: 0.8073, Val AUC: 0.9531
+2026-07-16 12:19:39,515 - INFO -   -> New best model saved (F1=0.8073)
+2026-07-16 12:19:39,515 - INFO - 
+Epoch 12/50
+2026-07-16 12:20:04,098 - INFO - Train Loss: 0.4897, Train Acc: 0.8242
+2026-07-16 12:20:04,098 - INFO - Val Loss: 1.0877, Val Acc: 0.7610, Val F1: 0.5050, Val AUC: 0.9468
+2026-07-16 12:20:04,098 - INFO - 
+Epoch 13/50
+2026-07-16 12:20:28,933 - INFO - Train Loss: 0.4703, Train Acc: 0.8348
+2026-07-16 12:20:28,933 - INFO - Val Loss: 0.6928, Val Acc: 0.8150, Val F1: 0.6557, Val AUC: 0.9599
+2026-07-16 12:20:28,933 - INFO - 
+Epoch 14/50
+2026-07-16 12:20:53,595 - INFO - Train Loss: 0.4669, Train Acc: 0.8361
+2026-07-16 12:20:53,595 - INFO - Val Loss: 0.3254, Val Acc: 0.9038, Val F1: 0.8599, Val AUC: 0.9665
+2026-07-16 12:20:53,631 - INFO -   -> New best model saved (F1=0.8599)
+2026-07-16 12:20:53,631 - INFO - 
+Epoch 15/50
+2026-07-16 12:21:18,365 - INFO - Train Loss: 0.4557, Train Acc: 0.8368
+2026-07-16 12:21:18,365 - INFO - Val Loss: 0.7135, Val Acc: 0.8108, Val F1: 0.6452, Val AUC: 0.9686
+2026-07-16 12:21:18,365 - INFO - 
+Epoch 16/50
+2026-07-16 12:21:43,139 - INFO - Train Loss: 0.4395, Train Acc: 0.8431
+2026-07-16 12:21:43,140 - INFO - Val Loss: 0.6954, Val Acc: 0.8178, Val F1: 0.6627, Val AUC: 0.9715
+2026-07-16 12:21:43,140 - INFO - 
+Epoch 17/50
+2026-07-16 12:22:07,959 - INFO - Train Loss: 0.4328, Train Acc: 0.8523
+2026-07-16 12:22:07,959 - INFO - Val Loss: 0.4634, Val Acc: 0.8639, Val F1: 0.7683, Val AUC: 0.9780
+2026-07-16 12:22:07,959 - INFO - 
+Epoch 18/50
+2026-07-16 12:22:32,611 - INFO - Train Loss: 0.4183, Train Acc: 0.8540
+2026-07-16 12:22:32,611 - INFO - Val Loss: 0.3698, Val Acc: 0.8899, Val F1: 0.8212, Val AUC: 0.9815
+2026-07-16 12:22:32,612 - INFO - 
+Epoch 19/50
+2026-07-16 12:22:57,262 - INFO - Train Loss: 0.4041, Train Acc: 0.8624
+2026-07-16 12:22:57,262 - INFO - Val Loss: 0.3962, Val Acc: 0.8838, Val F1: 0.8102, Val AUC: 0.9818
+2026-07-16 12:22:57,262 - INFO - 
+Epoch 20/50
+2026-07-16 12:23:21,869 - INFO - Train Loss: 0.3974, Train Acc: 0.8641
+2026-07-16 12:23:21,870 - INFO - Val Loss: 0.7241, Val Acc: 0.8196, Val F1: 0.6670, Val AUC: 0.9823
+2026-07-16 12:23:21,870 - INFO - 
+Epoch 21/50
+2026-07-16 12:23:46,572 - INFO - Train Loss: 0.3568, Train Acc: 0.8775
+2026-07-16 12:23:46,574 - INFO - Val Loss: 0.4245, Val Acc: 0.8760, Val F1: 0.7930, Val AUC: 0.9869
+2026-07-16 12:23:46,574 - INFO - 
+Epoch 22/50
+2026-07-16 12:24:11,187 - INFO - Train Loss: 0.3684, Train Acc: 0.8761
+2026-07-16 12:24:11,187 - INFO - Val Loss: 0.4541, Val Acc: 0.8676, Val F1: 0.7756, Val AUC: 0.9899
+2026-07-16 12:24:11,187 - INFO - 
+Epoch 23/50
+2026-07-16 12:24:35,943 - INFO - Train Loss: 0.3483, Train Acc: 0.8803
+2026-07-16 12:24:35,944 - INFO - Val Loss: 0.4313, Val Acc: 0.8753, Val F1: 0.7915, Val AUC: 0.9902
+2026-07-16 12:24:35,944 - INFO - 
+Epoch 24/50
+2026-07-16 12:25:00,763 - INFO - Train Loss: 0.3449, Train Acc: 0.8820
+2026-07-16 12:25:00,764 - INFO - Val Loss: 0.3201, Val Acc: 0.9082, Val F1: 0.8549, Val AUC: 0.9904
+2026-07-16 12:25:00,764 - INFO - 
+Epoch 25/50
+2026-07-16 12:25:25,495 - INFO - Train Loss: 0.3374, Train Acc: 0.8874
+2026-07-16 12:25:25,496 - INFO - Val Loss: 0.3967, Val Acc: 0.8850, Val F1: 0.8107, Val AUC: 0.9916
+2026-07-16 12:25:25,496 - INFO - 
+Epoch 26/50
+2026-07-16 12:25:50,482 - INFO - Train Loss: 0.3337, Train Acc: 0.8868
+2026-07-16 12:25:50,483 - INFO - Val Loss: 0.3978, Val Acc: 0.8857, Val F1: 0.8120, Val AUC: 0.9913
+2026-07-16 12:25:50,483 - INFO - 
+Epoch 27/50
+2026-07-16 12:26:15,241 - INFO - Train Loss: 0.3254, Train Acc: 0.8931
+2026-07-16 12:26:15,242 - INFO - Val Loss: 0.2015, Val Acc: 0.9495, Val F1: 0.9254, Val AUC: 0.9947
+2026-07-16 12:26:15,281 - INFO -   -> New best model saved (F1=0.9254)
+2026-07-16 12:26:15,281 - INFO - 
+Epoch 28/50
+2026-07-16 12:26:40,536 - INFO - Train Loss: 0.3225, Train Acc: 0.8931
+2026-07-16 12:26:40,537 - INFO - Val Loss: 0.2775, Val Acc: 0.9214, Val F1: 0.8786, Val AUC: 0.9922
+2026-07-16 12:26:40,537 - INFO - 
+Epoch 29/50
+2026-07-16 12:27:05,134 - INFO - Train Loss: 0.3187, Train Acc: 0.8951
+2026-07-16 12:27:05,134 - INFO - Val Loss: 0.2628, Val Acc: 0.9277, Val F1: 0.8891, Val AUC: 0.9942
+2026-07-16 12:27:05,134 - INFO - 
+Epoch 30/50
+2026-07-16 12:27:29,666 - INFO - Train Loss: 0.3153, Train Acc: 0.8958
+2026-07-16 12:27:29,666 - INFO - Val Loss: 0.2113, Val Acc: 0.9455, Val F1: 0.9189, Val AUC: 0.9943
+2026-07-16 12:27:29,666 - INFO - 
+Epoch 31/50
+2026-07-16 12:27:54,237 - INFO - Train Loss: 0.3136, Train Acc: 0.8971
+2026-07-16 12:27:54,237 - INFO - Val Loss: 0.2336, Val Acc: 0.9393, Val F1: 0.9085, Val AUC: 0.9937
+2026-07-16 12:27:54,237 - INFO - 
+Epoch 32/50
+2026-07-16 12:28:18,876 - INFO - Train Loss: 0.3020, Train Acc: 0.8993
+2026-07-16 12:28:18,876 - INFO - Val Loss: 0.2236, Val Acc: 0.9418, Val F1: 0.9126, Val AUC: 0.9955
+2026-07-16 12:28:18,876 - INFO - 
+Epoch 33/50
+2026-07-16 12:28:43,511 - INFO - Train Loss: 0.3023, Train Acc: 0.9023
+2026-07-16 12:28:43,512 - INFO - Val Loss: 0.1851, Val Acc: 0.9550, Val F1: 0.9340, Val AUC: 0.9956
+2026-07-16 12:28:43,557 - INFO -   -> New best model saved (F1=0.9340)
+2026-07-16 12:28:43,557 - INFO - 
+Epoch 34/50
+2026-07-16 12:29:08,315 - INFO - Train Loss: 0.2914, Train Acc: 0.9068
+2026-07-16 12:29:08,315 - INFO - Val Loss: 0.2396, Val Acc: 0.9383, Val F1: 0.9070, Val AUC: 0.9942
+2026-07-16 12:29:08,315 - INFO - 
+Epoch 35/50
+2026-07-16 12:29:32,815 - INFO - Train Loss: 0.2910, Train Acc: 0.9021
+2026-07-16 12:29:32,815 - INFO - Val Loss: 0.1810, Val Acc: 0.9562, Val F1: 0.9360, Val AUC: 0.9942
+2026-07-16 12:29:32,852 - INFO -   -> New best model saved (F1=0.9360)
+2026-07-16 12:29:32,852 - INFO - 
+Epoch 36/50
+2026-07-16 12:29:57,666 - INFO - Train Loss: 0.2801, Train Acc: 0.9080
+2026-07-16 12:29:57,667 - INFO - Val Loss: 0.2259, Val Acc: 0.9395, Val F1: 0.9087, Val AUC: 0.9956
+2026-07-16 12:29:57,667 - INFO - 
+Epoch 37/50
+2026-07-16 12:30:22,391 - INFO - Train Loss: 0.2843, Train Acc: 0.9037
+2026-07-16 12:30:22,392 - INFO - Val Loss: 0.1544, Val Acc: 0.9655, Val F1: 0.9502, Val AUC: 0.9965
+2026-07-16 12:30:22,432 - INFO -   -> New best model saved (F1=0.9502)
+2026-07-16 12:30:22,432 - INFO - 
+Epoch 38/50
+2026-07-16 12:30:47,218 - INFO - Train Loss: 0.2694, Train Acc: 0.9104
+2026-07-16 12:30:47,219 - INFO - Val Loss: 0.1566, Val Acc: 0.9659, Val F1: 0.9508, Val AUC: 0.9960
+2026-07-16 12:30:47,255 - INFO -   -> New best model saved (F1=0.9508)
+2026-07-16 12:30:47,255 - INFO - 
+Epoch 39/50
+2026-07-16 12:31:12,036 - INFO - Train Loss: 0.2763, Train Acc: 0.9084
+2026-07-16 12:31:12,036 - INFO - Val Loss: 0.2410, Val Acc: 0.9323, Val F1: 0.8967, Val AUC: 0.9969
+2026-07-16 12:31:12,036 - INFO - 
+Epoch 40/50
+2026-07-16 12:31:36,600 - INFO - Train Loss: 0.2750, Train Acc: 0.9081
+2026-07-16 12:31:36,600 - INFO - Val Loss: 0.3307, Val Acc: 0.9066, Val F1: 0.8515, Val AUC: 0.9973
+2026-07-16 12:31:36,600 - INFO - 
+Epoch 41/50
+2026-07-16 12:32:01,308 - INFO - Train Loss: 0.2651, Train Acc: 0.9158
+2026-07-16 12:32:01,308 - INFO - Val Loss: 0.2091, Val Acc: 0.9462, Val F1: 0.9197, Val AUC: 0.9962
+2026-07-16 12:32:01,308 - INFO - 
+Epoch 42/50
+2026-07-16 12:32:25,943 - INFO - Train Loss: 0.2594, Train Acc: 0.9144
+2026-07-16 12:32:25,943 - INFO - Val Loss: 0.1967, Val Acc: 0.9502, Val F1: 0.9261, Val AUC: 0.9964
+2026-07-16 12:32:25,943 - INFO - 
+Epoch 43/50
+2026-07-16 12:32:50,562 - INFO - Train Loss: 0.2642, Train Acc: 0.9156
+2026-07-16 12:32:50,562 - INFO - Val Loss: 0.2361, Val Acc: 0.9376, Val F1: 0.9055, Val AUC: 0.9971
+2026-07-16 12:32:50,562 - INFO - 
+Epoch 44/50
+2026-07-16 12:33:15,171 - INFO - Train Loss: 0.2455, Train Acc: 0.9209
+2026-07-16 12:33:15,171 - INFO - Val Loss: 0.2377, Val Acc: 0.9355, Val F1: 0.9021, Val AUC: 0.9970
+2026-07-16 12:33:15,171 - INFO - 
+Epoch 45/50
+2026-07-16 12:33:39,766 - INFO - Train Loss: 0.2280, Train Acc: 0.9271
+2026-07-16 12:33:39,766 - INFO - Val Loss: 0.1924, Val Acc: 0.9522, Val F1: 0.9292, Val AUC: 0.9967
+2026-07-16 12:33:39,766 - INFO - 
+Epoch 46/50
+2026-07-16 12:34:04,502 - INFO - Train Loss: 0.2387, Train Acc: 0.9257
+2026-07-16 12:34:04,502 - INFO - Val Loss: 0.1710, Val Acc: 0.9583, Val F1: 0.9388, Val AUC: 0.9970
+2026-07-16 12:34:04,502 - INFO - 
+Epoch 47/50
+2026-07-16 12:34:29,062 - INFO - Train Loss: 0.2456, Train Acc: 0.9204
+2026-07-16 12:34:29,063 - INFO - Val Loss: 0.2493, Val Acc: 0.9337, Val F1: 0.8989, Val AUC: 0.9969
+2026-07-16 12:34:29,063 - INFO - 
+Epoch 48/50
+2026-07-16 12:34:53,776 - INFO - Train Loss: 0.2341, Train Acc: 0.9244
+2026-07-16 12:34:53,777 - INFO - Val Loss: 0.2040, Val Acc: 0.9490, Val F1: 0.9240, Val AUC: 0.9972
+2026-07-16 12:34:53,777 - INFO - 
+Epoch 49/50
+2026-07-16 12:35:18,514 - INFO - Train Loss: 0.2303, Train Acc: 0.9275
+2026-07-16 12:35:18,515 - INFO - Val Loss: 0.2120, Val Acc: 0.9469, Val F1: 0.9207, Val AUC: 0.9971
+2026-07-16 12:35:18,515 - INFO - 
+Epoch 50/50
+2026-07-16 12:35:43,442 - INFO - Train Loss: 0.2277, Train Acc: 0.9292
+2026-07-16 12:35:43,443 - INFO - Val Loss: 0.1900, Val Acc: 0.9546, Val F1: 0.9329, Val AUC: 0.9975
+2026-07-16 12:35:46,349 - INFO - 
+Run 3 Test Results:
+2026-07-16 12:35:46,349 - INFO -   Accuracy: 0.9589, F1: 0.9333, AUC: 0.9973
+2026-07-16 12:35:46,349 - INFO - 
+============================================================
+Starting run 4/5
+============================================================
+2026-07-16 12:35:46,350 - INFO - 
+Run 4: Device = mps
+2026-07-16 12:35:51,186 - INFO - Train class distribution: 0=5570.0, 1=3211.0 (ratio 1:0.58)
+2026-07-16 12:35:51,189 - INFO - Using class weighting: pos_weight = 1.73
+2026-07-16 12:35:51,189 - INFO - 
+Epoch 1/50
+2026-07-16 12:36:15,801 - INFO - Train Loss: 0.8096, Train Acc: 0.6442
+2026-07-16 12:36:15,802 - INFO - Val Loss: 0.6847, Val Acc: 0.7222, Val F1: 0.6468, Val AUC: 0.8021
+2026-07-16 12:36:15,858 - INFO -   -> New best model saved (F1=0.6468)
+2026-07-16 12:36:15,858 - INFO - 
+Epoch 2/50
+2026-07-16 12:36:41,151 - INFO - Train Loss: 0.7225, Train Acc: 0.7000
+2026-07-16 12:36:41,151 - INFO - Val Loss: 0.5939, Val Acc: 0.7591, Val F1: 0.6879, Val AUC: 0.8516
+2026-07-16 12:36:41,195 - INFO -   -> New best model saved (F1=0.6879)
+2026-07-16 12:36:41,195 - INFO - 
+Epoch 3/50
+2026-07-16 12:37:05,955 - INFO - Train Loss: 0.6528, Train Acc: 0.7398
+2026-07-16 12:37:05,955 - INFO - Val Loss: 0.5372, Val Acc: 0.8099, Val F1: 0.7250, Val AUC: 0.8781
+2026-07-16 12:37:05,993 - INFO -   -> New best model saved (F1=0.7250)
+2026-07-16 12:37:05,993 - INFO - 
+Epoch 4/50
+2026-07-16 12:37:30,572 - INFO - Train Loss: 0.6253, Train Acc: 0.7628
+2026-07-16 12:37:30,573 - INFO - Val Loss: 0.6128, Val Acc: 0.8099, Val F1: 0.6546, Val AUC: 0.8885
+2026-07-16 12:37:30,573 - INFO - 
+Epoch 5/50
+2026-07-16 12:37:55,304 - INFO - Train Loss: 0.5915, Train Acc: 0.7796
+2026-07-16 12:37:55,305 - INFO - Val Loss: 0.7120, Val Acc: 0.8045, Val F1: 0.6352, Val AUC: 0.8897
+2026-07-16 12:37:55,305 - INFO - 
+Epoch 6/50
+2026-07-16 12:38:19,934 - INFO - Train Loss: 0.5776, Train Acc: 0.7857
+2026-07-16 12:38:19,934 - INFO - Val Loss: 0.4894, Val Acc: 0.8493, Val F1: 0.7648, Val AUC: 0.9087
+2026-07-16 12:38:19,972 - INFO -   -> New best model saved (F1=0.7648)
+2026-07-16 12:38:19,972 - INFO - 
+Epoch 7/50
+2026-07-16 12:38:44,612 - INFO - Train Loss: 0.5626, Train Acc: 0.7927
+2026-07-16 12:38:44,613 - INFO - Val Loss: 0.5244, Val Acc: 0.8430, Val F1: 0.7321, Val AUC: 0.9183
+2026-07-16 12:38:44,613 - INFO - 
+Epoch 8/50
+2026-07-16 12:39:09,310 - INFO - Train Loss: 0.5422, Train Acc: 0.8022
+2026-07-16 12:39:09,310 - INFO - Val Loss: 0.4396, Val Acc: 0.8488, Val F1: 0.7939, Val AUC: 0.9290
+2026-07-16 12:39:09,350 - INFO -   -> New best model saved (F1=0.7939)
+2026-07-16 12:39:09,350 - INFO - 
+Epoch 9/50
+2026-07-16 12:39:34,106 - INFO - Train Loss: 0.5318, Train Acc: 0.8094
+2026-07-16 12:39:34,106 - INFO - Val Loss: 0.6415, Val Acc: 0.8187, Val F1: 0.6681, Val AUC: 0.9308
+2026-07-16 12:39:34,106 - INFO - 
+Epoch 10/50
+2026-07-16 12:39:58,794 - INFO - Train Loss: 0.5173, Train Acc: 0.8137
+2026-07-16 12:39:58,794 - INFO - Val Loss: 0.6820, Val Acc: 0.8073, Val F1: 0.6382, Val AUC: 0.9392
+2026-07-16 12:39:58,794 - INFO - 
+Epoch 11/50
+2026-07-16 12:40:23,740 - INFO - Train Loss: 0.5036, Train Acc: 0.8235
+2026-07-16 12:40:23,741 - INFO - Val Loss: 0.6905, Val Acc: 0.8143, Val F1: 0.6555, Val AUC: 0.9475
+2026-07-16 12:40:23,741 - INFO - 
+Epoch 12/50
+2026-07-16 12:40:48,579 - INFO - Train Loss: 0.4894, Train Acc: 0.8261
+2026-07-16 12:40:48,580 - INFO - Val Loss: 0.6609, Val Acc: 0.8236, Val F1: 0.6793, Val AUC: 0.9517
+2026-07-16 12:40:48,580 - INFO - 
+Epoch 13/50
+2026-07-16 12:41:13,443 - INFO - Train Loss: 0.4835, Train Acc: 0.8291
+2026-07-16 12:41:13,444 - INFO - Val Loss: 0.3672, Val Acc: 0.8630, Val F1: 0.8287, Val AUC: 0.9592
+2026-07-16 12:41:13,487 - INFO -   -> New best model saved (F1=0.8287)
+2026-07-16 12:41:13,487 - INFO - 
+Epoch 14/50
+2026-07-16 12:41:38,361 - INFO - Train Loss: 0.4655, Train Acc: 0.8352
+2026-07-16 12:41:38,362 - INFO - Val Loss: 0.4022, Val Acc: 0.8838, Val F1: 0.8117, Val AUC: 0.9648
+2026-07-16 12:41:38,362 - INFO - 
+Epoch 15/50
+2026-07-16 12:42:03,069 - INFO - Train Loss: 0.4512, Train Acc: 0.8382
+2026-07-16 12:42:03,069 - INFO - Val Loss: 0.5106, Val Acc: 0.8542, Val F1: 0.7481, Val AUC: 0.9674
+2026-07-16 12:42:03,069 - INFO - 
+Epoch 16/50
+2026-07-16 12:42:28,472 - INFO - Train Loss: 0.4356, Train Acc: 0.8489
+2026-07-16 12:42:28,473 - INFO - Val Loss: 0.6519, Val Acc: 0.8233, Val F1: 0.6771, Val AUC: 0.9712
+2026-07-16 12:42:28,473 - INFO - 
+Epoch 17/50
+2026-07-16 12:42:54,475 - INFO - Train Loss: 0.4286, Train Acc: 0.8500
+2026-07-16 12:42:54,476 - INFO - Val Loss: 0.7707, Val Acc: 0.8087, Val F1: 0.6399, Val AUC: 0.9737
+2026-07-16 12:42:54,476 - INFO - 
+Epoch 18/50
+2026-07-16 12:43:19,102 - INFO - Train Loss: 0.4163, Train Acc: 0.8559
+2026-07-16 12:43:19,102 - INFO - Val Loss: 0.8605, Val Acc: 0.8032, Val F1: 0.6252, Val AUC: 0.9746
+2026-07-16 12:43:19,102 - INFO - 
+Epoch 19/50
+2026-07-16 12:43:43,637 - INFO - Train Loss: 0.4157, Train Acc: 0.8571
+2026-07-16 12:43:43,638 - INFO - Val Loss: 0.4561, Val Acc: 0.8725, Val F1: 0.7865, Val AUC: 0.9780
+2026-07-16 12:43:43,638 - INFO - 
+Epoch 20/50
+2026-07-16 12:44:08,307 - INFO - Train Loss: 0.3784, Train Acc: 0.8725
+2026-07-16 12:44:08,307 - INFO - Val Loss: 0.5849, Val Acc: 0.8412, Val F1: 0.7180, Val AUC: 0.9836
+2026-07-16 12:44:08,307 - INFO - 
+Epoch 21/50
+2026-07-16 12:44:33,036 - INFO - Train Loss: 0.3754, Train Acc: 0.8720
+2026-07-16 12:44:33,036 - INFO - Val Loss: 0.4531, Val Acc: 0.8778, Val F1: 0.7968, Val AUC: 0.9845
+2026-07-16 12:44:33,036 - INFO - 
+Epoch 22/50
+2026-07-16 12:44:57,739 - INFO - Train Loss: 0.3648, Train Acc: 0.8740
+2026-07-16 12:44:57,739 - INFO - Val Loss: 0.4310, Val Acc: 0.8799, Val F1: 0.8014, Val AUC: 0.9816
+2026-07-16 12:44:57,739 - INFO - 
+Epoch 23/50
+2026-07-16 12:45:22,375 - INFO - Train Loss: 0.3466, Train Acc: 0.8817
+2026-07-16 12:45:22,376 - INFO - Val Loss: 0.3319, Val Acc: 0.9066, Val F1: 0.8521, Val AUC: 0.9890
+2026-07-16 12:45:22,426 - INFO -   -> New best model saved (F1=0.8521)
+2026-07-16 12:45:22,426 - INFO - 
+Epoch 24/50
+2026-07-16 12:45:46,988 - INFO - Train Loss: 0.3508, Train Acc: 0.8821
+2026-07-16 12:45:46,988 - INFO - Val Loss: 0.3807, Val Acc: 0.8922, Val F1: 0.8253, Val AUC: 0.9901
+2026-07-16 12:45:46,988 - INFO - 
+Epoch 25/50
+2026-07-16 12:46:11,857 - INFO - Train Loss: 0.3463, Train Acc: 0.8842
+2026-07-16 12:46:11,858 - INFO - Val Loss: 0.3903, Val Acc: 0.8878, Val F1: 0.8165, Val AUC: 0.9903
+2026-07-16 12:46:11,858 - INFO - 
+Epoch 26/50
+2026-07-16 12:46:39,363 - INFO - Train Loss: 0.3339, Train Acc: 0.8904
+2026-07-16 12:46:39,364 - INFO - Val Loss: 0.3568, Val Acc: 0.9068, Val F1: 0.8522, Val AUC: 0.9885
+2026-07-16 12:46:39,422 - INFO -   -> New best model saved (F1=0.8522)
+2026-07-16 12:46:39,422 - INFO - 
+Epoch 27/50
+2026-07-16 12:47:04,163 - INFO - Train Loss: 0.3286, Train Acc: 0.8900
+2026-07-16 12:47:04,163 - INFO - Val Loss: 0.3845, Val Acc: 0.8980, Val F1: 0.8359, Val AUC: 0.9893
+2026-07-16 12:47:04,163 - INFO - 
+Epoch 28/50
+2026-07-16 12:47:28,792 - INFO - Train Loss: 0.3223, Train Acc: 0.8917
+2026-07-16 12:47:28,792 - INFO - Val Loss: 0.2663, Val Acc: 0.9281, Val F1: 0.8901, Val AUC: 0.9926
+2026-07-16 12:47:28,842 - INFO -   -> New best model saved (F1=0.8901)
+2026-07-16 12:47:28,842 - INFO - 
+Epoch 29/50
+2026-07-16 12:47:53,467 - INFO - Train Loss: 0.3276, Train Acc: 0.8931
+2026-07-16 12:47:53,467 - INFO - Val Loss: 0.3420, Val Acc: 0.9029, Val F1: 0.8450, Val AUC: 0.9931
+2026-07-16 12:47:53,467 - INFO - 
+Epoch 30/50
+2026-07-16 12:48:18,097 - INFO - Train Loss: 0.3080, Train Acc: 0.8999
+2026-07-16 12:48:18,097 - INFO - Val Loss: 0.5638, Val Acc: 0.8600, Val F1: 0.7596, Val AUC: 0.9916
+2026-07-16 12:48:18,097 - INFO - 
+Epoch 31/50
+2026-07-16 12:48:42,613 - INFO - Train Loss: 0.3091, Train Acc: 0.8990
+2026-07-16 12:48:42,613 - INFO - Val Loss: 0.2337, Val Acc: 0.9376, Val F1: 0.9059, Val AUC: 0.9944
+2026-07-16 12:48:42,650 - INFO -   -> New best model saved (F1=0.9059)
+2026-07-16 12:48:42,651 - INFO - 
+Epoch 32/50
+2026-07-16 12:49:07,275 - INFO - Train Loss: 0.3014, Train Acc: 0.9004
+2026-07-16 12:49:07,275 - INFO - Val Loss: 0.1752, Val Acc: 0.9571, Val F1: 0.9374, Val AUC: 0.9951
+2026-07-16 12:49:07,321 - INFO -   -> New best model saved (F1=0.9374)
+2026-07-16 12:49:07,322 - INFO - 
+Epoch 33/50
+2026-07-16 12:49:33,651 - INFO - Train Loss: 0.3041, Train Acc: 0.9022
+2026-07-16 12:49:33,652 - INFO - Val Loss: 0.2546, Val Acc: 0.9309, Val F1: 0.8945, Val AUC: 0.9955
+2026-07-16 12:49:33,652 - INFO - 
+Epoch 34/50
+2026-07-16 12:50:04,090 - INFO - Train Loss: 0.2880, Train Acc: 0.9074
+2026-07-16 12:50:04,090 - INFO - Val Loss: 0.2910, Val Acc: 0.9175, Val F1: 0.8713, Val AUC: 0.9946
+2026-07-16 12:50:04,091 - INFO - 
+Epoch 35/50
+2026-07-16 12:50:29,026 - INFO - Train Loss: 0.2802, Train Acc: 0.9104
+2026-07-16 12:50:29,026 - INFO - Val Loss: 0.2526, Val Acc: 0.9281, Val F1: 0.8899, Val AUC: 0.9956
+2026-07-16 12:50:29,027 - INFO - 
+Epoch 36/50
+2026-07-16 12:50:53,769 - INFO - Train Loss: 0.2850, Train Acc: 0.9065
+2026-07-16 12:50:53,770 - INFO - Val Loss: 0.1660, Val Acc: 0.9615, Val F1: 0.9441, Val AUC: 0.9958
+2026-07-16 12:50:53,811 - INFO -   -> New best model saved (F1=0.9441)
+2026-07-16 12:50:53,811 - INFO - 
+Epoch 37/50
+2026-07-16 12:51:18,453 - INFO - Train Loss: 0.2879, Train Acc: 0.9049
+2026-07-16 12:51:18,453 - INFO - Val Loss: 0.2458, Val Acc: 0.9332, Val F1: 0.8984, Val AUC: 0.9960
+2026-07-16 12:51:18,453 - INFO - 
+Epoch 38/50
+2026-07-16 12:51:43,809 - INFO - Train Loss: 0.2790, Train Acc: 0.9091
+2026-07-16 12:51:43,810 - INFO - Val Loss: 0.5410, Val Acc: 0.8690, Val F1: 0.7783, Val AUC: 0.9946
+2026-07-16 12:51:43,810 - INFO - 
+Epoch 39/50
+2026-07-16 12:52:08,523 - INFO - Train Loss: 0.2755, Train Acc: 0.9088
+2026-07-16 12:52:08,523 - INFO - Val Loss: 0.2033, Val Acc: 0.9490, Val F1: 0.9242, Val AUC: 0.9947
+2026-07-16 12:52:08,523 - INFO - 
+Epoch 40/50
+2026-07-16 12:52:33,148 - INFO - Train Loss: 0.2573, Train Acc: 0.9165
+2026-07-16 12:52:33,148 - INFO - Val Loss: 0.2584, Val Acc: 0.9330, Val F1: 0.8978, Val AUC: 0.9957
+2026-07-16 12:52:33,148 - INFO - 
+Epoch 41/50
+2026-07-16 12:52:57,898 - INFO - Train Loss: 0.2676, Train Acc: 0.9160
+2026-07-16 12:52:57,898 - INFO - Val Loss: 0.2061, Val Acc: 0.9464, Val F1: 0.9201, Val AUC: 0.9957
+2026-07-16 12:52:57,898 - INFO - 
+Epoch 42/50
+2026-07-16 12:53:22,494 - INFO - Train Loss: 0.2599, Train Acc: 0.9164
+2026-07-16 12:53:22,494 - INFO - Val Loss: 0.2577, Val Acc: 0.9304, Val F1: 0.8937, Val AUC: 0.9970
+2026-07-16 12:53:22,494 - INFO - 
+Epoch 43/50
+2026-07-16 12:53:47,097 - INFO - Train Loss: 0.2419, Train Acc: 0.9186
+2026-07-16 12:53:47,097 - INFO - Val Loss: 0.1559, Val Acc: 0.9636, Val F1: 0.9471, Val AUC: 0.9973
+2026-07-16 12:53:47,149 - INFO -   -> New best model saved (F1=0.9471)
+2026-07-16 12:53:47,150 - INFO - 
+Epoch 44/50
+2026-07-16 12:54:11,795 - INFO - Train Loss: 0.2429, Train Acc: 0.9207
+2026-07-16 12:54:11,796 - INFO - Val Loss: 0.2546, Val Acc: 0.9342, Val F1: 0.8998, Val AUC: 0.9971
+2026-07-16 12:54:11,796 - INFO - 
+Epoch 45/50
+2026-07-16 12:54:36,474 - INFO - Train Loss: 0.2500, Train Acc: 0.9198
+2026-07-16 12:54:36,474 - INFO - Val Loss: 0.2269, Val Acc: 0.9416, Val F1: 0.9121, Val AUC: 0.9976
+2026-07-16 12:54:36,474 - INFO - 
+Epoch 46/50
+2026-07-16 12:55:01,020 - INFO - Train Loss: 0.2348, Train Acc: 0.9255
+2026-07-16 12:55:01,020 - INFO - Val Loss: 0.1836, Val Acc: 0.9550, Val F1: 0.9337, Val AUC: 0.9977
+2026-07-16 12:55:01,020 - INFO - 
+Epoch 47/50
+2026-07-16 12:55:25,659 - INFO - Train Loss: 0.2369, Train Acc: 0.9251
+2026-07-16 12:55:25,659 - INFO - Val Loss: 0.1557, Val Acc: 0.9655, Val F1: 0.9499, Val AUC: 0.9974
+2026-07-16 12:55:25,704 - INFO -   -> New best model saved (F1=0.9499)
+2026-07-16 12:55:25,705 - INFO - 
+Epoch 48/50
+2026-07-16 12:55:50,509 - INFO - Train Loss: 0.2274, Train Acc: 0.9264
+2026-07-16 12:55:50,509 - INFO - Val Loss: 0.1571, Val Acc: 0.9629, Val F1: 0.9460, Val AUC: 0.9977
+2026-07-16 12:55:50,509 - INFO - 
+Epoch 49/50
+2026-07-16 12:56:15,161 - INFO - Train Loss: 0.2296, Train Acc: 0.9286
+2026-07-16 12:56:15,162 - INFO - Val Loss: 0.2025, Val Acc: 0.9490, Val F1: 0.9242, Val AUC: 0.9977
+2026-07-16 12:56:15,162 - INFO - 
+Epoch 50/50
+2026-07-16 12:56:40,511 - INFO - Train Loss: 0.2201, Train Acc: 0.9302
+2026-07-16 12:56:40,511 - INFO - Val Loss: 0.2280, Val Acc: 0.9406, Val F1: 0.9107, Val AUC: 0.9969
+2026-07-16 12:56:43,755 - INFO - 
+Run 4 Test Results:
+2026-07-16 12:56:43,756 - INFO -   Accuracy: 0.9540, F1: 0.9249, AUC: 0.9965
+2026-07-16 12:56:43,756 - INFO - 
+============================================================
+Starting run 5/5
+============================================================
+2026-07-16 12:56:43,757 - INFO - 
+Run 5: Device = mps
+2026-07-16 12:56:48,587 - INFO - Train class distribution: 0=5570.0, 1=3211.0 (ratio 1:0.58)
+2026-07-16 12:56:48,590 - INFO - Using class weighting: pos_weight = 1.73
+2026-07-16 12:56:48,590 - INFO - 
+Epoch 1/50
+2026-07-16 12:57:13,260 - INFO - Train Loss: 0.8138, Train Acc: 0.6234
+2026-07-16 12:57:13,260 - INFO - Val Loss: 0.7105, Val Acc: 0.6703, Val F1: 0.6452, Val AUC: 0.8020
+2026-07-16 12:57:13,301 - INFO -   -> New best model saved (F1=0.6452)
+2026-07-16 12:57:13,302 - INFO - 
+Epoch 2/50
+2026-07-16 12:57:37,891 - INFO - Train Loss: 0.7405, Train Acc: 0.6720
+2026-07-16 12:57:37,892 - INFO - Val Loss: 0.6295, Val Acc: 0.7628, Val F1: 0.6658, Val AUC: 0.8297
+2026-07-16 12:57:37,938 - INFO -   -> New best model saved (F1=0.6658)
+2026-07-16 12:57:37,938 - INFO - 
+Epoch 3/50
+2026-07-16 12:58:02,567 - INFO - Train Loss: 0.6747, Train Acc: 0.7252
+2026-07-16 12:58:02,567 - INFO - Val Loss: 0.7008, Val Acc: 0.5859, Val F1: 0.6232, Val AUC: 0.8601
+2026-07-16 12:58:02,567 - INFO - 
+Epoch 4/50
+2026-07-16 12:58:27,200 - INFO - Train Loss: 0.6347, Train Acc: 0.7562
+2026-07-16 12:58:27,201 - INFO - Val Loss: 0.5458, Val Acc: 0.7974, Val F1: 0.7345, Val AUC: 0.8873
+2026-07-16 12:58:27,255 - INFO -   -> New best model saved (F1=0.7345)
+2026-07-16 12:58:27,255 - INFO - 
+Epoch 5/50
+2026-07-16 12:58:51,851 - INFO - Train Loss: 0.6152, Train Acc: 0.7657
+2026-07-16 12:58:51,851 - INFO - Val Loss: 0.5177, Val Acc: 0.8340, Val F1: 0.7330, Val AUC: 0.8969
+2026-07-16 12:58:51,851 - INFO - 
+Epoch 6/50
+2026-07-16 12:59:16,534 - INFO - Train Loss: 0.5826, Train Acc: 0.7848
+2026-07-16 12:59:16,534 - INFO - Val Loss: 0.4947, Val Acc: 0.8365, Val F1: 0.7424, Val AUC: 0.9054
+2026-07-16 12:59:16,575 - INFO -   -> New best model saved (F1=0.7424)
+2026-07-16 12:59:16,575 - INFO - 
+Epoch 7/50
+2026-07-16 12:59:41,153 - INFO - Train Loss: 0.5711, Train Acc: 0.7923
+2026-07-16 12:59:41,154 - INFO - Val Loss: 0.4731, Val Acc: 0.8507, Val F1: 0.7660, Val AUC: 0.9185
+2026-07-16 12:59:41,206 - INFO -   -> New best model saved (F1=0.7660)
+2026-07-16 12:59:41,206 - INFO - 
+Epoch 8/50
+2026-07-16 13:00:05,864 - INFO - Train Loss: 0.5552, Train Acc: 0.7957
+2026-07-16 13:00:05,864 - INFO - Val Loss: 0.4784, Val Acc: 0.8481, Val F1: 0.7527, Val AUC: 0.9243
+2026-07-16 13:00:05,864 - INFO - 
+Epoch 9/50
+2026-07-16 13:00:30,448 - INFO - Train Loss: 0.5349, Train Acc: 0.8071
+2026-07-16 13:00:30,448 - INFO - Val Loss: 0.4217, Val Acc: 0.8660, Val F1: 0.8000, Val AUC: 0.9332
+2026-07-16 13:00:30,486 - INFO -   -> New best model saved (F1=0.8000)
+2026-07-16 13:00:30,486 - INFO - 
+Epoch 10/50
+2026-07-16 13:00:55,388 - INFO - Train Loss: 0.5244, Train Acc: 0.8091
+2026-07-16 13:00:55,389 - INFO - Val Loss: 0.4543, Val Acc: 0.8644, Val F1: 0.7798, Val AUC: 0.9364
+2026-07-16 13:00:55,389 - INFO - 
+Epoch 11/50
+2026-07-16 13:01:20,088 - INFO - Train Loss: 0.4997, Train Acc: 0.8210
+2026-07-16 13:01:20,088 - INFO - Val Loss: 0.4265, Val Acc: 0.8690, Val F1: 0.7872, Val AUC: 0.9511
+2026-07-16 13:01:20,088 - INFO - 
+Epoch 12/50
+2026-07-16 13:01:44,745 - INFO - Train Loss: 0.4932, Train Acc: 0.8214
+2026-07-16 13:01:44,745 - INFO - Val Loss: 0.5873, Val Acc: 0.8349, Val F1: 0.7060, Val AUC: 0.9528
+2026-07-16 13:01:44,745 - INFO - 
+Epoch 13/50
+2026-07-16 13:02:09,805 - INFO - Train Loss: 0.4830, Train Acc: 0.8287
+2026-07-16 13:02:09,806 - INFO - Val Loss: 0.5642, Val Acc: 0.8419, Val F1: 0.7209, Val AUC: 0.9601
+2026-07-16 13:02:09,806 - INFO - 
+Epoch 14/50
+2026-07-16 13:02:34,432 - INFO - Train Loss: 0.4713, Train Acc: 0.8316
+2026-07-16 13:02:34,432 - INFO - Val Loss: 0.5243, Val Acc: 0.8486, Val F1: 0.7359, Val AUC: 0.9698
+2026-07-16 13:02:34,432 - INFO - 
+Epoch 15/50
+2026-07-16 13:02:59,187 - INFO - Train Loss: 0.4630, Train Acc: 0.8376
+2026-07-16 13:02:59,187 - INFO - Val Loss: 0.5180, Val Acc: 0.8495, Val F1: 0.7376, Val AUC: 0.9681
+2026-07-16 13:02:59,187 - INFO - 
+Epoch 16/50
+2026-07-16 13:03:23,856 - INFO - Train Loss: 0.4386, Train Acc: 0.8505
+2026-07-16 13:03:23,856 - INFO - Val Loss: 0.4556, Val Acc: 0.8678, Val F1: 0.7780, Val AUC: 0.9719
+2026-07-16 13:03:23,856 - INFO - 
+Epoch 17/50
+2026-07-16 13:03:48,484 - INFO - Train Loss: 0.4241, Train Acc: 0.8522
+2026-07-16 13:03:48,485 - INFO - Val Loss: 0.4164, Val Acc: 0.8764, Val F1: 0.7952, Val AUC: 0.9744
+2026-07-16 13:03:48,485 - INFO - 
+Epoch 18/50
+2026-07-16 13:04:13,110 - INFO - Train Loss: 0.4016, Train Acc: 0.8584
+2026-07-16 13:04:13,111 - INFO - Val Loss: 0.4217, Val Acc: 0.8815, Val F1: 0.8050, Val AUC: 0.9755
+2026-07-16 13:04:13,166 - INFO -   -> New best model saved (F1=0.8050)
+2026-07-16 13:04:13,166 - INFO - 
+Epoch 19/50
+2026-07-16 13:04:37,853 - INFO - Train Loss: 0.3880, Train Acc: 0.8678
+2026-07-16 13:04:37,854 - INFO - Val Loss: 0.3911, Val Acc: 0.8878, Val F1: 0.8174, Val AUC: 0.9793
+2026-07-16 13:04:37,894 - INFO -   -> New best model saved (F1=0.8174)
+2026-07-16 13:04:37,894 - INFO - 
+Epoch 20/50
+2026-07-16 13:05:02,447 - INFO - Train Loss: 0.3866, Train Acc: 0.8658
+2026-07-16 13:05:02,447 - INFO - Val Loss: 0.3817, Val Acc: 0.8878, Val F1: 0.8171, Val AUC: 0.9823
+2026-07-16 13:05:02,447 - INFO - 
+Epoch 21/50
+2026-07-16 13:05:27,114 - INFO - Train Loss: 0.3792, Train Acc: 0.8684
+2026-07-16 13:05:27,115 - INFO - Val Loss: 0.2958, Val Acc: 0.9165, Val F1: 0.8710, Val AUC: 0.9843
+2026-07-16 13:05:27,153 - INFO -   -> New best model saved (F1=0.8710)
+2026-07-16 13:05:27,153 - INFO - 
+Epoch 22/50
+2026-07-16 13:05:51,827 - INFO - Train Loss: 0.3638, Train Acc: 0.8786
+2026-07-16 13:05:51,827 - INFO - Val Loss: 0.5977, Val Acc: 0.8460, Val F1: 0.7290, Val AUC: 0.9818
+2026-07-16 13:05:51,827 - INFO - 
+Epoch 23/50
+2026-07-16 13:06:16,536 - INFO - Train Loss: 0.3619, Train Acc: 0.8743
+2026-07-16 13:06:16,537 - INFO - Val Loss: 0.3234, Val Acc: 0.9056, Val F1: 0.8511, Val AUC: 0.9863
+2026-07-16 13:06:16,537 - INFO - 
+Epoch 24/50
+2026-07-16 13:06:41,903 - INFO - Train Loss: 0.3583, Train Acc: 0.8764
+2026-07-16 13:06:41,903 - INFO - Val Loss: 0.5612, Val Acc: 0.8565, Val F1: 0.7519, Val AUC: 0.9854
+2026-07-16 13:06:41,903 - INFO - 
+Epoch 25/50
+2026-07-16 13:07:06,865 - INFO - Train Loss: 0.3531, Train Acc: 0.8783
+2026-07-16 13:07:06,865 - INFO - Val Loss: 0.4904, Val Acc: 0.8720, Val F1: 0.7847, Val AUC: 0.9877
+2026-07-16 13:07:06,866 - INFO - 
+Epoch 26/50
+2026-07-16 13:07:31,486 - INFO - Train Loss: 0.3305, Train Acc: 0.8891
+2026-07-16 13:07:31,487 - INFO - Val Loss: 0.5081, Val Acc: 0.8695, Val F1: 0.7796, Val AUC: 0.9861
+2026-07-16 13:07:31,487 - INFO - 
+Epoch 27/50
+2026-07-16 13:07:56,274 - INFO - Train Loss: 0.3402, Train Acc: 0.8842
+2026-07-16 13:07:56,274 - INFO - Val Loss: 0.3957, Val Acc: 0.8950, Val F1: 0.8299, Val AUC: 0.9902
+2026-07-16 13:07:56,275 - INFO - 
+Epoch 28/50
+2026-07-16 13:08:21,121 - INFO - Train Loss: 0.3180, Train Acc: 0.8966
+2026-07-16 13:08:21,122 - INFO - Val Loss: 0.4305, Val Acc: 0.8848, Val F1: 0.8101, Val AUC: 0.9917
+2026-07-16 13:08:21,122 - INFO - 
+Epoch 29/50
+2026-07-16 13:08:46,043 - INFO - Train Loss: 0.3098, Train Acc: 0.8989
+2026-07-16 13:08:46,044 - INFO - Val Loss: 0.6207, Val Acc: 0.8437, Val F1: 0.7238, Val AUC: 0.9907
+2026-07-16 13:08:46,044 - INFO - 
+Epoch 30/50
+2026-07-16 13:09:10,702 - INFO - Train Loss: 0.3093, Train Acc: 0.8966
+2026-07-16 13:09:10,702 - INFO - Val Loss: 0.5401, Val Acc: 0.8623, Val F1: 0.7643, Val AUC: 0.9916
+2026-07-16 13:09:10,702 - INFO - 
+Epoch 31/50
+2026-07-16 13:09:35,861 - INFO - Train Loss: 0.2963, Train Acc: 0.9014
+2026-07-16 13:09:35,861 - INFO - Val Loss: 0.3149, Val Acc: 0.9091, Val F1: 0.8562, Val AUC: 0.9937
+2026-07-16 13:09:35,861 - INFO - 
+Epoch 32/50
+2026-07-16 13:10:01,861 - INFO - Train Loss: 0.2905, Train Acc: 0.9031
+2026-07-16 13:10:01,861 - INFO - Val Loss: 0.6268, Val Acc: 0.8484, Val F1: 0.7341, Val AUC: 0.9927
+2026-07-16 13:10:01,861 - INFO - 
+Epoch 33/50
+2026-07-16 13:10:27,176 - INFO - Train Loss: 0.3067, Train Acc: 0.9007
+2026-07-16 13:10:27,177 - INFO - Val Loss: 0.6314, Val Acc: 0.8505, Val F1: 0.7388, Val AUC: 0.9923
+2026-07-16 13:10:27,177 - INFO - 
+Epoch 34/50
+2026-07-16 13:10:51,908 - INFO - Train Loss: 0.2904, Train Acc: 0.9022
+2026-07-16 13:10:51,909 - INFO - Val Loss: 0.3536, Val Acc: 0.9019, Val F1: 0.8428, Val AUC: 0.9940
+2026-07-16 13:10:51,909 - INFO - 
+Epoch 35/50
+2026-07-16 13:11:19,652 - INFO - Train Loss: 0.2956, Train Acc: 0.9055
+2026-07-16 13:11:19,652 - INFO - Val Loss: 0.4089, Val Acc: 0.8901, Val F1: 0.8205, Val AUC: 0.9939
+2026-07-16 13:11:19,653 - INFO - 
+Epoch 36/50
+2026-07-16 13:11:44,987 - INFO - Train Loss: 0.2890, Train Acc: 0.9033
+2026-07-16 13:11:44,987 - INFO - Val Loss: 0.3549, Val Acc: 0.9031, Val F1: 0.8450, Val AUC: 0.9943
+2026-07-16 13:11:44,987 - INFO - Early stopping at epoch 36
+2026-07-16 13:11:47,854 - INFO - 
+Run 5 Test Results:
+2026-07-16 13:11:47,854 - INFO -   Accuracy: 0.9249, F1: 0.8712, AUC: 0.9939
+2026-07-16 13:11:47,866 - INFO - 
+Saved all runs results to ./outputs/models/cnn_cross_fold/fold_brazil/merged_japan_usa_cnn_stage1_results.csv
+2026-07-16 13:11:47,866 - INFO - 
+============================================================
+2026-07-16 13:11:47,866 - INFO - SUMMARY OF ALL RUNS
+2026-07-16 13:11:47,866 - INFO - ============================================================
+2026-07-16 13:11:47,870 - INFO - test_acc: 0.9545 ± 0.0194
+2026-07-16 13:11:47,870 - INFO - test_prec: 0.9954 ± 0.0056
+2026-07-16 13:11:47,870 - INFO - test_rec: 0.8659 ± 0.0634
+2026-07-16 13:11:47,870 - INFO - test_f1: 0.9247 ± 0.0340
+2026-07-16 13:11:47,870 - INFO - test_auc: 0.9964 ± 0.0013
+2026-07-16 13:11:47,873 - INFO - 
+Best overall run: 1 (test F1=0.9775)
+2026-07-16 13:11:47,873 - INFO - Best model saved at: ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn_run1.pth
+2026-07-16 13:11:47,882 - INFO - Copied best model to ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn.pth
+2026-07-16 13:12:08,102 - INFO - 
+All plots and summaries saved to: ./outputs/models/cnn_cross_fold/fold_brazil/plots
+2026-07-16 13:12:08,103 - INFO - Stage 1 training completed. Ready for Stage 2 (GNN).
+2026-07-16 23:07:01,107 - INFO - ============================================================
+2026-07-16 23:07:01,107 - INFO -  Stage 1: CNN Training Started (TRAINONLY, leakage-safe)
+2026-07-16 23:07:01,107 - INFO - ============================================================
+2026-07-16 23:07:01,107 - INFO - Output directory: ./outputs/models/cnn_cross_fold/fold_brazil
+2026-07-16 23:07:01,107 - INFO - Log file: ./outputs/models/cnn_cross_fold/fold_brazil/logs/step3_cnn.log
+2026-07-16 23:07:01,108 - INFO - Countries to pool for training: ['japan', 'usa']
+2026-07-16 23:07:02,204 - INFO -  Merged 2 countries (trainonly) into temporary files
+2026-07-16 23:07:02,205 - INFO - Using images: /var/folders/83/s1qld1k57b3bky6vw6j9q44m0000gn/T/tmptn7uwkf6.h5
+2026-07-16 23:07:02,205 - INFO - Using labels: /var/folders/83/s1qld1k57b3bky6vw6j9q44m0000gn/T/tmp3kv9vj6a.csv
+2026-07-16 23:07:02,207 - INFO - Total samples: 5741
+2026-07-16 23:07:02,211 - INFO - Saved split to ./outputs/models/cnn_cross_fold/fold_brazil/merged_japan_usa_trainonly_split.json
+2026-07-16 23:07:02,211 - INFO - 
+============================================================
+Starting run 1/5
+============================================================
+2026-07-16 23:07:02,231 - INFO - 
+Run 1: Device = mps
+2026-07-16 23:07:03,726 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-16 23:07:03,728 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-16 23:07:03,728 - INFO - 
+Epoch 1/50
+2026-07-16 23:07:10,022 - INFO - Train Loss: 0.7964, Train Acc: 0.6498
+2026-07-16 23:07:10,022 - INFO - Val Loss: 1.3054, Val Acc: 0.3775, Val F1: 0.5355, Val AUC: 0.7991
+2026-07-16 23:07:10,055 - INFO -   -> New best model saved (F1=0.5355)
+2026-07-16 23:07:10,055 - INFO - 
+Epoch 2/50
+2026-07-16 23:07:16,018 - INFO - Train Loss: 0.6632, Train Acc: 0.7414
+2026-07-16 23:07:16,018 - INFO - Val Loss: 0.6054, Val Acc: 0.7921, Val F1: 0.7145, Val AUC: 0.8472
+2026-07-16 23:07:16,044 - INFO -   -> New best model saved (F1=0.7145)
+2026-07-16 23:07:16,044 - INFO - 
+Epoch 3/50
+2026-07-16 23:07:22,276 - INFO - Train Loss: 0.5934, Train Acc: 0.7907
+2026-07-16 23:07:22,277 - INFO - Val Loss: 0.9419, Val Acc: 0.4367, Val F1: 0.5587, Val AUC: 0.8561
+2026-07-16 23:07:22,277 - INFO - 
+Epoch 4/50
+2026-07-16 23:07:29,274 - INFO - Train Loss: 0.5688, Train Acc: 0.8026
+2026-07-16 23:07:29,274 - INFO - Val Loss: 0.5482, Val Acc: 0.8211, Val F1: 0.7326, Val AUC: 0.8750
+2026-07-16 23:07:29,308 - INFO -   -> New best model saved (F1=0.7326)
+2026-07-16 23:07:29,308 - INFO - 
+Epoch 5/50
+2026-07-16 23:07:35,186 - INFO - Train Loss: 0.5354, Train Acc: 0.8208
+2026-07-16 23:07:35,186 - INFO - Val Loss: 0.6676, Val Acc: 0.8246, Val F1: 0.6998, Val AUC: 0.8797
+2026-07-16 23:07:35,186 - INFO - 
+Epoch 6/50
+2026-07-16 23:07:40,937 - INFO - Train Loss: 0.5184, Train Acc: 0.8211
+2026-07-16 23:07:40,937 - INFO - Val Loss: 0.8452, Val Acc: 0.7816, Val F1: 0.5628, Val AUC: 0.8855
+2026-07-16 23:07:40,937 - INFO - 
+Epoch 7/50
+2026-07-16 23:07:46,814 - INFO - Train Loss: 0.5081, Train Acc: 0.8280
+2026-07-16 23:07:46,814 - INFO - Val Loss: 0.6725, Val Acc: 0.8328, Val F1: 0.7131, Val AUC: 0.8887
+2026-07-16 23:07:46,814 - INFO - 
+Epoch 8/50
+2026-07-16 23:07:52,982 - INFO - Train Loss: 0.4907, Train Acc: 0.8340
+2026-07-16 23:07:52,982 - INFO - Val Loss: 0.5289, Val Acc: 0.8444, Val F1: 0.7528, Val AUC: 0.9011
+2026-07-16 23:07:53,012 - INFO -   -> New best model saved (F1=0.7528)
+2026-07-16 23:07:53,012 - INFO - 
+Epoch 9/50
+2026-07-16 23:07:58,998 - INFO - Train Loss: 0.4628, Train Acc: 0.8454
+2026-07-16 23:07:58,998 - INFO - Val Loss: 0.8047, Val Acc: 0.6039, Val F1: 0.6361, Val AUC: 0.8896
+2026-07-16 23:07:58,998 - INFO - 
+Epoch 10/50
+2026-07-16 23:08:04,765 - INFO - Train Loss: 0.4595, Train Acc: 0.8430
+2026-07-16 23:08:04,765 - INFO - Val Loss: 0.5280, Val Acc: 0.8525, Val F1: 0.7661, Val AUC: 0.9056
+2026-07-16 23:08:04,792 - INFO -   -> New best model saved (F1=0.7661)
+2026-07-16 23:08:04,792 - INFO - 
+Epoch 11/50
+2026-07-16 23:08:10,543 - INFO - Train Loss: 0.4468, Train Acc: 0.8440
+2026-07-16 23:08:10,543 - INFO - Val Loss: 0.4710, Val Acc: 0.8502, Val F1: 0.7802, Val AUC: 0.9106
+2026-07-16 23:08:10,571 - INFO -   -> New best model saved (F1=0.7802)
+2026-07-16 23:08:10,571 - INFO - 
+Epoch 12/50
+2026-07-16 23:08:16,650 - INFO - Train Loss: 0.4142, Train Acc: 0.8693
+2026-07-16 23:08:16,651 - INFO - Val Loss: 0.5240, Val Acc: 0.8153, Val F1: 0.7602, Val AUC: 0.8925
+2026-07-16 23:08:16,651 - INFO - 
+Epoch 13/50
+2026-07-16 23:08:22,728 - INFO - Train Loss: 0.4174, Train Acc: 0.8659
+2026-07-16 23:08:22,728 - INFO - Val Loss: 0.4664, Val Acc: 0.8444, Val F1: 0.7832, Val AUC: 0.9114
+2026-07-16 23:08:22,754 - INFO -   -> New best model saved (F1=0.7832)
+2026-07-16 23:08:22,754 - INFO - 
+Epoch 14/50
+2026-07-16 23:08:28,833 - INFO - Train Loss: 0.4055, Train Acc: 0.8678
+2026-07-16 23:08:28,833 - INFO - Val Loss: 0.5201, Val Acc: 0.7886, Val F1: 0.7465, Val AUC: 0.9076
+2026-07-16 23:08:28,833 - INFO - 
+Epoch 15/50
+2026-07-16 23:08:34,729 - INFO - Train Loss: 0.3992, Train Acc: 0.8624
+2026-07-16 23:08:34,729 - INFO - Val Loss: 0.5144, Val Acc: 0.7851, Val F1: 0.7368, Val AUC: 0.9013
+2026-07-16 23:08:34,729 - INFO - 
+Epoch 16/50
+2026-07-16 23:08:40,485 - INFO - Train Loss: 0.3649, Train Acc: 0.8790
+2026-07-16 23:08:40,485 - INFO - Val Loss: 0.5431, Val Acc: 0.7689, Val F1: 0.7357, Val AUC: 0.9150
+2026-07-16 23:08:40,485 - INFO - 
+Epoch 17/50
+2026-07-16 23:08:46,429 - INFO - Train Loss: 0.3598, Train Acc: 0.8840
+2026-07-16 23:08:46,430 - INFO - Val Loss: 0.5032, Val Acc: 0.8118, Val F1: 0.7686, Val AUC: 0.9190
+2026-07-16 23:08:46,430 - INFO - 
+Epoch 18/50
+2026-07-16 23:08:52,109 - INFO - Train Loss: 0.3522, Train Acc: 0.8805
+2026-07-16 23:08:52,109 - INFO - Val Loss: 0.4740, Val Acc: 0.8362, Val F1: 0.7834, Val AUC: 0.9197
+2026-07-16 23:08:52,136 - INFO -   -> New best model saved (F1=0.7834)
+2026-07-16 23:08:52,136 - INFO - 
+Epoch 19/50
+2026-07-16 23:08:57,833 - INFO - Train Loss: 0.3397, Train Acc: 0.8910
+2026-07-16 23:08:57,833 - INFO - Val Loss: 0.4568, Val Acc: 0.8502, Val F1: 0.8012, Val AUC: 0.9223
+2026-07-16 23:08:57,861 - INFO -   -> New best model saved (F1=0.8012)
+2026-07-16 23:08:57,861 - INFO - 
+Epoch 20/50
+2026-07-16 23:09:03,592 - INFO - Train Loss: 0.3172, Train Acc: 0.8970
+2026-07-16 23:09:03,592 - INFO - Val Loss: 0.4596, Val Acc: 0.8490, Val F1: 0.7917, Val AUC: 0.9278
+2026-07-16 23:09:03,592 - INFO - 
+Epoch 21/50
+2026-07-16 23:09:10,075 - INFO - Train Loss: 0.3176, Train Acc: 0.8987
+2026-07-16 23:09:10,075 - INFO - Val Loss: 0.4558, Val Acc: 0.8455, Val F1: 0.7951, Val AUC: 0.9237
+2026-07-16 23:09:10,075 - INFO - 
+Epoch 22/50
+2026-07-16 23:09:17,634 - INFO - Train Loss: 0.3178, Train Acc: 0.8950
+2026-07-16 23:09:17,634 - INFO - Val Loss: 0.4985, Val Acc: 0.8746, Val F1: 0.8092, Val AUC: 0.9318
+2026-07-16 23:09:17,668 - INFO -   -> New best model saved (F1=0.8092)
+2026-07-16 23:09:17,668 - INFO - 
+Epoch 23/50
+2026-07-16 23:09:24,775 - INFO - Train Loss: 0.2949, Train Acc: 0.9047
+2026-07-16 23:09:24,775 - INFO - Val Loss: 0.4206, Val Acc: 0.8560, Val F1: 0.8116, Val AUC: 0.9313
+2026-07-16 23:09:24,811 - INFO -   -> New best model saved (F1=0.8116)
+2026-07-16 23:09:24,811 - INFO - 
+Epoch 24/50
+2026-07-16 23:09:32,082 - INFO - Train Loss: 0.2772, Train Acc: 0.9129
+2026-07-16 23:09:32,083 - INFO - Val Loss: 0.4608, Val Acc: 0.8513, Val F1: 0.7968, Val AUC: 0.9226
+2026-07-16 23:09:32,083 - INFO - 
+Epoch 25/50
+2026-07-16 23:09:39,367 - INFO - Train Loss: 0.2804, Train Acc: 0.9149
+2026-07-16 23:09:39,367 - INFO - Val Loss: 0.4653, Val Acc: 0.8769, Val F1: 0.8179, Val AUC: 0.9337
+2026-07-16 23:09:39,408 - INFO -   -> New best model saved (F1=0.8179)
+2026-07-16 23:09:39,408 - INFO - 
+Epoch 26/50
+2026-07-16 23:09:45,979 - INFO - Train Loss: 0.2633, Train Acc: 0.9129
+2026-07-16 23:09:45,979 - INFO - Val Loss: 0.4892, Val Acc: 0.8304, Val F1: 0.7878, Val AUC: 0.9241
+2026-07-16 23:09:45,979 - INFO - 
+Epoch 27/50
+2026-07-16 23:09:51,947 - INFO - Train Loss: 0.2534, Train Acc: 0.9206
+2026-07-16 23:09:51,947 - INFO - Val Loss: 0.5761, Val Acc: 0.8676, Val F1: 0.8014, Val AUC: 0.9292
+2026-07-16 23:09:51,947 - INFO - 
+Epoch 28/50
+2026-07-16 23:09:57,668 - INFO - Train Loss: 0.2634, Train Acc: 0.9119
+2026-07-16 23:09:57,668 - INFO - Val Loss: 0.5483, Val Acc: 0.8769, Val F1: 0.8037, Val AUC: 0.9319
+2026-07-16 23:09:57,668 - INFO - 
+Epoch 29/50
+2026-07-16 23:10:03,548 - INFO - Train Loss: 0.2682, Train Acc: 0.9179
+2026-07-16 23:10:03,549 - INFO - Val Loss: 0.4923, Val Acc: 0.8153, Val F1: 0.7757, Val AUC: 0.9324
+2026-07-16 23:10:03,549 - INFO - 
+Epoch 30/50
+2026-07-16 23:10:09,324 - INFO - Train Loss: 0.2095, Train Acc: 0.9316
+2026-07-16 23:10:09,324 - INFO - Val Loss: 0.4827, Val Acc: 0.8479, Val F1: 0.8042, Val AUC: 0.9339
+2026-07-16 23:10:09,324 - INFO - 
+Epoch 31/50
+2026-07-16 23:10:15,327 - INFO - Train Loss: 0.2180, Train Acc: 0.9331
+2026-07-16 23:10:15,328 - INFO - Val Loss: 0.4637, Val Acc: 0.8804, Val F1: 0.8286, Val AUC: 0.9393
+2026-07-16 23:10:15,361 - INFO -   -> New best model saved (F1=0.8286)
+2026-07-16 23:10:15,361 - INFO - 
+Epoch 32/50
+2026-07-16 23:10:21,564 - INFO - Train Loss: 0.1937, Train Acc: 0.9430
+2026-07-16 23:10:21,564 - INFO - Val Loss: 0.4695, Val Acc: 0.8769, Val F1: 0.8262, Val AUC: 0.9398
+2026-07-16 23:10:21,564 - INFO - 
+Epoch 33/50
+2026-07-16 23:10:27,838 - INFO - Train Loss: 0.1882, Train Acc: 0.9400
+2026-07-16 23:10:27,839 - INFO - Val Loss: 0.4753, Val Acc: 0.8630, Val F1: 0.8046, Val AUC: 0.9322
+2026-07-16 23:10:27,839 - INFO - 
+Epoch 34/50
+2026-07-16 23:10:34,455 - INFO - Train Loss: 0.1882, Train Acc: 0.9420
+2026-07-16 23:10:34,455 - INFO - Val Loss: 0.4875, Val Acc: 0.8757, Val F1: 0.8183, Val AUC: 0.9393
+2026-07-16 23:10:34,455 - INFO - 
+Epoch 35/50
+2026-07-16 23:10:41,277 - INFO - Train Loss: 0.1808, Train Acc: 0.9403
+2026-07-16 23:10:41,277 - INFO - Val Loss: 0.4279, Val Acc: 0.8722, Val F1: 0.8297, Val AUC: 0.9430
+2026-07-16 23:10:41,312 - INFO -   -> New best model saved (F1=0.8297)
+2026-07-16 23:10:41,312 - INFO - 
+Epoch 36/50
+2026-07-16 23:10:48,415 - INFO - Train Loss: 0.1601, Train Acc: 0.9517
+2026-07-16 23:10:48,415 - INFO - Val Loss: 0.4495, Val Acc: 0.8850, Val F1: 0.8374, Val AUC: 0.9436
+2026-07-16 23:10:48,448 - INFO -   -> New best model saved (F1=0.8374)
+2026-07-16 23:10:48,448 - INFO - 
+Epoch 37/50
+2026-07-16 23:10:55,596 - INFO - Train Loss: 0.1697, Train Acc: 0.9462
+2026-07-16 23:10:55,597 - INFO - Val Loss: 0.4715, Val Acc: 0.8688, Val F1: 0.8220, Val AUC: 0.9421
+2026-07-16 23:10:55,597 - INFO - 
+Epoch 38/50
+2026-07-16 23:11:02,962 - INFO - Train Loss: 0.1809, Train Acc: 0.9452
+2026-07-16 23:11:02,962 - INFO - Val Loss: 0.4430, Val Acc: 0.8827, Val F1: 0.8347, Val AUC: 0.9449
+2026-07-16 23:11:02,962 - INFO - 
+Epoch 39/50
+2026-07-16 23:11:10,216 - INFO - Train Loss: 0.1542, Train Acc: 0.9520
+2026-07-16 23:11:10,216 - INFO - Val Loss: 0.4858, Val Acc: 0.8804, Val F1: 0.8275, Val AUC: 0.9450
+2026-07-16 23:11:10,216 - INFO - 
+Epoch 40/50
+2026-07-16 23:11:17,624 - INFO - Train Loss: 0.1583, Train Acc: 0.9535
+2026-07-16 23:11:17,624 - INFO - Val Loss: 0.4808, Val Acc: 0.8804, Val F1: 0.8309, Val AUC: 0.9448
+2026-07-16 23:11:17,624 - INFO - 
+Epoch 41/50
+2026-07-16 23:11:25,042 - INFO - Train Loss: 0.1512, Train Acc: 0.9547
+2026-07-16 23:11:25,043 - INFO - Val Loss: 0.4673, Val Acc: 0.8839, Val F1: 0.8333, Val AUC: 0.9472
+2026-07-16 23:11:25,043 - INFO - 
+Epoch 42/50
+2026-07-16 23:11:32,208 - INFO - Train Loss: 0.1552, Train Acc: 0.9507
+2026-07-16 23:11:32,208 - INFO - Val Loss: 0.4585, Val Acc: 0.8815, Val F1: 0.8294, Val AUC: 0.9465
+2026-07-16 23:11:32,208 - INFO - 
+Epoch 43/50
+2026-07-16 23:11:39,571 - INFO - Train Loss: 0.1327, Train Acc: 0.9612
+2026-07-16 23:11:39,571 - INFO - Val Loss: 0.4710, Val Acc: 0.8746, Val F1: 0.8252, Val AUC: 0.9461
+2026-07-16 23:11:39,571 - INFO - 
+Epoch 44/50
+2026-07-16 23:11:46,716 - INFO - Train Loss: 0.1208, Train Acc: 0.9632
+2026-07-16 23:11:46,716 - INFO - Val Loss: 0.5036, Val Acc: 0.8780, Val F1: 0.8241, Val AUC: 0.9460
+2026-07-16 23:11:46,716 - INFO - 
+Epoch 45/50
+2026-07-16 23:11:53,714 - INFO - Train Loss: 0.1231, Train Acc: 0.9654
+2026-07-16 23:11:53,714 - INFO - Val Loss: 0.4857, Val Acc: 0.8769, Val F1: 0.8251, Val AUC: 0.9468
+2026-07-16 23:11:53,714 - INFO - 
+Epoch 46/50
+2026-07-16 23:12:00,852 - INFO - Train Loss: 0.1239, Train Acc: 0.9609
+2026-07-16 23:12:00,852 - INFO - Val Loss: 0.4737, Val Acc: 0.8897, Val F1: 0.8414, Val AUC: 0.9476
+2026-07-16 23:12:00,884 - INFO -   -> New best model saved (F1=0.8414)
+2026-07-16 23:12:00,884 - INFO - 
+Epoch 47/50
+2026-07-16 23:12:08,099 - INFO - Train Loss: 0.1370, Train Acc: 0.9594
+2026-07-16 23:12:08,100 - INFO - Val Loss: 0.4414, Val Acc: 0.8746, Val F1: 0.8280, Val AUC: 0.9485
+2026-07-16 23:12:08,100 - INFO - 
+Epoch 48/50
+2026-07-16 23:12:14,838 - INFO - Train Loss: 0.1209, Train Acc: 0.9619
+2026-07-16 23:12:14,838 - INFO - Val Loss: 0.5212, Val Acc: 0.8908, Val F1: 0.8390, Val AUC: 0.9488
+2026-07-16 23:12:14,838 - INFO - 
+Epoch 49/50
+2026-07-16 23:12:21,659 - INFO - Train Loss: 0.1187, Train Acc: 0.9647
+2026-07-16 23:12:21,659 - INFO - Val Loss: 0.4660, Val Acc: 0.8827, Val F1: 0.8342, Val AUC: 0.9487
+2026-07-16 23:12:21,659 - INFO - 
+Epoch 50/50
+2026-07-16 23:12:28,589 - INFO - Train Loss: 0.1296, Train Acc: 0.9597
+2026-07-16 23:12:28,589 - INFO - Val Loss: 0.4739, Val Acc: 0.8780, Val F1: 0.8298, Val AUC: 0.9481
+2026-07-16 23:12:29,314 - INFO - 
+Run 1 Test Results:
+2026-07-16 23:12:29,314 - INFO -   Accuracy: 0.8817, F1: 0.8289, AUC: 0.9362
+2026-07-16 23:12:29,314 - INFO - 
+============================================================
+Starting run 2/5
+============================================================
+2026-07-16 23:12:29,315 - INFO - 
+Run 2: Device = mps
+2026-07-16 23:12:30,905 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-16 23:12:30,909 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-16 23:12:30,910 - INFO - 
+Epoch 1/50
+2026-07-16 23:12:37,770 - INFO - Train Loss: 0.7968, Train Acc: 0.6670
+2026-07-16 23:12:37,770 - INFO - Val Loss: 0.6961, Val Acc: 0.7840, Val F1: 0.6593, Val AUC: 0.8086
+2026-07-16 23:12:37,799 - INFO -   -> New best model saved (F1=0.6593)
+2026-07-16 23:12:37,799 - INFO - 
+Epoch 2/50
+2026-07-16 23:12:44,903 - INFO - Train Loss: 0.6692, Train Acc: 0.7479
+2026-07-16 23:12:44,903 - INFO - Val Loss: 0.6893, Val Acc: 0.6632, Val F1: 0.6455, Val AUC: 0.8397
+2026-07-16 23:12:44,903 - INFO - 
+Epoch 3/50
+2026-07-16 23:12:52,058 - INFO - Train Loss: 0.6167, Train Acc: 0.7748
+2026-07-16 23:12:52,058 - INFO - Val Loss: 0.8252, Val Acc: 0.8037, Val F1: 0.6472, Val AUC: 0.8587
+2026-07-16 23:12:52,058 - INFO - 
+Epoch 4/50
+2026-07-16 23:12:59,159 - INFO - Train Loss: 0.5677, Train Acc: 0.8049
+2026-07-16 23:12:59,159 - INFO - Val Loss: 0.5944, Val Acc: 0.7515, Val F1: 0.7036, Val AUC: 0.8715
+2026-07-16 23:12:59,191 - INFO -   -> New best model saved (F1=0.7036)
+2026-07-16 23:12:59,191 - INFO - 
+Epoch 5/50
+2026-07-16 23:13:06,392 - INFO - Train Loss: 0.5448, Train Acc: 0.8141
+2026-07-16 23:13:06,392 - INFO - Val Loss: 0.9942, Val Acc: 0.7793, Val F1: 0.5662, Val AUC: 0.8709
+2026-07-16 23:13:06,392 - INFO - 
+Epoch 6/50
+2026-07-16 23:13:13,615 - INFO - Train Loss: 0.5226, Train Acc: 0.8186
+2026-07-16 23:13:13,615 - INFO - Val Loss: 0.5570, Val Acc: 0.8409, Val F1: 0.7430, Val AUC: 0.8837
+2026-07-16 23:13:13,644 - INFO -   -> New best model saved (F1=0.7430)
+2026-07-16 23:13:13,644 - INFO - 
+Epoch 7/50
+2026-07-16 23:13:20,746 - INFO - Train Loss: 0.5051, Train Acc: 0.8328
+2026-07-16 23:13:20,747 - INFO - Val Loss: 0.5104, Val Acc: 0.8409, Val F1: 0.7650, Val AUC: 0.8893
+2026-07-16 23:13:20,778 - INFO -   -> New best model saved (F1=0.7650)
+2026-07-16 23:13:20,779 - INFO - 
+Epoch 8/50
+2026-07-16 23:13:28,630 - INFO - Train Loss: 0.4836, Train Acc: 0.8342
+2026-07-16 23:13:28,630 - INFO - Val Loss: 0.6213, Val Acc: 0.6922, Val F1: 0.6692, Val AUC: 0.8758
+2026-07-16 23:13:28,630 - INFO - 
+Epoch 9/50
+2026-07-16 23:13:36,092 - INFO - Train Loss: 0.4676, Train Acc: 0.8442
+2026-07-16 23:13:36,093 - INFO - Val Loss: 0.5970, Val Acc: 0.8490, Val F1: 0.7628, Val AUC: 0.8968
+2026-07-16 23:13:36,093 - INFO - 
+Epoch 10/50
+2026-07-16 23:13:45,383 - INFO - Train Loss: 0.4554, Train Acc: 0.8467
+2026-07-16 23:13:45,384 - INFO - Val Loss: 0.5813, Val Acc: 0.8432, Val F1: 0.7399, Val AUC: 0.9029
+2026-07-16 23:13:45,384 - INFO - 
+Epoch 11/50
+2026-07-16 23:13:54,958 - INFO - Train Loss: 0.4448, Train Acc: 0.8527
+2026-07-16 23:13:54,959 - INFO - Val Loss: 0.7384, Val Acc: 0.8362, Val F1: 0.7251, Val AUC: 0.8946
+2026-07-16 23:13:54,959 - INFO - 
+Epoch 12/50
+2026-07-16 23:14:02,907 - INFO - Train Loss: 0.4159, Train Acc: 0.8552
+2026-07-16 23:14:02,907 - INFO - Val Loss: 0.5062, Val Acc: 0.8467, Val F1: 0.7747, Val AUC: 0.9038
+2026-07-16 23:14:02,941 - INFO -   -> New best model saved (F1=0.7747)
+2026-07-16 23:14:02,941 - INFO - 
+Epoch 13/50
+2026-07-16 23:14:10,322 - INFO - Train Loss: 0.4070, Train Acc: 0.8706
+2026-07-16 23:14:10,322 - INFO - Val Loss: 0.9715, Val Acc: 0.8188, Val F1: 0.6763, Val AUC: 0.9019
+2026-07-16 23:14:10,322 - INFO - 
+Epoch 14/50
+2026-07-16 23:14:17,819 - INFO - Train Loss: 0.4042, Train Acc: 0.8586
+2026-07-16 23:14:17,819 - INFO - Val Loss: 0.6724, Val Acc: 0.6736, Val F1: 0.6736, Val AUC: 0.9007
+2026-07-16 23:14:17,819 - INFO - 
+Epoch 15/50
+2026-07-16 23:14:25,071 - INFO - Train Loss: 0.3756, Train Acc: 0.8778
+2026-07-16 23:14:25,071 - INFO - Val Loss: 0.5626, Val Acc: 0.8479, Val F1: 0.7551, Val AUC: 0.9115
+2026-07-16 23:14:25,071 - INFO - 
+Epoch 16/50
+2026-07-16 23:14:32,288 - INFO - Train Loss: 0.3736, Train Acc: 0.8711
+2026-07-16 23:14:32,288 - INFO - Val Loss: 0.5088, Val Acc: 0.8037, Val F1: 0.7504, Val AUC: 0.9087
+2026-07-16 23:14:32,288 - INFO - 
+Epoch 17/50
+2026-07-16 23:14:39,135 - INFO - Train Loss: 0.3480, Train Acc: 0.8853
+2026-07-16 23:14:39,135 - INFO - Val Loss: 0.6930, Val Acc: 0.8606, Val F1: 0.7710, Val AUC: 0.9115
+2026-07-16 23:14:39,135 - INFO - 
+Epoch 18/50
+2026-07-16 23:14:46,419 - INFO - Train Loss: 0.3361, Train Acc: 0.8880
+2026-07-16 23:14:46,419 - INFO - Val Loss: 0.4616, Val Acc: 0.8444, Val F1: 0.7886, Val AUC: 0.9180
+2026-07-16 23:14:46,450 - INFO -   -> New best model saved (F1=0.7886)
+2026-07-16 23:14:46,450 - INFO - 
+Epoch 19/50
+2026-07-16 23:14:53,717 - INFO - Train Loss: 0.3299, Train Acc: 0.8927
+2026-07-16 23:14:53,717 - INFO - Val Loss: 0.6317, Val Acc: 0.8653, Val F1: 0.7860, Val AUC: 0.9149
+2026-07-16 23:14:53,717 - INFO - 
+Epoch 20/50
+2026-07-16 23:15:00,638 - INFO - Train Loss: 0.2975, Train Acc: 0.9079
+2026-07-16 23:15:00,638 - INFO - Val Loss: 0.4498, Val Acc: 0.8630, Val F1: 0.8059, Val AUC: 0.9278
+2026-07-16 23:15:00,669 - INFO -   -> New best model saved (F1=0.8059)
+2026-07-16 23:15:00,669 - INFO - 
+Epoch 21/50
+2026-07-16 23:15:08,122 - INFO - Train Loss: 0.3214, Train Acc: 0.8907
+2026-07-16 23:15:08,122 - INFO - Val Loss: 0.6915, Val Acc: 0.8571, Val F1: 0.7692, Val AUC: 0.9156
+2026-07-16 23:15:08,122 - INFO - 
+Epoch 22/50
+2026-07-16 23:15:15,835 - INFO - Train Loss: 0.3194, Train Acc: 0.9064
+2026-07-16 23:15:15,836 - INFO - Val Loss: 0.4271, Val Acc: 0.8618, Val F1: 0.8126, Val AUC: 0.9301
+2026-07-16 23:15:15,865 - INFO -   -> New best model saved (F1=0.8126)
+2026-07-16 23:15:15,865 - INFO - 
+Epoch 23/50
+2026-07-16 23:15:23,053 - INFO - Train Loss: 0.2823, Train Acc: 0.9104
+2026-07-16 23:15:23,053 - INFO - Val Loss: 0.5715, Val Acc: 0.8664, Val F1: 0.7993, Val AUC: 0.9239
+2026-07-16 23:15:23,053 - INFO - 
+Epoch 24/50
+2026-07-16 23:15:31,110 - INFO - Train Loss: 0.2884, Train Acc: 0.9097
+2026-07-16 23:15:31,110 - INFO - Val Loss: 0.4341, Val Acc: 0.8513, Val F1: 0.8066, Val AUC: 0.9310
+2026-07-16 23:15:31,110 - INFO - 
+Epoch 25/50
+2026-07-16 23:15:38,061 - INFO - Train Loss: 0.2925, Train Acc: 0.9097
+2026-07-16 23:15:38,061 - INFO - Val Loss: 0.5087, Val Acc: 0.8769, Val F1: 0.8114, Val AUC: 0.9246
+2026-07-16 23:15:38,061 - INFO - 
+Epoch 26/50
+2026-07-16 23:15:45,227 - INFO - Train Loss: 0.2828, Train Acc: 0.9116
+2026-07-16 23:15:45,227 - INFO - Val Loss: 0.4724, Val Acc: 0.8699, Val F1: 0.8095, Val AUC: 0.9292
+2026-07-16 23:15:45,227 - INFO - 
+Epoch 27/50
+2026-07-16 23:15:53,001 - INFO - Train Loss: 0.2551, Train Acc: 0.9204
+2026-07-16 23:15:53,001 - INFO - Val Loss: 0.4838, Val Acc: 0.8153, Val F1: 0.7770, Val AUC: 0.9313
+2026-07-16 23:15:53,001 - INFO - 
+Epoch 28/50
+2026-07-16 23:15:59,953 - INFO - Train Loss: 0.2531, Train Acc: 0.9221
+2026-07-16 23:15:59,953 - INFO - Val Loss: 0.5090, Val Acc: 0.8571, Val F1: 0.7890, Val AUC: 0.9252
+2026-07-16 23:15:59,953 - INFO - 
+Epoch 29/50
+2026-07-16 23:16:07,201 - INFO - Train Loss: 0.2239, Train Acc: 0.9340
+2026-07-16 23:16:07,201 - INFO - Val Loss: 0.5509, Val Acc: 0.8664, Val F1: 0.7905, Val AUC: 0.9330
+2026-07-16 23:16:07,201 - INFO - 
+Epoch 30/50
+2026-07-16 23:16:14,652 - INFO - Train Loss: 0.2137, Train Acc: 0.9323
+2026-07-16 23:16:14,652 - INFO - Val Loss: 0.4784, Val Acc: 0.8630, Val F1: 0.8201, Val AUC: 0.9348
+2026-07-16 23:16:14,681 - INFO -   -> New best model saved (F1=0.8201)
+2026-07-16 23:16:14,681 - INFO - 
+Epoch 31/50
+2026-07-16 23:16:22,074 - INFO - Train Loss: 0.1968, Train Acc: 0.9403
+2026-07-16 23:16:22,074 - INFO - Val Loss: 0.5689, Val Acc: 0.8792, Val F1: 0.8156, Val AUC: 0.9332
+2026-07-16 23:16:22,074 - INFO - 
+Epoch 32/50
+2026-07-16 23:16:29,371 - INFO - Train Loss: 0.1956, Train Acc: 0.9375
+2026-07-16 23:16:29,371 - INFO - Val Loss: 0.4630, Val Acc: 0.8653, Val F1: 0.8215, Val AUC: 0.9353
+2026-07-16 23:16:29,400 - INFO -   -> New best model saved (F1=0.8215)
+2026-07-16 23:16:29,400 - INFO - 
+Epoch 33/50
+2026-07-16 23:16:36,721 - INFO - Train Loss: 0.1854, Train Acc: 0.9375
+2026-07-16 23:16:36,722 - INFO - Val Loss: 0.5225, Val Acc: 0.8711, Val F1: 0.8159, Val AUC: 0.9308
+2026-07-16 23:16:36,722 - INFO - 
+Epoch 34/50
+2026-07-16 23:16:44,199 - INFO - Train Loss: 0.1857, Train Acc: 0.9440
+2026-07-16 23:16:44,199 - INFO - Val Loss: 0.5332, Val Acc: 0.8769, Val F1: 0.8160, Val AUC: 0.9377
+2026-07-16 23:16:44,199 - INFO - 
+Epoch 35/50
+2026-07-16 23:16:51,520 - INFO - Train Loss: 0.1602, Train Acc: 0.9545
+2026-07-16 23:16:51,520 - INFO - Val Loss: 0.5107, Val Acc: 0.8734, Val F1: 0.8124, Val AUC: 0.9416
+2026-07-16 23:16:51,520 - INFO - 
+Epoch 36/50
+2026-07-16 23:16:58,703 - INFO - Train Loss: 0.1738, Train Acc: 0.9450
+2026-07-16 23:16:58,703 - INFO - Val Loss: 0.4885, Val Acc: 0.8711, Val F1: 0.8115, Val AUC: 0.9432
+2026-07-16 23:16:58,703 - INFO - 
+Epoch 37/50
+2026-07-16 23:17:05,693 - INFO - Train Loss: 0.1521, Train Acc: 0.9545
+2026-07-16 23:17:05,694 - INFO - Val Loss: 0.4896, Val Acc: 0.8769, Val F1: 0.8227, Val AUC: 0.9435
+2026-07-16 23:17:05,722 - INFO -   -> New best model saved (F1=0.8227)
+2026-07-16 23:17:05,722 - INFO - 
+Epoch 38/50
+2026-07-16 23:17:13,887 - INFO - Train Loss: 0.1499, Train Acc: 0.9532
+2026-07-16 23:17:13,888 - INFO - Val Loss: 0.5087, Val Acc: 0.8769, Val F1: 0.8197, Val AUC: 0.9404
+2026-07-16 23:17:13,888 - INFO - 
+Epoch 39/50
+2026-07-16 23:17:21,918 - INFO - Train Loss: 0.1544, Train Acc: 0.9525
+2026-07-16 23:17:21,918 - INFO - Val Loss: 0.5036, Val Acc: 0.8711, Val F1: 0.8153, Val AUC: 0.9386
+2026-07-16 23:17:21,918 - INFO - 
+Epoch 40/50
+2026-07-16 23:17:29,610 - INFO - Train Loss: 0.1409, Train Acc: 0.9577
+2026-07-16 23:17:29,610 - INFO - Val Loss: 0.4983, Val Acc: 0.8711, Val F1: 0.8177, Val AUC: 0.9410
+2026-07-16 23:17:29,610 - INFO - 
+Epoch 41/50
+2026-07-16 23:17:36,388 - INFO - Train Loss: 0.1581, Train Acc: 0.9522
+2026-07-16 23:17:36,388 - INFO - Val Loss: 0.4702, Val Acc: 0.8746, Val F1: 0.8230, Val AUC: 0.9441
+2026-07-16 23:17:36,417 - INFO -   -> New best model saved (F1=0.8230)
+2026-07-16 23:17:36,417 - INFO - 
+Epoch 42/50
+2026-07-16 23:17:43,430 - INFO - Train Loss: 0.1321, Train Acc: 0.9587
+2026-07-16 23:17:43,430 - INFO - Val Loss: 0.4632, Val Acc: 0.8769, Val F1: 0.8245, Val AUC: 0.9461
+2026-07-16 23:17:43,462 - INFO -   -> New best model saved (F1=0.8245)
+2026-07-16 23:17:43,463 - INFO - 
+Epoch 43/50
+2026-07-16 23:17:50,462 - INFO - Train Loss: 0.1331, Train Acc: 0.9612
+2026-07-16 23:17:50,462 - INFO - Val Loss: 0.5129, Val Acc: 0.8780, Val F1: 0.8217, Val AUC: 0.9440
+2026-07-16 23:17:50,462 - INFO - 
+Epoch 44/50
+2026-07-16 23:17:57,449 - INFO - Train Loss: 0.1422, Train Acc: 0.9579
+2026-07-16 23:17:57,449 - INFO - Val Loss: 0.5306, Val Acc: 0.8769, Val F1: 0.8166, Val AUC: 0.9465
+2026-07-16 23:17:57,449 - INFO - 
+Epoch 45/50
+2026-07-16 23:18:04,416 - INFO - Train Loss: 0.1267, Train Acc: 0.9624
+2026-07-16 23:18:04,416 - INFO - Val Loss: 0.5166, Val Acc: 0.8804, Val F1: 0.8275, Val AUC: 0.9449
+2026-07-16 23:18:04,446 - INFO -   -> New best model saved (F1=0.8275)
+2026-07-16 23:18:04,446 - INFO - 
+Epoch 46/50
+2026-07-16 23:18:11,380 - INFO - Train Loss: 0.1244, Train Acc: 0.9612
+2026-07-16 23:18:11,380 - INFO - Val Loss: 0.5181, Val Acc: 0.8769, Val F1: 0.8233, Val AUC: 0.9457
+2026-07-16 23:18:11,380 - INFO - 
+Epoch 47/50
+2026-07-16 23:18:18,343 - INFO - Train Loss: 0.1085, Train Acc: 0.9674
+2026-07-16 23:18:18,343 - INFO - Val Loss: 0.5011, Val Acc: 0.8827, Val F1: 0.8297, Val AUC: 0.9474
+2026-07-16 23:18:18,373 - INFO -   -> New best model saved (F1=0.8297)
+2026-07-16 23:18:18,373 - INFO - 
+Epoch 48/50
+2026-07-16 23:18:25,288 - INFO - Train Loss: 0.1189, Train Acc: 0.9632
+2026-07-16 23:18:25,289 - INFO - Val Loss: 0.5339, Val Acc: 0.8792, Val F1: 0.8243, Val AUC: 0.9457
+2026-07-16 23:18:25,289 - INFO - 
+Epoch 49/50
+2026-07-16 23:18:32,222 - INFO - Train Loss: 0.1271, Train Acc: 0.9622
+2026-07-16 23:18:32,222 - INFO - Val Loss: 0.4928, Val Acc: 0.8792, Val F1: 0.8289, Val AUC: 0.9465
+2026-07-16 23:18:32,222 - INFO - 
+Epoch 50/50
+2026-07-16 23:18:39,202 - INFO - Train Loss: 0.1397, Train Acc: 0.9592
+2026-07-16 23:18:39,202 - INFO - Val Loss: 0.5093, Val Acc: 0.8804, Val F1: 0.8257, Val AUC: 0.9451
+2026-07-16 23:18:39,661 - INFO - 
+Run 2 Test Results:
+2026-07-16 23:18:39,661 - INFO -   Accuracy: 0.8910, F1: 0.8379, AUC: 0.9332
+2026-07-16 23:18:39,661 - INFO - 
+============================================================
+Starting run 3/5
+============================================================
+2026-07-16 23:18:39,661 - INFO - 
+Run 3: Device = mps
+2026-07-16 23:18:41,175 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-16 23:18:41,177 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-16 23:18:41,177 - INFO - 
+Epoch 1/50
+2026-07-16 23:18:47,926 - INFO - Train Loss: 0.7691, Train Acc: 0.6837
+2026-07-16 23:18:47,926 - INFO - Val Loss: 0.7732, Val Acc: 0.7735, Val F1: 0.5788, Val AUC: 0.8222
+2026-07-16 23:18:47,954 - INFO -   -> New best model saved (F1=0.5788)
+2026-07-16 23:18:47,954 - INFO - 
+Epoch 2/50
+2026-07-16 23:18:54,863 - INFO - Train Loss: 0.6532, Train Acc: 0.7566
+2026-07-16 23:18:54,863 - INFO - Val Loss: 0.8273, Val Acc: 0.7782, Val F1: 0.5765, Val AUC: 0.8459
+2026-07-16 23:18:54,863 - INFO - 
+Epoch 3/50
+2026-07-16 23:19:01,870 - INFO - Train Loss: 0.6141, Train Acc: 0.7800
+2026-07-16 23:19:01,870 - INFO - Val Loss: 0.6769, Val Acc: 0.8118, Val F1: 0.6760, Val AUC: 0.8597
+2026-07-16 23:19:01,900 - INFO -   -> New best model saved (F1=0.6760)
+2026-07-16 23:19:01,900 - INFO - 
+Epoch 4/50
+2026-07-16 23:19:08,903 - INFO - Train Loss: 0.5691, Train Acc: 0.8049
+2026-07-16 23:19:08,903 - INFO - Val Loss: 0.5608, Val Acc: 0.8409, Val F1: 0.7430, Val AUC: 0.8810
+2026-07-16 23:19:08,932 - INFO -   -> New best model saved (F1=0.7430)
+2026-07-16 23:19:08,932 - INFO - 
+Epoch 5/50
+2026-07-16 23:19:15,938 - INFO - Train Loss: 0.5472, Train Acc: 0.8203
+2026-07-16 23:19:15,938 - INFO - Val Loss: 0.6257, Val Acc: 0.8269, Val F1: 0.7038, Val AUC: 0.8704
+2026-07-16 23:19:15,938 - INFO - 
+Epoch 6/50
+2026-07-16 23:19:22,971 - INFO - Train Loss: 0.5147, Train Acc: 0.8298
+2026-07-16 23:19:22,971 - INFO - Val Loss: 1.4485, Val Acc: 0.7120, Val F1: 0.3297, Val AUC: 0.8706
+2026-07-16 23:19:22,971 - INFO - 
+Epoch 7/50
+2026-07-16 23:19:29,966 - INFO - Train Loss: 0.4909, Train Acc: 0.8400
+2026-07-16 23:19:29,967 - INFO - Val Loss: 0.6303, Val Acc: 0.8432, Val F1: 0.7368, Val AUC: 0.8941
+2026-07-16 23:19:29,967 - INFO - 
+Epoch 8/50
+2026-07-16 23:19:36,965 - INFO - Train Loss: 0.4966, Train Acc: 0.8360
+2026-07-16 23:19:36,965 - INFO - Val Loss: 1.0866, Val Acc: 0.7631, Val F1: 0.5096, Val AUC: 0.8891
+2026-07-16 23:19:36,965 - INFO - 
+Epoch 9/50
+2026-07-16 23:19:43,952 - INFO - Train Loss: 0.4715, Train Acc: 0.8400
+2026-07-16 23:19:43,952 - INFO - Val Loss: 0.7331, Val Acc: 0.8269, Val F1: 0.6928, Val AUC: 0.9008
+2026-07-16 23:19:43,952 - INFO - 
+Epoch 10/50
+2026-07-16 23:19:50,977 - INFO - Train Loss: 0.4504, Train Acc: 0.8472
+2026-07-16 23:19:50,977 - INFO - Val Loss: 0.5272, Val Acc: 0.7944, Val F1: 0.7489, Val AUC: 0.9013
+2026-07-16 23:19:51,007 - INFO -   -> New best model saved (F1=0.7489)
+2026-07-16 23:19:51,007 - INFO - 
+Epoch 11/50
+2026-07-16 23:19:58,005 - INFO - Train Loss: 0.4354, Train Acc: 0.8591
+2026-07-16 23:19:58,005 - INFO - Val Loss: 0.4649, Val Acc: 0.8386, Val F1: 0.7710, Val AUC: 0.9117
+2026-07-16 23:19:58,037 - INFO -   -> New best model saved (F1=0.7710)
+2026-07-16 23:19:58,037 - INFO - 
+Epoch 12/50
+2026-07-16 23:20:05,002 - INFO - Train Loss: 0.4243, Train Acc: 0.8549
+2026-07-16 23:20:05,002 - INFO - Val Loss: 0.8043, Val Acc: 0.8177, Val F1: 0.6667, Val AUC: 0.9103
+2026-07-16 23:20:05,002 - INFO - 
+Epoch 13/50
+2026-07-16 23:20:11,906 - INFO - Train Loss: 0.4082, Train Acc: 0.8661
+2026-07-16 23:20:11,906 - INFO - Val Loss: 1.6069, Val Acc: 0.4193, Val F1: 0.5495, Val AUC: 0.8616
+2026-07-16 23:20:11,906 - INFO - 
+Epoch 14/50
+2026-07-16 23:20:18,893 - INFO - Train Loss: 0.4120, Train Acc: 0.8624
+2026-07-16 23:20:18,893 - INFO - Val Loss: 0.5087, Val Acc: 0.8618, Val F1: 0.7784, Val AUC: 0.9171
+2026-07-16 23:20:18,923 - INFO -   -> New best model saved (F1=0.7784)
+2026-07-16 23:20:18,923 - INFO - 
+Epoch 15/50
+2026-07-16 23:20:25,822 - INFO - Train Loss: 0.3912, Train Acc: 0.8703
+2026-07-16 23:20:25,822 - INFO - Val Loss: 0.6822, Val Acc: 0.8490, Val F1: 0.7421, Val AUC: 0.9076
+2026-07-16 23:20:25,822 - INFO - 
+Epoch 16/50
+2026-07-16 23:20:32,779 - INFO - Train Loss: 0.3800, Train Acc: 0.8810
+2026-07-16 23:20:32,780 - INFO - Val Loss: 1.3119, Val Acc: 0.7933, Val F1: 0.5973, Val AUC: 0.9003
+2026-07-16 23:20:32,780 - INFO - 
+Epoch 17/50
+2026-07-16 23:20:39,726 - INFO - Train Loss: 0.3683, Train Acc: 0.8788
+2026-07-16 23:20:39,726 - INFO - Val Loss: 0.4481, Val Acc: 0.8722, Val F1: 0.8136, Val AUC: 0.9203
+2026-07-16 23:20:39,756 - INFO -   -> New best model saved (F1=0.8136)
+2026-07-16 23:20:39,756 - INFO - 
+Epoch 18/50
+2026-07-16 23:20:46,701 - INFO - Train Loss: 0.3654, Train Acc: 0.8818
+2026-07-16 23:20:46,701 - INFO - Val Loss: 0.8985, Val Acc: 0.5436, Val F1: 0.6058, Val AUC: 0.9089
+2026-07-16 23:20:46,701 - INFO - 
+Epoch 19/50
+2026-07-16 23:20:53,569 - INFO - Train Loss: 0.3404, Train Acc: 0.8892
+2026-07-16 23:20:53,569 - INFO - Val Loss: 1.0999, Val Acc: 0.8223, Val F1: 0.6752, Val AUC: 0.9041
+2026-07-16 23:20:53,569 - INFO - 
+Epoch 20/50
+2026-07-16 23:21:00,554 - INFO - Train Loss: 0.3168, Train Acc: 0.8980
+2026-07-16 23:21:00,554 - INFO - Val Loss: 0.4390, Val Acc: 0.8595, Val F1: 0.8130, Val AUC: 0.9282
+2026-07-16 23:21:00,554 - INFO - 
+Epoch 21/50
+2026-07-16 23:21:07,473 - INFO - Train Loss: 0.3254, Train Acc: 0.8900
+2026-07-16 23:21:07,473 - INFO - Val Loss: 1.3681, Val Acc: 0.8002, Val F1: 0.6161, Val AUC: 0.9140
+2026-07-16 23:21:07,473 - INFO - 
+Epoch 22/50
+2026-07-16 23:21:14,440 - INFO - Train Loss: 0.3135, Train Acc: 0.8997
+2026-07-16 23:21:14,440 - INFO - Val Loss: 0.5546, Val Acc: 0.8641, Val F1: 0.7845, Val AUC: 0.9326
+2026-07-16 23:21:14,440 - INFO - 
+Epoch 23/50
+2026-07-16 23:21:21,336 - INFO - Train Loss: 0.3061, Train Acc: 0.8985
+2026-07-16 23:21:21,336 - INFO - Val Loss: 0.5161, Val Acc: 0.8711, Val F1: 0.8049, Val AUC: 0.9274
+2026-07-16 23:21:21,336 - INFO - 
+Epoch 24/50
+2026-07-16 23:21:28,371 - INFO - Train Loss: 0.3051, Train Acc: 0.9094
+2026-07-16 23:21:28,371 - INFO - Val Loss: 0.4760, Val Acc: 0.8676, Val F1: 0.8041, Val AUC: 0.9191
+2026-07-16 23:21:28,371 - INFO - 
+Epoch 25/50
+2026-07-16 23:21:35,337 - INFO - Train Loss: 0.2733, Train Acc: 0.9124
+2026-07-16 23:21:35,337 - INFO - Val Loss: 0.4549, Val Acc: 0.8525, Val F1: 0.8006, Val AUC: 0.9235
+2026-07-16 23:21:35,337 - INFO - 
+Epoch 26/50
+2026-07-16 23:21:42,303 - INFO - Train Loss: 0.2677, Train Acc: 0.9129
+2026-07-16 23:21:42,303 - INFO - Val Loss: 0.5411, Val Acc: 0.8757, Val F1: 0.8029, Val AUC: 0.9335
+2026-07-16 23:21:42,303 - INFO - 
+Epoch 27/50
+2026-07-16 23:21:49,368 - INFO - Train Loss: 0.2565, Train Acc: 0.9194
+2026-07-16 23:21:49,369 - INFO - Val Loss: 0.6828, Val Acc: 0.8664, Val F1: 0.7834, Val AUC: 0.9330
+2026-07-16 23:21:49,369 - INFO - 
+Epoch 28/50
+2026-07-16 23:21:56,367 - INFO - Train Loss: 0.2223, Train Acc: 0.9313
+2026-07-16 23:21:56,367 - INFO - Val Loss: 0.6104, Val Acc: 0.8711, Val F1: 0.7971, Val AUC: 0.9335
+2026-07-16 23:21:56,367 - INFO - 
+Epoch 29/50
+2026-07-16 23:22:03,352 - INFO - Train Loss: 0.2119, Train Acc: 0.9331
+2026-07-16 23:22:03,352 - INFO - Val Loss: 0.5941, Val Acc: 0.8711, Val F1: 0.8076, Val AUC: 0.9309
+2026-07-16 23:22:03,352 - INFO - 
+Epoch 30/50
+2026-07-16 23:22:10,450 - INFO - Train Loss: 0.2211, Train Acc: 0.9348
+2026-07-16 23:22:10,450 - INFO - Val Loss: 0.5828, Val Acc: 0.8792, Val F1: 0.8163, Val AUC: 0.9325
+2026-07-16 23:22:10,480 - INFO -   -> New best model saved (F1=0.8163)
+2026-07-16 23:22:10,480 - INFO - 
+Epoch 31/50
+2026-07-16 23:22:17,449 - INFO - Train Loss: 0.2196, Train Acc: 0.9321
+2026-07-16 23:22:17,449 - INFO - Val Loss: 0.7230, Val Acc: 0.8688, Val F1: 0.7904, Val AUC: 0.9299
+2026-07-16 23:22:17,449 - INFO - 
+Epoch 32/50
+2026-07-16 23:22:24,471 - INFO - Train Loss: 0.1979, Train Acc: 0.9400
+2026-07-16 23:22:24,471 - INFO - Val Loss: 0.5264, Val Acc: 0.8804, Val F1: 0.8202, Val AUC: 0.9359
+2026-07-16 23:22:24,505 - INFO -   -> New best model saved (F1=0.8202)
+2026-07-16 23:22:24,505 - INFO - 
+Epoch 33/50
+2026-07-16 23:22:31,538 - INFO - Train Loss: 0.1757, Train Acc: 0.9410
+2026-07-16 23:22:31,538 - INFO - Val Loss: 0.6204, Val Acc: 0.8757, Val F1: 0.8065, Val AUC: 0.9357
+2026-07-16 23:22:31,538 - INFO - 
+Epoch 34/50
+2026-07-16 23:22:38,638 - INFO - Train Loss: 0.1753, Train Acc: 0.9465
+2026-07-16 23:22:38,638 - INFO - Val Loss: 0.4495, Val Acc: 0.8897, Val F1: 0.8465, Val AUC: 0.9407
+2026-07-16 23:22:38,670 - INFO -   -> New best model saved (F1=0.8465)
+2026-07-16 23:22:38,670 - INFO - 
+Epoch 35/50
+2026-07-16 23:22:45,657 - INFO - Train Loss: 0.1673, Train Acc: 0.9480
+2026-07-16 23:22:45,658 - INFO - Val Loss: 0.4890, Val Acc: 0.8827, Val F1: 0.8308, Val AUC: 0.9397
+2026-07-16 23:22:45,658 - INFO - 
+Epoch 36/50
+2026-07-16 23:22:52,673 - INFO - Train Loss: 0.1585, Train Acc: 0.9537
+2026-07-16 23:22:52,673 - INFO - Val Loss: 0.6790, Val Acc: 0.8780, Val F1: 0.8094, Val AUC: 0.9345
+2026-07-16 23:22:52,673 - INFO - 
+Epoch 37/50
+2026-07-16 23:22:59,738 - INFO - Train Loss: 0.1453, Train Acc: 0.9525
+2026-07-16 23:22:59,739 - INFO - Val Loss: 0.5855, Val Acc: 0.8850, Val F1: 0.8272, Val AUC: 0.9392
+2026-07-16 23:22:59,739 - INFO - 
+Epoch 38/50
+2026-07-16 23:23:06,728 - INFO - Train Loss: 0.1488, Train Acc: 0.9552
+2026-07-16 23:23:06,728 - INFO - Val Loss: 0.7788, Val Acc: 0.8827, Val F1: 0.8160, Val AUC: 0.9346
+2026-07-16 23:23:06,728 - INFO - 
+Epoch 39/50
+2026-07-16 23:23:13,749 - INFO - Train Loss: 0.1529, Train Acc: 0.9502
+2026-07-16 23:23:13,749 - INFO - Val Loss: 0.5195, Val Acc: 0.8873, Val F1: 0.8386, Val AUC: 0.9398
+2026-07-16 23:23:13,749 - INFO - 
+Epoch 40/50
+2026-07-16 23:23:20,777 - INFO - Train Loss: 0.1527, Train Acc: 0.9547
+2026-07-16 23:23:20,777 - INFO - Val Loss: 0.5632, Val Acc: 0.8804, Val F1: 0.8233, Val AUC: 0.9388
+2026-07-16 23:23:20,777 - INFO - 
+Epoch 41/50
+2026-07-16 23:23:27,781 - INFO - Train Loss: 0.1415, Train Acc: 0.9550
+2026-07-16 23:23:27,781 - INFO - Val Loss: 0.5728, Val Acc: 0.8839, Val F1: 0.8270, Val AUC: 0.9408
+2026-07-16 23:23:27,781 - INFO - 
+Epoch 42/50
+2026-07-16 23:23:34,766 - INFO - Train Loss: 0.1247, Train Acc: 0.9614
+2026-07-16 23:23:34,766 - INFO - Val Loss: 0.6270, Val Acc: 0.8850, Val F1: 0.8242, Val AUC: 0.9408
+2026-07-16 23:23:34,766 - INFO - 
+Epoch 43/50
+2026-07-16 23:23:41,809 - INFO - Train Loss: 0.1472, Train Acc: 0.9550
+2026-07-16 23:23:41,809 - INFO - Val Loss: 0.5654, Val Acc: 0.8955, Val F1: 0.8454, Val AUC: 0.9413
+2026-07-16 23:23:41,809 - INFO - 
+Epoch 44/50
+2026-07-16 23:23:48,783 - INFO - Train Loss: 0.1347, Train Acc: 0.9587
+2026-07-16 23:23:48,783 - INFO - Val Loss: 0.6357, Val Acc: 0.8920, Val F1: 0.8342, Val AUC: 0.9392
+2026-07-16 23:23:48,783 - INFO - 
+Epoch 45/50
+2026-07-16 23:23:55,778 - INFO - Train Loss: 0.1460, Train Acc: 0.9564
+2026-07-16 23:23:55,778 - INFO - Val Loss: 0.5913, Val Acc: 0.8885, Val F1: 0.8322, Val AUC: 0.9391
+2026-07-16 23:23:55,778 - INFO - 
+Epoch 46/50
+2026-07-16 23:24:02,731 - INFO - Train Loss: 0.1323, Train Acc: 0.9612
+2026-07-16 23:24:02,731 - INFO - Val Loss: 0.5852, Val Acc: 0.8897, Val F1: 0.8370, Val AUC: 0.9398
+2026-07-16 23:24:02,731 - INFO - 
+Epoch 47/50
+2026-07-16 23:24:09,774 - INFO - Train Loss: 0.1284, Train Acc: 0.9634
+2026-07-16 23:24:09,775 - INFO - Val Loss: 0.5913, Val Acc: 0.8908, Val F1: 0.8385, Val AUC: 0.9399
+2026-07-16 23:24:09,775 - INFO - 
+Epoch 48/50
+2026-07-16 23:24:16,744 - INFO - Train Loss: 0.1359, Train Acc: 0.9619
+2026-07-16 23:24:16,744 - INFO - Val Loss: 0.5914, Val Acc: 0.8827, Val F1: 0.8256, Val AUC: 0.9395
+2026-07-16 23:24:16,744 - INFO - 
+Epoch 49/50
+2026-07-16 23:24:23,772 - INFO - Train Loss: 0.1420, Train Acc: 0.9587
+2026-07-16 23:24:23,772 - INFO - Val Loss: 0.6459, Val Acc: 0.8885, Val F1: 0.8286, Val AUC: 0.9410
+2026-07-16 23:24:23,772 - INFO - Early stopping at epoch 49
+2026-07-16 23:24:24,233 - INFO - 
+Run 3 Test Results:
+2026-07-16 23:24:24,233 - INFO -   Accuracy: 0.8735, F1: 0.7978, AUC: 0.9320
+2026-07-16 23:24:24,233 - INFO - 
+============================================================
+Starting run 4/5
+============================================================
+2026-07-16 23:24:24,233 - INFO - 
+Run 4: Device = mps
+2026-07-16 23:24:25,836 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-16 23:24:25,837 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-16 23:24:25,838 - INFO - 
+Epoch 1/50
+2026-07-16 23:24:32,732 - INFO - Train Loss: 0.7777, Train Acc: 0.6687
+2026-07-16 23:24:32,733 - INFO - Val Loss: 1.4177, Val Acc: 0.3717, Val F1: 0.5332, Val AUC: 0.7952
+2026-07-16 23:24:32,762 - INFO -   -> New best model saved (F1=0.5332)
+2026-07-16 23:24:32,762 - INFO - 
+Epoch 2/50
+2026-07-16 23:24:39,860 - INFO - Train Loss: 0.6647, Train Acc: 0.7549
+2026-07-16 23:24:39,860 - INFO - Val Loss: 1.5585, Val Acc: 0.6702, Val F1: 0.1548, Val AUC: 0.8366
+2026-07-16 23:24:39,860 - INFO - 
+Epoch 3/50
+2026-07-16 23:24:46,935 - INFO - Train Loss: 0.6062, Train Acc: 0.7835
+2026-07-16 23:24:46,935 - INFO - Val Loss: 0.6857, Val Acc: 0.5923, Val F1: 0.6104, Val AUC: 0.8491
+2026-07-16 23:24:46,969 - INFO -   -> New best model saved (F1=0.6104)
+2026-07-16 23:24:46,969 - INFO - 
+Epoch 4/50
+2026-07-16 23:24:54,086 - INFO - Train Loss: 0.5839, Train Acc: 0.7967
+2026-07-16 23:24:54,086 - INFO - Val Loss: 1.0967, Val Acc: 0.7503, Val F1: 0.4717, Val AUC: 0.8545
+2026-07-16 23:24:54,086 - INFO - 
+Epoch 5/50
+2026-07-16 23:25:01,102 - INFO - Train Loss: 0.5510, Train Acc: 0.8146
+2026-07-16 23:25:01,102 - INFO - Val Loss: 0.6532, Val Acc: 0.6492, Val F1: 0.6472, Val AUC: 0.8666
+2026-07-16 23:25:01,133 - INFO -   -> New best model saved (F1=0.6472)
+2026-07-16 23:25:01,133 - INFO - 
+Epoch 6/50
+2026-07-16 23:25:08,225 - INFO - Train Loss: 0.5248, Train Acc: 0.8228
+2026-07-16 23:25:08,226 - INFO - Val Loss: 0.5583, Val Acc: 0.7596, Val F1: 0.7089, Val AUC: 0.8785
+2026-07-16 23:25:08,260 - INFO -   -> New best model saved (F1=0.7089)
+2026-07-16 23:25:08,260 - INFO - 
+Epoch 7/50
+2026-07-16 23:25:15,345 - INFO - Train Loss: 0.5101, Train Acc: 0.8240
+2026-07-16 23:25:15,345 - INFO - Val Loss: 0.7691, Val Acc: 0.8165, Val F1: 0.6695, Val AUC: 0.8870
+2026-07-16 23:25:15,345 - INFO - 
+Epoch 8/50
+2026-07-16 23:25:22,440 - INFO - Train Loss: 0.4971, Train Acc: 0.8367
+2026-07-16 23:25:22,440 - INFO - Val Loss: 0.6968, Val Acc: 0.8177, Val F1: 0.6736, Val AUC: 0.8959
+2026-07-16 23:25:22,440 - INFO - 
+Epoch 9/50
+2026-07-16 23:25:29,564 - INFO - Train Loss: 0.4827, Train Acc: 0.8365
+2026-07-16 23:25:29,564 - INFO - Val Loss: 0.5629, Val Acc: 0.8420, Val F1: 0.7444, Val AUC: 0.9003
+2026-07-16 23:25:29,593 - INFO -   -> New best model saved (F1=0.7444)
+2026-07-16 23:25:29,594 - INFO - 
+Epoch 10/50
+2026-07-16 23:25:36,575 - INFO - Train Loss: 0.4611, Train Acc: 0.8477
+2026-07-16 23:25:36,576 - INFO - Val Loss: 0.5614, Val Acc: 0.7584, Val F1: 0.7143, Val AUC: 0.8868
+2026-07-16 23:25:36,576 - INFO - 
+Epoch 11/50
+2026-07-16 23:25:43,655 - INFO - Train Loss: 0.4423, Train Acc: 0.8512
+2026-07-16 23:25:43,655 - INFO - Val Loss: 0.5266, Val Acc: 0.7863, Val F1: 0.7394, Val AUC: 0.8958
+2026-07-16 23:25:43,655 - INFO - 
+Epoch 12/50
+2026-07-16 23:25:50,695 - INFO - Train Loss: 0.4295, Train Acc: 0.8556
+2026-07-16 23:25:50,695 - INFO - Val Loss: 0.5655, Val Acc: 0.8571, Val F1: 0.7726, Val AUC: 0.9067
+2026-07-16 23:25:50,726 - INFO -   -> New best model saved (F1=0.7726)
+2026-07-16 23:25:50,726 - INFO - 
+Epoch 13/50
+2026-07-16 23:25:57,722 - INFO - Train Loss: 0.4136, Train Acc: 0.8601
+2026-07-16 23:25:57,722 - INFO - Val Loss: 0.5117, Val Acc: 0.7851, Val F1: 0.7413, Val AUC: 0.9057
+2026-07-16 23:25:57,722 - INFO - 
+Epoch 14/50
+2026-07-16 23:26:04,846 - INFO - Train Loss: 0.3978, Train Acc: 0.8716
+2026-07-16 23:26:04,846 - INFO - Val Loss: 0.6387, Val Acc: 0.8386, Val F1: 0.7342, Val AUC: 0.8931
+2026-07-16 23:26:04,846 - INFO - 
+Epoch 15/50
+2026-07-16 23:26:11,807 - INFO - Train Loss: 0.3696, Train Acc: 0.8803
+2026-07-16 23:26:11,807 - INFO - Val Loss: 0.5018, Val Acc: 0.8316, Val F1: 0.7680, Val AUC: 0.9026
+2026-07-16 23:26:11,807 - INFO - 
+Epoch 16/50
+2026-07-16 23:26:18,829 - INFO - Train Loss: 0.3691, Train Acc: 0.8753
+2026-07-16 23:26:18,829 - INFO - Val Loss: 1.1486, Val Acc: 0.8026, Val F1: 0.6272, Val AUC: 0.9016
+2026-07-16 23:26:18,829 - INFO - 
+Epoch 17/50
+2026-07-16 23:26:25,862 - INFO - Train Loss: 0.3562, Train Acc: 0.8868
+2026-07-16 23:26:25,862 - INFO - Val Loss: 1.1875, Val Acc: 0.8095, Val F1: 0.6419, Val AUC: 0.9004
+2026-07-16 23:26:25,862 - INFO - 
+Epoch 18/50
+2026-07-16 23:26:32,878 - INFO - Train Loss: 0.3460, Train Acc: 0.8868
+2026-07-16 23:26:32,878 - INFO - Val Loss: 0.4954, Val Acc: 0.8095, Val F1: 0.7609, Val AUC: 0.9169
+2026-07-16 23:26:32,879 - INFO - 
+Epoch 19/50
+2026-07-16 23:26:39,906 - INFO - Train Loss: 0.3326, Train Acc: 0.8925
+2026-07-16 23:26:39,906 - INFO - Val Loss: 0.5246, Val Acc: 0.8595, Val F1: 0.7932, Val AUC: 0.9169
+2026-07-16 23:26:39,942 - INFO -   -> New best model saved (F1=0.7932)
+2026-07-16 23:26:39,942 - INFO - 
+Epoch 20/50
+2026-07-16 23:26:46,938 - INFO - Train Loss: 0.3261, Train Acc: 0.8940
+2026-07-16 23:26:46,938 - INFO - Val Loss: 0.5253, Val Acc: 0.8688, Val F1: 0.8068, Val AUC: 0.9219
+2026-07-16 23:26:46,972 - INFO -   -> New best model saved (F1=0.8068)
+2026-07-16 23:26:46,972 - INFO - 
+Epoch 21/50
+2026-07-16 23:26:54,050 - INFO - Train Loss: 0.3023, Train Acc: 0.9057
+2026-07-16 23:26:54,051 - INFO - Val Loss: 0.5467, Val Acc: 0.7747, Val F1: 0.7406, Val AUC: 0.9198
+2026-07-16 23:26:54,051 - INFO - 
+Epoch 22/50
+2026-07-16 23:27:01,056 - INFO - Train Loss: 0.2877, Train Acc: 0.9094
+2026-07-16 23:27:01,056 - INFO - Val Loss: 0.5558, Val Acc: 0.8548, Val F1: 0.7811, Val AUC: 0.9225
+2026-07-16 23:27:01,056 - INFO - 
+Epoch 23/50
+2026-07-16 23:27:08,103 - INFO - Train Loss: 0.2943, Train Acc: 0.9067
+2026-07-16 23:27:08,103 - INFO - Val Loss: 0.5052, Val Acc: 0.8084, Val F1: 0.7673, Val AUC: 0.9227
+2026-07-16 23:27:08,104 - INFO - 
+Epoch 24/50
+2026-07-16 23:27:15,188 - INFO - Train Loss: 0.2831, Train Acc: 0.9169
+2026-07-16 23:27:15,188 - INFO - Val Loss: 0.4431, Val Acc: 0.8571, Val F1: 0.8019, Val AUC: 0.9283
+2026-07-16 23:27:15,188 - INFO - 
+Epoch 25/50
+2026-07-16 23:27:22,168 - INFO - Train Loss: 0.2713, Train Acc: 0.9131
+2026-07-16 23:27:22,168 - INFO - Val Loss: 0.4732, Val Acc: 0.8455, Val F1: 0.7879, Val AUC: 0.9260
+2026-07-16 23:27:22,168 - INFO - 
+Epoch 26/50
+2026-07-16 23:27:29,887 - INFO - Train Loss: 0.2718, Train Acc: 0.9116
+2026-07-16 23:27:29,887 - INFO - Val Loss: 0.8163, Val Acc: 0.8420, Val F1: 0.7375, Val AUC: 0.9216
+2026-07-16 23:27:29,887 - INFO - 
+Epoch 27/50
+2026-07-16 23:27:36,839 - INFO - Train Loss: 0.2636, Train Acc: 0.9151
+2026-07-16 23:27:36,840 - INFO - Val Loss: 0.5094, Val Acc: 0.8502, Val F1: 0.7854, Val AUC: 0.9206
+2026-07-16 23:27:36,840 - INFO - 
+Epoch 28/50
+2026-07-16 23:27:43,879 - INFO - Train Loss: 0.2493, Train Acc: 0.9196
+2026-07-16 23:27:43,879 - INFO - Val Loss: 1.0456, Val Acc: 0.8490, Val F1: 0.7400, Val AUC: 0.9228
+2026-07-16 23:27:43,879 - INFO - 
+Epoch 29/50
+2026-07-16 23:27:50,922 - INFO - Train Loss: 0.2392, Train Acc: 0.9248
+2026-07-16 23:27:50,922 - INFO - Val Loss: 0.4754, Val Acc: 0.8734, Val F1: 0.8149, Val AUC: 0.9372
+2026-07-16 23:27:50,951 - INFO -   -> New best model saved (F1=0.8149)
+2026-07-16 23:27:50,951 - INFO - 
+Epoch 30/50
+2026-07-16 23:27:57,964 - INFO - Train Loss: 0.2314, Train Acc: 0.9276
+2026-07-16 23:27:57,965 - INFO - Val Loss: 0.5632, Val Acc: 0.8699, Val F1: 0.8007, Val AUC: 0.9359
+2026-07-16 23:27:57,965 - INFO - 
+Epoch 31/50
+2026-07-16 23:28:05,076 - INFO - Train Loss: 0.2154, Train Acc: 0.9306
+2026-07-16 23:28:05,076 - INFO - Val Loss: 0.4505, Val Acc: 0.8595, Val F1: 0.8147, Val AUC: 0.9365
+2026-07-16 23:28:05,076 - INFO - 
+Epoch 32/50
+2026-07-16 23:28:12,046 - INFO - Train Loss: 0.1745, Train Acc: 0.9502
+2026-07-16 23:28:12,046 - INFO - Val Loss: 0.5109, Val Acc: 0.8339, Val F1: 0.7948, Val AUC: 0.9331
+2026-07-16 23:28:12,046 - INFO - 
+Epoch 33/50
+2026-07-16 23:28:19,069 - INFO - Train Loss: 0.1869, Train Acc: 0.9375
+2026-07-16 23:28:19,069 - INFO - Val Loss: 0.5191, Val Acc: 0.8734, Val F1: 0.8245, Val AUC: 0.9338
+2026-07-16 23:28:19,102 - INFO -   -> New best model saved (F1=0.8245)
+2026-07-16 23:28:19,102 - INFO - 
+Epoch 34/50
+2026-07-16 23:28:26,195 - INFO - Train Loss: 0.1743, Train Acc: 0.9472
+2026-07-16 23:28:26,195 - INFO - Val Loss: 0.4787, Val Acc: 0.8699, Val F1: 0.8194, Val AUC: 0.9399
+2026-07-16 23:28:26,195 - INFO - 
+Epoch 35/50
+2026-07-16 23:28:33,240 - INFO - Train Loss: 0.1718, Train Acc: 0.9475
+2026-07-16 23:28:33,241 - INFO - Val Loss: 0.5640, Val Acc: 0.8804, Val F1: 0.8183, Val AUC: 0.9380
+2026-07-16 23:28:33,241 - INFO - 
+Epoch 36/50
+2026-07-16 23:28:40,293 - INFO - Train Loss: 0.1650, Train Acc: 0.9433
+2026-07-16 23:28:40,293 - INFO - Val Loss: 0.5320, Val Acc: 0.8502, Val F1: 0.8100, Val AUC: 0.9377
+2026-07-16 23:28:40,293 - INFO - 
+Epoch 37/50
+2026-07-16 23:28:47,351 - INFO - Train Loss: 0.1607, Train Acc: 0.9502
+2026-07-16 23:28:47,351 - INFO - Val Loss: 0.4930, Val Acc: 0.8734, Val F1: 0.8239, Val AUC: 0.9416
+2026-07-16 23:28:47,351 - INFO - 
+Epoch 38/50
+2026-07-16 23:28:54,437 - INFO - Train Loss: 0.1419, Train Acc: 0.9545
+2026-07-16 23:28:54,437 - INFO - Val Loss: 0.5140, Val Acc: 0.8792, Val F1: 0.8306, Val AUC: 0.9406
+2026-07-16 23:28:54,469 - INFO -   -> New best model saved (F1=0.8306)
+2026-07-16 23:28:54,469 - INFO - 
+Epoch 39/50
+2026-07-16 23:29:01,463 - INFO - Train Loss: 0.1556, Train Acc: 0.9500
+2026-07-16 23:29:01,464 - INFO - Val Loss: 0.5543, Val Acc: 0.8757, Val F1: 0.8237, Val AUC: 0.9404
+2026-07-16 23:29:01,464 - INFO - 
+Epoch 40/50
+2026-07-16 23:29:08,533 - INFO - Train Loss: 0.1394, Train Acc: 0.9574
+2026-07-16 23:29:08,534 - INFO - Val Loss: 0.5735, Val Acc: 0.8757, Val F1: 0.8208, Val AUC: 0.9376
+2026-07-16 23:29:08,534 - INFO - 
+Epoch 41/50
+2026-07-16 23:29:15,644 - INFO - Train Loss: 0.1409, Train Acc: 0.9545
+2026-07-16 23:29:15,644 - INFO - Val Loss: 0.5439, Val Acc: 0.8676, Val F1: 0.8196, Val AUC: 0.9377
+2026-07-16 23:29:15,644 - INFO - 
+Epoch 42/50
+2026-07-16 23:29:22,595 - INFO - Train Loss: 0.1249, Train Acc: 0.9632
+2026-07-16 23:29:22,595 - INFO - Val Loss: 0.5614, Val Acc: 0.8734, Val F1: 0.8198, Val AUC: 0.9366
+2026-07-16 23:29:22,595 - INFO - 
+Epoch 43/50
+2026-07-16 23:29:29,675 - INFO - Train Loss: 0.1393, Train Acc: 0.9612
+2026-07-16 23:29:29,675 - INFO - Val Loss: 0.6037, Val Acc: 0.8757, Val F1: 0.8183, Val AUC: 0.9382
+2026-07-16 23:29:29,675 - INFO - 
+Epoch 44/50
+2026-07-16 23:29:36,681 - INFO - Train Loss: 0.1206, Train Acc: 0.9647
+2026-07-16 23:29:36,681 - INFO - Val Loss: 0.5341, Val Acc: 0.8734, Val F1: 0.8222, Val AUC: 0.9413
+2026-07-16 23:29:36,681 - INFO - 
+Epoch 45/50
+2026-07-16 23:29:43,657 - INFO - Train Loss: 0.1206, Train Acc: 0.9652
+2026-07-16 23:29:43,657 - INFO - Val Loss: 0.5814, Val Acc: 0.8780, Val F1: 0.8223, Val AUC: 0.9426
+2026-07-16 23:29:43,657 - INFO - 
+Epoch 46/50
+2026-07-16 23:29:50,661 - INFO - Train Loss: 0.1126, Train Acc: 0.9671
+2026-07-16 23:29:50,661 - INFO - Val Loss: 0.5209, Val Acc: 0.8792, Val F1: 0.8306, Val AUC: 0.9434
+2026-07-16 23:29:50,661 - INFO - 
+Epoch 47/50
+2026-07-16 23:29:57,763 - INFO - Train Loss: 0.1143, Train Acc: 0.9622
+2026-07-16 23:29:57,764 - INFO - Val Loss: 0.4927, Val Acc: 0.8815, Val F1: 0.8333, Val AUC: 0.9451
+2026-07-16 23:29:57,801 - INFO -   -> New best model saved (F1=0.8333)
+2026-07-16 23:29:57,801 - INFO - 
+Epoch 48/50
+2026-07-16 23:30:04,787 - INFO - Train Loss: 0.1332, Train Acc: 0.9629
+2026-07-16 23:30:04,787 - INFO - Val Loss: 0.5751, Val Acc: 0.8815, Val F1: 0.8277, Val AUC: 0.9430
+2026-07-16 23:30:04,787 - INFO - 
+Epoch 49/50
+2026-07-16 23:30:11,852 - INFO - Train Loss: 0.1201, Train Acc: 0.9614
+2026-07-16 23:30:11,852 - INFO - Val Loss: 0.5206, Val Acc: 0.8746, Val F1: 0.8291, Val AUC: 0.9446
+2026-07-16 23:30:11,852 - INFO - 
+Epoch 50/50
+2026-07-16 23:30:18,895 - INFO - Train Loss: 0.1286, Train Acc: 0.9617
+2026-07-16 23:30:18,895 - INFO - Val Loss: 0.5331, Val Acc: 0.8815, Val F1: 0.8350, Val AUC: 0.9443
+2026-07-16 23:30:18,924 - INFO -   -> New best model saved (F1=0.8350)
+2026-07-16 23:30:19,384 - INFO - 
+Run 4 Test Results:
+2026-07-16 23:30:19,384 - INFO -   Accuracy: 0.8794, F1: 0.8219, AUC: 0.9348
+2026-07-16 23:30:19,384 - INFO - 
+============================================================
+Starting run 5/5
+============================================================
+2026-07-16 23:30:19,385 - INFO - 
+Run 5: Device = mps
+2026-07-16 23:30:20,975 - INFO - Train class distribution: 0=2575.0, 1=1443.0 (ratio 1:0.56)
+2026-07-16 23:30:20,978 - INFO - Using class weighting: pos_weight = 1.78
+2026-07-16 23:30:20,978 - INFO - 
+Epoch 1/50
+2026-07-16 23:30:27,824 - INFO - Train Loss: 0.7992, Train Acc: 0.6458
+2026-07-16 23:30:27,824 - INFO - Val Loss: 0.8063, Val Acc: 0.4774, Val F1: 0.5722, Val AUC: 0.8054
+2026-07-16 23:30:27,853 - INFO -   -> New best model saved (F1=0.5722)
+2026-07-16 23:30:27,853 - INFO - 
+Epoch 2/50
+2026-07-16 23:30:34,928 - INFO - Train Loss: 0.6670, Train Acc: 0.7469
+2026-07-16 23:30:34,929 - INFO - Val Loss: 0.7357, Val Acc: 0.8002, Val F1: 0.6309, Val AUC: 0.8361
+2026-07-16 23:30:34,964 - INFO -   -> New best model saved (F1=0.6309)
+2026-07-16 23:30:34,964 - INFO - 
+Epoch 3/50
+2026-07-16 23:30:42,069 - INFO - Train Loss: 0.6171, Train Acc: 0.7792
+2026-07-16 23:30:42,069 - INFO - Val Loss: 0.7565, Val Acc: 0.5145, Val F1: 0.5861, Val AUC: 0.8472
+2026-07-16 23:30:42,069 - INFO - 
+Epoch 4/50
+2026-07-16 23:30:49,080 - INFO - Train Loss: 0.5632, Train Acc: 0.7992
+2026-07-16 23:30:49,080 - INFO - Val Loss: 2.2214, Val Acc: 0.3624, Val F1: 0.5296, Val AUC: 0.8499
+2026-07-16 23:30:49,080 - INFO - 
+Epoch 5/50
+2026-07-16 23:30:56,237 - INFO - Train Loss: 0.5686, Train Acc: 0.8036
+2026-07-16 23:30:56,237 - INFO - Val Loss: 0.5674, Val Acc: 0.7689, Val F1: 0.7145, Val AUC: 0.8753
+2026-07-16 23:30:56,266 - INFO -   -> New best model saved (F1=0.7145)
+2026-07-16 23:30:56,266 - INFO - 
+Epoch 6/50
+2026-07-16 23:31:03,405 - INFO - Train Loss: 0.5137, Train Acc: 0.8280
+2026-07-16 23:31:03,405 - INFO - Val Loss: 0.5464, Val Acc: 0.7793, Val F1: 0.7316, Val AUC: 0.8858
+2026-07-16 23:31:03,436 - INFO -   -> New best model saved (F1=0.7316)
+2026-07-16 23:31:03,436 - INFO - 
+Epoch 7/50
+2026-07-16 23:31:10,460 - INFO - Train Loss: 0.5011, Train Acc: 0.8288
+2026-07-16 23:31:10,460 - INFO - Val Loss: 0.8629, Val Acc: 0.5180, Val F1: 0.5911, Val AUC: 0.8802
+2026-07-16 23:31:10,460 - INFO - 
+Epoch 8/50
+2026-07-16 23:31:17,562 - INFO - Train Loss: 0.4780, Train Acc: 0.8377
+2026-07-16 23:31:17,562 - INFO - Val Loss: 0.7674, Val Acc: 0.8177, Val F1: 0.6776, Val AUC: 0.8997
+2026-07-16 23:31:17,562 - INFO - 
+Epoch 9/50
+2026-07-16 23:31:24,649 - INFO - Train Loss: 0.4502, Train Acc: 0.8452
+2026-07-16 23:31:24,649 - INFO - Val Loss: 0.6056, Val Acc: 0.8479, Val F1: 0.7436, Val AUC: 0.9092
+2026-07-16 23:31:24,675 - INFO -   -> New best model saved (F1=0.7436)
+2026-07-16 23:31:24,676 - INFO - 
+Epoch 10/50
+2026-07-16 23:31:31,784 - INFO - Train Loss: 0.4490, Train Acc: 0.8532
+2026-07-16 23:31:31,784 - INFO - Val Loss: 0.4880, Val Acc: 0.8606, Val F1: 0.7880, Val AUC: 0.9144
+2026-07-16 23:31:31,822 - INFO -   -> New best model saved (F1=0.7880)
+2026-07-16 23:31:31,823 - INFO - 
+Epoch 11/50
+2026-07-16 23:31:38,911 - INFO - Train Loss: 0.4223, Train Acc: 0.8624
+2026-07-16 23:31:38,911 - INFO - Val Loss: 0.5920, Val Acc: 0.8444, Val F1: 0.7500, Val AUC: 0.8998
+2026-07-16 23:31:38,911 - INFO - 
+Epoch 12/50
+2026-07-16 23:31:46,050 - INFO - Train Loss: 0.4142, Train Acc: 0.8664
+2026-07-16 23:31:46,050 - INFO - Val Loss: 0.8446, Val Acc: 0.7944, Val F1: 0.6005, Val AUC: 0.9037
+2026-07-16 23:31:46,050 - INFO - 
+Epoch 13/50
+2026-07-16 23:31:53,086 - INFO - Train Loss: 0.3992, Train Acc: 0.8671
+2026-07-16 23:31:53,086 - INFO - Val Loss: 1.2097, Val Acc: 0.7793, Val F1: 0.5622, Val AUC: 0.8988
+2026-07-16 23:31:53,086 - INFO - 
+Epoch 14/50
+2026-07-16 23:32:01,139 - INFO - Train Loss: 0.3843, Train Acc: 0.8738
+2026-07-16 23:32:01,139 - INFO - Val Loss: 0.4553, Val Acc: 0.8548, Val F1: 0.7885, Val AUC: 0.9171
+2026-07-16 23:32:01,176 - INFO -   -> New best model saved (F1=0.7885)
+2026-07-16 23:32:01,176 - INFO - 
+Epoch 15/50
+2026-07-16 23:32:09,483 - INFO - Train Loss: 0.3745, Train Acc: 0.8746
+2026-07-16 23:32:09,484 - INFO - Val Loss: 0.5492, Val Acc: 0.8688, Val F1: 0.7888, Val AUC: 0.9239
+2026-07-16 23:32:09,522 - INFO -   -> New best model saved (F1=0.7888)
+2026-07-16 23:32:09,522 - INFO - 
+Epoch 16/50
+2026-07-16 23:32:16,905 - INFO - Train Loss: 0.3658, Train Acc: 0.8803
+2026-07-16 23:32:16,906 - INFO - Val Loss: 0.4603, Val Acc: 0.8595, Val F1: 0.7888, Val AUC: 0.9257
+2026-07-16 23:32:16,942 - INFO -   -> New best model saved (F1=0.7888)
+2026-07-16 23:32:16,942 - INFO - 
+Epoch 17/50
+2026-07-16 23:32:24,431 - INFO - Train Loss: 0.3587, Train Acc: 0.8813
+2026-07-16 23:32:24,431 - INFO - Val Loss: 0.7591, Val Acc: 0.8537, Val F1: 0.7529, Val AUC: 0.9208
+2026-07-16 23:32:24,431 - INFO - 
+Epoch 18/50
+2026-07-16 23:32:32,490 - INFO - Train Loss: 0.3393, Train Acc: 0.8917
+2026-07-16 23:32:32,491 - INFO - Val Loss: 1.1358, Val Acc: 0.7967, Val F1: 0.6204, Val AUC: 0.9051
+2026-07-16 23:32:32,491 - INFO - 
+Epoch 19/50
+2026-07-16 23:32:39,659 - INFO - Train Loss: 0.3275, Train Acc: 0.8902
+2026-07-16 23:32:39,659 - INFO - Val Loss: 0.7247, Val Acc: 0.8583, Val F1: 0.7698, Val AUC: 0.9166
+2026-07-16 23:32:39,659 - INFO - 
+Epoch 20/50
+2026-07-16 23:32:47,914 - INFO - Train Loss: 0.3148, Train Acc: 0.9024
+2026-07-16 23:32:47,915 - INFO - Val Loss: 0.4527, Val Acc: 0.8664, Val F1: 0.8093, Val AUC: 0.9286
+2026-07-16 23:32:47,960 - INFO -   -> New best model saved (F1=0.8093)
+2026-07-16 23:32:47,961 - INFO - 
+Epoch 21/50
+2026-07-16 23:32:57,266 - INFO - Train Loss: 0.2985, Train Acc: 0.9049
+2026-07-16 23:32:57,267 - INFO - Val Loss: 0.4661, Val Acc: 0.8688, Val F1: 0.8132, Val AUC: 0.9273
+2026-07-16 23:32:57,309 - INFO -   -> New best model saved (F1=0.8132)
+2026-07-16 23:32:57,309 - INFO - 
+Epoch 22/50
+2026-07-16 23:33:05,662 - INFO - Train Loss: 0.2804, Train Acc: 0.9099
+2026-07-16 23:33:05,663 - INFO - Val Loss: 0.4599, Val Acc: 0.8618, Val F1: 0.8108, Val AUC: 0.9311
+2026-07-16 23:33:05,663 - INFO - 
+Epoch 23/50
+2026-07-16 23:33:13,278 - INFO - Train Loss: 0.2786, Train Acc: 0.9102
+2026-07-16 23:33:13,278 - INFO - Val Loss: 0.8704, Val Acc: 0.8560, Val F1: 0.7606, Val AUC: 0.9144
+2026-07-16 23:33:13,279 - INFO - 
+Epoch 24/50
+2026-07-16 23:33:20,659 - INFO - Train Loss: 0.2891, Train Acc: 0.9092
+2026-07-16 23:33:20,660 - INFO - Val Loss: 0.4460, Val Acc: 0.8746, Val F1: 0.8138, Val AUC: 0.9357
+2026-07-16 23:33:20,695 - INFO -   -> New best model saved (F1=0.8138)
+2026-07-16 23:33:20,695 - INFO - 
+Epoch 25/50
+2026-07-16 23:33:28,512 - INFO - Train Loss: 0.2553, Train Acc: 0.9204
+2026-07-16 23:33:28,512 - INFO - Val Loss: 0.8303, Val Acc: 0.8467, Val F1: 0.7381, Val AUC: 0.9230
+2026-07-16 23:33:28,512 - INFO - 
+Epoch 26/50
+2026-07-16 23:33:35,860 - INFO - Train Loss: 0.2567, Train Acc: 0.9171
+2026-07-16 23:33:35,861 - INFO - Val Loss: 0.6894, Val Acc: 0.8699, Val F1: 0.7934, Val AUC: 0.9285
+2026-07-16 23:33:35,861 - INFO - 
+Epoch 27/50
+2026-07-16 23:33:44,241 - INFO - Train Loss: 0.2490, Train Acc: 0.9206
+2026-07-16 23:33:44,241 - INFO - Val Loss: 0.5978, Val Acc: 0.8711, Val F1: 0.7956, Val AUC: 0.9315
+2026-07-16 23:33:44,241 - INFO - 
+Epoch 28/50
+2026-07-16 23:33:51,636 - INFO - Train Loss: 0.2401, Train Acc: 0.9181
+2026-07-16 23:33:51,637 - INFO - Val Loss: 0.8996, Val Acc: 0.8525, Val F1: 0.7515, Val AUC: 0.9310
+2026-07-16 23:33:51,637 - INFO - 
+Epoch 29/50
+2026-07-16 23:33:59,069 - INFO - Train Loss: 0.2610, Train Acc: 0.9169
+2026-07-16 23:33:59,069 - INFO - Val Loss: 1.1527, Val Acc: 0.8374, Val F1: 0.7131, Val AUC: 0.9273
+2026-07-16 23:33:59,069 - INFO - 
+Epoch 30/50
+2026-07-16 23:34:06,756 - INFO - Train Loss: 0.2318, Train Acc: 0.9306
+2026-07-16 23:34:06,757 - INFO - Val Loss: 0.4565, Val Acc: 0.8746, Val F1: 0.8247, Val AUC: 0.9389
+2026-07-16 23:34:06,797 - INFO -   -> New best model saved (F1=0.8247)
+2026-07-16 23:34:06,797 - INFO - 
+Epoch 31/50
+2026-07-16 23:34:14,990 - INFO - Train Loss: 0.2050, Train Acc: 0.9358
+2026-07-16 23:34:14,991 - INFO - Val Loss: 0.4640, Val Acc: 0.8780, Val F1: 0.8211, Val AUC: 0.9407
+2026-07-16 23:34:14,991 - INFO - 
+Epoch 32/50
+2026-07-16 23:34:24,443 - INFO - Train Loss: 0.2165, Train Acc: 0.9286
+2026-07-16 23:34:24,444 - INFO - Val Loss: 0.5258, Val Acc: 0.8688, Val F1: 0.8101, Val AUC: 0.9368
+2026-07-16 23:34:24,444 - INFO - 
+Epoch 33/50
+2026-07-16 23:34:32,987 - INFO - Train Loss: 0.1890, Train Acc: 0.9440
+2026-07-16 23:34:32,988 - INFO - Val Loss: 0.4940, Val Acc: 0.8815, Val F1: 0.8259, Val AUC: 0.9429
+2026-07-16 23:34:33,027 - INFO -   -> New best model saved (F1=0.8259)
+2026-07-16 23:34:33,027 - INFO - 
+Epoch 34/50
+2026-07-16 23:34:40,266 - INFO - Train Loss: 0.1697, Train Acc: 0.9467
+2026-07-16 23:34:40,266 - INFO - Val Loss: 0.5644, Val Acc: 0.8804, Val F1: 0.8190, Val AUC: 0.9421
+2026-07-16 23:34:40,266 - INFO - 
+Epoch 35/50
+2026-07-16 23:34:48,304 - INFO - Train Loss: 0.1628, Train Acc: 0.9542
+2026-07-16 23:34:48,304 - INFO - Val Loss: 0.4525, Val Acc: 0.8769, Val F1: 0.8317, Val AUC: 0.9452
+2026-07-16 23:34:48,334 - INFO -   -> New best model saved (F1=0.8317)
+2026-07-16 23:34:48,334 - INFO - 
+Epoch 36/50
+2026-07-16 23:34:55,829 - INFO - Train Loss: 0.1807, Train Acc: 0.9490
+2026-07-16 23:34:55,829 - INFO - Val Loss: 0.4627, Val Acc: 0.8827, Val F1: 0.8336, Val AUC: 0.9473
+2026-07-16 23:34:55,863 - INFO -   -> New best model saved (F1=0.8336)
+2026-07-16 23:34:55,863 - INFO - 
+Epoch 37/50
+2026-07-16 23:35:03,242 - INFO - Train Loss: 0.1529, Train Acc: 0.9562
+2026-07-16 23:35:03,242 - INFO - Val Loss: 0.4927, Val Acc: 0.8792, Val F1: 0.8278, Val AUC: 0.9479
+2026-07-16 23:35:03,242 - INFO - 
+Epoch 38/50
+2026-07-16 23:35:11,315 - INFO - Train Loss: 0.1418, Train Acc: 0.9552
+2026-07-16 23:35:11,316 - INFO - Val Loss: 0.5509, Val Acc: 0.8862, Val F1: 0.8322, Val AUC: 0.9485
+2026-07-16 23:35:11,316 - INFO - 
+Epoch 39/50
+2026-07-16 23:35:19,860 - INFO - Train Loss: 0.1386, Train Acc: 0.9567
+2026-07-16 23:35:19,860 - INFO - Val Loss: 0.4668, Val Acc: 0.8839, Val F1: 0.8350, Val AUC: 0.9506
+2026-07-16 23:35:19,907 - INFO -   -> New best model saved (F1=0.8350)
+2026-07-16 23:35:19,907 - INFO - 
+Epoch 40/50
+2026-07-16 23:35:27,795 - INFO - Train Loss: 0.1541, Train Acc: 0.9532
+2026-07-16 23:35:27,795 - INFO - Val Loss: 0.4715, Val Acc: 0.8850, Val F1: 0.8347, Val AUC: 0.9484
+2026-07-16 23:35:27,795 - INFO - 
+Epoch 41/50
+2026-07-16 23:35:35,214 - INFO - Train Loss: 0.1408, Train Acc: 0.9567
+2026-07-16 23:35:35,215 - INFO - Val Loss: 0.6630, Val Acc: 0.8792, Val F1: 0.8109, Val AUC: 0.9463
+2026-07-16 23:35:35,215 - INFO - 
+Epoch 42/50
+2026-07-16 23:35:42,157 - INFO - Train Loss: 0.1550, Train Acc: 0.9559
+2026-07-16 23:35:42,157 - INFO - Val Loss: 0.4414, Val Acc: 0.8850, Val F1: 0.8401, Val AUC: 0.9492
+2026-07-16 23:35:42,191 - INFO -   -> New best model saved (F1=0.8401)
+2026-07-16 23:35:42,191 - INFO - 
+Epoch 43/50
+2026-07-16 23:35:49,153 - INFO - Train Loss: 0.1429, Train Acc: 0.9542
+2026-07-16 23:35:49,154 - INFO - Val Loss: 0.6637, Val Acc: 0.8862, Val F1: 0.8244, Val AUC: 0.9477
+2026-07-16 23:35:49,154 - INFO - 
+Epoch 44/50
+2026-07-16 23:35:56,138 - INFO - Train Loss: 0.1296, Train Acc: 0.9634
+2026-07-16 23:35:56,138 - INFO - Val Loss: 0.6165, Val Acc: 0.8804, Val F1: 0.8131, Val AUC: 0.9469
+2026-07-16 23:35:56,138 - INFO - 
+Epoch 45/50
+2026-07-16 23:36:02,977 - INFO - Train Loss: 0.1177, Train Acc: 0.9659
+2026-07-16 23:36:02,978 - INFO - Val Loss: 0.6114, Val Acc: 0.8827, Val F1: 0.8212, Val AUC: 0.9472
+2026-07-16 23:36:02,978 - INFO - 
+Epoch 46/50
+2026-07-16 23:36:10,012 - INFO - Train Loss: 0.1426, Train Acc: 0.9577
+2026-07-16 23:36:10,013 - INFO - Val Loss: 0.4638, Val Acc: 0.8897, Val F1: 0.8440, Val AUC: 0.9503
+2026-07-16 23:36:10,047 - INFO -   -> New best model saved (F1=0.8440)
+2026-07-16 23:36:10,047 - INFO - 
+Epoch 47/50
+2026-07-16 23:36:16,822 - INFO - Train Loss: 0.1203, Train Acc: 0.9632
+2026-07-16 23:36:16,822 - INFO - Val Loss: 0.4836, Val Acc: 0.8873, Val F1: 0.8386, Val AUC: 0.9509
+2026-07-16 23:36:16,822 - INFO - 
+Epoch 48/50
+2026-07-16 23:36:23,579 - INFO - Train Loss: 0.1218, Train Acc: 0.9629
+2026-07-16 23:36:23,579 - INFO - Val Loss: 0.5029, Val Acc: 0.8780, Val F1: 0.8259, Val AUC: 0.9481
+2026-07-16 23:36:23,579 - INFO - 
+Epoch 49/50
+2026-07-16 23:36:30,768 - INFO - Train Loss: 0.1057, Train Acc: 0.9714
+2026-07-16 23:36:30,769 - INFO - Val Loss: 0.6026, Val Acc: 0.8827, Val F1: 0.8237, Val AUC: 0.9485
+2026-07-16 23:36:30,770 - INFO - 
+Epoch 50/50
+2026-07-16 23:36:37,680 - INFO - Train Loss: 0.1033, Train Acc: 0.9679
+2026-07-16 23:36:37,680 - INFO - Val Loss: 0.5439, Val Acc: 0.8839, Val F1: 0.8311, Val AUC: 0.9500
+2026-07-16 23:36:38,140 - INFO - 
+Run 5 Test Results:
+2026-07-16 23:36:38,140 - INFO -   Accuracy: 0.8875, F1: 0.8283, AUC: 0.9417
+2026-07-16 23:36:38,142 - INFO - 
+Saved all runs results to ./outputs/models/cnn_cross_fold/fold_brazil/merged_japan_usa_cnn_stage1_trainonly_results.csv
+2026-07-16 23:36:38,142 - INFO - 
+============================================================
+2026-07-16 23:36:38,142 - INFO - SUMMARY OF ALL RUNS
+2026-07-16 23:36:38,142 - INFO - ============================================================
+2026-07-16 23:36:38,143 - INFO - test_acc: 0.8826 ± 0.0061
+2026-07-16 23:36:38,143 - INFO - test_prec: 0.8958 ± 0.0269
+2026-07-16 23:36:38,143 - INFO - test_rec: 0.7631 ± 0.0363
+2026-07-16 23:36:38,143 - INFO - test_f1: 0.8230 ± 0.0136
+2026-07-16 23:36:38,143 - INFO - test_auc: 0.9356 ± 0.0034
+2026-07-16 23:36:38,144 - INFO - 
+Best overall run: 2 (test F1=0.8379)
+2026-07-16 23:36:38,144 - INFO - Best model saved at: ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn_run2.pth
+2026-07-16 23:36:38,155 - INFO - Copied best model to ./outputs/models/cnn_cross_fold/fold_brazil/best_cnn.pth
+2026-07-16 23:36:41,109 - INFO - 
+All plots and summaries saved to: ./outputs/models/cnn_cross_fold/fold_brazil/plots
+2026-07-16 23:36:41,109 - INFO - Stage 1 training completed (trainonly). Ready for embedding extraction via extract_embeddings.py

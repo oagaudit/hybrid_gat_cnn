@@ -1,0 +1,26 @@
+Using device: mps
+
+--- Processing brazil (full set) ---
+Total pairs: 122
+  Using model_type: simple (checkpoint: ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth)
+  Loaded model from ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth (best val F1: 0.6896551724137931)
+Extracting embeddings:   0%|          | 0/1 [00:00<?, ?it/s]Extracting embeddings: 100%|██████████| 1/1 [00:00<00:00,  5.83it/s]Extracting embeddings: 100%|██████████| 1/1 [00:00<00:00,  5.82it/s]
+Saved 122 embeddings to ./outputs/embeddings/fold_japan/brazil_pair_embeddings.npy and ./outputs/embeddings/fold_japan/brazil_pair_embeddings_with_labels.csv
+
+--- Processing japan (full set) ---
+Total pairs: 8676
+  Using model_type: simple (checkpoint: ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth)
+  Loaded model from ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth (best val F1: 0.6896551724137931)
+Extracting embeddings:   0%|          | 0/68 [00:00<?, ?it/s]Extracting embeddings:   3%|▎         | 2/68 [00:00<00:04, 13.82it/s]Extracting embeddings:   6%|▌         | 4/68 [00:00<00:03, 16.02it/s]Extracting embeddings:   9%|▉         | 6/68 [00:00<00:03, 17.26it/s]Extracting embeddings:  13%|█▎        | 9/68 [00:00<00:03, 19.03it/s]Extracting embeddings:  18%|█▊        | 12/68 [00:00<00:02, 19.87it/s]Extracting embeddings:  22%|██▏       | 15/68 [00:00<00:02, 20.16it/s]Extracting embeddings:  26%|██▋       | 18/68 [00:00<00:02, 19.06it/s]Extracting embeddings:  29%|██▉       | 20/68 [00:01<00:02, 17.22it/s]Extracting embeddings:  32%|███▏      | 22/68 [00:01<00:02, 15.90it/s]Extracting embeddings:  35%|███▌      | 24/68 [00:01<00:02, 15.41it/s]Extracting embeddings:  38%|███▊      | 26/68 [00:01<00:02, 15.46it/s]Extracting embeddings:  41%|████      | 28/68 [00:01<00:02, 15.08it/s]Extracting embeddings:  44%|████▍     | 30/68 [00:01<00:02, 14.67it/s]Extracting embeddings:  47%|████▋     | 32/68 [00:01<00:02, 14.14it/s]Extracting embeddings:  50%|█████     | 34/68 [00:02<00:02, 13.48it/s]Extracting embeddings:  53%|█████▎    | 36/68 [00:02<00:02, 13.76it/s]Extracting embeddings:  56%|█████▌    | 38/68 [00:02<00:02, 14.17it/s]Extracting embeddings:  59%|█████▉    | 40/68 [00:02<00:01, 14.41it/s]Extracting embeddings:  62%|██████▏   | 42/68 [00:02<00:01, 14.22it/s]Extracting embeddings:  65%|██████▍   | 44/68 [00:02<00:01, 14.55it/s]Extracting embeddings:  68%|██████▊   | 46/68 [00:02<00:01, 14.71it/s]Extracting embeddings:  71%|███████   | 48/68 [00:03<00:01, 14.59it/s]Extracting embeddings:  74%|███████▎  | 50/68 [00:03<00:01, 14.72it/s]Extracting embeddings:  76%|███████▋  | 52/68 [00:03<00:01, 14.48it/s]Extracting embeddings:  79%|███████▉  | 54/68 [00:03<00:00, 14.13it/s]Extracting embeddings:  82%|████████▏ | 56/68 [00:03<00:00, 14.07it/s]Extracting embeddings:  85%|████████▌ | 58/68 [00:03<00:00, 14.35it/s]Extracting embeddings:  88%|████████▊ | 60/68 [00:03<00:00, 14.44it/s]Extracting embeddings:  91%|█████████ | 62/68 [00:04<00:00, 14.43it/s]Extracting embeddings:  94%|█████████▍| 64/68 [00:04<00:00, 14.49it/s]Extracting embeddings:  97%|█████████▋| 66/68 [00:04<00:00, 14.19it/s]Extracting embeddings: 100%|██████████| 68/68 [00:04<00:00, 13.99it/s]Extracting embeddings: 100%|██████████| 68/68 [00:04<00:00, 15.11it/s]
+Saved 8676 embeddings to ./outputs/embeddings/fold_japan/japan_pair_embeddings.npy and ./outputs/embeddings/fold_japan/japan_pair_embeddings_with_labels.csv
+
+--- Processing usa (full set) ---
+Total pairs: 223
+  Using model_type: simple (checkpoint: ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth)
+  Loaded model from ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth (best val F1: 0.6896551724137931)
+Extracting embeddings:   0%|          | 0/2 [00:00<?, ?it/s]Extracting embeddings: 100%|██████████| 2/2 [00:00<00:00, 20.33it/s]
+Saved 223 embeddings to ./outputs/embeddings/fold_japan/usa_pair_embeddings.npy and ./outputs/embeddings/fold_japan/usa_pair_embeddings_with_labels.csv
+
+Saved combined embeddings for 3 countries to ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+
+Extraction complete. Ready for Stage 2 (GNN) node-feature preparation.

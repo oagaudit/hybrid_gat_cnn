@@ -1,0 +1,300 @@
+2026-07-17 16:35:41,176 - INFO - ============================================================
+2026-07-17 16:35:41,176 - INFO - Stage 2: HYBRID Training Started
+2026-07-17 16:35:41,176 - INFO - ============================================================
+2026-07-17 16:35:41,176 - INFO - Output directory: ./outputs/models_stage2/in_sample/in_sample
+2026-07-17 16:35:41,176 - INFO - Log file: ./outputs/models_stage2/in_sample/in_sample/logs/hybrid_stage2.log
+2026-07-17 16:35:41,176 - INFO - Model type: hybrid
+2026-07-17 16:35:41,176 - INFO - Node features dir: ./outputs/node_features/insample
+2026-07-17 16:35:41,176 - INFO - In-sample mode
+2026-07-17 16:35:41,194 - INFO - Using device: mps (requested: --device auto)
+2026-07-17 16:35:41,218 - INFO - Using hybrid features: 135 dim
+2026-07-17 16:35:41,218 - INFO - Node feature shape after adjustment: torch.Size([3322, 135])
+2026-07-17 16:35:41,218 - INFO - Graph size: 3322 nodes, 1254360 directed edge entries (density=0.1137)
+2026-07-17 16:35:41,218 - WARNING - Large graph (1254360 edges). If running on --device mps and you hit an 'MPS backend out of memory' error, this script will automatically retry on CPU. You can also pass --device cpu directly to skip the failed MPS attempt.
+2026-07-17 16:35:41,218 - INFO - ============================================================
+2026-07-17 16:35:41,218 - INFO - In-sample mode: Loading tender splits from create_tender_splits.py
+2026-07-17 16:35:41,218 - INFO - ============================================================
+2026-07-17 16:35:41,218 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 16:35:41,219 - INFO -   ✅ brazil: Train=69, Val=16, Test=16
+2026-07-17 16:35:41,219 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 16:35:41,220 - INFO -   ✅ japan: Train=756, Val=162, Test=162
+2026-07-17 16:35:41,220 - INFO - 
+📂 Processing USA...
+2026-07-17 16:35:41,221 - INFO -   ✅ usa: Train=1504, Val=316, Test=321
+2026-07-17 16:35:41,226 - INFO - 
+✅ In-sample splits loaded from tender splits:
+2026-07-17 16:35:41,228 - INFO -   Train: 2329
+2026-07-17 16:35:41,228 - INFO -   Val: 494
+2026-07-17 16:35:41,228 - INFO -   Test: 499
+2026-07-17 16:35:41,229 - INFO -   Total: 3322 (All assigned ✅)
+2026-07-17 16:35:41,231 - INFO -   Label distribution (train): 0=1945, 1=384
+2026-07-17 16:35:41,231 - INFO - 
+============================================================
+Run 1/5 (device=mps)
+============================================================
+2026-07-17 16:35:41,283 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 16:36:01,513 - ERROR - Run 1: caught out-of-memory error on device 'mps': MPS backend out of memory (MPS allocated: 16.48 GiB, other allocations: 1.97 GiB, max allowed: 20.13 GiB). Tried to allocate 1.92 GiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
+2026-07-17 16:36:01,545 - ERROR - Falling back to CPU for this run and all remaining runs (CPU has no hard memory ceiling like MPS/CUDA, just slower). You can avoid this delay next time by passing --device cpu directly.
+2026-07-17 16:36:01,674 - INFO - 
+============================================================
+Run 1/5 (device=cpu)
+============================================================
+2026-07-17 16:36:01,964 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 16:36:30,719 - INFO - Epoch   1 | Train Loss: 0.8401 Acc: 0.7497 | Val Loss: 0.8934 Acc: 0.6215 F1: 0.4316 AUC: 0.7773
+2026-07-17 16:37:12,901 - INFO - Epoch   2 | Train Loss: 1.1209 Acc: 0.5745 | Val Loss: 0.4931 Acc: 0.7591 F1: 0.5609 AUC: 0.9186
+2026-07-17 16:37:45,826 - INFO - Epoch   3 | Train Loss: 0.6127 Acc: 0.6990 | Val Loss: 0.6569 Acc: 0.7611 F1: 0.5496 AUC: 0.8774
+2026-07-17 16:38:22,898 - INFO - Epoch   4 | Train Loss: 0.6340 Acc: 0.7316 | Val Loss: 0.6619 Acc: 0.8219 F1: 0.6207 AUC: 0.8771
+2026-07-17 16:38:55,316 - INFO - Epoch   5 | Train Loss: 0.6633 Acc: 0.7802 | Val Loss: 0.5944 Acc: 0.8441 F1: 0.6516 AUC: 0.8883
+2026-07-17 16:39:28,988 - INFO - Epoch   6 | Train Loss: 0.5651 Acc: 0.8201 | Val Loss: 0.5158 Acc: 0.8887 F1: 0.7179 AUC: 0.9048
+2026-07-17 16:40:07,620 - INFO - Epoch   7 | Train Loss: 0.4770 Acc: 0.8583 | Val Loss: 0.4218 Acc: 0.8988 F1: 0.7222 AUC: 0.9184
+2026-07-17 16:40:43,691 - INFO - Epoch   8 | Train Loss: 0.4074 Acc: 0.8798 | Val Loss: 0.3263 Acc: 0.9069 F1: 0.7444 AUC: 0.9518
+2026-07-17 16:41:15,044 - INFO - Epoch   9 | Train Loss: 0.3714 Acc: 0.8866 | Val Loss: 0.3275 Acc: 0.8684 F1: 0.6829 AUC: 0.9476
+2026-07-17 16:41:48,982 - INFO - Epoch  10 | Train Loss: 0.4442 Acc: 0.8703 | Val Loss: 0.2656 Acc: 0.9271 F1: 0.8043 AUC: 0.9715
+2026-07-17 16:42:28,046 - INFO - Epoch  11 | Train Loss: 0.3170 Acc: 0.9017 | Val Loss: 0.3023 Acc: 0.9291 F1: 0.8045 AUC: 0.9494
+2026-07-17 16:43:28,266 - INFO - Epoch  12 | Train Loss: 0.3087 Acc: 0.9098 | Val Loss: 0.3218 Acc: 0.9312 F1: 0.8090 AUC: 0.9425
+2026-07-17 16:44:02,855 - INFO - Epoch  13 | Train Loss: 0.2975 Acc: 0.9180 | Val Loss: 0.3076 Acc: 0.9393 F1: 0.8295 AUC: 0.9488
+2026-07-17 16:44:39,235 - INFO - Epoch  14 | Train Loss: 0.3029 Acc: 0.9274 | Val Loss: 0.2735 Acc: 0.9474 F1: 0.8523 AUC: 0.9625
+2026-07-17 16:45:18,161 - INFO - Epoch  15 | Train Loss: 0.2840 Acc: 0.9300 | Val Loss: 0.2366 Acc: 0.9514 F1: 0.8554 AUC: 0.9677
+2026-07-17 16:46:01,120 - INFO - Epoch  16 | Train Loss: 0.2599 Acc: 0.9382 | Val Loss: 0.1813 Acc: 0.9433 F1: 0.8478 AUC: 0.9871
+2026-07-17 16:47:05,106 - INFO - Epoch  17 | Train Loss: 0.2128 Acc: 0.9163 | Val Loss: 0.1766 Acc: 0.9352 F1: 0.8261 AUC: 0.9867
+2026-07-17 16:47:50,264 - INFO - Epoch  18 | Train Loss: 0.2361 Acc: 0.9214 | Val Loss: 0.1762 Acc: 0.9413 F1: 0.8398 AUC: 0.9860
+2026-07-17 16:48:35,147 - INFO - Epoch  19 | Train Loss: 0.2151 Acc: 0.9287 | Val Loss: 0.1842 Acc: 0.9393 F1: 0.8333 AUC: 0.9801
+2026-07-17 16:49:18,404 - INFO - Epoch  20 | Train Loss: 0.2005 Acc: 0.9206 | Val Loss: 0.1703 Acc: 0.9433 F1: 0.8444 AUC: 0.9841
+2026-07-17 16:49:55,849 - INFO - Epoch  21 | Train Loss: 0.1800 Acc: 0.9300 | Val Loss: 0.1586 Acc: 0.9453 F1: 0.8541 AUC: 0.9881
+2026-07-17 16:50:34,803 - INFO - Epoch  22 | Train Loss: 0.1754 Acc: 0.9390 | Val Loss: 0.1545 Acc: 0.9352 F1: 0.8316 AUC: 0.9885
+2026-07-17 16:51:10,503 - INFO - Epoch  23 | Train Loss: 0.1698 Acc: 0.9369 | Val Loss: 0.1495 Acc: 0.9332 F1: 0.8272 AUC: 0.9891
+2026-07-17 16:51:46,966 - INFO - Epoch  24 | Train Loss: 0.1767 Acc: 0.9334 | Val Loss: 0.1445 Acc: 0.9312 F1: 0.8211 AUC: 0.9898
+2026-07-17 16:52:26,239 - INFO - Epoch  25 | Train Loss: 0.1721 Acc: 0.9304 | Val Loss: 0.1446 Acc: 0.9372 F1: 0.8342 AUC: 0.9891
+2026-07-17 16:53:01,087 - INFO - Epoch  26 | Train Loss: 0.1532 Acc: 0.9317 | Val Loss: 0.1456 Acc: 0.9393 F1: 0.8404 AUC: 0.9886
+2026-07-17 16:53:36,570 - INFO - Epoch  27 | Train Loss: 0.1692 Acc: 0.9330 | Val Loss: 0.1405 Acc: 0.9474 F1: 0.8587 AUC: 0.9893
+2026-07-17 16:54:08,971 - INFO - Epoch  28 | Train Loss: 0.1476 Acc: 0.9416 | Val Loss: 0.1378 Acc: 0.9474 F1: 0.8571 AUC: 0.9894
+2026-07-17 16:54:51,809 - INFO - Epoch  29 | Train Loss: 0.1514 Acc: 0.9455 | Val Loss: 0.1348 Acc: 0.9413 F1: 0.8432 AUC: 0.9902
+2026-07-17 16:55:32,592 - INFO - Epoch  30 | Train Loss: 0.1491 Acc: 0.9493 | Val Loss: 0.1288 Acc: 0.9433 F1: 0.8511 AUC: 0.9915
+2026-07-17 16:56:11,069 - INFO - Epoch  31 | Train Loss: 0.1390 Acc: 0.9416 | Val Loss: 0.1246 Acc: 0.9393 F1: 0.8404 AUC: 0.9922
+2026-07-17 16:56:48,985 - INFO - Epoch  32 | Train Loss: 0.1413 Acc: 0.9446 | Val Loss: 0.1257 Acc: 0.9372 F1: 0.8360 AUC: 0.9923
+2026-07-17 16:57:31,297 - INFO - Epoch  33 | Train Loss: 0.1333 Acc: 0.9390 | Val Loss: 0.1288 Acc: 0.9413 F1: 0.8449 AUC: 0.9910
+2026-07-17 16:58:13,293 - INFO - Epoch  34 | Train Loss: 0.1449 Acc: 0.9420 | Val Loss: 0.1270 Acc: 0.9453 F1: 0.8541 AUC: 0.9912
+2026-07-17 16:58:51,720 - INFO - Epoch  35 | Train Loss: 0.1411 Acc: 0.9416 | Val Loss: 0.1238 Acc: 0.9393 F1: 0.8387 AUC: 0.9918
+2026-07-17 16:59:29,316 - INFO - Epoch  36 | Train Loss: 0.1290 Acc: 0.9455 | Val Loss: 0.1255 Acc: 0.9433 F1: 0.8478 AUC: 0.9912
+2026-07-17 17:00:09,653 - INFO - Epoch  37 | Train Loss: 0.1316 Acc: 0.9511 | Val Loss: 0.1201 Acc: 0.9413 F1: 0.8415 AUC: 0.9922
+2026-07-17 17:00:49,753 - INFO - Epoch  38 | Train Loss: 0.1441 Acc: 0.9472 | Val Loss: 0.1197 Acc: 0.9433 F1: 0.8478 AUC: 0.9921
+2026-07-17 17:01:25,744 - INFO - Epoch  39 | Train Loss: 0.1375 Acc: 0.9511 | Val Loss: 0.1204 Acc: 0.9372 F1: 0.8342 AUC: 0.9920
+2026-07-17 17:02:13,865 - INFO - Epoch  40 | Train Loss: 0.1202 Acc: 0.9468 | Val Loss: 0.1159 Acc: 0.9433 F1: 0.8495 AUC: 0.9926
+2026-07-17 17:02:56,166 - INFO - Epoch  41 | Train Loss: 0.1370 Acc: 0.9463 | Val Loss: 0.1178 Acc: 0.9453 F1: 0.8541 AUC: 0.9923
+2026-07-17 17:03:35,564 - INFO - Epoch  42 | Train Loss: 0.1256 Acc: 0.9472 | Val Loss: 0.1193 Acc: 0.9474 F1: 0.8571 AUC: 0.9920
+2026-07-17 17:03:35,568 - INFO - Early stopping at epoch 42
+2026-07-17 17:03:38,387 - INFO - 
+Run 1 Test Results:
+2026-07-17 17:03:38,388 - INFO -   Accuracy: 0.9599, F1: 0.8837, AUC: 0.9895
+2026-07-17 17:03:38,389 - INFO - 
+============================================================
+Run 2/5 (device=cpu)
+============================================================
+2026-07-17 17:03:38,503 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 17:04:15,748 - INFO - Epoch   1 | Train Loss: 0.9683 Acc: 0.8012 | Val Loss: 0.8267 Acc: 0.6437 F1: 0.3803 AUC: 0.6881
+2026-07-17 17:04:54,771 - INFO - Epoch   2 | Train Loss: 1.0530 Acc: 0.6767 | Val Loss: 0.6803 Acc: 0.7105 F1: 0.4800 AUC: 0.7950
+2026-07-17 17:05:32,334 - INFO - Epoch   3 | Train Loss: 0.7824 Acc: 0.6861 | Val Loss: 0.6451 Acc: 0.6579 F1: 0.4601 AUC: 0.8500
+2026-07-17 17:06:08,204 - INFO - Epoch   4 | Train Loss: 0.5708 Acc: 0.6694 | Val Loss: 0.6464 Acc: 0.7247 F1: 0.4809 AUC: 0.8213
+2026-07-17 17:06:43,660 - INFO - Epoch   5 | Train Loss: 0.6808 Acc: 0.7398 | Val Loss: 0.5192 Acc: 0.8279 F1: 0.6188 AUC: 0.8774
+2026-07-17 17:07:26,130 - INFO - Epoch   6 | Train Loss: 0.5716 Acc: 0.7909 | Val Loss: 0.4032 Acc: 0.8441 F1: 0.6516 AUC: 0.9142
+2026-07-17 17:08:06,279 - INFO - Epoch   7 | Train Loss: 0.4763 Acc: 0.8016 | Val Loss: 0.3825 Acc: 0.8320 F1: 0.6438 AUC: 0.9340
+2026-07-17 17:08:41,116 - INFO - Epoch   8 | Train Loss: 0.4972 Acc: 0.7939 | Val Loss: 0.3535 Acc: 0.8623 F1: 0.6762 AUC: 0.9408
+2026-07-17 17:09:29,615 - INFO - Epoch   9 | Train Loss: 0.4693 Acc: 0.8274 | Val Loss: 0.3484 Acc: 0.8927 F1: 0.7196 AUC: 0.9324
+2026-07-17 17:10:04,480 - INFO - Epoch  10 | Train Loss: 0.3839 Acc: 0.8669 | Val Loss: 0.3532 Acc: 0.9008 F1: 0.7293 AUC: 0.9360
+2026-07-17 17:10:41,360 - INFO - Epoch  11 | Train Loss: 0.3573 Acc: 0.8922 | Val Loss: 0.3055 Acc: 0.9150 F1: 0.7692 AUC: 0.9491
+2026-07-17 17:11:20,016 - INFO - Epoch  12 | Train Loss: 0.3171 Acc: 0.9000 | Val Loss: 0.2496 Acc: 0.9271 F1: 0.8022 AUC: 0.9701
+2026-07-17 17:11:54,927 - INFO - Epoch  13 | Train Loss: 0.3635 Acc: 0.8965 | Val Loss: 0.2371 Acc: 0.9332 F1: 0.8136 AUC: 0.9714
+2026-07-17 17:12:29,545 - INFO - Epoch  14 | Train Loss: 0.2769 Acc: 0.9085 | Val Loss: 0.2366 Acc: 0.9534 F1: 0.8639 AUC: 0.9659
+2026-07-17 17:13:03,417 - INFO - Epoch  15 | Train Loss: 0.2677 Acc: 0.9163 | Val Loss: 0.2161 Acc: 0.9474 F1: 0.8488 AUC: 0.9762
+2026-07-17 17:13:34,687 - INFO - Epoch  16 | Train Loss: 0.2733 Acc: 0.9184 | Val Loss: 0.2158 Acc: 0.9474 F1: 0.8488 AUC: 0.9740
+2026-07-17 17:14:09,188 - INFO - Epoch  17 | Train Loss: 0.2299 Acc: 0.9279 | Val Loss: 0.2023 Acc: 0.9474 F1: 0.8488 AUC: 0.9788
+2026-07-17 17:14:44,946 - INFO - Epoch  18 | Train Loss: 0.2222 Acc: 0.9300 | Val Loss: 0.1838 Acc: 0.9575 F1: 0.8772 AUC: 0.9847
+2026-07-17 17:15:27,183 - INFO - Epoch  19 | Train Loss: 0.2038 Acc: 0.9270 | Val Loss: 0.1785 Acc: 0.9555 F1: 0.8706 AUC: 0.9865
+2026-07-17 17:16:03,862 - INFO - Epoch  20 | Train Loss: 0.2075 Acc: 0.9356 | Val Loss: 0.1757 Acc: 0.9555 F1: 0.8736 AUC: 0.9870
+2026-07-17 17:16:42,245 - INFO - Epoch  21 | Train Loss: 0.1884 Acc: 0.9339 | Val Loss: 0.1879 Acc: 0.9474 F1: 0.8539 AUC: 0.9787
+2026-07-17 17:17:22,184 - INFO - Epoch  22 | Train Loss: 0.1951 Acc: 0.9292 | Val Loss: 0.1904 Acc: 0.9393 F1: 0.8352 AUC: 0.9762
+2026-07-17 17:17:59,867 - INFO - Epoch  23 | Train Loss: 0.1907 Acc: 0.9274 | Val Loss: 0.1754 Acc: 0.9372 F1: 0.8306 AUC: 0.9829
+2026-07-17 17:18:33,959 - INFO - Epoch  24 | Train Loss: 0.1820 Acc: 0.9270 | Val Loss: 0.1581 Acc: 0.9433 F1: 0.8495 AUC: 0.9883
+2026-07-17 17:19:11,914 - INFO - Epoch  25 | Train Loss: 0.1695 Acc: 0.9274 | Val Loss: 0.1559 Acc: 0.9413 F1: 0.8466 AUC: 0.9885
+2026-07-17 17:19:47,640 - INFO - Epoch  26 | Train Loss: 0.1751 Acc: 0.9214 | Val Loss: 0.1565 Acc: 0.9393 F1: 0.8352 AUC: 0.9868
+2026-07-17 17:20:23,141 - INFO - Epoch  27 | Train Loss: 0.1645 Acc: 0.9330 | Val Loss: 0.1636 Acc: 0.9453 F1: 0.8492 AUC: 0.9848
+2026-07-17 17:21:01,816 - INFO - Epoch  28 | Train Loss: 0.1676 Acc: 0.9334 | Val Loss: 0.1456 Acc: 0.9494 F1: 0.8619 AUC: 0.9889
+2026-07-17 17:21:37,117 - INFO - Epoch  29 | Train Loss: 0.1600 Acc: 0.9304 | Val Loss: 0.1426 Acc: 0.9433 F1: 0.8462 AUC: 0.9890
+2026-07-17 17:22:09,040 - INFO - Epoch  30 | Train Loss: 0.1640 Acc: 0.9330 | Val Loss: 0.1475 Acc: 0.9433 F1: 0.8427 AUC: 0.9876
+2026-07-17 17:22:47,002 - INFO - Epoch  31 | Train Loss: 0.1812 Acc: 0.9373 | Val Loss: 0.1564 Acc: 0.9514 F1: 0.8621 AUC: 0.9853
+2026-07-17 17:23:27,903 - INFO - Epoch  32 | Train Loss: 0.1473 Acc: 0.9429 | Val Loss: 0.1516 Acc: 0.9453 F1: 0.8457 AUC: 0.9868
+2026-07-17 17:24:07,008 - INFO - Epoch  33 | Train Loss: 0.1547 Acc: 0.9407 | Val Loss: 0.1456 Acc: 0.9474 F1: 0.8523 AUC: 0.9876
+2026-07-17 17:24:07,014 - INFO - Early stopping at epoch 33
+2026-07-17 17:24:09,835 - INFO - 
+Run 2 Test Results:
+2026-07-17 17:24:09,835 - INFO -   Accuracy: 0.9539, F1: 0.8686, AUC: 0.9846
+2026-07-17 17:24:09,841 - INFO - 
+============================================================
+Run 3/5 (device=cpu)
+============================================================
+2026-07-17 17:24:10,000 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 17:24:47,546 - INFO - Epoch   1 | Train Loss: 0.8207 Acc: 0.4951 | Val Loss: 1.0656 Acc: 0.7571 F1: 0.5041 AUC: 0.7575
+2026-07-17 17:25:24,352 - INFO - Epoch   2 | Train Loss: 0.9369 Acc: 0.7278 | Val Loss: 1.0113 Acc: 0.8097 F1: 0.5688 AUC: 0.8041
+2026-07-17 17:25:58,036 - INFO - Epoch   3 | Train Loss: 0.8672 Acc: 0.7398 | Val Loss: 0.8503 Acc: 0.8543 F1: 0.6211 AUC: 0.8324
+2026-07-17 17:26:39,990 - INFO - Epoch   4 | Train Loss: 0.7697 Acc: 0.7827 | Val Loss: 0.6775 Acc: 0.8401 F1: 0.6108 AUC: 0.8425
+2026-07-17 17:27:22,123 - INFO - Epoch   5 | Train Loss: 0.6798 Acc: 0.7827 | Val Loss: 0.4839 Acc: 0.7713 F1: 0.5350 AUC: 0.8937
+2026-07-17 17:27:59,279 - INFO - Epoch   6 | Train Loss: 0.6203 Acc: 0.7377 | Val Loss: 0.4509 Acc: 0.8036 F1: 0.5975 AUC: 0.9129
+2026-07-17 17:28:41,299 - INFO - Epoch   7 | Train Loss: 0.5772 Acc: 0.7415 | Val Loss: 0.4194 Acc: 0.8077 F1: 0.5957 AUC: 0.9187
+2026-07-17 17:29:22,524 - INFO - Epoch   8 | Train Loss: 0.4884 Acc: 0.7767 | Val Loss: 0.4173 Acc: 0.8320 F1: 0.6140 AUC: 0.9092
+2026-07-17 17:30:01,151 - INFO - Epoch   9 | Train Loss: 0.4809 Acc: 0.8025 | Val Loss: 0.4223 Acc: 0.8704 F1: 0.6863 AUC: 0.9100
+2026-07-17 17:30:41,463 - INFO - Epoch  10 | Train Loss: 0.4563 Acc: 0.8343 | Val Loss: 0.4060 Acc: 0.8887 F1: 0.7179 AUC: 0.9175
+2026-07-17 17:31:30,085 - INFO - Epoch  11 | Train Loss: 0.4453 Acc: 0.8467 | Val Loss: 0.3701 Acc: 0.8927 F1: 0.7196 AUC: 0.9264
+2026-07-17 17:32:08,119 - INFO - Epoch  12 | Train Loss: 0.3936 Acc: 0.8600 | Val Loss: 0.3287 Acc: 0.8806 F1: 0.6943 AUC: 0.9365
+2026-07-17 17:32:46,626 - INFO - Epoch  13 | Train Loss: 0.3819 Acc: 0.8673 | Val Loss: 0.3002 Acc: 0.8826 F1: 0.7071 AUC: 0.9492
+2026-07-17 17:33:28,116 - INFO - Epoch  14 | Train Loss: 0.3436 Acc: 0.8574 | Val Loss: 0.2811 Acc: 0.8785 F1: 0.6970 AUC: 0.9561
+2026-07-17 17:34:04,884 - INFO - Epoch  15 | Train Loss: 0.3086 Acc: 0.8789 | Val Loss: 0.2755 Acc: 0.8927 F1: 0.7196 AUC: 0.9554
+2026-07-17 17:34:48,573 - INFO - Epoch  16 | Train Loss: 0.3067 Acc: 0.8965 | Val Loss: 0.2424 Acc: 0.9291 F1: 0.8087 AUC: 0.9708
+2026-07-17 17:35:33,926 - INFO - Epoch  17 | Train Loss: 0.2692 Acc: 0.9008 | Val Loss: 0.2263 Acc: 0.9251 F1: 0.8021 AUC: 0.9732
+2026-07-17 17:36:12,474 - INFO - Epoch  18 | Train Loss: 0.2689 Acc: 0.9017 | Val Loss: 0.2100 Acc: 0.9150 F1: 0.7812 AUC: 0.9766
+2026-07-17 17:36:50,295 - INFO - Epoch  19 | Train Loss: 0.2355 Acc: 0.9103 | Val Loss: 0.2035 Acc: 0.9130 F1: 0.7772 AUC: 0.9775
+2026-07-17 17:37:27,562 - INFO - Epoch  20 | Train Loss: 0.2337 Acc: 0.9038 | Val Loss: 0.1945 Acc: 0.9190 F1: 0.7980 AUC: 0.9799
+2026-07-17 17:38:04,911 - INFO - Epoch  21 | Train Loss: 0.2192 Acc: 0.9081 | Val Loss: 0.1806 Acc: 0.9150 F1: 0.7900 AUC: 0.9839
+2026-07-17 17:38:42,370 - INFO - Epoch  22 | Train Loss: 0.2138 Acc: 0.9090 | Val Loss: 0.1730 Acc: 0.9251 F1: 0.8103 AUC: 0.9847
+2026-07-17 17:39:22,281 - INFO - Epoch  23 | Train Loss: 0.1811 Acc: 0.9231 | Val Loss: 0.1691 Acc: 0.9332 F1: 0.8272 AUC: 0.9848
+2026-07-17 17:39:55,430 - INFO - Epoch  24 | Train Loss: 0.2009 Acc: 0.9223 | Val Loss: 0.1620 Acc: 0.9271 F1: 0.8125 AUC: 0.9865
+2026-07-17 17:40:37,621 - INFO - Epoch  25 | Train Loss: 0.1733 Acc: 0.9309 | Val Loss: 0.1592 Acc: 0.9231 F1: 0.8021 AUC: 0.9860
+2026-07-17 17:41:15,426 - INFO - Epoch  26 | Train Loss: 0.1768 Acc: 0.9339 | Val Loss: 0.1547 Acc: 0.9190 F1: 0.7959 AUC: 0.9868
+2026-07-17 17:41:54,807 - INFO - Epoch  27 | Train Loss: 0.1603 Acc: 0.9365 | Val Loss: 0.1532 Acc: 0.9109 F1: 0.7800 AUC: 0.9872
+2026-07-17 17:42:39,259 - INFO - Epoch  28 | Train Loss: 0.1628 Acc: 0.9231 | Val Loss: 0.1498 Acc: 0.9251 F1: 0.8083 AUC: 0.9873
+2026-07-17 17:43:20,722 - INFO - Epoch  29 | Train Loss: 0.1547 Acc: 0.9300 | Val Loss: 0.1457 Acc: 0.9291 F1: 0.8168 AUC: 0.9877
+2026-07-17 17:43:54,683 - INFO - Epoch  30 | Train Loss: 0.1517 Acc: 0.9395 | Val Loss: 0.1453 Acc: 0.9251 F1: 0.8083 AUC: 0.9877
+2026-07-17 17:44:36,227 - INFO - Epoch  31 | Train Loss: 0.1635 Acc: 0.9219 | Val Loss: 0.1454 Acc: 0.9312 F1: 0.8191 AUC: 0.9875
+2026-07-17 17:45:16,133 - INFO - Epoch  32 | Train Loss: 0.1571 Acc: 0.9292 | Val Loss: 0.1407 Acc: 0.9332 F1: 0.8235 AUC: 0.9881
+2026-07-17 17:46:02,349 - INFO - Epoch  33 | Train Loss: 0.1441 Acc: 0.9352 | Val Loss: 0.1443 Acc: 0.9352 F1: 0.8280 AUC: 0.9875
+2026-07-17 17:46:38,805 - INFO - Epoch  34 | Train Loss: 0.1534 Acc: 0.9360 | Val Loss: 0.1436 Acc: 0.9372 F1: 0.8342 AUC: 0.9874
+2026-07-17 17:47:17,662 - INFO - Epoch  35 | Train Loss: 0.1384 Acc: 0.9322 | Val Loss: 0.1406 Acc: 0.9372 F1: 0.8342 AUC: 0.9879
+2026-07-17 17:47:56,774 - INFO - Epoch  36 | Train Loss: 0.1386 Acc: 0.9352 | Val Loss: 0.1377 Acc: 0.9393 F1: 0.8370 AUC: 0.9883
+2026-07-17 17:48:42,206 - INFO - Epoch  37 | Train Loss: 0.1425 Acc: 0.9360 | Val Loss: 0.1363 Acc: 0.9494 F1: 0.8603 AUC: 0.9883
+2026-07-17 17:49:34,601 - INFO - Epoch  38 | Train Loss: 0.1428 Acc: 0.9446 | Val Loss: 0.1397 Acc: 0.9413 F1: 0.8432 AUC: 0.9880
+2026-07-17 17:50:12,129 - INFO - Epoch  39 | Train Loss: 0.1376 Acc: 0.9386 | Val Loss: 0.1422 Acc: 0.9433 F1: 0.8478 AUC: 0.9879
+2026-07-17 17:50:56,716 - INFO - Epoch  40 | Train Loss: 0.1440 Acc: 0.9339 | Val Loss: 0.1361 Acc: 0.9352 F1: 0.8298 AUC: 0.9889
+2026-07-17 17:51:33,388 - INFO - Epoch  41 | Train Loss: 0.1345 Acc: 0.9365 | Val Loss: 0.1338 Acc: 0.9352 F1: 0.8298 AUC: 0.9894
+2026-07-17 17:52:11,534 - INFO - Epoch  42 | Train Loss: 0.1311 Acc: 0.9377 | Val Loss: 0.1315 Acc: 0.9352 F1: 0.8280 AUC: 0.9897
+2026-07-17 17:52:49,198 - INFO - Epoch  43 | Train Loss: 0.1346 Acc: 0.9373 | Val Loss: 0.1309 Acc: 0.9393 F1: 0.8370 AUC: 0.9897
+2026-07-17 17:53:26,085 - INFO - Epoch  44 | Train Loss: 0.1262 Acc: 0.9459 | Val Loss: 0.1308 Acc: 0.9372 F1: 0.8324 AUC: 0.9894
+2026-07-17 17:54:02,310 - INFO - Epoch  45 | Train Loss: 0.1262 Acc: 0.9463 | Val Loss: 0.1304 Acc: 0.9372 F1: 0.8360 AUC: 0.9892
+2026-07-17 17:54:43,828 - INFO - Epoch  46 | Train Loss: 0.1262 Acc: 0.9455 | Val Loss: 0.1306 Acc: 0.9372 F1: 0.8342 AUC: 0.9892
+2026-07-17 17:55:18,480 - INFO - Epoch  47 | Train Loss: 0.1261 Acc: 0.9463 | Val Loss: 0.1275 Acc: 0.9413 F1: 0.8432 AUC: 0.9896
+2026-07-17 17:55:57,896 - INFO - Epoch  48 | Train Loss: 0.1402 Acc: 0.9463 | Val Loss: 0.1325 Acc: 0.9433 F1: 0.8495 AUC: 0.9890
+2026-07-17 17:56:35,422 - INFO - Epoch  49 | Train Loss: 0.1314 Acc: 0.9420 | Val Loss: 0.1268 Acc: 0.9352 F1: 0.8316 AUC: 0.9899
+2026-07-17 17:57:15,535 - INFO - Epoch  50 | Train Loss: 0.1231 Acc: 0.9463 | Val Loss: 0.1245 Acc: 0.9352 F1: 0.8298 AUC: 0.9904
+2026-07-17 17:57:18,619 - INFO - 
+Run 3 Test Results:
+2026-07-17 17:57:18,619 - INFO -   Accuracy: 0.9359, F1: 0.8280, AUC: 0.9898
+2026-07-17 17:57:18,619 - INFO - 
+============================================================
+Run 4/5 (device=cpu)
+============================================================
+2026-07-17 17:57:18,691 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 17:57:53,569 - INFO - Epoch   1 | Train Loss: 1.4430 Acc: 0.1949 | Val Loss: 0.9634 Acc: 0.3745 F1: 0.2993 AUC: 0.7130
+2026-07-17 17:58:27,395 - INFO - Epoch   2 | Train Loss: 0.8802 Acc: 0.3693 | Val Loss: 1.0534 Acc: 0.4555 F1: 0.3423 AUC: 0.7732
+2026-07-17 17:59:04,353 - INFO - Epoch   3 | Train Loss: 0.9152 Acc: 0.4586 | Val Loss: 1.0690 Acc: 0.5830 F1: 0.4080 AUC: 0.8022
+2026-07-17 17:59:39,663 - INFO - Epoch   4 | Train Loss: 0.8170 Acc: 0.5796 | Val Loss: 1.0242 Acc: 0.6923 F1: 0.4685 AUC: 0.8086
+2026-07-17 18:00:18,987 - INFO - Epoch   5 | Train Loss: 0.8879 Acc: 0.6655 | Val Loss: 0.9228 Acc: 0.6943 F1: 0.4811 AUC: 0.8345
+2026-07-17 18:00:55,964 - INFO - Epoch   6 | Train Loss: 0.7882 Acc: 0.6934 | Val Loss: 0.7704 Acc: 0.7895 F1: 0.5556 AUC: 0.8390
+2026-07-17 18:01:29,582 - INFO - Epoch   7 | Train Loss: 0.6734 Acc: 0.7484 | Val Loss: 0.5916 Acc: 0.8057 F1: 0.5752 AUC: 0.8378
+2026-07-17 18:02:06,084 - INFO - Epoch   8 | Train Loss: 0.6802 Acc: 0.7600 | Val Loss: 0.4970 Acc: 0.8320 F1: 0.6278 AUC: 0.8671
+2026-07-17 18:02:37,192 - INFO - Epoch   9 | Train Loss: 0.6151 Acc: 0.7621 | Val Loss: 0.5085 Acc: 0.8016 F1: 0.5847 AUC: 0.8613
+2026-07-17 18:03:16,403 - INFO - Epoch  10 | Train Loss: 0.6600 Acc: 0.7578 | Val Loss: 0.5358 Acc: 0.8158 F1: 0.5919 AUC: 0.8381
+2026-07-17 18:03:55,787 - INFO - Epoch  11 | Train Loss: 0.6133 Acc: 0.7724 | Val Loss: 0.5299 Acc: 0.8441 F1: 0.6316 AUC: 0.8443
+2026-07-17 18:04:37,429 - INFO - Epoch  12 | Train Loss: 0.5992 Acc: 0.7935 | Val Loss: 0.5145 Acc: 0.8664 F1: 0.6667 AUC: 0.8471
+2026-07-17 18:05:08,080 - INFO - Epoch  13 | Train Loss: 0.5595 Acc: 0.8257 | Val Loss: 0.4858 Acc: 0.8623 F1: 0.6566 AUC: 0.8639
+2026-07-17 18:05:49,227 - INFO - Epoch  14 | Train Loss: 0.5493 Acc: 0.8231 | Val Loss: 0.4631 Acc: 0.8664 F1: 0.6667 AUC: 0.8843
+2026-07-17 18:06:28,393 - INFO - Epoch  15 | Train Loss: 0.4960 Acc: 0.8373 | Val Loss: 0.4306 Acc: 0.8704 F1: 0.6768 AUC: 0.8990
+2026-07-17 18:07:15,353 - INFO - Epoch  16 | Train Loss: 0.4517 Acc: 0.8330 | Val Loss: 0.4038 Acc: 0.8583 F1: 0.6569 AUC: 0.9120
+2026-07-17 18:07:51,094 - INFO - Epoch  17 | Train Loss: 0.4257 Acc: 0.8330 | Val Loss: 0.3626 Acc: 0.8502 F1: 0.6574 AUC: 0.9322
+2026-07-17 18:08:27,783 - INFO - Epoch  18 | Train Loss: 0.4095 Acc: 0.8197 | Val Loss: 0.3406 Acc: 0.8725 F1: 0.7070 AUC: 0.9418
+2026-07-17 18:09:17,397 - INFO - Epoch  19 | Train Loss: 0.3941 Acc: 0.8386 | Val Loss: 0.3408 Acc: 0.8927 F1: 0.7282 AUC: 0.9339
+2026-07-17 18:09:53,991 - INFO - Epoch  20 | Train Loss: 0.3781 Acc: 0.8489 | Val Loss: 0.3510 Acc: 0.9008 F1: 0.7435 AUC: 0.9303
+2026-07-17 18:10:35,789 - INFO - Epoch  21 | Train Loss: 0.3545 Acc: 0.8759 | Val Loss: 0.3464 Acc: 0.8988 F1: 0.7396 AUC: 0.9323
+2026-07-17 18:11:13,148 - INFO - Epoch  22 | Train Loss: 0.3561 Acc: 0.8897 | Val Loss: 0.3265 Acc: 0.9008 F1: 0.7461 AUC: 0.9398
+2026-07-17 18:11:52,019 - INFO - Epoch  23 | Train Loss: 0.3288 Acc: 0.8892 | Val Loss: 0.3126 Acc: 0.9211 F1: 0.7869 AUC: 0.9409
+2026-07-17 18:12:33,600 - INFO - Epoch  24 | Train Loss: 0.3137 Acc: 0.8892 | Val Loss: 0.2944 Acc: 0.9150 F1: 0.7766 AUC: 0.9463
+2026-07-17 18:13:57,275 - INFO - Epoch  25 | Train Loss: 0.2978 Acc: 0.8982 | Val Loss: 0.2676 Acc: 0.9251 F1: 0.8000 AUC: 0.9597
+2026-07-17 18:14:42,443 - INFO - Epoch  26 | Train Loss: 0.2821 Acc: 0.8965 | Val Loss: 0.2515 Acc: 0.9271 F1: 0.8065 AUC: 0.9643
+2026-07-17 18:15:29,195 - INFO - Epoch  27 | Train Loss: 0.2813 Acc: 0.9021 | Val Loss: 0.2448 Acc: 0.9231 F1: 0.7957 AUC: 0.9656
+2026-07-17 18:16:09,288 - INFO - Epoch  28 | Train Loss: 0.2655 Acc: 0.9068 | Val Loss: 0.2417 Acc: 0.9231 F1: 0.7935 AUC: 0.9663
+2026-07-17 18:16:52,826 - INFO - Epoch  29 | Train Loss: 0.2499 Acc: 0.9090 | Val Loss: 0.2390 Acc: 0.9150 F1: 0.7742 AUC: 0.9670
+2026-07-17 18:17:41,514 - INFO - Epoch  30 | Train Loss: 0.2358 Acc: 0.9120 | Val Loss: 0.2349 Acc: 0.9170 F1: 0.7784 AUC: 0.9683
+2026-07-17 18:18:45,177 - INFO - Epoch  31 | Train Loss: 0.2317 Acc: 0.9176 | Val Loss: 0.2236 Acc: 0.9190 F1: 0.7849 AUC: 0.9721
+2026-07-17 18:19:36,857 - INFO - Epoch  32 | Train Loss: 0.2187 Acc: 0.9201 | Val Loss: 0.2138 Acc: 0.9291 F1: 0.8045 AUC: 0.9751
+2026-07-17 18:20:23,537 - INFO - Epoch  33 | Train Loss: 0.2240 Acc: 0.9210 | Val Loss: 0.2026 Acc: 0.9332 F1: 0.8197 AUC: 0.9783
+2026-07-17 18:21:08,832 - INFO - Epoch  34 | Train Loss: 0.2171 Acc: 0.9253 | Val Loss: 0.1960 Acc: 0.9231 F1: 0.8000 AUC: 0.9790
+2026-07-17 18:21:50,305 - INFO - Epoch  35 | Train Loss: 0.2099 Acc: 0.9158 | Val Loss: 0.1963 Acc: 0.9251 F1: 0.8021 AUC: 0.9773
+2026-07-17 18:22:34,806 - INFO - Epoch  36 | Train Loss: 0.1955 Acc: 0.9266 | Val Loss: 0.2003 Acc: 0.9312 F1: 0.8111 AUC: 0.9750
+2026-07-17 18:23:23,637 - INFO - Epoch  37 | Train Loss: 0.2089 Acc: 0.9313 | Val Loss: 0.1978 Acc: 0.9352 F1: 0.8202 AUC: 0.9759
+2026-07-17 18:24:05,414 - INFO - Epoch  38 | Train Loss: 0.1865 Acc: 0.9334 | Val Loss: 0.1897 Acc: 0.9393 F1: 0.8295 AUC: 0.9787
+2026-07-17 18:24:51,493 - INFO - Epoch  39 | Train Loss: 0.2015 Acc: 0.9330 | Val Loss: 0.1789 Acc: 0.9453 F1: 0.8508 AUC: 0.9828
+2026-07-17 18:25:49,109 - INFO - Epoch  40 | Train Loss: 0.1755 Acc: 0.9339 | Val Loss: 0.1736 Acc: 0.9271 F1: 0.8144 AUC: 0.9841
+2026-07-17 18:27:05,849 - INFO - Epoch  41 | Train Loss: 0.1827 Acc: 0.9197 | Val Loss: 0.1707 Acc: 0.9291 F1: 0.8187 AUC: 0.9841
+2026-07-17 18:28:15,533 - INFO - Epoch  42 | Train Loss: 0.1724 Acc: 0.9240 | Val Loss: 0.1690 Acc: 0.9352 F1: 0.8280 AUC: 0.9837
+2026-07-17 18:29:10,839 - INFO - Epoch  43 | Train Loss: 0.1637 Acc: 0.9240 | Val Loss: 0.1690 Acc: 0.9372 F1: 0.8324 AUC: 0.9834
+2026-07-17 18:30:02,428 - INFO - Epoch  44 | Train Loss: 0.1683 Acc: 0.9373 | Val Loss: 0.1684 Acc: 0.9332 F1: 0.8216 AUC: 0.9835
+2026-07-17 18:30:57,844 - INFO - Epoch  45 | Train Loss: 0.1622 Acc: 0.9309 | Val Loss: 0.1642 Acc: 0.9372 F1: 0.8306 AUC: 0.9842
+2026-07-17 18:31:43,795 - INFO - Epoch  46 | Train Loss: 0.1594 Acc: 0.9352 | Val Loss: 0.1619 Acc: 0.9413 F1: 0.8398 AUC: 0.9848
+2026-07-17 18:32:37,726 - INFO - Epoch  47 | Train Loss: 0.1582 Acc: 0.9416 | Val Loss: 0.1625 Acc: 0.9494 F1: 0.8603 AUC: 0.9849
+2026-07-17 18:33:29,629 - INFO - Epoch  48 | Train Loss: 0.1575 Acc: 0.9420 | Val Loss: 0.1605 Acc: 0.9433 F1: 0.8478 AUC: 0.9850
+2026-07-17 18:34:33,180 - INFO - Epoch  49 | Train Loss: 0.1650 Acc: 0.9425 | Val Loss: 0.1599 Acc: 0.9413 F1: 0.8432 AUC: 0.9851
+2026-07-17 18:35:48,405 - INFO - Epoch  50 | Train Loss: 0.1488 Acc: 0.9326 | Val Loss: 0.1600 Acc: 0.9312 F1: 0.8191 AUC: 0.9850
+2026-07-17 18:35:53,887 - INFO - 
+Run 4 Test Results:
+2026-07-17 18:35:53,887 - INFO -   Accuracy: 0.9319, F1: 0.8191, AUC: 0.9881
+2026-07-17 18:35:53,887 - INFO - 
+============================================================
+Run 5/5 (device=cpu)
+============================================================
+2026-07-17 18:35:54,014 - INFO - Using class weighting: class1 weight = 5.07
+2026-07-17 18:36:48,272 - INFO - Epoch   1 | Train Loss: 0.8370 Acc: 0.2937 | Val Loss: 0.9605 Acc: 0.4838 F1: 0.3735 AUC: 0.8367
+2026-07-17 18:37:33,177 - INFO - Epoch   2 | Train Loss: 0.8555 Acc: 0.4852 | Val Loss: 0.8609 Acc: 0.8178 F1: 0.6087 AUC: 0.8721
+2026-07-17 18:38:39,833 - INFO - Epoch   3 | Train Loss: 0.8002 Acc: 0.7377 | Val Loss: 0.6802 Acc: 0.8502 F1: 0.6542 AUC: 0.8815
+2026-07-17 18:39:47,434 - INFO - Epoch   4 | Train Loss: 0.6390 Acc: 0.8149 | Val Loss: 0.5018 Acc: 0.8320 F1: 0.6376 AUC: 0.8952
+2026-07-17 18:40:49,503 - INFO - Epoch   5 | Train Loss: 0.4972 Acc: 0.8179 | Val Loss: 0.3942 Acc: 0.8057 F1: 0.6190 AUC: 0.9261
+2026-07-17 18:42:01,795 - INFO - Epoch   6 | Train Loss: 0.6317 Acc: 0.7870 | Val Loss: 0.3338 Acc: 0.8543 F1: 0.6786 AUC: 0.9517
+2026-07-17 18:42:54,469 - INFO - Epoch   7 | Train Loss: 0.5071 Acc: 0.8210 | Val Loss: 0.3617 Acc: 0.8927 F1: 0.7282 AUC: 0.9413
+2026-07-17 18:43:37,172 - INFO - Epoch   8 | Train Loss: 0.4897 Acc: 0.8806 | Val Loss: 0.4516 Acc: 0.9190 F1: 0.7778 AUC: 0.9281
+2026-07-17 18:44:52,647 - INFO - Epoch   9 | Train Loss: 0.4112 Acc: 0.8948 | Val Loss: 0.4502 Acc: 0.9312 F1: 0.8046 AUC: 0.9318
+2026-07-17 18:45:46,834 - INFO - Epoch  10 | Train Loss: 0.3913 Acc: 0.9060 | Val Loss: 0.4044 Acc: 0.9413 F1: 0.8284 AUC: 0.9380
+2026-07-17 18:46:32,830 - INFO - Epoch  11 | Train Loss: 0.3885 Acc: 0.9274 | Val Loss: 0.3349 Acc: 0.9514 F1: 0.8554 AUC: 0.9515
+2026-07-17 18:47:22,424 - INFO - Epoch  12 | Train Loss: 0.3065 Acc: 0.9274 | Val Loss: 0.2785 Acc: 0.9352 F1: 0.8161 AUC: 0.9604
+2026-07-17 18:48:16,534 - INFO - Epoch  13 | Train Loss: 0.2816 Acc: 0.9261 | Val Loss: 0.2217 Acc: 0.9130 F1: 0.7749 AUC: 0.9726
+2026-07-17 18:49:16,969 - INFO - Epoch  14 | Train Loss: 0.2572 Acc: 0.9064 | Val Loss: 0.2092 Acc: 0.9170 F1: 0.7876 AUC: 0.9751
+2026-07-17 18:50:18,473 - INFO - Epoch  15 | Train Loss: 0.2870 Acc: 0.9098 | Val Loss: 0.2009 Acc: 0.9211 F1: 0.7958 AUC: 0.9763
+2026-07-17 18:51:14,078 - INFO - Epoch  16 | Train Loss: 0.2392 Acc: 0.9034 | Val Loss: 0.2000 Acc: 0.9372 F1: 0.8268 AUC: 0.9770
+2026-07-17 18:52:07,426 - INFO - Epoch  17 | Train Loss: 0.2086 Acc: 0.9188 | Val Loss: 0.2045 Acc: 0.9433 F1: 0.8444 AUC: 0.9755
+2026-07-17 18:52:51,746 - INFO - Epoch  18 | Train Loss: 0.2427 Acc: 0.9253 | Val Loss: 0.1990 Acc: 0.9393 F1: 0.8370 AUC: 0.9753
+2026-07-17 18:53:37,481 - INFO - Epoch  19 | Train Loss: 0.2190 Acc: 0.9176 | Val Loss: 0.1878 Acc: 0.9271 F1: 0.8125 AUC: 0.9800
+2026-07-17 18:54:49,145 - INFO - Epoch  20 | Train Loss: 0.2006 Acc: 0.9223 | Val Loss: 0.1782 Acc: 0.9271 F1: 0.8125 AUC: 0.9827
+2026-07-17 18:55:53,565 - INFO - Epoch  21 | Train Loss: 0.2057 Acc: 0.9073 | Val Loss: 0.1727 Acc: 0.9150 F1: 0.7900 AUC: 0.9840
+2026-07-17 18:56:50,506 - INFO - Epoch  22 | Train Loss: 0.2036 Acc: 0.9025 | Val Loss: 0.1659 Acc: 0.9130 F1: 0.7882 AUC: 0.9870
+2026-07-17 18:58:03,313 - INFO - Epoch  23 | Train Loss: 0.1958 Acc: 0.9030 | Val Loss: 0.1592 Acc: 0.9170 F1: 0.7940 AUC: 0.9878
+2026-07-17 18:59:06,371 - INFO - Epoch  24 | Train Loss: 0.1833 Acc: 0.9206 | Val Loss: 0.1608 Acc: 0.9312 F1: 0.8211 AUC: 0.9870
+2026-07-17 19:00:05,261 - INFO - Epoch  25 | Train Loss: 0.1738 Acc: 0.9210 | Val Loss: 0.1613 Acc: 0.9433 F1: 0.8462 AUC: 0.9856
+2026-07-17 19:01:20,248 - INFO - Epoch  26 | Train Loss: 0.1735 Acc: 0.9313 | Val Loss: 0.1562 Acc: 0.9393 F1: 0.8370 AUC: 0.9860
+2026-07-17 19:01:20,251 - INFO - Early stopping at epoch 26
+2026-07-17 19:01:23,622 - INFO - 
+Run 5 Test Results:
+2026-07-17 19:01:23,623 - INFO -   Accuracy: 0.9218, F1: 0.7937, AUC: 0.9830
+2026-07-17 19:01:23,623 - WARNING - NOTE: one or more runs fell back to CPU after an out-of-memory error on the original device. All reported runs below are still valid results — the device only affects speed, not correctness — but if you need every run trained on the exact same device for reproducibility notes, rerun with --device cpu from the start.
+2026-07-17 19:01:23,973 - INFO - 
+Saved results to ./outputs/models_stage2/in_sample/in_sample/hybrid_stage2_results.csv
+2026-07-17 19:01:23,973 - INFO - 
+============================================================
+2026-07-17 19:01:23,973 - INFO - SUMMARY OF ALL RUNS
+2026-07-17 19:01:23,973 - INFO - ============================================================
+2026-07-17 19:01:23,989 - INFO - test_acc: mean=0.9407 ± 0.0141
+2026-07-17 19:01:23,989 - INFO - test_prec: mean=0.7582 ± 0.0541
+2026-07-17 19:01:23,989 - INFO - test_rec: mean=0.9407 ± 0.0092
+2026-07-17 19:01:23,989 - INFO - test_f1: mean=0.8386 ± 0.0330
+2026-07-17 19:01:23,989 - INFO - test_auc: mean=0.9870 ± 0.0027
+2026-07-17 19:01:24,085 - INFO - 
+Best model saved to ./outputs/models_stage2/in_sample/in_sample/best_hybrid_stage2.pth
+2026-07-17 19:01:26,621 - INFO - 
+Plots and specifications saved to ./outputs/models_stage2/in_sample/in_sample/plots
+2026-07-17 19:01:26,621 - INFO - Stage 2 training completed.

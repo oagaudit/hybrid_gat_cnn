@@ -1,0 +1,26 @@
+{
+  "countries_used": [
+    "japan",
+    "usa"
+  ],
+  "data_source": "trainonly",
+  "model_type": "simple",
+  "embedding_dim": 64,
+  "dropout": 0.5,
+  "total_parameters": 4829121,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "optimizer": "Adam",
+  "loss_function": "BCEWithLogitsLoss",
+  "class_weight_used": true,
+  "pos_weight": "auto",
+  "decision_threshold": 0.5,
+  "augmentation": true,
+  "n_runs": 5,
+  "best_run_test_f1": 0.8379310344827586,
+  "mean_test_f1": 0.822960028418386,
+  "std_test_f1": 0.015191143412616882,
+  "mean_test_auc": 0.935579393364818,
+  "std_test_auc": 0.003789084957164173
+}

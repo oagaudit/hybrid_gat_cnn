@@ -1,0 +1,24 @@
+/Users/mati/hybrid_gat_cnn/.venv/lib/python3.13/site-packages/sklearn/linear_model/_logistic.py:406: ConvergenceWarning: lbfgs failed to converge after 1000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=1000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Warning: No masks found for brazil. Using random split.
+Warning: No masks found for japan. Using random split.
+Warning: No masks found for usa. Using random split.
+Train samples: 2822, Test samples: 500
+Label distribution (train): 0=2356, 1=466
+
+============================================================
+Baseline Results (In-sample)
+============================================================
+        Model  Accuracy  Precision   Recall       F1      AUC
+LR (baseline)     0.886   0.634409 0.719512 0.674286 0.900455
+RF (baseline)     0.954   0.927536 0.780488 0.847682 0.963269
+
+ baseline metrics saved to:
+   /Users/mati/hybrid_gat_cnn/outputs/models_stage2/in_sample/baseline_results.csv

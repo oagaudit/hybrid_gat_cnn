@@ -1,0 +1,46 @@
+2026-07-15 23:26:16,378 - INFO - ============================================================
+2026-07-15 23:26:16,378 - INFO - 🔧 Preparing Graph Data for Stage 2 (GAT)
+2026-07-15 23:26:16,378 - INFO - ============================================================
+2026-07-15 23:26:16,378 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:26:16,479 - INFO -   Total tenders after filtering: 101
+2026-07-15 23:26:16,479 - INFO -   Label distribution: 0=68, 1=33
+2026-07-15 23:26:16,485 - INFO -   Edges (undirected): 1553
+2026-07-15 23:26:17,703 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/brazil_graph.pt
+2026-07-15 23:26:17,703 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:26:17,854 - INFO -   Total tenders after filtering: 1080
+2026-07-15 23:26:17,855 - INFO -   Label distribution: 0=957, 1=123
+2026-07-15 23:26:18,357 - INFO -   Edges (undirected): 44511
+2026-07-15 23:26:18,360 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/japan_graph.pt
+2026-07-15 23:26:18,361 - INFO - 
+📂 Processing USA...
+2026-07-15 23:26:18,609 - INFO -   Total tenders after filtering: 2141
+2026-07-15 23:26:18,609 - INFO -   Label distribution: 0=1749, 1=392
+2026-07-15 23:26:20,520 - INFO -   Edges (undirected): 581116
+2026-07-15 23:26:20,548 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/usa_graph.pt
+2026-07-15 23:26:20,549 - INFO - 
+ Graph data preparation completed.
+2026-07-17 00:24:17,296 - INFO - ============================================================
+2026-07-17 00:24:17,296 - INFO - 🔧 Preparing Graph Data for Stage 2 (GAT)
+2026-07-17 00:24:17,296 - INFO - ============================================================
+2026-07-17 00:24:17,296 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 00:24:17,434 - INFO -   Total tenders after filtering: 101
+2026-07-17 00:24:17,434 - INFO -   Label distribution: 0=68, 1=33
+2026-07-17 00:24:17,441 - INFO -   Edges (undirected): 1553
+2026-07-17 00:24:18,184 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/brazil_graph.pt
+2026-07-17 00:24:18,185 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 00:24:18,342 - INFO -   Total tenders after filtering: 1080
+2026-07-17 00:24:18,342 - INFO -   Label distribution: 0=957, 1=123
+2026-07-17 00:24:18,872 - INFO -   Edges (undirected): 44511
+2026-07-17 00:24:18,876 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/japan_graph.pt
+2026-07-17 00:24:18,876 - INFO - 
+📂 Processing USA...
+2026-07-17 00:24:19,134 - INFO -   Total tenders after filtering: 2141
+2026-07-17 00:24:19,134 - INFO -   Label distribution: 0=1749, 1=392
+2026-07-17 00:24:21,073 - INFO -   Edges (undirected): 581116
+2026-07-17 00:24:21,093 - INFO -   Saved graph to /Users/mati/hybrid_gat_cnn/outputs/graph_data/usa_graph.pt
+2026-07-17 00:24:21,093 - INFO - 
+ Graph data preparation completed.

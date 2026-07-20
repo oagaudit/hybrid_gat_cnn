@@ -1,0 +1,396 @@
+2026-07-15 23:04:53,231 - INFO - Using device: mps
+2026-07-15 23:04:53,232 - INFO - ============================================================
+2026-07-15 23:04:53,232 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:04:53,232 - INFO - ============================================================
+2026-07-15 23:04:53,232 - INFO - Embedding CSV: ./outputs/embeddings/fold_brazil/all_pair_embeddings_with_labels.csv
+2026-07-15 23:04:53,232 - INFO - Output dir: ./outputs/node_features/fold_brazil
+2026-07-15 23:04:53,232 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:04:54,080 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:04:54,088 - INFO - Bridge module initialized.
+
+2026-07-15 23:04:54,088 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:04:56,410 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/brazil_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:04:56,410 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:04:57,940 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/japan_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:04:57,940 - INFO - 
+📂 Processing USA...
+2026-07-15 23:05:00,049 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/usa_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:00,049 - INFO - 
+ Node features preparation completed.
+2026-07-15 23:05:08,591 - INFO - Using device: mps
+2026-07-15 23:05:08,591 - INFO - ============================================================
+2026-07-15 23:05:08,591 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:05:08,591 - INFO - ============================================================
+2026-07-15 23:05:08,591 - INFO - Embedding CSV: ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-15 23:05:08,591 - INFO - Output dir: ./outputs/node_features/fold_japan
+2026-07-15 23:05:08,591 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:05:09,821 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:05:09,827 - INFO - Bridge module initialized.
+
+2026-07-15 23:05:09,827 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:05:10,124 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/brazil_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:10,124 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:05:11,564 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/japan_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:11,564 - INFO - 
+📂 Processing USA...
+2026-07-15 23:05:13,683 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/usa_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:13,683 - INFO - 
+ Node features preparation completed.
+2026-07-15 23:05:50,511 - INFO - Using device: mps
+2026-07-15 23:05:50,511 - INFO - ============================================================
+2026-07-15 23:05:50,511 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:05:50,511 - INFO - ============================================================
+2026-07-15 23:05:50,511 - INFO - Embedding CSV: ./outputs/embeddings/fold_usa/all_pair_embeddings_with_labels.csv
+2026-07-15 23:05:50,511 - INFO - Output dir: ./outputs/node_features/fold_usa
+2026-07-15 23:05:50,511 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:05:51,355 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:05:51,361 - INFO - Bridge module initialized.
+
+2026-07-15 23:05:51,361 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:05:51,686 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/brazil_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:51,686 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:05:53,200 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/japan_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:53,201 - INFO - 
+📂 Processing USA...
+2026-07-15 23:05:55,368 - ERROR - Graph file not found: /Users/mati/hybrid_gat_cnn/outputs/graph_data/usa_graph.pt. Run prepare_graph_data.py first.
+2026-07-15 23:05:55,368 - INFO - 
+ Node features preparation completed.
+2026-07-15 23:27:07,956 - INFO - Using device: mps
+2026-07-15 23:27:07,957 - INFO - ============================================================
+2026-07-15 23:27:07,957 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:27:07,957 - INFO - ============================================================
+2026-07-15 23:27:07,957 - INFO - Embedding CSV: ./outputs/embeddings/fold_brazil/all_pair_embeddings_with_labels.csv
+2026-07-15 23:27:07,957 - INFO - Output dir: ./outputs/node_features/fold_brazil
+2026-07-15 23:27:07,957 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:27:08,816 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:27:08,824 - INFO - Bridge module initialized.
+
+2026-07-15 23:27:08,824 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:27:09,856 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/brazil_node_features.pt
+2026-07-15 23:27:09,856 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:27:11,316 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/japan_node_features.pt
+2026-07-15 23:27:11,316 - INFO - 
+📂 Processing USA...
+2026-07-15 23:27:13,499 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/usa_node_features.pt
+2026-07-15 23:27:13,500 - INFO - 
+ Node features preparation completed.
+2026-07-15 23:27:24,738 - INFO - Using device: mps
+2026-07-15 23:27:24,739 - INFO - ============================================================
+2026-07-15 23:27:24,739 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:27:24,739 - INFO - ============================================================
+2026-07-15 23:27:24,739 - INFO - Embedding CSV: ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-15 23:27:24,739 - INFO - Output dir: ./outputs/node_features/fold_japan
+2026-07-15 23:27:24,739 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:27:25,602 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:27:25,609 - INFO - Bridge module initialized.
+
+2026-07-15 23:27:25,609 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:27:26,595 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/brazil_node_features.pt
+2026-07-15 23:27:26,595 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:27:28,111 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/japan_node_features.pt
+2026-07-15 23:27:28,111 - INFO - 
+📂 Processing USA...
+2026-07-15 23:27:30,331 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/usa_node_features.pt
+2026-07-15 23:27:30,331 - INFO - 
+ Node features preparation completed.
+2026-07-15 23:27:34,671 - INFO - Using device: mps
+2026-07-15 23:27:34,671 - INFO - ============================================================
+2026-07-15 23:27:34,671 - INFO -  Preparing Node Features with Bridge Module
+2026-07-15 23:27:34,671 - INFO - ============================================================
+2026-07-15 23:27:34,672 - INFO - Embedding CSV: ./outputs/embeddings/fold_usa/all_pair_embeddings_with_labels.csv
+2026-07-15 23:27:34,672 - INFO - Output dir: ./outputs/node_features/fold_usa
+2026-07-15 23:27:34,672 - INFO - 
+ Loading pair embeddings...
+2026-07-15 23:27:35,523 - INFO - Loaded 5803 pair embeddings
+2026-07-15 23:27:35,529 - INFO - Bridge module initialized.
+
+2026-07-15 23:27:35,529 - INFO - 
+📂 Processing BRAZIL...
+2026-07-15 23:27:36,326 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/brazil_node_features.pt
+2026-07-15 23:27:36,326 - INFO - 
+📂 Processing JAPAN...
+2026-07-15 23:27:37,879 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/japan_node_features.pt
+2026-07-15 23:27:37,879 - INFO - 
+📂 Processing USA...
+2026-07-15 23:27:40,254 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/usa_node_features.pt
+2026-07-15 23:27:40,254 - INFO - 
+ Node features preparation completed.
+2026-07-16 21:14:41,411 - INFO - Using device: mps
+2026-07-16 21:14:41,412 - INFO - ============================================================
+2026-07-16 21:14:41,412 - INFO -  Preparing Node Features with Bridge Module
+2026-07-16 21:14:41,412 - INFO - ============================================================
+2026-07-16 21:14:41,412 - INFO - Embedding CSV: ./outputs/embeddings/fold_brazil/all_pair_embeddings_with_labels.csv
+2026-07-16 21:14:41,412 - INFO - Output dir: ./outputs/node_features/fold_brazil
+2026-07-16 21:14:41,412 - INFO - 
+ Loading pair embeddings...
+2026-07-16 21:14:42,921 - INFO - Loaded 5803 pair embeddings
+2026-07-16 21:14:42,931 - INFO - Bridge module initialized.
+
+2026-07-16 21:14:42,931 - INFO - 
+📂 Processing BRAZIL...
+2026-07-16 21:14:44,781 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/brazil_node_features.pt
+2026-07-16 21:14:44,781 - INFO - 
+📂 Processing JAPAN...
+2026-07-16 21:14:47,422 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/japan_node_features.pt
+2026-07-16 21:14:47,422 - INFO - 
+📂 Processing USA...
+2026-07-16 21:14:50,811 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/usa_node_features.pt
+2026-07-16 21:14:50,812 - INFO - 
+ Node features preparation completed.
+2026-07-16 21:15:32,883 - INFO - Using device: mps
+2026-07-16 21:15:32,884 - INFO - ============================================================
+2026-07-16 21:15:32,884 - INFO -  Preparing Node Features with Bridge Module
+2026-07-16 21:15:32,884 - INFO - ============================================================
+2026-07-16 21:15:32,884 - INFO - Embedding CSV: ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-16 21:15:32,884 - INFO - Output dir: ./outputs/node_features/fold_japan
+2026-07-16 21:15:32,884 - INFO - 
+ Loading pair embeddings...
+2026-07-16 21:15:34,376 - INFO - Loaded 5803 pair embeddings
+2026-07-16 21:15:34,386 - INFO - Bridge module initialized.
+
+2026-07-16 21:15:34,386 - INFO - 
+📂 Processing BRAZIL...
+2026-07-16 21:15:36,030 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/brazil_node_features.pt
+2026-07-16 21:15:36,030 - INFO - 
+📂 Processing JAPAN...
+2026-07-16 21:15:38,605 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/japan_node_features.pt
+2026-07-16 21:15:38,605 - INFO - 
+📂 Processing USA...
+2026-07-16 21:15:41,972 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/usa_node_features.pt
+2026-07-16 21:15:41,973 - INFO - 
+ Node features preparation completed.
+2026-07-16 21:15:52,771 - INFO - Using device: mps
+2026-07-16 21:15:52,772 - INFO - ============================================================
+2026-07-16 21:15:52,772 - INFO -  Preparing Node Features with Bridge Module
+2026-07-16 21:15:52,772 - INFO - ============================================================
+2026-07-16 21:15:52,772 - INFO - Embedding CSV: ./outputs/embeddings/fold_usa/all_pair_embeddings_with_labels.csv
+2026-07-16 21:15:52,772 - INFO - Output dir: ./outputs/node_features/fold_usa
+2026-07-16 21:15:52,772 - INFO - 
+ Loading pair embeddings...
+2026-07-16 21:15:54,283 - INFO - Loaded 5803 pair embeddings
+2026-07-16 21:15:54,293 - INFO - Bridge module initialized.
+
+2026-07-16 21:15:54,293 - INFO - 
+📂 Processing BRAZIL...
+2026-07-16 21:15:56,062 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/brazil_node_features.pt
+2026-07-16 21:15:56,062 - INFO - 
+📂 Processing JAPAN...
+2026-07-16 21:15:58,769 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/japan_node_features.pt
+2026-07-16 21:15:58,769 - INFO - 
+📂 Processing USA...
+2026-07-16 21:16:02,106 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/usa_node_features.pt
+2026-07-16 21:16:02,107 - INFO - 
+ Node features preparation completed.
+2026-07-16 21:16:06,490 - INFO - Using device: mps
+2026-07-16 21:16:06,491 - INFO - ============================================================
+2026-07-16 21:16:06,491 - INFO -  Preparing Node Features with Bridge Module
+2026-07-16 21:16:06,491 - INFO - ============================================================
+2026-07-16 21:16:06,491 - INFO - Embedding CSV: ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv
+2026-07-16 21:16:06,491 - INFO - Output dir: ./outputs/node_features/insample
+2026-07-16 21:16:06,491 - INFO - 
+ Loading pair embeddings...
+2026-07-16 21:16:08,841 - INFO - Loaded 9013 pair embeddings
+2026-07-16 21:16:08,850 - INFO - Bridge module initialized.
+
+2026-07-16 21:16:08,851 - INFO - 
+📂 Processing BRAZIL...
+2026-07-16 21:16:10,845 - INFO -   Saved updated graph to ./outputs/node_features/insample/brazil_node_features.pt
+2026-07-16 21:16:10,845 - INFO - 
+📂 Processing JAPAN...
+2026-07-16 21:16:13,660 - INFO -   Saved updated graph to ./outputs/node_features/insample/japan_node_features.pt
+2026-07-16 21:16:13,661 - INFO - 
+📂 Processing USA...
+2026-07-16 21:16:17,541 - INFO -   Saved updated graph to ./outputs/node_features/insample/usa_node_features.pt
+2026-07-16 21:16:17,543 - INFO - 
+ Node features preparation completed.
+2026-07-17 00:24:34,880 - INFO - Using device: mps
+2026-07-17 00:24:34,881 - INFO - ============================================================
+2026-07-17 00:24:34,881 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 00:24:34,882 - INFO - ============================================================
+2026-07-17 00:24:34,882 - INFO - Embedding CSV: ./outputs/embeddings/fold_brazil/all_pair_embeddings_with_labels.csv
+2026-07-17 00:24:34,882 - INFO - Output dir: ./outputs/node_features/fold_brazil
+2026-07-17 00:24:34,882 - INFO - 
+ Loading pair embeddings...
+2026-07-17 00:24:36,261 - INFO - Loaded 9013 pair embeddings
+2026-07-17 00:24:36,268 - INFO - Bridge module initialized.
+
+2026-07-17 00:24:36,268 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 00:24:37,182 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/brazil_node_features.pt
+2026-07-17 00:24:37,182 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 00:24:39,185 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/japan_node_features.pt
+2026-07-17 00:24:39,185 - INFO - 
+📂 Processing USA...
+2026-07-17 00:24:41,724 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/usa_node_features.pt
+2026-07-17 00:24:41,724 - INFO - 
+ Node features preparation completed.
+2026-07-17 00:24:45,945 - INFO - Using device: mps
+2026-07-17 00:24:45,945 - INFO - ============================================================
+2026-07-17 00:24:45,945 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 00:24:45,945 - INFO - ============================================================
+2026-07-17 00:24:45,945 - INFO - Embedding CSV: ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-17 00:24:45,945 - INFO - Output dir: ./outputs/node_features/fold_japan
+2026-07-17 00:24:45,945 - INFO - 
+ Loading pair embeddings...
+2026-07-17 00:24:47,276 - INFO - Loaded 9013 pair embeddings
+2026-07-17 00:24:47,282 - INFO - Bridge module initialized.
+
+2026-07-17 00:24:47,282 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 00:24:48,214 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/brazil_node_features.pt
+2026-07-17 00:24:48,214 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 00:24:50,034 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/japan_node_features.pt
+2026-07-17 00:24:50,034 - INFO - 
+📂 Processing USA...
+2026-07-17 00:24:52,590 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/usa_node_features.pt
+2026-07-17 00:24:52,591 - INFO - 
+ Node features preparation completed.
+2026-07-17 00:24:55,762 - INFO - Using device: mps
+2026-07-17 00:24:55,763 - INFO - ============================================================
+2026-07-17 00:24:55,763 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 00:24:55,763 - INFO - ============================================================
+2026-07-17 00:24:55,763 - INFO - Embedding CSV: ./outputs/embeddings/fold_usa/all_pair_embeddings_with_labels.csv
+2026-07-17 00:24:55,763 - INFO - Output dir: ./outputs/node_features/fold_usa
+2026-07-17 00:24:55,763 - INFO - 
+ Loading pair embeddings...
+2026-07-17 00:24:57,126 - INFO - Loaded 9013 pair embeddings
+2026-07-17 00:24:57,133 - INFO - Bridge module initialized.
+
+2026-07-17 00:24:57,133 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 00:24:58,031 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/brazil_node_features.pt
+2026-07-17 00:24:58,031 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 00:25:00,102 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/japan_node_features.pt
+2026-07-17 00:25:00,103 - INFO - 
+📂 Processing USA...
+2026-07-17 00:25:02,656 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/usa_node_features.pt
+2026-07-17 00:25:02,656 - INFO - 
+ Node features preparation completed.
+2026-07-17 00:25:06,114 - INFO - Using device: mps
+2026-07-17 00:25:06,114 - INFO - ============================================================
+2026-07-17 00:25:06,115 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 00:25:06,115 - INFO - ============================================================
+2026-07-17 00:25:06,115 - INFO - Embedding CSV: ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv
+2026-07-17 00:25:06,115 - INFO - Output dir: ./outputs/node_features/insample
+2026-07-17 00:25:06,115 - INFO - 
+ Loading pair embeddings...
+2026-07-17 00:25:07,436 - INFO - Loaded 9013 pair embeddings
+2026-07-17 00:25:07,441 - INFO - Bridge module initialized.
+
+2026-07-17 00:25:07,441 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 00:25:08,269 - INFO -   Saved updated graph to ./outputs/node_features/insample/brazil_node_features.pt
+2026-07-17 00:25:08,269 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 00:25:10,065 - INFO -   Saved updated graph to ./outputs/node_features/insample/japan_node_features.pt
+2026-07-17 00:25:10,066 - INFO - 
+📂 Processing USA...
+2026-07-17 00:25:12,785 - INFO -   Saved updated graph to ./outputs/node_features/insample/usa_node_features.pt
+2026-07-17 00:25:12,786 - INFO - 
+ Node features preparation completed.
+2026-07-17 11:53:54,782 - INFO - Using device: mps
+2026-07-17 11:53:54,783 - INFO - ============================================================
+2026-07-17 11:53:54,783 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 11:53:54,783 - INFO - ============================================================
+2026-07-17 11:53:54,783 - INFO - Embedding CSV: ./outputs/embeddings/fold_brazil/all_pair_embeddings_with_labels.csv
+2026-07-17 11:53:54,783 - INFO - Output dir: ./outputs/node_features/fold_brazil
+2026-07-17 11:53:54,783 - INFO - 
+ Loading pair embeddings...
+2026-07-17 11:53:57,133 - INFO - Loaded 9021 pair embeddings
+2026-07-17 11:53:57,143 - INFO - Bridge module initialized.
+
+2026-07-17 11:53:57,143 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 11:53:58,882 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/brazil_node_features.pt
+2026-07-17 11:53:58,882 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 11:54:01,371 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/japan_node_features.pt
+2026-07-17 11:54:01,372 - INFO - 
+📂 Processing USA...
+2026-07-17 11:54:04,524 - INFO -   Saved updated graph to ./outputs/node_features/fold_brazil/usa_node_features.pt
+2026-07-17 11:54:04,525 - INFO - 
+ Node features preparation completed.
+2026-07-17 11:54:08,201 - INFO - Using device: mps
+2026-07-17 11:54:08,201 - INFO - ============================================================
+2026-07-17 11:54:08,201 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 11:54:08,201 - INFO - ============================================================
+2026-07-17 11:54:08,201 - INFO - Embedding CSV: ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-17 11:54:08,201 - INFO - Output dir: ./outputs/node_features/fold_japan
+2026-07-17 11:54:08,201 - INFO - 
+ Loading pair embeddings...
+2026-07-17 11:54:10,531 - INFO - Loaded 9021 pair embeddings
+2026-07-17 11:54:10,540 - INFO - Bridge module initialized.
+
+2026-07-17 11:54:10,540 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 11:54:11,879 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/brazil_node_features.pt
+2026-07-17 11:54:11,879 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 11:54:14,289 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/japan_node_features.pt
+2026-07-17 11:54:14,289 - INFO - 
+📂 Processing USA...
+2026-07-17 11:54:17,510 - INFO -   Saved updated graph to ./outputs/node_features/fold_japan/usa_node_features.pt
+2026-07-17 11:54:17,511 - INFO - 
+ Node features preparation completed.
+2026-07-17 11:54:21,435 - INFO - Using device: mps
+2026-07-17 11:54:21,435 - INFO - ============================================================
+2026-07-17 11:54:21,435 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 11:54:21,435 - INFO - ============================================================
+2026-07-17 11:54:21,436 - INFO - Embedding CSV: ./outputs/embeddings/fold_usa/all_pair_embeddings_with_labels.csv
+2026-07-17 11:54:21,436 - INFO - Output dir: ./outputs/node_features/fold_usa
+2026-07-17 11:54:21,436 - INFO - 
+ Loading pair embeddings...
+2026-07-17 11:54:23,739 - INFO - Loaded 9021 pair embeddings
+2026-07-17 11:54:23,747 - INFO - Bridge module initialized.
+
+2026-07-17 11:54:23,747 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 11:54:25,061 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/brazil_node_features.pt
+2026-07-17 11:54:25,061 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 11:54:27,438 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/japan_node_features.pt
+2026-07-17 11:54:27,439 - INFO - 
+📂 Processing USA...
+2026-07-17 11:54:30,657 - INFO -   Saved updated graph to ./outputs/node_features/fold_usa/usa_node_features.pt
+2026-07-17 11:54:30,658 - INFO - 
+ Node features preparation completed.
+2026-07-17 11:54:34,950 - INFO - Using device: mps
+2026-07-17 11:54:34,951 - INFO - ============================================================
+2026-07-17 11:54:34,951 - INFO -  Preparing Node Features with Bridge Module
+2026-07-17 11:54:34,951 - INFO - ============================================================
+2026-07-17 11:54:34,951 - INFO - Embedding CSV: ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv
+2026-07-17 11:54:34,951 - INFO - Output dir: ./outputs/node_features/insample
+2026-07-17 11:54:34,951 - INFO - 
+ Loading pair embeddings...
+2026-07-17 11:54:37,287 - INFO - Loaded 9021 pair embeddings
+2026-07-17 11:54:37,295 - INFO - Bridge module initialized.
+
+2026-07-17 11:54:37,295 - INFO - 
+📂 Processing BRAZIL...
+2026-07-17 11:54:38,594 - INFO -   Saved updated graph to ./outputs/node_features/insample/brazil_node_features.pt
+2026-07-17 11:54:38,594 - INFO - 
+📂 Processing JAPAN...
+2026-07-17 11:54:41,052 - INFO -   Saved updated graph to ./outputs/node_features/insample/japan_node_features.pt
+2026-07-17 11:54:41,052 - INFO - 
+📂 Processing USA...
+2026-07-17 11:54:44,249 - INFO -   Saved updated graph to ./outputs/node_features/insample/usa_node_features.pt
+2026-07-17 11:54:44,250 - INFO - 
+ Node features preparation completed.

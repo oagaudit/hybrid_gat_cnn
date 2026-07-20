@@ -1,0 +1,28 @@
+2026-07-15 22:49:20,067 - INFO - ============================================================
+2026-07-15 22:49:20,067 - INFO - 🔍 Embedding Extraction Started
+2026-07-15 22:49:20,067 - INFO - ============================================================
+2026-07-15 22:49:20,067 - INFO - Model: ./outputs/models/cnn_cross_fold/fold_japan/best_cnn.pth
+2026-07-15 22:49:20,067 - INFO - Countries: ['brazil', 'japan', 'usa']
+2026-07-15 22:49:20,067 - INFO - Images directory: ./outputs/images
+2026-07-15 22:49:20,067 - INFO - Output directory: ./outputs/embeddings/fold_japan
+2026-07-15 22:49:20,067 - INFO - Log file: ./outputs/embeddings/fold_japan/logs/extract_embeddings.log
+2026-07-15 22:49:20,067 - INFO - Using images from: ./outputs/images
+2026-07-15 22:49:20,081 - INFO - Using device: mps
+2026-07-15 22:49:20,225 - INFO - Model type: simple
+2026-07-15 22:49:20,261 - INFO - Loaded model (best val F1: 0.6451612903225806)
+2026-07-15 22:49:20,262 - INFO - 
+--- Processing brazil ---
+2026-07-15 22:49:20,273 - INFO - Total pairs: 66
+2026-07-15 22:49:20,376 - INFO - Saved 66 embeddings to ./outputs/embeddings/fold_japan/brazil_pair_embeddings.npy and ./outputs/embeddings/fold_japan/brazil_pair_embeddings_with_labels.csv
+2026-07-15 22:49:20,376 - INFO - 
+--- Processing japan ---
+2026-07-15 22:49:20,379 - INFO - Total pairs: 5556
+2026-07-15 22:49:22,183 - INFO - Saved 5556 embeddings to ./outputs/embeddings/fold_japan/japan_pair_embeddings.npy and ./outputs/embeddings/fold_japan/japan_pair_embeddings_with_labels.csv
+2026-07-15 22:49:22,187 - INFO - 
+--- Processing usa ---
+2026-07-15 22:49:22,188 - INFO - Total pairs: 185
+2026-07-15 22:49:22,268 - INFO - Saved 185 embeddings to ./outputs/embeddings/fold_japan/usa_pair_embeddings.npy and ./outputs/embeddings/fold_japan/usa_pair_embeddings_with_labels.csv
+2026-07-15 22:49:22,409 - INFO - 
+ Saved combined embeddings to ./outputs/embeddings/fold_japan/all_pair_embeddings_with_labels.csv
+2026-07-15 22:49:22,409 - INFO - 
+ Extraction complete. Ready for Stage 2 (GNN).

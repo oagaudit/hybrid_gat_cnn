@@ -1,0 +1,31 @@
+2026-07-16 21:08:53,295 - INFO - ============================================================
+2026-07-16 21:08:53,295 - INFO - 🔍 Embedding Extraction Started
+2026-07-16 21:08:53,295 - INFO - ============================================================
+2026-07-16 21:08:53,295 - INFO - Model: ./outputs/models/pooled_m1/best_cnn.pth
+2026-07-16 21:08:53,295 - INFO - Countries: ['brazil', 'japan', 'usa']
+2026-07-16 21:08:53,295 - INFO - Images directory: ./outputs/images
+2026-07-16 21:08:53,295 - INFO - Output directory: ./outputs/embeddings/insample
+2026-07-16 21:08:53,295 - INFO - Log file: ./outputs/embeddings/insample/logs/extract_embeddings.log
+2026-07-16 21:08:53,295 - INFO - Using images from: ./outputs/images
+2026-07-16 21:08:53,329 - INFO - Using device: mps
+2026-07-16 21:08:53,617 - INFO - Model type: simple
+2026-07-16 21:08:53,673 - INFO - Loaded model (best val F1: 0.9778633301251203)
+2026-07-16 21:08:53,673 - INFO - 
+--- Processing brazil ---
+2026-07-16 21:08:53,688 - INFO - Total pairs: 122
+Extracting embeddings for brazil:   0%|          | 0/1 [00:00<?, ?it/s]Extracting embeddings for brazil: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]Extracting embeddings for brazil: 100%|██████████| 1/1 [00:00<00:00,  3.68it/s]
+2026-07-16 21:08:53,991 - INFO - Saved 122 embeddings to ./outputs/embeddings/insample/brazil_pair_embeddings.npy and ./outputs/embeddings/insample/brazil_pair_embeddings_with_labels.csv
+2026-07-16 21:08:53,992 - INFO - 
+--- Processing japan ---
+2026-07-16 21:08:53,998 - INFO - Total pairs: 8676
+Extracting embeddings for japan:   0%|          | 0/68 [00:00<?, ?it/s]Extracting embeddings for japan:   3%|▎         | 2/68 [00:00<00:04, 14.54it/s]Extracting embeddings for japan:   6%|▌         | 4/68 [00:00<00:04, 14.32it/s]Extracting embeddings for japan:   9%|▉         | 6/68 [00:00<00:04, 13.65it/s]Extracting embeddings for japan:  12%|█▏        | 8/68 [00:00<00:04, 13.70it/s]Extracting embeddings for japan:  15%|█▍        | 10/68 [00:00<00:04, 14.28it/s]Extracting embeddings for japan:  18%|█▊        | 12/68 [00:00<00:03, 14.23it/s]Extracting embeddings for japan:  21%|██        | 14/68 [00:00<00:03, 14.48it/s]Extracting embeddings for japan:  24%|██▎       | 16/68 [00:01<00:03, 14.54it/s]Extracting embeddings for japan:  26%|██▋       | 18/68 [00:01<00:03, 14.40it/s]Extracting embeddings for japan:  29%|██▉       | 20/68 [00:01<00:03, 14.52it/s]Extracting embeddings for japan:  32%|███▏      | 22/68 [00:01<00:03, 14.39it/s]Extracting embeddings for japan:  35%|███▌      | 24/68 [00:01<00:03, 14.25it/s]Extracting embeddings for japan:  38%|███▊      | 26/68 [00:01<00:02, 14.56it/s]Extracting embeddings for japan:  41%|████      | 28/68 [00:01<00:02, 14.65it/s]Extracting embeddings for japan:  44%|████▍     | 30/68 [00:02<00:02, 14.71it/s]Extracting embeddings for japan:  47%|████▋     | 32/68 [00:02<00:02, 14.76it/s]Extracting embeddings for japan:  50%|█████     | 34/68 [00:02<00:02, 14.73it/s]Extracting embeddings for japan:  53%|█████▎    | 36/68 [00:02<00:02, 14.42it/s]Extracting embeddings for japan:  56%|█████▌    | 38/68 [00:02<00:02, 14.53it/s]Extracting embeddings for japan:  59%|█████▉    | 40/68 [00:02<00:01, 14.56it/s]Extracting embeddings for japan:  62%|██████▏   | 42/68 [00:02<00:01, 13.84it/s]Extracting embeddings for japan:  65%|██████▍   | 44/68 [00:03<00:01, 14.39it/s]Extracting embeddings for japan:  68%|██████▊   | 46/68 [00:03<00:01, 14.25it/s]Extracting embeddings for japan:  71%|███████   | 48/68 [00:03<00:01, 14.32it/s]Extracting embeddings for japan:  74%|███████▎  | 50/68 [00:03<00:01, 14.25it/s]Extracting embeddings for japan:  76%|███████▋  | 52/68 [00:03<00:01, 14.64it/s]Extracting embeddings for japan:  79%|███████▉  | 54/68 [00:03<00:00, 14.53it/s]Extracting embeddings for japan:  82%|████████▏ | 56/68 [00:03<00:00, 14.65it/s]Extracting embeddings for japan:  85%|████████▌ | 58/68 [00:04<00:00, 14.82it/s]Extracting embeddings for japan:  88%|████████▊ | 60/68 [00:04<00:00, 14.91it/s]Extracting embeddings for japan:  91%|█████████ | 62/68 [00:04<00:00, 15.12it/s]Extracting embeddings for japan:  94%|█████████▍| 64/68 [00:04<00:00, 14.82it/s]Extracting embeddings for japan:  97%|█████████▋| 66/68 [00:04<00:00, 14.80it/s]Extracting embeddings for japan: 100%|██████████| 68/68 [00:04<00:00, 10.10it/s]Extracting embeddings for japan: 100%|██████████| 68/68 [00:04<00:00, 13.89it/s]
+2026-07-16 21:08:59,265 - INFO - Saved 8676 embeddings to ./outputs/embeddings/insample/japan_pair_embeddings.npy and ./outputs/embeddings/insample/japan_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,285 - INFO - 
+--- Processing usa ---
+2026-07-16 21:08:59,287 - INFO - Total pairs: 223
+Extracting embeddings for usa:   0%|          | 0/2 [00:00<?, ?it/s]Extracting embeddings for usa: 100%|██████████| 2/2 [00:00<00:00,  9.23it/s]Extracting embeddings for usa: 100%|██████████| 2/2 [00:00<00:00,  9.22it/s]
+2026-07-16 21:08:59,515 - INFO - Saved 223 embeddings to ./outputs/embeddings/insample/usa_pair_embeddings.npy and ./outputs/embeddings/insample/usa_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,890 - INFO - 
+ Saved combined embeddings to ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,890 - INFO - 
+ Extraction complete. Ready for Stage 2 (GNN).

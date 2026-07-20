@@ -1,0 +1,26 @@
+{
+  "countries_used": [
+    "brazil",
+    "japan"
+  ],
+  "data_source": "trainonly",
+  "model_type": "simple",
+  "embedding_dim": 64,
+  "dropout": 0.5,
+  "total_parameters": 4829121,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-05,
+  "optimizer": "Adam",
+  "loss_function": "BCEWithLogitsLoss",
+  "class_weight_used": true,
+  "pos_weight": "auto",
+  "decision_threshold": 0.5,
+  "augmentation": true,
+  "n_runs": 5,
+  "best_run_test_f1": 0.8630849220103987,
+  "mean_test_f1": 0.8482939187329681,
+  "std_test_f1": 0.013163205575150976,
+  "mean_test_auc": 0.9463110191915813,
+  "std_test_auc": 0.003260398371332797
+}

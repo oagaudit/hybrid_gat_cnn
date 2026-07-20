@@ -1,0 +1,13 @@
+2026-07-15 19:04:12,084 - INFO - ============================================================
+2026-07-15 19:04:12,084 - INFO - Creating Tender Splits (Before Image Generation)
+2026-07-15 19:04:12,084 - INFO - ============================================================
+2026-07-15 19:04:12,084 - INFO - Processing BRAZIL...
+2026-07-15 19:04:12,209 - INFO - Total tenders: 101
+2026-07-15 19:04:12,212 - INFO - Saved: train=69, val=16, test=16
+2026-07-15 19:04:12,212 - INFO - Processing JAPAN...
+2026-07-15 19:04:12,215 - INFO - Total tenders: 1080
+2026-07-15 19:04:12,219 - INFO - Saved: train=756, val=162, test=162
+2026-07-15 19:04:12,219 - INFO - Processing USA...
+2026-07-15 19:04:12,222 - INFO - Total tenders: 2233
+2026-07-15 19:04:12,227 - INFO - Saved: train=1563, val=335, test=335
+2026-07-15 19:04:12,227 - INFO - Done! Saved to: /Users/mati/hybrid_gat_cnn/outputs/splits

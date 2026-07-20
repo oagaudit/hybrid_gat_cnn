@@ -1,0 +1,28 @@
+2026-07-16 21:08:53,295 - INFO - ============================================================
+2026-07-16 21:08:53,295 - INFO - 🔍 Embedding Extraction Started
+2026-07-16 21:08:53,295 - INFO - ============================================================
+2026-07-16 21:08:53,295 - INFO - Model: ./outputs/models/pooled_m1/best_cnn.pth
+2026-07-16 21:08:53,295 - INFO - Countries: ['brazil', 'japan', 'usa']
+2026-07-16 21:08:53,295 - INFO - Images directory: ./outputs/images
+2026-07-16 21:08:53,295 - INFO - Output directory: ./outputs/embeddings/insample
+2026-07-16 21:08:53,295 - INFO - Log file: ./outputs/embeddings/insample/logs/extract_embeddings.log
+2026-07-16 21:08:53,295 - INFO - Using images from: ./outputs/images
+2026-07-16 21:08:53,329 - INFO - Using device: mps
+2026-07-16 21:08:53,617 - INFO - Model type: simple
+2026-07-16 21:08:53,673 - INFO - Loaded model (best val F1: 0.9778633301251203)
+2026-07-16 21:08:53,673 - INFO - 
+--- Processing brazil ---
+2026-07-16 21:08:53,688 - INFO - Total pairs: 122
+2026-07-16 21:08:53,991 - INFO - Saved 122 embeddings to ./outputs/embeddings/insample/brazil_pair_embeddings.npy and ./outputs/embeddings/insample/brazil_pair_embeddings_with_labels.csv
+2026-07-16 21:08:53,992 - INFO - 
+--- Processing japan ---
+2026-07-16 21:08:53,998 - INFO - Total pairs: 8676
+2026-07-16 21:08:59,265 - INFO - Saved 8676 embeddings to ./outputs/embeddings/insample/japan_pair_embeddings.npy and ./outputs/embeddings/insample/japan_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,285 - INFO - 
+--- Processing usa ---
+2026-07-16 21:08:59,287 - INFO - Total pairs: 223
+2026-07-16 21:08:59,515 - INFO - Saved 223 embeddings to ./outputs/embeddings/insample/usa_pair_embeddings.npy and ./outputs/embeddings/insample/usa_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,890 - INFO - 
+ Saved combined embeddings to ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv
+2026-07-16 21:08:59,890 - INFO - 
+ Extraction complete. Ready for Stage 2 (GNN).
