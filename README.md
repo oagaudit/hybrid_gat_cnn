@@ -188,7 +188,7 @@ If you use this code, please cite the accompanying thesis and the original
 dataset source:
 
 - García Rodríguez, M. J., Rodríguez-Montequín, V., Ballesteros-Pérez, P., Love, P. E. D. & Signor, R. (2022). 'Collusion detection in public procurement auctions with machine learning algorithms'. Automation in Construction, 133, 104047. https://doi.org/10.1016/j.autcon.2021.104047
-- Nakphon, [First Initial]. (2026). Hybrid GAT-CNN Architecture for Enhanced Cross-Market Bid-Rigging Detection (Unpublished master's thesis). University of Europe for Applied Sciences, Potsdam, Germany.
+- Nakphon, M. (2026). Hybrid GAT-CNN Architecture for Enhanced Cross-Market Bid-Rigging Detection (Unpublished master's thesis). University of Europe for Applied Sciences, Potsdam, Germany.
 
 
 The thesis is currently unpublished. Update the second entry above with the final title, submission year, and university once the thesis
