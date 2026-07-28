@@ -424,28 +424,28 @@ Conditions are set by flags: **C1** = no flag (zero-shot, local norm), **C2** = 
 python src/train_stage2.py --model_type hybrid --test_country brazil \
     --node_features_dir ./outputs/node_features/fold_brazil \
     --output_dir ./outputs/models_stage2 \
-    --n_runs 5 --epochs 100 \
+    --n_runs 5 --epochs 50 \
     2>&1 | tee outputs/logs/step7_loco_brazil_c1.log
 
 python src/train_stage2.py --model_type hybrid --test_country brazil \
     --node_features_dir ./outputs/node_features/fold_brazil \
     --output_dir ./outputs/models_stage2 \
     --global_norm \
-    --n_runs 5 --epochs 100 \
+    --n_runs 5 --epochs 50 \
     2>&1 | tee outputs/logs/step7_loco_brazil_c2.log
 
 python src/train_stage2.py --model_type hybrid --test_country brazil \
     --node_features_dir ./outputs/node_features/fold_brazil \
     --output_dir ./outputs/models_stage2 \
     --global_norm --fine_tune_ratio 0.15 \
-    --n_runs 5 --epochs 100 \
+    --n_runs 5 --epochs 50 \
     2>&1 | tee outputs/logs/step7_loco_brazil_c3.log
 ```
 
 <details>
 <summary><b>Japan and USA folds</b></summary>
 
-Same three commands with `--test_country japan` / `--node_features_dir ./outputs/node_features/fold_japan` (100 epochs), and `--test_country usa` / `--node_features_dir ./outputs/node_features/fold_usa` (50 epochs).
+Same three commands with `--test_country japan` / `--node_features_dir ./outputs/node_features/fold_japan` (50 epochs), and `--test_country usa` / `--node_features_dir ./outputs/node_features/fold_usa` (50 epochs).
 
 ```bash
 # Japan
@@ -454,7 +454,7 @@ for C in "c1:" "c2:--global_norm" "c3:--global_norm --fine_tune_ratio 0.15"; do
   python src/train_stage2.py --model_type hybrid --test_country japan \
       --node_features_dir ./outputs/node_features/fold_japan \
       --output_dir ./outputs/models_stage2 \
-      $FLAGS --n_runs 5 --epochs 100 \
+      $FLAGS --n_runs 5 --epochs 50 \
       2>&1 | tee outputs/logs/step7_loco_japan_$TAG.log
 done
 
@@ -497,14 +497,14 @@ Stage 2 hyperparameters (identical for M2, M3, and M4 so differences come only f
 | GAT layers | 2 |
 | Attention heads per layer | 4 |
 | Training mode | Full-batch (whole graph per forward pass) |
-| Max epochs | 100 |
+| Max epochs | 50 |
 | Early stopping | Validation F1-score, patience 15 |
 | Optimizer | Adam |
 | LR scheduler | ReduceLROnPlateau on val loss (factor 0.5, patience 5) |
 | Loss | CrossEntropyLoss with class weights |
 | Independent runs | 5 (seeds 43–47) |
 
-Stage 1: Adam (LR 1 × 10⁻³, weight decay 10⁻⁵), ReduceLROnPlateau (patience 5, factor 0.5), early stopping patience 15, batch size 32, max 100 epochs.
+Stage 1: Adam (LR 1 × 10⁻³, weight decay 10⁻⁵), ReduceLROnPlateau (patience 5, factor 0.5), early stopping patience 15, batch size 32, max 50 epochs.
 
 No grid or random search was performed — hyperparameters follow prior work and were checked on the validation set only.
 
