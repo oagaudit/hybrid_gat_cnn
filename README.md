@@ -4,7 +4,7 @@ A two-stage deep learning framework that combines **Convolutional Neural Network
 
 > **Paper:** *Hybrid GAT-CNN Architecture for Enhanced Cross-Market Bid-Rigging Detection*
 > Mati Nakphon — University of Europe for Applied Sciences, Potsdam, Germany
-> 📧 mati.nakphon@ue-germany.de, supernay26@gmail.com
+> 📧 mati.nakphon@ue-germany.de
 
 ---
 
