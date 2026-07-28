@@ -532,14 +532,6 @@ No grid or random search was performed — hyperparameters follow prior work and
 
 ---
 
-## Paper
-
-The condensed IEEE conference version of this work lives in `paper/paper.tex`, with its figures in `paper/figs/`. Build it with any standard LaTeX toolchain:
-
-```bash
-cd paper
-latexmk -pdf paper.tex
-```
 
 Exploratory data analysis behind the paper is in `notebook/explore_analysis.ipynb`.
 
