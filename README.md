@@ -158,9 +158,6 @@ hybrid_gat_cnn/
 │   └── processed/                  # (not tracked) built by data_preprocessing.py
 ├── notebook/
 │   └── explore_analysis.ipynb      # exploratory data analysis
-├── paper/
-│   ├── paper.tex                   # IEEE conference paper source
-│   └── figs/                       # figures used by paper.tex
 ├── outputs/                        # (not tracked) all generated artefacts
 │   ├── embeddings/                 # 64-dim pair embeddings: insample/ + fold_*/
 │   ├── graph_data/                 # tender-level graphs (edges + screens)
