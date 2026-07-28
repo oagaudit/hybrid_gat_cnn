@@ -21,6 +21,7 @@ A two-stage deep learning framework that combines **Convolutional Neural Network
 - [Configuration](#configuration)
 - [Reproducibility](#reproducibility)
 - [Limitations](#limitations)
+- [Paper](#paper)
 - [Citation](#citation)
 - [Ethical Use](#ethical-use)
 - [License](#license)
@@ -80,7 +81,7 @@ STAGE 2 — Graph Relational Learning
 - Pair label = 1 only if **both** firms are verified cartel members.
 
 **Stage 2 — Tender-level graph**
-- Nodes = tenders; an undirected, unweighted edge connects two tenders sharing ≥ 1 bidder.
+- Nodes = tenders; an undirected edge connects two tenders sharing ≥ 1 bidder. The implementation scores candidate edges with Jaccard similarity over bidder sets (optionally with temporal decay from the `Date` column) and stores an `edge_weight`, but GATv2 is trained on **unweighted** edges — attention learns neighbour importance instead.
 - Node label = 1 if at least one verified cartel member participated.
 - Node feature `x_v = [f_v ‖ s_v] ∈ R^135` (128-dim visual context + 7 screens).
 - Global Z-score normalisation for cross-market runs, with μ and σ computed on **training data only**.
@@ -148,32 +149,44 @@ STAGE 2 — Graph Relational Learning
 
 ## Repository Structure
 
-> Adjust the paths below to match your actual layout.
-
 ```
 hybrid_gat_cnn/
+├── config/
+│   └── config.yaml                 # paths, countries, split ratios, image params
 ├── data/
-│   ├── raw/                  # source procurement CSVs (not tracked — see Data)
-│   ├── processed/            # cleaned tenders, bids, screens
-│   └── splits/               # fixed train/val/test indices (created BEFORE image generation)
-├── images/                   # generated 96×96 bid-rotation images
-├── embeddings/               # cached 64-dim pair embeddings (.h5)
+│   ├── raw/                        # (not tracked) downloaded country CSVs
+│   └── processed/                  # (not tracked) built by data_preprocessing.py
+├── notebook/
+│   └── explore_analysis.ipynb      # exploratory data analysis
+├── paper/
+│   ├── paper.tex                   # IEEE conference paper source
+│   └── figs/                       # figures used by paper.tex
+├── outputs/                        # (not tracked) all generated artefacts
+│   ├── embeddings/                 # 64-dim pair embeddings: insample/ + fold_*/
+│   ├── graph_data/                 # tender-level graphs (edges + screens)
+│   ├── images/                     # 96x96 bid-rotation images
+│   ├── logs/                       # per-step run logs
+│   ├── models/                     # Stage 1 CNN: pooled_m1/ + cnn_cross_fold/fold_*/
+│   ├── models_stage2/              # Stage 2 GATv2: in_sample/ + LOCO runs
+│   ├── node_features/              # 135-dim features: insample/ + fold_*/
+│   └── splits/                     # fixed train/val/test tender splits
 ├── src/
-│   ├── preprocessing.py      # cleaning, min_bids ≥ 2 filter, normalisation
-│   ├── make_splits.py        # stratified 70/15/15 tender-level splits
-│   ├── bid_images.py         # bid-rotation image generation
-│   ├── cnn.py                # Stage 1 CNN encoder (M1)
-│   ├── bridge.py             # Contextual Bridge Module
-│   ├── graph.py              # tender-level graph construction
-│   ├── gatv2.py              # Stage 2 GATv2 + MLP head (M2/M3/M4)
-│   ├── baselines.py          # Logistic Regression / Random Forest
-│   ├── train_stage1.py
-│   ├── train_stage2.py
-│   ├── loco.py               # Leave-One-Country-Out experiments (C1/C2/C3)
-│   └── evaluate.py           # metrics, paired t-tests, plots
-├── configs/
-├── results/                  # metrics, figures, t-SNE plots
-├── notebooks/
+│   ├── models/
+│   │   ├── bridge_module.py        # ContextualBridgeModule (Stage 1 -> 2 bridge)
+│   │   ├── cnn_model.py            # BidRotationCNN / SimpleCNN (M1)
+│   │   └── gatv2_model.py          # SimpleGAT (M2), GATv2Model (M3/M4)
+│   ├── utils/
+│   │   └── config_loader.py        # loads config.yaml, resolves project root
+│   ├── create_tender_splits.py     # train/val/test tender splits
+│   ├── data_preprocessing.py       # clean and normalise raw country data
+│   ├── evaluate_baseline.py        # LR / RF classical baselines
+│   ├── extract_embeddings.py       # frozen-CNN forward pass -> pair embeddings
+│   ├── image_generator.py          # builds bid-rotation pair images
+│   ├── prepare_graph_data.py       # builds tender graphs (edges, screens)
+│   ├── prepare_node_features.py    # Bridge Module -> 135-dim node features
+│   ├── train_cnn.py                # Stage 1 CNN training (pooled or LOCO fold)
+│   ├── train_stage2.py             # GATv2 training (in-sample and LOCO)
+│   └── ttest.py                    # paired t-tests
 ├── requirements.txt
 └── README.md
 ```
@@ -207,7 +220,9 @@ pip install -r requirements.txt
 | matplotlib / seaborn | 3.10.8 / 0.13.2 |
 | h5py / tqdm | 3.16.0 / 4.67.3 |
 
-CUDA and CPU also work — set the device in `configs/`.
+CUDA and CPU also work — pass `--device auto` or set the device in `config/config.yaml`.
+
+Total runtime: ~2 h for Stage 1 (5 runs), ~30 min per Stage 2 configuration, ~10 h for the full set of experiments.
 
 ---
 
@@ -241,40 +256,237 @@ Place the downloaded files in `data/raw/` before running the pipeline.
 
 ## Usage
 
+The pipeline runs in eight phases. Stage 1 is trained **four times** — once pooled (M1, in-sample) and once per LOCO fold — so that no target-country image ever reaches the CNN used to evaluate that country.
+
+Create the output directories first:
+
 ```bash
-# 1. Clean data and compute/attach the seven statistical screens
-python src/preprocessing.py --config configs/default.yaml
-
-# 2. Create fixed tender-level splits FIRST (prevents Stage 1 leakage)
-python src/make_splits.py --ratio 70 15 15 --stratify
-
-# 3. Generate bid-rotation images (training split only for CNN fitting)
-python src/bid_images.py --min-interactions 3 --size 96 --dpi 100
-
-# 4. Train the Stage 1 CNN encoder (M1) and cache pair embeddings
-python src/train_stage1.py --seeds 43 44 45 46 47
-
-# 5. Train Stage 2 models — the CNN stays frozen
-python src/train_stage2.py --model M2   # SimpleGAT (GATv1)
-python src/train_stage2.py --model M3   # GATv2 + GraphNorm/residual/edge dropout
-python src/train_stage2.py --model M4   # Full hybrid with Bridge Module
-
-# 6. Classical baselines
-python src/baselines.py --features screens    # 7 features
-python src/baselines.py --features full       # 135 features
-
-# 7. Cross-market experiments
-python src/loco.py --target japan --condition C1   # zero-shot, local norm
-python src/loco.py --target japan --condition C2   # zero-shot, global norm
-python src/loco.py --target japan --condition C3   # few-shot 15%, global norm
-
-# 8. Aggregate metrics, paired t-tests, and figures
-python src/evaluate.py --results results/
+mkdir -p outputs/logs
+mkdir -p outputs/models/pooled_m1
+mkdir -p outputs/models/cnn_cross_fold/fold_{brazil,japan,usa}
 ```
+
+### Phase 0 — Data preprocessing
+
+Loads the three country datasets, filters tenders by the minimum bidder count, and applies per-tender Min–Max normalisation.
+
+```bash
+python src/data_preprocessing.py
+```
+
+Output: `data/processed/{brazil,japan,usa}_cleaned.parquet`
+
+### Phase 1 — Tender splits
+
+Splits are created **before** any image is generated to prevent Stage 1 leakage.
+
+```bash
+python src/create_tender_splits.py
+```
+
+### Phase 2 — Bid-rotation images
+
+Images are built from train tenders only.
+
+```bash
+python src/image_generator.py
+```
+
+### Phase 3 — Stage 1 CNN training
+
+```bash
+# Pooled M1 (in-sample): Brazil + Japan + USA
+python src/train_cnn.py \
+    --countries brazil japan usa \
+    --images_dir ./outputs/images \
+    --output_dir ./outputs/models/pooled_m1 \
+    --model_type simple --use_class_weight \
+    --n_runs 5 --epochs 50 \
+    2>&1 | tee outputs/logs/step_m1_pooled.log
+```
+
+<details>
+<summary><b>LOCO folds — three more runs</b></summary>
+
+```bash
+# Test = Brazil  -> train on Japan + USA
+python src/train_cnn.py \
+    --countries japan usa \
+    --images_dir ./outputs/images \
+    --output_dir ./outputs/models/cnn_cross_fold/fold_brazil \
+    --model_type simple --use_class_weight \
+    --n_runs 5 --epochs 50 \
+    2>&1 | tee outputs/logs/step3_cnn_fold_brazil.log
+
+# Test = Japan  -> train on Brazil + USA
+python src/train_cnn.py \
+    --countries brazil usa \
+    --images_dir ./outputs/images \
+    --output_dir ./outputs/models/cnn_cross_fold/fold_japan \
+    --model_type simple --use_class_weight \
+    --n_runs 5 --epochs 50 \
+    2>&1 | tee outputs/logs/step3_cnn_fold_japan.log
+
+# Test = USA  -> train on Brazil + Japan
+python src/train_cnn.py \
+    --countries brazil japan \
+    --images_dir ./outputs/images \
+    --output_dir ./outputs/models/cnn_cross_fold/fold_usa \
+    --model_type simple --use_class_weight \
+    --n_runs 5 --epochs 50 \
+    2>&1 | tee outputs/logs/step3_cnn_fold_usa.log
+```
+
+</details>
+
+### Phase 4 — Extract pair embeddings
+
+The CNN is frozen; each fold uses its own checkpoint.
+
+```bash
+# M1 pooled (in-sample)
+python src/extract_embeddings.py \
+    --model_dir ./outputs/models/pooled_m1 \
+    --model_file best_cnn.pth \
+    --images_dir ./outputs/images \
+    --countries_list brazil japan usa \
+    --output_dir ./outputs/embeddings/insample \
+    2>&1 | tee outputs/logs/step4_embeddings_insample.log
+```
+
+<details>
+<summary><b>LOCO folds — three more runs</b></summary>
+
+```bash
+for FOLD in brazil japan usa; do
+  python src/extract_embeddings.py \
+      --model_dir ./outputs/models/cnn_cross_fold/fold_$FOLD \
+      --model_file best_cnn.pth \
+      --images_dir ./outputs/images \
+      --countries_list brazil japan usa \
+      --output_dir ./outputs/embeddings/fold_$FOLD \
+      2>&1 | tee outputs/logs/step4_embeddings_fold_$FOLD.log
+done
+```
+
+</details>
+
+### Phase 5 — Graph data and node features
+
+`prepare_graph_data.py` is independent of the CNN: it uses only the cleaned parquet files to build edges and the initial statistical-screen node features. Edges come from Jaccard similarity over bidder sets, with optional temporal decay from the `Date` column. Edge weights are computed but **not** consumed by the model — GATv2 runs on unweighted edges.
+
+```bash
+python src/prepare_graph_data.py
+```
+
+`prepare_node_features.py` then applies the Bridge Module to produce the 135-dim node features, once per embedding set:
+
+```bash
+# In-sample
+python src/prepare_node_features.py \
+    --embedding_csv ./outputs/embeddings/insample/all_pair_embeddings_with_labels.csv \
+    --output_dir ./outputs/node_features/insample \
+    2>&1 | tee outputs/logs/step_insample_node_features.log
+
+# LOCO folds
+for FOLD in brazil japan usa; do
+  python src/prepare_node_features.py \
+      --embedding_csv ./outputs/embeddings/fold_$FOLD/all_pair_embeddings_with_labels.csv \
+      --output_dir ./outputs/node_features/fold_$FOLD \
+      2>&1 | tee outputs/logs/step5_node_features_fold_$FOLD.log
+done
+```
+
+### Phase 6 — Stage 2 training (in-sample ablation)
+
+```bash
+# M2 (SimpleGAT) / M3 (GATv2) / M4 (Hybrid)
+for MODEL in simple_gat gatv2 hybrid; do
+  python src/train_stage2.py \
+      --model_type $MODEL \
+      --node_features_dir ./outputs/node_features/insample \
+      --output_dir ./outputs/models_stage2/in_sample \
+      --device auto \
+      --n_runs 5 --epochs 50 \
+      2>&1 | tee outputs/logs/step7_in_sample_$MODEL.log
+done
+```
+
+### Phase 6.2 — Classical baselines
+
+```bash
+python src/evaluate_baseline.py 2>&1 | tee outputs/logs/step_evaluate_baseline.log
+```
+
+### Phase 7 — Cross-market LOCO (3 folds × 3 conditions)
+
+Conditions are set by flags: **C1** = no flag (zero-shot, local norm), **C2** = `--global_norm`, **C3** = `--global_norm --fine_tune_ratio 0.15`.
+
+```bash
+# Example: Test = Brazil, all three conditions
+python src/train_stage2.py --model_type hybrid --test_country brazil \
+    --node_features_dir ./outputs/node_features/fold_brazil \
+    --output_dir ./outputs/models_stage2 \
+    --n_runs 5 --epochs 100 \
+    2>&1 | tee outputs/logs/step7_loco_brazil_c1.log
+
+python src/train_stage2.py --model_type hybrid --test_country brazil \
+    --node_features_dir ./outputs/node_features/fold_brazil \
+    --output_dir ./outputs/models_stage2 \
+    --global_norm \
+    --n_runs 5 --epochs 100 \
+    2>&1 | tee outputs/logs/step7_loco_brazil_c2.log
+
+python src/train_stage2.py --model_type hybrid --test_country brazil \
+    --node_features_dir ./outputs/node_features/fold_brazil \
+    --output_dir ./outputs/models_stage2 \
+    --global_norm --fine_tune_ratio 0.15 \
+    --n_runs 5 --epochs 100 \
+    2>&1 | tee outputs/logs/step7_loco_brazil_c3.log
+```
+
+<details>
+<summary><b>Japan and USA folds</b></summary>
+
+Same three commands with `--test_country japan` / `--node_features_dir ./outputs/node_features/fold_japan` (100 epochs), and `--test_country usa` / `--node_features_dir ./outputs/node_features/fold_usa` (50 epochs).
+
+```bash
+# Japan
+for C in "c1:" "c2:--global_norm" "c3:--global_norm --fine_tune_ratio 0.15"; do
+  TAG=${C%%:*}; FLAGS=${C#*:}
+  python src/train_stage2.py --model_type hybrid --test_country japan \
+      --node_features_dir ./outputs/node_features/fold_japan \
+      --output_dir ./outputs/models_stage2 \
+      $FLAGS --n_runs 5 --epochs 100 \
+      2>&1 | tee outputs/logs/step7_loco_japan_$TAG.log
+done
+
+# USA
+for C in "c1:" "c2:--global_norm" "c3:--global_norm --fine_tune_ratio 0.15"; do
+  TAG=${C%%:*}; FLAGS=${C#*:}
+  python src/train_stage2.py --model_type hybrid --test_country usa \
+      --node_features_dir ./outputs/node_features/fold_usa \
+      --output_dir ./outputs/models_stage2 \
+      $FLAGS --n_runs 5 --epochs 50 \
+      2>&1 | tee outputs/logs/step7_loco_usa_$TAG.log
+done
+```
+
+</details>
+
+### Phase 8 — Paired t-tests
+
+```bash
+python src/ttest.py 2>&1 | tee outputs/logs/step8_ttest.log
+```
+
+All metrics, checkpoints, and logs are written under `outputs/`.
 
 ---
 
 ## Configuration
+
+Paths, country list, split ratios, and image-generation parameters live in `config/config.yaml` and are loaded through `src/utils/config_loader.py`.
 
 Stage 2 hyperparameters (identical for M2, M3, and M4 so differences come only from architecture):
 
@@ -320,6 +532,19 @@ No grid or random search was performed — hyperparameters follow prior work and
 - Attention weights are not systematically extracted, so the model's internal reasoning remains largely a black box.
 
 **Future work:** more countries and auction formats; a heterogeneous graph with bidders, tenders, agencies, regions, and contract types as typed nodes; attention-weight extraction for explainability; and testing whether fewer than 15% target-market labels suffice for adaptation.
+
+---
+
+## Paper
+
+The condensed IEEE conference version of this work lives in `paper/paper.tex`, with its figures in `paper/figs/`. Build it with any standard LaTeX toolchain:
+
+```bash
+cd paper
+latexmk -pdf paper.tex
+```
+
+Exploratory data analysis behind the paper is in `notebook/explore_analysis.ipynb`.
 
 ---
 
