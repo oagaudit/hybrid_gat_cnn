@@ -64,13 +64,13 @@ STAGE 1 — Offline Feature Extraction
         │ (CV, SPD, DIFFP, RD, SKEW, KURT, KSTEST)       │ to disk, weights frozen
         ▼                                                ▼
 STAGE 2 — Graph Relational Learning
-┌────────────────────────────┐   ┌──────────────────┐   ┌──────────────────┐
-│ Contextual Bridge Module   │ → │ GATv2 (2 layers) │ → │ MLP classifier   │
+┌────────────────────────────┐   ┌───────────────────┐   ┌──────────────────┐
+│ Contextual Bridge Module   │ → │ GATv2 (2 layers)  │ → │ MLP classifier   │
 │ query = screens            │   │ 4 heads, GraphNorm│   │ 512 → 64 → 2     │
-│ keys/values = pair embeds  │   │ residual, edge   │   │ collusive vs.    │
-│ → 128-dim visual context   │   │ dropout p = 0.2  │   │ competitive      │
-│ node feature = [128 ‖ 7]   │   │ → 512-dim node   │   │                  │
-└────────────────────────────┘   └──────────────────┘   └──────────────────┘
+│ keys/values = pair embeds  │   │ residual, edge    │   │ collusive vs.    │
+│ → 128-dim visual context   │   │ dropout p = 0.2   │   │ competitive      │
+│ node feature = [128 ‖ 7]   │   │ → 512-dim node    │   │                  │
+└────────────────────────────┘   └───────────────────┘   └──────────────────┘
 ```
 
 **Stage 1 — Pairwise visual feature extraction**
