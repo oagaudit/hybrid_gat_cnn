@@ -186,3 +186,177 @@ Total pairs across all countries: 9021
 2026-07-16 22:18:18,042 - INFO -  -> Use *_trainonly_pair_images.h5 / all_pairs_trainonly_labels.csv to TRAIN the CNN (train_cnn.py)
 2026-07-16 22:18:18,042 - INFO -  -> Use *_full_pair_images.h5 / all_pairs_full_labels.csv ONLY to extract embeddings for Stage 2 (extract_embeddings.py)
 2026-07-16 22:18:18,042 - INFO - ============================================================
+2026-08-18 15:01:41,624 - INFO - ============================================================
+2026-08-18 15:01:41,625 - INFO -  Image Generator Started (leakage-safe, dual-set version)
+2026-08-18 15:01:41,625 - INFO - ============================================================
+2026-08-18 15:01:41,625 - INFO - Settings:
+2026-08-18 15:01:41,625 - INFO -   IMAGE_SIZE: 96
+2026-08-18 15:01:41,625 - INFO -   DPI: 100
+2026-08-18 15:01:41,625 - INFO -   MARKER_SIZE: 10
+2026-08-18 15:01:41,625 - INFO -   MIN_INTERACTIONS: 3
+2026-08-18 15:01:41,625 - INFO -   ADD_CONTEXT: True
+2026-08-18 15:01:41,625 - INFO -   USE_HDF5: True
+2026-08-18 15:01:41,625 - INFO - ============================================================
+2026-08-18 15:01:41,625 - INFO - ============================================================
+2026-08-18 15:01:41,625 - INFO - Phase 2: Image Generation (Pair-level, Cross-Tender, Leakage-Safe)
+2026-08-18 15:01:41,625 - INFO - ============================================================
+2026-08-18 15:01:41,854 - INFO - [TRAINONLY] brazil: using 69 train tenders (out of 101 total)
+2026-08-18 15:01:41,855 - INFO - 
+ Processing BRAZIL_TRAINONLY...
+2026-08-18 15:01:41,861 - INFO -   Filtered to 478 bids (from 683) using allowed_tenders (69 tenders allowed)
+2026-08-18 15:01:41,863 - INFO -   Loaded 478 bids, 69 tenders
+2026-08-18 15:01:41,924 - INFO -   Found 1784 unique bidder pairs
+2026-08-18 15:01:41,936 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:01:41,937 - INFO -   Kept 66 pairs (>=3 interactions), skipped 1718 sparse pairs
+2026-08-18 15:01:43,147 - INFO -   Saved 66 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/brazil_trainonly_pair_images.h5
+2026-08-18 15:01:43,150 - INFO -   Label distribution: 0=29, 1=37
+2026-08-18 15:01:43,151 - INFO - [FULL] brazil: using 101 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:01:43,151 - INFO - 
+ Processing BRAZIL_FULL...
+2026-08-18 15:01:43,151 - INFO -   Filtered to 683 bids (from 683) using allowed_tenders (101 tenders allowed)
+2026-08-18 15:01:43,152 - INFO -   Loaded 683 bids, 101 tenders
+2026-08-18 15:01:43,195 - INFO -   Found 2272 unique bidder pairs
+2026-08-18 15:01:43,211 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:01:43,211 - INFO -   Kept 122 pairs (>=3 interactions), skipped 2150 sparse pairs
+2026-08-18 15:01:44,994 - INFO -   Saved 122 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/brazil_full_pair_images.h5
+2026-08-18 15:01:44,995 - INFO -   Label distribution: 0=62, 1=60
+2026-08-18 15:01:45,002 - INFO - [TRAINONLY] japan: using 756 train tenders (out of 1080 total)
+2026-08-18 15:01:45,002 - INFO - 
+ Processing JAPAN_TRAINONLY...
+2026-08-18 15:01:45,003 - INFO -   Filtered to 9524 bids (from 13515) using allowed_tenders (756 tenders allowed)
+2026-08-18 15:01:45,004 - INFO -   Loaded 9524 bids, 756 tenders
+2026-08-18 15:01:45,391 - INFO -   Found 33948 unique bidder pairs
+2026-08-18 15:01:45,804 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:01:45,810 - INFO -   Kept 5556 pairs (>=3 interactions), skipped 28392 sparse pairs
+2026-08-18 15:03:10,620 - INFO -   Saved 5556 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/japan_trainonly_pair_images.h5
+2026-08-18 15:03:10,633 - INFO -   Label distribution: 0=3564, 1=1992
+2026-08-18 15:03:10,686 - INFO - [FULL] japan: using 1080 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:03:10,686 - INFO - 
+ Processing JAPAN_FULL...
+2026-08-18 15:03:10,687 - INFO -   Filtered to 13515 bids (from 13515) using allowed_tenders (1080 tenders allowed)
+2026-08-18 15:03:10,687 - INFO -   Loaded 13515 bids, 1080 tenders
+2026-08-18 15:03:11,294 - INFO -   Found 42104 unique bidder pairs
+2026-08-18 15:03:11,884 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:03:11,893 - INFO -   Kept 8676 pairs (>=3 interactions), skipped 33428 sparse pairs
+2026-08-18 15:05:20,623 - INFO -   Saved 8676 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/japan_full_pair_images.h5
+2026-08-18 15:05:20,641 - INFO -   Label distribution: 0=5511, 1=3165
+2026-08-18 15:05:20,726 - INFO - [TRAINONLY] usa: using 1563 train tenders (out of 2233 total)
+2026-08-18 15:05:20,727 - INFO - 
+ Processing USA_TRAINONLY...
+2026-08-18 15:05:20,728 - INFO -   Filtered to 3841 bids (from 5483) using allowed_tenders (1563 tenders allowed)
+2026-08-18 15:05:20,728 - INFO -   Loaded 3841 bids, 1563 tenders
+2026-08-18 15:05:21,206 - INFO -   Found 373 unique bidder pairs
+2026-08-18 15:05:21,211 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:05:21,211 - INFO -   Kept 185 pairs (>=3 interactions), skipped 188 sparse pairs
+2026-08-18 15:05:24,114 - INFO -   Saved 185 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/usa_trainonly_pair_images.h5
+2026-08-18 15:05:24,116 - INFO -   Label distribution: 0=116, 1=69
+2026-08-18 15:05:24,117 - INFO - [FULL] usa: using 2233 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:05:24,117 - INFO - 
+ Processing USA_FULL...
+2026-08-18 15:05:24,118 - INFO -   Filtered to 5483 bids (from 5483) using allowed_tenders (2233 tenders allowed)
+2026-08-18 15:05:24,118 - INFO -   Loaded 5483 bids, 2233 tenders
+2026-08-18 15:05:24,739 - INFO -   Found 423 unique bidder pairs
+2026-08-18 15:05:24,746 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:05:24,746 - INFO -   Kept 223 pairs (>=3 interactions), skipped 200 sparse pairs
+2026-08-18 15:05:28,233 - INFO -   Saved 223 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/usa_full_pair_images.h5
+2026-08-18 15:05:28,235 - INFO -   Label distribution: 0=143, 1=80
+2026-08-18 15:05:28,243 - INFO - 
+[TRAINONLY] Total pairs across all countries: 5807
+2026-08-18 15:05:28,244 - INFO - [TRAINONLY] Label distribution: 0=3709, 1=2098
+2026-08-18 15:05:28,251 - INFO - 
+[FULL] Total pairs across all countries: 9021
+2026-08-18 15:05:28,252 - INFO - [FULL] Label distribution: 0=5716, 1=3305
+2026-08-18 15:05:28,254 - INFO - 
+✅ บันทึกภาพตัวอย่าง (Figure 2) ที่ปรับปรุงแล้วไว้ที่: /Users/mati/hybrid_gat_cnn/outputs/figures/figure2_improved_white_bg.png
+2026-08-18 15:05:28,254 - INFO - 
+============================================================
+2026-08-18 15:05:28,255 - INFO -  Image generation completed!
+2026-08-18 15:05:28,255 - INFO -  -> Use *_trainonly_pair_images.h5 / all_pairs_trainonly_labels.csv to TRAIN the CNN (train_cnn.py)
+2026-08-18 15:05:28,255 - INFO -  -> Use *_full_pair_images.h5 / all_pairs_full_labels.csv ONLY to extract embeddings for Stage 2 (extract_embeddings.py)
+2026-08-18 15:05:28,255 - INFO - ============================================================
+2026-08-18 15:21:16,478 - INFO - ============================================================
+2026-08-18 15:21:16,479 - INFO -  Image Generator Started (leakage-safe, dual-set version)
+2026-08-18 15:21:16,479 - INFO - ============================================================
+2026-08-18 15:21:16,479 - INFO - Settings:
+2026-08-18 15:21:16,479 - INFO -   IMAGE_SIZE: 96
+2026-08-18 15:21:16,479 - INFO -   DPI: 100
+2026-08-18 15:21:16,479 - INFO -   MARKER_SIZE: 10
+2026-08-18 15:21:16,479 - INFO -   MIN_INTERACTIONS: 3
+2026-08-18 15:21:16,479 - INFO -   ADD_CONTEXT: True
+2026-08-18 15:21:16,479 - INFO -   USE_HDF5: True
+2026-08-18 15:21:16,479 - INFO - ============================================================
+2026-08-18 15:21:16,479 - INFO - ============================================================
+2026-08-18 15:21:16,479 - INFO - Phase 2: Image Generation (Pair-level, Cross-Tender, Leakage-Safe)
+2026-08-18 15:21:16,479 - INFO - ============================================================
+2026-08-18 15:21:16,597 - INFO - [TRAINONLY] brazil: using 69 train tenders (out of 101 total)
+2026-08-18 15:21:16,597 - INFO - 
+ Processing BRAZIL_TRAINONLY...
+2026-08-18 15:21:16,603 - INFO -   Filtered to 478 bids (from 683) using allowed_tenders (69 tenders allowed)
+2026-08-18 15:21:16,604 - INFO -   Loaded 478 bids, 69 tenders
+2026-08-18 15:21:16,635 - INFO -   Found 1784 unique bidder pairs
+2026-08-18 15:21:16,649 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:21:16,649 - INFO -   Kept 66 pairs (>=3 interactions), skipped 1718 sparse pairs
+2026-08-18 15:21:17,685 - INFO -   Saved 66 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/brazil_trainonly_pair_images.h5
+2026-08-18 15:21:17,687 - INFO -   Label distribution: 0=29, 1=37
+2026-08-18 15:21:17,689 - INFO - [FULL] brazil: using 101 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:21:17,689 - INFO - 
+ Processing BRAZIL_FULL...
+2026-08-18 15:21:17,689 - INFO -   Filtered to 683 bids (from 683) using allowed_tenders (101 tenders allowed)
+2026-08-18 15:21:17,690 - INFO -   Loaded 683 bids, 101 tenders
+2026-08-18 15:21:17,730 - INFO -   Found 2272 unique bidder pairs
+2026-08-18 15:21:17,745 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:21:17,746 - INFO -   Kept 122 pairs (>=3 interactions), skipped 2150 sparse pairs
+2026-08-18 15:21:19,538 - INFO -   Saved 122 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/brazil_full_pair_images.h5
+2026-08-18 15:21:19,540 - INFO -   Label distribution: 0=62, 1=60
+2026-08-18 15:21:19,547 - INFO - [TRAINONLY] japan: using 756 train tenders (out of 1080 total)
+2026-08-18 15:21:19,547 - INFO - 
+ Processing JAPAN_TRAINONLY...
+2026-08-18 15:21:19,549 - INFO -   Filtered to 9524 bids (from 13515) using allowed_tenders (756 tenders allowed)
+2026-08-18 15:21:19,549 - INFO -   Loaded 9524 bids, 756 tenders
+2026-08-18 15:21:19,957 - INFO -   Found 33948 unique bidder pairs
+2026-08-18 15:21:20,387 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:21:20,395 - INFO -   Kept 5556 pairs (>=3 interactions), skipped 28392 sparse pairs
+2026-08-18 15:22:43,839 - INFO -   Saved 5556 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/japan_trainonly_pair_images.h5
+2026-08-18 15:22:43,848 - INFO -   Label distribution: 0=3564, 1=1992
+2026-08-18 15:22:43,901 - INFO - [FULL] japan: using 1080 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:22:43,901 - INFO - 
+ Processing JAPAN_FULL...
+2026-08-18 15:22:43,902 - INFO -   Filtered to 13515 bids (from 13515) using allowed_tenders (1080 tenders allowed)
+2026-08-18 15:22:43,902 - INFO -   Loaded 13515 bids, 1080 tenders
+2026-08-18 15:22:44,433 - INFO -   Found 42104 unique bidder pairs
+2026-08-18 15:22:45,012 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:22:45,021 - INFO -   Kept 8676 pairs (>=3 interactions), skipped 33428 sparse pairs
+2026-08-18 15:24:53,774 - INFO -   Saved 8676 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/japan_full_pair_images.h5
+2026-08-18 15:24:53,783 - INFO -   Label distribution: 0=5511, 1=3165
+2026-08-18 15:24:53,863 - INFO - [TRAINONLY] usa: using 1563 train tenders (out of 2233 total)
+2026-08-18 15:24:53,863 - INFO - 
+ Processing USA_TRAINONLY...
+2026-08-18 15:24:53,864 - INFO -   Filtered to 3841 bids (from 5483) using allowed_tenders (1563 tenders allowed)
+2026-08-18 15:24:53,864 - INFO -   Loaded 3841 bids, 1563 tenders
+2026-08-18 15:24:54,296 - INFO -   Found 373 unique bidder pairs
+2026-08-18 15:24:54,301 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:24:54,301 - INFO -   Kept 185 pairs (>=3 interactions), skipped 188 sparse pairs
+2026-08-18 15:24:56,926 - INFO -   Saved 185 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/usa_trainonly_pair_images.h5
+2026-08-18 15:24:56,927 - INFO -   Label distribution: 0=116, 1=69
+2026-08-18 15:24:56,928 - INFO - [FULL] usa: using 2233 tenders (train+val+test) for embedding extraction only
+2026-08-18 15:24:56,928 - INFO - 
+ Processing USA_FULL...
+2026-08-18 15:24:56,929 - INFO -   Filtered to 5483 bids (from 5483) using allowed_tenders (2233 tenders allowed)
+2026-08-18 15:24:56,929 - INFO -   Loaded 5483 bids, 2233 tenders
+2026-08-18 15:24:57,540 - INFO -   Found 423 unique bidder pairs
+2026-08-18 15:24:57,546 - INFO -   Context pairs generated for each main pair
+2026-08-18 15:24:57,547 - INFO -   Kept 223 pairs (>=3 interactions), skipped 200 sparse pairs
+2026-08-18 15:25:00,698 - INFO -   Saved 223 pair images to /Users/mati/hybrid_gat_cnn/outputs/images/usa_full_pair_images.h5
+2026-08-18 15:25:00,700 - INFO -   Label distribution: 0=143, 1=80
+2026-08-18 15:25:00,707 - INFO - 
+[TRAINONLY] Total pairs across all countries: 5807
+2026-08-18 15:25:00,709 - INFO - [TRAINONLY] Label distribution: 0=3709, 1=2098
+2026-08-18 15:25:00,715 - INFO - 
+[FULL] Total pairs across all countries: 9021
+2026-08-18 15:25:00,716 - INFO - [FULL] Label distribution: 0=5716, 1=3305
+2026-08-18 15:25:00,716 - INFO - 
+============================================================
+2026-08-18 15:25:00,716 - INFO -  Image generation completed!
+2026-08-18 15:25:00,716 - INFO -  -> Use *_trainonly_pair_images.h5 / all_pairs_trainonly_labels.csv to TRAIN the CNN (train_cnn.py)
+2026-08-18 15:25:00,716 - INFO -  -> Use *_full_pair_images.h5 / all_pairs_full_labels.csv ONLY to extract embeddings for Stage 2 (extract_embeddings.py)
+2026-08-18 15:25:00,716 - INFO - ============================================================

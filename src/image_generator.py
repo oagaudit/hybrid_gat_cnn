@@ -27,6 +27,9 @@ with `splits['train'] + splits['val'] + splits['test']`, which is
 equivalent to using ALL tenders (i.e. no filtering at all). This
 version fixes that by explicitly generating both sets with the
 correct tender lists.
+
+[UPDATED] Background changed from black to white, marker colors adjusted
+for better visibility (per professor's feedback on Figure 2).
 =====================================================================
 """
 
@@ -45,6 +48,7 @@ import h5py
 from tqdm import tqdm
 import matplotlib.pyplot as plt
 from collections import defaultdict
+from PIL import Image  
 from src.utils.config_loader import CONFIG, get_project_root
 
 PROJECT_ROOT = get_project_root()
@@ -98,35 +102,41 @@ logging.info("=" * 60)
 
 
 # ============================================
-# Create image function
+# Create image function  
 # ============================================
 def generate_bid_rotation_image(bid_pairs, context_pairs=None, image_size=96, dpi=100, marker_size=8):
     """
     Create grayscale image of bid rotation.
     - bid_pairs: list of (x,y) for the main firm pair
     - context_pairs: optional list of (x,y) for additional context (other pairs)
+    
+    [UPDATED] Background changed to WHITE. Main points in BLACK, context in DARK GRAY.
     """
     if not bid_pairs and not context_pairs:
         return np.zeros((image_size, image_size), dtype=np.uint8)
 
     fig, ax = plt.subplots(figsize=(image_size / dpi, image_size / dpi), dpi=dpi)
 
-    # Plot main pairs (white, opaque)
+    # change background
+    ax.set_facecolor('white')
+    # =================================
+
+    # Plot main pairs (เปลี่ยนจากสีขาวเป็นสีดำ เพื่อให้เห็นบนพื้นขาว)
     x = [p[0] for p in bid_pairs]
     y = [p[1] for p in bid_pairs]
-    ax.scatter(x, y, s=marker_size, c='white', alpha=0.9, edgecolors='none')
+    ax.scatter(x, y, s=marker_size, c='black', alpha=0.9, edgecolors='none')  # <-- c='black'
 
-    # Plot context pairs (gray, transparent) if provided
+    # Plot context pairs 
     if context_pairs:
         ctx_x = [p[0] for p in context_pairs]
         ctx_y = [p[1] for p in context_pairs]
-        ax.scatter(ctx_x, ctx_y, s=CONTEXT_MARKER_SIZE, c='gray', alpha=CONTEXT_ALPHA, edgecolors='none')
+        ax.scatter(ctx_x, ctx_y, s=CONTEXT_MARKER_SIZE, c='#808080', alpha=CONTEXT_ALPHA, edgecolors='none')  # <-- c='#808080'
 
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     ax.set_xticks([])
     ax.set_yticks([])
-    ax.set_facecolor('black')
+    # ไม่ต้อง set_facecolor ซ้ำ เพราะตั้งไปแล้วข้างต้น
     for spine in ax.spines.values():
         spine.set_visible(False)
 
@@ -138,7 +148,6 @@ def generate_bid_rotation_image(bid_pairs, context_pairs=None, image_size=96, dp
     plt.close(fig)
 
     image_gray = np.dot(image[..., :3], [0.2989, 0.5870, 0.1140])
-    from PIL import Image
     img_pil = Image.fromarray(image_gray.astype('uint8'))
     img_pil = img_pil.resize((image_size, image_size), Image.Resampling.LANCZOS)
     return np.array(img_pil)
@@ -396,6 +405,8 @@ def main():
                      f"1={len(combined_full[combined_full['label'] == 1])}")
     else:
         logging.error("No FULL data was generated for any country.")
+
+    
 
     logging.info("\n" + "=" * 60)
     logging.info(" Image generation completed!")
