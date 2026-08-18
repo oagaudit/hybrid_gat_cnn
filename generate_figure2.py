@@ -1,6 +1,6 @@
 """
 generate_figure2_with_context.py
-เพิ่ม Context points (สีเทา) และกล่องเส้นประแดงแสดง Density Gap
+add Context points 
 """
 
 import sys
@@ -17,10 +17,9 @@ PROCESSED_DIR = os.path.join(PROJECT_ROOT, CONFIG['data']['processed_dir'])
 OUTPUT_DIR = os.path.join(PROJECT_ROOT, 'outputs', 'figures')
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# โหลดข้อมูล
 cleaned_path = os.path.join(PROCESSED_DIR, 'brazil_cleaned.parquet')
 df = pd.read_parquet(cleaned_path)
-print(f"✅ โหลดข้อมูล {len(df)} rows")
+print(f"load data {len(df)} rows")
 
 def get_pair_data_with_context(df, firm_a, firm_b):
     firm_a, firm_b = int(firm_a), int(firm_b)
@@ -61,17 +60,15 @@ def get_pair_data_with_context(df, firm_a, firm_b):
     
     return bids_a, bids_b, context_x, context_y
 
-# ดึงข้อมูล
 bids_a_comp, bids_b_comp, ctx_x_comp, ctx_y_comp = get_pair_data_with_context(df, 50, 76)
 bids_a_coll, bids_b_coll, ctx_x_coll, ctx_y_coll = get_pair_data_with_context(df, 69, 76)
 
-print(f"✅ คู่ 50_76: {len(bids_a_comp)} จุดหลัก, {len(ctx_x_comp)} จุดบริบท")
-print(f"✅ คู่ 69_76: {len(bids_a_coll)} จุดหลัก, {len(ctx_x_coll)} จุดบริบท")
+print(f" 50_76: {len(bids_a_comp)} main, {len(ctx_x_comp)} context")
+print(f" 69_76: {len(bids_a_coll)} main, {len(ctx_x_coll)} context")
 
 # สร้าง Figure
 fig, axes = plt.subplots(1, 2, figsize=(10, 4.5))
 
-# ---- ซ้าย: Competitive Pair (50_76) ----
 ax1 = axes[0]
 ax1.scatter(ctx_x_comp, ctx_y_comp, s=15, c='gray', alpha=0.3, edgecolors='none', label='Other pairs')
 ax1.scatter(bids_a_comp, bids_b_comp, s=40, c='black', alpha=0.9, edgecolors='none', label='Pair (50,76)')
@@ -84,12 +81,10 @@ ax1.grid(True, alpha=0.2)
 ax1.set_aspect('equal')
 ax1.legend(fontsize=8)
 
-# ---- ขวา: Collusive Pair (69_76) ----
 ax2 = axes[1]
 ax2.scatter(ctx_x_coll, ctx_y_coll, s=15, c='gray', alpha=0.3, edgecolors='none', label='Other pairs')
 ax2.scatter(bids_a_coll, bids_b_coll, s=40, c='black', alpha=0.9, edgecolors='none', label='Pair (69,76)')
 
-# ✅ กล่องเส้นประแดง แสดง Density Gap บริเวณ (0.0 - 0.2)
 rect = Rectangle((0.0, 0.0), 0.2, 0.2, 
                  linewidth=2, edgecolor='red', facecolor='none', 
                  linestyle='--', label='Density gap')
@@ -110,4 +105,4 @@ output_path = os.path.join(OUTPUT_DIR, 'figure2_with_context.png')
 plt.savefig(output_path, dpi=300, bbox_inches='tight', facecolor='white')
 plt.close()
 
-print(f"\n✅ บันทึก Figure 2 (พร้อม Density Gap) ที่: {output_path}")
+print(f"\n save: {output_path}")
